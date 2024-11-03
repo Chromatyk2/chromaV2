@@ -7,7 +7,7 @@ function AuthService() {
 
   const [cookies, setCookie, removeCookie] = useCookies();
   const CLIENT_ID = process.env.REACT_APP_CLIENT_ID;
-  const REDIRECT_URI = "https://chromatyk.fr/";
+  const REDIRECT_URI = "https://chromav2.netlify.app/";
   const SCOPES = ['openid'];
   const CLIENT_SECRET = process.env.REACT_APP_CLIENT_SECRET
 
@@ -56,7 +56,7 @@ function AuthService() {
           client_secret:CLIENT_SECRET,
           code:params.code,
           grant_type:"authorization_code",
-          redirect_uri:"https://chromatyk.fr/"
+          redirect_uri:"https://chromav2.netlify.app/"
         }
       )
       .then(

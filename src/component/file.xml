@@ -1,0 +1,23 @@
+<offre>
+    <title>__valeur__</title>
+    <recruiterId>__valeur__</recruiterId>
+    <ref>__valeur__</ref>
+    <contractType>__valeur__</contractType>
+    <scholarLevel>__valeur__</scholarLevel>
+    <experience>__valeur__</experience>
+    <min_salary>__valeur__</min_salary>
+    <max_salary>__valeur__</max_salary>
+    <salary_by_profile>__valeur__</salary_by_profile>
+    <company_description>__valeur__</company_description>
+    <job_description>__valeur__</job_description>
+    <profile_description>__valeur__</profile_description>
+    <updated_at>__valeur__</updated_at>
+    <starting_date>__valeur__</starting_date>
+    <starting_asap>__valeur__</starting_asap>
+    <duration>__valeur__</duration>
+    <address>__valeur__</address>
+    <job_application_email>__valeur__</job_application_email>
+    <job_application_URL></job_application_URL>
+    <publication_date>__valeur__</publication_date>
+    <site_ids>__valeur__</site_ids>
+</offre>

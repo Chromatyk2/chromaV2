@@ -1,0 +1,605 @@
+
+  {
+    "nom": "Bulbizarre",
+    "description": "Bulbizarre est un petit quadrup\u00e8de vert avec une t\u00eate large. Il porte un bulbe sur son dos. Ce dernier lui sert \u00e9galement d'organe de stockage, puisqu'on rapporte notamment qu'en p\u00e9riode de s\u00e9cheresse, il peut survivre plusieurs jours sans manger gr\u00e2ce \u00e0 l'\u00e9nergie qui y est accumul\u00e9e. Il a des taches fonc\u00e9es sur le corps faisant penser \u00e0 un batracien. Son bulbe grandit en permanence en absorbant les rayons du soleil, et lorsque le poids du bulbe sera trop grand et emp\u00eachera Bulbizarre de se dresser sur ses deux pattes arri\u00e8re, cela signifiera que son \u00e9volution en Herbizarre est proche.Bulbizarre utilise couramment la capacit\u00e9 Vampigraine qui est l'expulsion d'une graine parasitant l'ennemi par l'orifice de son bulbe\u00a0; et le Fouet Lianes qui est l'utilisation de tiges comme membres articul\u00e9s pour frapper l'adversaire. Ces tiges sont d'ailleurs fr\u00e9quemment utilis\u00e9es pour manipuler des objets ou se porter lui-m\u00eame en hauteur. Leur force est incroyable, il peut soulever des masses \u00e9quivalentes \u00e0 la sienne, voire plus grosses."
+  },
+  {
+    "nom": "Herbizarre",
+    "description": "Herbizarre est un Pok\u00e9mon quadrup\u00e8de, semblable \u00e0 un dinosaure. Il a un corps bleu vert avec des taches plus fonc\u00e9es. Deux canines sup\u00e9rieures d\u00e9passent de sa bouche quand elle est ferm\u00e9e, et par rapport \u00e0 sa pr\u00e9-\u00e9volution, ses yeux sont plus petits et plus fonc\u00e9s. Il a sur le haut de sa t\u00eate deux oreilles pointues remplies de noir. Il a un petit museau rond et une large bouche. Chacun de ses pieds poss\u00e8de trois griffes pointues et blanches. Le bulbe sur son dos a fleuri et est devenu un gros bourgeon rose dont le poids est tel qu'il emp\u00eache Herbizarre de se tenir sur ses pattes post\u00e9rieures trop longtemps. Une petite tige marron, entour\u00e9e par quatre larges feuilles, soutient le bourgeon.Quand le bourgeon est sur le point d'\u00e9clore, il d\u00e9gage une d\u00e9licate odeur fleurie et commence \u00e0 se gonfler. Herbizarre commence donc \u00e0 passer plus de temps au soleil pour pr\u00e9parer son \u00e9volution proche. L'exposition au soleil donne plus de force \u00e0 la plante et \u00e0 Herbizarre. Les Herbizarre vivent naturellement dans les plaines. Cependant, \u00e0 pr\u00e9sent, beaucoup vivent en captivit\u00e9."
+  },
+  {
+    "nom": "Florizarre",
+    "description": "Florizarre est un imposant quadrup\u00e8de \u00e0 la peau verte ayant l'aspect d'un batracien, il est beaucoup plus grand et lourd que Bulbizarre et Herbizarre. Il porte une grande fleur rose tachet\u00e9e sur son dos, entour\u00e9e de quatre grandes feuilles. L'int\u00e9rieur de ses oreilles s'est color\u00e9 de rouge et sa peau au niveau de ses pattes est d\u00e9sormais recouverte d'excroissances faisant penser aux verrues d'un crapaud. Sa bouche est orn\u00e9e de six petites canines. Chacun de ses pas provoque un tremblement du sol. Sa fleur \u00e9met un parfum qui calme les esprits et app\u00e2te les Pok\u00e9mon. Ce parfum est plus ent\u00eatant apr\u00e8s une journ\u00e9e de pluie. La fleur permet aussi \u00e0 Florizarre d'absorber les rayons du soleil pour se soigner ou \u00eatre plus efficace en combat.Florizarre poss\u00e8de plus de lianes que ses pr\u00e9-\u00e9volutions, qui \u00e9taient limit\u00e9es \u00e0 deux. Avec elles, il peut soulever des adversaires tr\u00e8s lourds. Lors d'une attaque Lance-Soleil, sa fleur sur son dos emmagasine l'\u00e9nergie des rayons du soleil, mais il semblerait qu'il puisse rel\u00e2cher sa puissance soit par l'orifice de sa plante, soit par sa bouche, selon la position angulaire de son adversaire."
+  },
+  {
+    "nom": "Salam\u00e8che",
+    "description": "Salam\u00e8che est un Pok\u00e9mon bip\u00e8de et reptilien avec un corps principalement orange, \u00e0 l'exception de son ventre et de ses plantes de pieds qui sont beiges. Ses bras et ses jambes sont courts, avec respectivement quatre doigts et trois griffes chacune. Une flamme br\u00fble au bout de la svelte queue de Salam\u00e8che, et elle flamboie depuis sa naissance. La flamme peut servir d'indication quant \u00e0 la sant\u00e9 et \u00e0 l'humeur de Salam\u00e8che\u00a0: elle br\u00fble fi\u00e8rement quand le Pok\u00e9mon est en pleine forme, doucement si le Pok\u00e9mon est faible ou triste, ondoie quand il est heureux et flamboie quand il est en col\u00e8re. Il est dit qu'un Salam\u00e8che meurt si sa flamme s'\u00e9teint.Salam\u00e8che peut \u00eatre trouv\u00e9 dans les chaudes aires montagneuses. Cependant, il est trouv\u00e9 encore plus fr\u00e9quemment sous la propri\u00e9t\u00e9 d'un Dresseur. Comme montr\u00e9 dans Pok\u00e9mon Snap, Salam\u00e8che a un comportement de groupe, appelant les autres membres de sa bande quand il trouve \u00e0 manger."
+  },
+  {
+    "nom": "Reptincel",
+    "description": "Reptincel est tir\u00e9 du dinosaure\u00a0; il poss\u00e8de trois grandes et puissantes griffes ac\u00e9r\u00e9es \u00e0 chaque main et pied, qui l'aident notamment \u00e0 d\u00e9chirer la peau de ses ennemis lors des combats. Sa peau est plus fonc\u00e9e que celle de sa pr\u00e9-\u00e9volution et son museau s'est allong\u00e9. Son cr\u00e2ne est d\u00e9sormais dot\u00e9 d'une cr\u00eate. Sa queue, longue et termin\u00e9e par une flamme, lui sert notamment \u00e0 \u00e9lever sa temp\u00e9rature, le rendant plus puissant en combat, et \u00e0 faire chuter ses adversaires avant de les achever.Le Pok\u00e9dex le dit extr\u00eamement agressif, violent, voire cruel dans certains cas. Il cherche toujours des adversaires plus puissants et sa flamme devient bleue tandis que sa temp\u00e9rature augmente."
+  },
+  {
+    "nom": "Dracaufeu",
+    "description": "Dracaufeu est bas\u00e9 sur un dragon europ\u00e9en. Contrairement \u00e0 ses pr\u00e9-\u00e9volutions, il a deux ailes lui permettant de voler\u00a0: l'int\u00e9rieur des ailes est bleu alors que leur verso est orange. Son cou s'est d\u00e9velopp\u00e9, il est d\u00e9sormais plus long et deux cr\u00eates ont pouss\u00e9 \u00e0 l'arri\u00e8re de son cr\u00e2ne. Ses membres sup\u00e9rieurs se sont atrophi\u00e9s tandis que sa queue s'est allong\u00e9e pour permettre \u00e0 ce titan de garder une certaine stabilit\u00e9 au sol bien qu'il soit plus \u00e0 l'aise dans les airs. Sa dentition, avec ses canines apparentes, r\u00e9v\u00e8le une pr\u00e9f\u00e9rence marqu\u00e9e pour la viande\u00a0; il poss\u00e8de trois griffes \u00e0 chaque patte et a le ventre jaune p\u00e2le. Pok\u00e9mon noble, il n'attaque pas les plus faibles que lui et cherche toujours des adversaires plus forts. Apr\u00e8s un combat difficile ou s'il est en col\u00e8re, sa flamme s'intensifie et devient blanc-bleu. Il crache des flammes pouvant faire fondre n'importe quoi et est souvent la cause d'incendies.Dans les jeux vid\u00e9o, jusqu'\u00e0 la cinqui\u00e8me g\u00e9n\u00e9ration incluse, son cri \u00e9tait le m\u00eame que celui de Rhinocorne."
+  },
+  {
+    "nom": "Carapuce",
+    "description": "Carapuce est une petite tortue bip\u00e8de de couleur bleue. Il poss\u00e8de une carapace brune au pourtour blanc, beige au niveau du ventre. Ses yeux sont grands et violac\u00e9s. Il a une queue enroul\u00e9e sur elle-m\u00eame formant une spirale. Il poss\u00e8de quatre pattes avec chacune trois doigts.Sa carapace, molle \u00e0 la naissance, durcit avec le temps et lui sert \u00e0 se prot\u00e9ger pour lancer ensuite des jets d'eau ou d'\u00e9cume, mais aussi \u00e0 am\u00e9liorer son hydrodynamisme."
+  },
+  {
+    "nom": "Carabaffe",
+    "description": "Carabaffe est une tortue bip\u00e8de de couleur bleu indigo, dont les oreilles et la queue sont recouvertes d'une fourrure duveteuse de couleur blanche\u00a0; celle-ci fait d'ailleurs penser \u00e0 des vagues. Ses grands yeux sont marron. Trois griffes ornent chacune de ses pattes, et une \u00e9paisse carapace le prot\u00e8ge des coups.Carabaffe est fait pour le combat\u00a0: des canines affleurent sur ses l\u00e8vres, sa queue peut administrer de puissantes vol\u00e9es de coups et ses pattes robustes lui permettent de r\u00e9sister aux chocs. Il semble pouvoir nager extr\u00eamement vite, notamment \u00e0 l'aide de ses oreilles et de sa queue."
+  },
+  {
+    "nom": "Tortank",
+    "description": "Tortank est un bip\u00e8de massif de la famille des tortues. Les extr\u00e9mit\u00e9s sup\u00e9rieures gauche et droite de sa carapace sont orn\u00e9es d'un canon \u00e0 eau pouvant \u00eatre orient\u00e9 dans diverses directions. Form\u00e9 au combat, sa t\u00eate s'est endurcie\u00a0: le duvet de Carabaffe n'est plus pr\u00e9sent et il poss\u00e8de d\u00e9sormais deux petites oreilles et une queue courte. Ses griffes se sont maintenant d\u00e9velopp\u00e9es sur tous ses doigts et ses yeux n'ont pas chang\u00e9 de couleur.Il n'y a aucune diff\u00e9rence entre les individus m\u00e2les et femelles de cette esp\u00e8ce."
+  },
+  {
+    "nom": "Chenipan",
+    "description": "Chenipan est un Pok\u00e9mon serpentin ressemblant aux larves de Papilio xuthus. Il a le corps d'une chenille verte avec des marques jaunes en forme d'anneaux sur les flancs. Il poss\u00e8de \u00e9galement de grands yeux jaunes aux pupilles noires. Sa caract\u00e9ristique la plus notable est l'antenne rouge vif sur sa t\u00eate en forme de \u00ab\u00a0Y\u00a0\u00bb, certainement un osmeterium, qui lib\u00e8re une odeur repoussant les pr\u00e9dateurs. Ses marques en formes d'yeux servent \u00e9galement \u00e0 effrayer ses ennemis. Ses pattes se terminent par des ventouses, permettant \u00e0 ce Pok\u00e9mon d'escalader la plupart des surfaces avec un minimum d'efforts.Chenipan muera plusieurs fois avant de s'enfermer dans un cocon de soie \u00e9paisse. Il peut \u00e9galement cracher cette soie pour emprisonner ses ennemis, comme on le voit dans l'\u00e9pisode 3 de la s\u00e9rie (Capture du premier Pok\u00e9mon). Son app\u00e9tit vorace l'oblige \u00e0 manger des feuilles plus grandes que lui\u00a0: en effet, il se nourrit principalement de plantes. D'apr\u00e8s Pocket Monsters Special, sa nourriture favorite est la fleur Vermilion. Chenipan vit dans les for\u00eats."
+  },
+  {
+    "nom": "Chrysacier",
+    "description": "Chrysacier est un Pok\u00e9mon cocon int\u00e9gralement vert. Courb\u00e9 vers l'arri\u00e8re, il poss\u00e8de deux yeux \u00e0 demi ferm\u00e9s avec des scl\u00e8res blanches (jaune p\u00e2le dans l'anim\u00e9). Sous ses yeux, plusieurs plaques prennent la forme d'un museau. Il poss\u00e8de une pointe au milieu du dos. L'extr\u00e9mit\u00e9 inf\u00e9rieure de son corps comporte deux anneaux stri\u00e9s.Il n'y a aucune diff\u00e9rence entre les individus m\u00e2les et femelles de cette esp\u00e8ce."
+  },
+  {
+    "nom": "Papilusion",
+    "description": "Papilusion est une sorte de papillon poss\u00e9dant de grandes antennes. Il est violet avec des parties bleues\u00a0; ses ailes, tr\u00e8s grandes pour sa taille, permettent notamment les capacit\u00e9s de type Vol et l'utilisation de diverses poudres. Comme pour les insectes r\u00e9els, ses yeux sont probablement compos\u00e9s. Ses ailes poss\u00e8dent des motifs comme les papillons. Il a deux grands pieds qui ne semblent pas poss\u00e9der de doigts, mais deux mains qui en ont trois sur chacune d'elles. Papilusion a deux petites dents qui semblent sortir de son nez. Ses antennes sont de longues tiges noires avec une boule au bout. Il adore le pollen.Les Papilusion femelles ont des marques violettes (avant la sixi\u00e8me g\u00e9n\u00e9ration) ou noires (\u00e0 partir de la sixi\u00e8me g\u00e9n\u00e9ration) sur les ailes du bas."
+  },
+  {
+    "nom": "Aspicot",
+    "description": "Aspicot est \u00e0 moiti\u00e9 chenille et \u00e0 moiti\u00e9 asticot. Sa t\u00eate est recouverte d'un aiguillon empoisonn\u00e9 qui fait sa dangereuse r\u00e9putation.Contrairement \u00e0 son \u00ab\u00a0rival\u00a0\u00bb Chenipan, il est muni de petits yeux noirs et de quatorze petites pattes rondes et violettes le long de son corps marron clair. Au bout de sa queue, il poss\u00e8de un autre aiguillon empoisonn\u00e9 qui lui sert beaucoup moins. Il n'a pas de bouche ni d'oreilles, mais a un gros nez violet de forme ovale."
+  },
+  {
+    "nom": "Coconfort",
+    "description": "Coconfort est en fait un Pok\u00e9mon envelopp\u00e9 dans une armure marron clair attendant son \u00e9volution. Il est inspir\u00e9 d'une nymphe de gu\u00eape, c'est-\u00e0-dire son stade entre la larve et l'adulte. Il a deux dards sous sa t\u00eate triangulaire, pr\u00e9curseurs de sa future \u00e9volution en Dardargnan. Il a deux yeux noirs \u00e0 pupille blanche.Ce Pok\u00e9mon est l'\u00e9tat interm\u00e9diaire entre Aspicot et Dardargnan\u00a0; il dort constamment tant qu'il n'a pas \u00e9volu\u00e9 en ce dernier."
+  },
+  {
+    "nom": "Dardargnan",
+    "description": "Dardargnan est un Pok\u00e9mon inspir\u00e9 de la gu\u00eape g\u00e9ante du Japon, le vespa mandarinia. Il poss\u00e8de deux grandes antennes sur sa t\u00eate triangulaire. Il est jaune et noir et poss\u00e8de quatre pattes dont les deux ant\u00e9rieures sont munies de gros dards.\nIl poss\u00e8de quatre ailes transparentes et un dard jaune en guise de queue.\nSes yeux sont rouges et lui permettent de voir m\u00eame en grande vitesse pendant son vol.Il n'y a aucune diff\u00e9rence entre les individus m\u00e2les et femelles de cette esp\u00e8ce."
+  },
+  {
+    "nom": "Roucool",
+    "description": "Roucool est un petit Pok\u00e9mon aviaire au corps dodu. Il est principalement marron avec un visage, un ventre et quelques plumes de couleur cr\u00e8me. Ses serres et son bec sont gris ros\u00e2tre. Il a des marquages noirs angulaires autour des yeux et une petite cr\u00eate aux plumes marron et cr\u00e8me sur le dessus de la t\u00eate.Roucool a un sens de l'orientation extr\u00eamement aiguis\u00e9, surtout pour rentrer chez lui. Il peut localiser son nid m\u00eame s'il a \u00e9t\u00e9 d\u00e9plac\u00e9. C'est un Pok\u00e9mon docile, et il pr\u00e9f\u00e8re s'enfuir en volant devant ses ennemis plut\u00f4t que de les combattre. En agitant rapidement ses ailes, il peut soulever des nuages de poussi\u00e8re et cr\u00e9er des tourbillons pour se prot\u00e9ger et faire fuir son potentiel ennemi. Roucool est un Pok\u00e9mon tr\u00e8s commun, et peut \u00eatre trouv\u00e9 dans les pr\u00e9s et les for\u00eats."
+  },
+  {
+    "nom": "Roucoups",
+    "description": "Roucoups est un Pok\u00e9mon volatile qui ressemble \u00e0 un rapace. Il est couvert de plumes marron, et a un visage et un ventre couleur cr\u00e8me. Il a une cr\u00eate de plumes rouge ros\u00e2tre sur le dessus de la t\u00eate et des marquages noirs angulaires autour des yeux. Le plumage de sa queue est alternativement rouge et jaune, et les plumes de sa queue ont un bout d\u00e9chiquet\u00e9. Son bec et ses jambes sont roses, et il a de puissantes serres aiguis\u00e9es dont il se sert pour attraper ses proies.Roucoups est un puissant volatile qui peut rep\u00e9rer des proies \u00e0 plusieurs kilom\u00e8tres de son nid. Il a une vision extraordinaire, ce qui l'aide \u00e0 rep\u00e9rer ses proies pr\u00e9f\u00e9r\u00e9es, comme les Magicarpe ou les Noeunoeuf. Dans l'anim\u00e9, il s'attaque aux Chenipan. Un Roucoups peut \u00e9tendre son territoire jusqu'\u00e0 60 kilom\u00e8tres \u00e0 la ronde. Son nid est g\u00e9n\u00e9ralement au centre de son territoire. Il survole tous les jours son territoire \u00e0 la recherche de nourriture ou d'intrus. Roucoups est un Pok\u00e9mon dangereux, il donne de dynamiques coups de bec aux intrus. Il est commun\u00e9ment trouv\u00e9 dans les for\u00eats."
+  },
+  {
+    "nom": "Roucarnage",
+    "description": "Bien que dans beaucoup de langues, son nom soit issu du terme pigeon, il a bien plus de points communs avec un aigle. Ainsi, il partage avec cet animal une silhouette proche (allure g\u00e9n\u00e9rale, taille, forme des ailes et des serres, etc) et d'autres donn\u00e9es physiologiques, comme la vue per\u00e7ante. Cependant, ce Pok\u00e9mon oiseau est dot\u00e9 d'un physique assez fort. L\u00e0 o\u00f9 d'autres concurrents du m\u00eame genre sont plut\u00f4t petits (H\u00e9l\u00e9delle mesure 0,7 m - \u00c9touraptor, D\u00e9flaisan, Flambusard et Rapasdepic mesurent 1,2 m), Roucarnage atteint une moyenne d'1,5 m. De m\u00eame pour la masse, H\u00e9l\u00e9delle p\u00e8se 19,8\u00a0kg, \u00c9touraptor atteint 24,9\u00a0kg, Rapasdepic 38\u00a0kg, Flambusard 24,5\u00a0kg et D\u00e9flaisan 29\u00a0kg; alors que Roucarnage monte \u00e0 39,5\u00a0kg. Son allure \u00e0 l'aspect moins \u00e9lanc\u00e9 traduit d'ailleurs ces donn\u00e9es physiques. De ce fait, Roucarnage se sert surtout de ses ailes puissantes pour attaquer. Si contrairement \u00e0 Rapasdepic, il n'a pas la capacit\u00e9 de lancer l'attaque Bec Vrille, il se sert surtout de Tornade, Cyclone mais aussi Cru-Aile et Rapace. L'attaque H\u00e2te est aussi r\u00e9guli\u00e8rement utilis\u00e9e pour combler ce d\u00e9ficit de vitesse. Roucarnage est un Pok\u00e9mon r\u00e9put\u00e9 pour sa fiert\u00e9, ainsi que son ardeur \u00e0 d\u00e9fendre son territoire. A l'\u00e9tat domestique, il est en g\u00e9n\u00e9ral tr\u00e8s docile (notamment parce que la plupart des Roucarnage domestiques sont issus d'\u00e9volutions \u00e0 partir du stade de base Roucool), mais conserve son ardeur qu'il met au service de son Dresseur.Il n'y a aucune diff\u00e9rence entre les individus m\u00e2les et femelles de cette esp\u00e8ce."
+  },
+  {
+    "nom": "Rattata",
+    "description": "Rattata est un Pok\u00e9mon ressemblant \u00e0 un rat au corps violet et blanc p\u00e2le. C'est donc un quadrup\u00e8de, avec trois griffes \u00e0 chaque patte.Il poss\u00e8de deux moustaches qui lui donnent plus de stabilit\u00e9 pour \u00eatre plus rapide\u00a0; soit pour attaquer, soit pour fuir. Il a deux oreilles dont l'ou\u00efe peut porter tr\u00e8s loin en plus d'yeux rouges \u00e0 vue per\u00e7ante. Sa bouche est munie de deux grandes dents. Son ventre est compl\u00e8tement blanc p\u00e2le et il poss\u00e8de une longue queue violette qui se retourne sur elle-m\u00eame. Selon le Pok\u00e9dex, une \u00e9tude a prouv\u00e9 que les dents du Rattata repoussent aussi vite que celle du Keunotor."
+  },
+  {
+    "nom": "Rattatac",
+    "description": "Rattatac ressemble \u00e0 un gros rat et poss\u00e8de de petits bras, un corps marron et beige et des pieds palm\u00e9s. Il a les yeux noirs. Il poss\u00e8de aussi une longue queue marron. Sa bouche poss\u00e8de deux larges incisives (une en bas et une en haut). Il a des moustaches qui sont au nombre de trois de chaque c\u00f4t\u00e9 de sa t\u00eate.\nRattatac est rapide et robuste et capable de croquer n'importe quoi. Si l'on coupe ses moustaches, il perdra de la vitesse et sera moins efficace au combat.Depuis Pok\u00e9mon Soleil et Lune, Rattatac poss\u00e8de une nouvelle variante, appel\u00e9e Rattatac d'Alola."
+  },
+  {
+    "nom": "Piafabec",
+    "description": "Petit et rapide, Piafabec est un oiseau \u00e0 la mine rev\u00eache dot\u00e9 d'un caract\u00e8re tr\u00e8s d\u00e9sagr\u00e9able. D'une l\u00e2chet\u00e9 \u00e0 toute \u00e9preuve, il vit avec ses cong\u00e9n\u00e8res dans des clans d'une trentaine de membres. Ils attaquent les diff\u00e9rents Pok\u00e9mon vivants dans leur territoire et les Dresseurs de passage. Il a deux ailes rouges et des plumes brunes sur son dos. Son ventre est gris. Ses pattes griffues ont trois doigts.Il n'y a aucune diff\u00e9rence entre les individus m\u00e2les et femelles de cette esp\u00e8ce."
+  },
+  {
+    "nom": "Rapasdepic",
+    "description": "Rapasdepic ressemble \u00e0 un grand oiseau et plus particuli\u00e8rement \u00e0 un rapace. Il a une cr\u00eate rouge \u00e0 cinq pics. Sur son corps se trouve une fourrure beige. Il a les yeux blancs avec des pupilles noires et poss\u00e8de un tr\u00e8s large bec pointu et d'immenses ailes. Il poss\u00e8de \u00e9galement une queue \u00e0 quatre plumes ainsi que des serres puissantes.\nRapasdepic est craint de tous les Pok\u00e9mon oiseaux plus petits que lui, car il attaque sans motif apparent. Il aime particuli\u00e8rement planer au-dessus des nuages, l\u00e0 o\u00f9 la plupart des oiseaux ne volent pas. Son bec pointu est excellent dans les attaques Bec Vrille, mais il aime tout particuli\u00e8rement l'attaque Mimique.Il n'y a aucune diff\u00e9rence entre les individus m\u00e2les et femelles de cette esp\u00e8ce."
+  },
+  {
+    "nom": "Abo",
+    "description": "Abo est un Pok\u00e9mon serpent au corps violet. Son ventre est compl\u00e8tement jaune, tout comme l'anneau qu'il poss\u00e8de autour du cou.Ses yeux sont aussi jaunes et il est muni d'une sonnette de la m\u00eame couleur au bout de sa queue. Ce Pok\u00e9mon est tr\u00e8s peureux en temps normal, mais peut \u00eatre agressif pendant les combats."
+  },
+  {
+    "nom": "Arbok",
+    "description": "Arbok est un Pok\u00e9mon qui ressemble \u00e0 un serpent avec des \u00e9cailles violettes tout le long du corps. Il a un large capuchon sous sa t\u00eate, o\u00f9 se dessine un motif qui ressemble \u00e0 un visage \u00e9nerv\u00e9, ce dernier changeant en fonction de son environnement (il est indiqu\u00e9 dans Pok\u00e9mon Jaune que six motifs diff\u00e9rents sont recens\u00e9s). Ce motif contient g\u00e9n\u00e9ralement des t\u00e2ches rouges et jaunes qui forment les yeux entour\u00e9s de noir, une bande noire qui ressemble \u00e0 une bouche et une bande noire en forme de V au-dessus du visage.Arbok est capable d'\u00e9craser ses adversaires en enroulant son corps autour d'eux et en les pressant tr\u00e8s fort. Il peut m\u00eame aplatir des barils de p\u00e9trole. Quand il rencontre un ennemi, il l\u00e8ve la t\u00eate, l'effraie avec le motif de son capuchon et en faisant des bruits avec sa langue. Il est dit que n'importe quelle partie que l'on coupe du corps d'Arbok, \u00e0 part la t\u00eate, repousse dans l'espace de quelques semaines. Il est \u00e9galement capable de ressentir les vibrations, comme montr\u00e9 dans le dessin anim\u00e9. Arbok est capable de passer de longues p\u00e9riodes sous l'eau et de survivre dans les milieux aquatiques."
+  },
+  {
+    "nom": "Pikachu",
+    "description": "Pikachu est un petit Pok\u00e9mon joufflu qui ressemble \u00e0 un rongeur, au corps recouvert d'un pelage jaune avec deux bandes horizontales brunes dans le dos. Il a une petite bouche, de longues oreilles pointues aux extr\u00e9mit\u00e9s noires et des yeux noir et blanc. Il a sur chacune de ses joues un marquage rouge qui est en r\u00e9alit\u00e9 une poche contenant de l'\u00e9lectricit\u00e9. Il a cinq petits doigts au bout de chacun de ses membres ant\u00e9rieurs, tandis que ses pattes post\u00e9rieures ont trois petits orteils. Il a de la fourrure brune \u00e0 la base de sa queue en forme d'\u00e9clair. Bien que cat\u00e9goris\u00e9 comme quadrup\u00e8de, il est capable de se tenir et de se d\u00e9placer sur ses pattes post\u00e9rieures.Pikachu n'a pas \u00e9t\u00e9 con\u00e7u au d\u00e9part comme un rongeur ou une souris mais comme une simple cr\u00e9ature ronde. Toutefois, ses poches d'\u00e9lectricit\u00e9 sont inspir\u00e9es des abajoues que certains rongeurs, dont l'\u00e9cureuil, utilisent pour stocker de la nourriture et il a finalement \u00e9t\u00e9 d\u00e9cid\u00e9 de le pr\u00e9senter comme une souris. Ses oreilles en pointe noire et le motif de son dos ne sont inspir\u00e9s d'aucun animal et la forme en \u00e9clair de sa queue a \u00e9t\u00e9 choisie pour expliciter son type \u00c9lectrik[2]."
+  },
+  {
+    "nom": "Raichu",
+    "description": "Raichu est un Pok\u00e9mon ressemblant \u00e0 une souris. Son corps est orange avec un ventre blanc. Il poss\u00e8de une longue queue noire avec au bout un \u00e9clair jaune. Ses joues sont jaunes, ses pattes sont marron\u00a0; il n'a pas de doigt visible sur les pattes avant, mais en a trois les pattes arri\u00e8re qui sont blanches c\u00f4t\u00e9 paume tandis qu'un cercle jaune fait penser \u00e0 un talon. Ses oreilles sont grandes, jaunes \u00e0 l'int\u00e9rieur et marron \u00e0 l'ext\u00e9rieur.Dans L\u00e9gendes Pok\u00e9mon\u00a0: Arceus, ce Pok\u00e9mon est trouvable \u00e0 l'\u00e9tat sauvage uniquement sous sa forme Baron. Il a donc par d\u00e9faut un comportement agressif et attaque le protagoniste d\u00e8s qu'il le voit."
+  },
+  {
+    "nom": "Sabelette",
+    "description": "Sabelette est un Pok\u00e9mon ressemblant \u00e0 un pangolin au corps cuirass\u00e9 jaune. Son ventre est compl\u00e8tement beige p\u00e2le en plus de son menton. Il poss\u00e8de des yeux noir et bleu et deux petites oreilles. Ce bip\u00e8de est muni de trois griffes aux bras et de deux aux jambes. Sabelette vit en horde.Depuis Pok\u00e9mon Soleil et Lune, Sabelette poss\u00e8de une nouvelle variante, appel\u00e9e Sabelette d'Alola."
+  },
+  {
+    "nom": "Sablaireau",
+    "description": "Sablaireau est un Pok\u00e9mon ressemblant \u00e0 la fois au blaireau (pattes), au tatou et au pangolin, avec un corps jaune et un ventre blanc p\u00e2le. Il poss\u00e8de deux yeux noirs, deux grandes oreilles en pointes et une corne jaune sur la t\u00eate. Son dos est h\u00e9riss\u00e9 de grosses \u00e9pines marron allant de la t\u00eate jusqu'au bas du dos. Contrairement \u00e0 sa pr\u00e9-\u00e9volution Sabelette, sa queue n'a pas de rayures. Ce bip\u00e8de est muni de deux grandes griffes aux bras et aux jambes.Depuis Pok\u00e9mon Soleil et Lune, Sablaireau poss\u00e8de une nouvelle variante, appel\u00e9e Sablaireau d'Alola."
+  },
+  {
+    "nom": "Nidoran\u2640",
+    "description": "Nidoran\u2640 est un Pok\u00e9mon femelle au corps bleu tirant vers le blanc. Elle poss\u00e8de des taches violettes de chaque c\u00f4t\u00e9 de son corps. Ses yeux sont rouges, et elle a deux grandes oreilles dont l'int\u00e9rieur est bleu canard et violet. Elle est munie d'une grande dent et de quatre moustaches, faisant penser \u00e0 un rongeur. Ce quadrup\u00e8de poss\u00e8de deux petites griffes \u00e0 chaque patte et poss\u00e8de deux piquants au bas du dos.Cette esp\u00e8ce est compos\u00e9e uniquement d'individus femelles, mais la contrepartie m\u00e2le est Nidoran\u2642."
+  },
+  {
+    "nom": "Nidorina",
+    "description": "\u00c9trangement, dans la famille \u00e9volutive des Nidoran, Nidorina et Nidoqueen sont deux Pok\u00e9mon inaptes \u00e0 la reproduction.Nidorina est un Pok\u00e9mon femelle au corps bleu tirant vers le blanc. Elle poss\u00e8de des taches bleu fonc\u00e9 sur ses pattes arri\u00e8re en plus de piques h\u00e9rissant son dos. Ses yeux sont rouges et elle a deux grandes oreilles bleu fonc\u00e9 et bleu clair.\nElle est munie de deux canines, mais n'a pas de moustaches, contrairement \u00e0 sa pr\u00e9-\u00e9volution. Elle a trois griffes \u00e0 chaque patte."
+  },
+  {
+    "nom": "Nidoqueen",
+    "description": "Nidoqueen est un Pok\u00e9mon bip\u00e8de au corps cuirass\u00e9 de couleur principalement bleu \u00e0 l'exception de son menton, sa poitrine et son abdomen \u00e9tant de couleur cr\u00e8me. Elle dispose d'une corne sur le front ainsi qu'une colonne de pics allant du dos jusqu'\u00e0 sa queue. Ses oreilles poss\u00e8dent un pic et l'int\u00e9rieur est marron. Ses mains disposent de trois doigts griffus et ses pieds poss\u00e8dent deux orteils griffus. Contrairement \u00e0 ses pr\u00e9-\u00e9volutions, elle dispose une sorte de bec \u00e9dent\u00e9. Avant la quatri\u00e8me g\u00e9n\u00e9ration, certains artworks ou sprites repr\u00e9sentaient ce Pok\u00e9mon avec une dentition.Avec Nidorina, Nidoqueen a comme particularit\u00e9 singuli\u00e8re d'\u00eatre incapable de se reproduire tandis que sa contrepartie m\u00e2le, Nidoking, est apte \u00e0 la reproduction."
+  },
+  {
+    "nom": "Nidoran\u2642",
+    "description": "Nidoran\u2642 est un Pok\u00e9mon m\u00e2le de couleur mauve. Son dos est muni de trois rang\u00e9es de piquants. Ses grandes oreilles, dont l'int\u00e9rieur est bleu canard, sont corn\u00e9es. Sa peau est tachet\u00e9e de violet sur chaque c\u00f4t\u00e9 de son corps. Sa m\u00e2choire ne compte qu'une dent et ses yeux sont rouges. Ce quadrup\u00e8de poss\u00e8de deux griffes \u00e0 chacune de ses pattes, ainsi qu'une corne sur son front.Cette esp\u00e8ce est compos\u00e9e uniquement d'individus m\u00e2les, mais la contrepartie femelle est Nidoran\u2640."
+  },
+  {
+    "nom": "Nidorino",
+    "description": "Nidorino est un Pok\u00e9mon m\u00e2le au corps violet. Il poss\u00e8de une corne sur son front, une paire de canines et une colonne de piquants sur son dos. Ses grandes oreilles, dont l'int\u00e9rieur est bleu canard p\u00e2le, sont munies de deux cornes chacune. Sa peau comporte quelques taches violet fonc\u00e9 par endroits et ses yeux sont rouges. Ce quadrup\u00e8de poss\u00e8de trois griffes \u00e0 chaque patte.Cette esp\u00e8ce est compos\u00e9e uniquement d'individus m\u00e2les. La contrepartie femelle est Nidorina."
+  },
+  {
+    "nom": "Nidoking",
+    "description": "Nidoking est un Pok\u00e9mon bip\u00e8de \u00e0 l'allure bestiale. Son corps cuirass\u00e9 est principalement violet et sa partie pectorale est gris blanc. Il dispose d'une grosse corne empoisonn\u00e9e sur le front ainsi que de plusieurs excroissances pointues longeant son dos. Ses oreilles poss\u00e8dent des pics et l'int\u00e9rieur est bleu canard. Sa m\u00e2choire inf\u00e9rieure dispose de dents pointues dont deux crocs d\u00e9passant de sa bouche. Ses mains se composent de trois doigts griffus \u00e0 l'exception de ses pieds, ne poss\u00e9dant qu'un orteil griffu. Contrairement \u00e0 ses pr\u00e9-\u00e9volutions, il dispose une \u00e9paisse queue orn\u00e9e de marques circulaires.Nidoking est principalement inspir\u00e9 de Baragon, un kaij\u016b apparu pour la premi\u00e8re fois dans le film Frankenstein vs. Baragon."
+  },
+  {
+    "nom": "M\u00e9lof\u00e9e",
+    "description": "M\u00e9lof\u00e9e est un petit Pok\u00e9mon bip\u00e8de. Il a la fourrure rase et rose, avec deux oreilles dress\u00e9es se terminant par une pointe brune. Entre elles, on trouve une grande m\u00e8che boucl\u00e9e de fourrure rose. Il est plut\u00f4t timide et se cache dans les grottes o\u00f9 se trouvent des Pierres Lune, cohabitant avec des dizaines d'autres M\u00e9lof\u00e9e. C'est un Pok\u00e9mon tr\u00e8s intelligent\u00a0; dans leur clan, ils ont leur propre hi\u00e9rarchie. On peut malgr\u00e9 tout les apercevoir lors des nuits de pleine lune, avec un peu de chance, en train de danser autour de la Pierre Lune. Les M\u00e9lof\u00e9e viendraient de l'espace.Dans les premi\u00e8res g\u00e9n\u00e9rations des jeux principaux, M\u00e9lof\u00e9e \u00e9tait initialement connu pour sa raret\u00e9."
+  },
+  {
+    "nom": "M\u00e9lodelfe",
+    "description": "Il est assez similaire \u00e0 sa pr\u00e9-\u00e9volution, bien que M\u00e9lodelfe soit un peu plus grand. Ses ailes ont grandi et sont devenues d'un rose plus intense, bien que M\u00e9lodelfe reste incapable de voler. Ses oreilles se sont allong\u00e9es et sont devenues aussi grandes que ses ailes, avec toujours ces taches brunes \u00e0 leur extr\u00e9mit\u00e9.Tout comme M\u00e9lof\u00e9e, il poss\u00e8de trois doigts, mais qui sont d\u00e9pourvus d'ongles. Il a cependant gagn\u00e9 un orteil griffu suppl\u00e9mentaire \u00e0 chaque pied."
+  },
+  {
+    "nom": "Goupix",
+    "description": "Goupix est un petit Pok\u00e9mon quadrup\u00e8de \u00e0 l'allure vulpine. Son pelage est rouge tomette avec un ventre de couleur cr\u00e8me. Il a de grands yeux noisette, des oreilles pointues \u00e0 l'int\u00e9rieur brun et un petit museau brun. Le pelage de ses pattes est l\u00e9g\u00e8rement plus fonc\u00e9 que sur le reste de son corps et il a de petits coussinets brun clair. Il a sur le haut de la t\u00eate trois boucles de fourrure orange avec une petite frange, ainsi que six queues orang\u00e9es aux extr\u00e9mit\u00e9s boucl\u00e9es sur le post\u00e9rieur. Bien que g\u00e9n\u00e9ralement repr\u00e9sent\u00e9s avec six queues, les Goupix naissent avec une unique queue blanche qui se multiplie au fur et \u00e0 mesure de sa croissance. Quand il est sur le point d'\u00e9voluer, ses queues \u00e9mettent une puissante chaleur.Goupix est inspir\u00e9 du renard roux et du kitsune du folklore japonais, un renard \u00e0 plusieurs queues capable de cracher du feu. Apr\u00e8s une longue p\u00e9riode, les kitsune peuvent devenir des esprits, ce qui expliquerait pourquoi Goupix est capable d'apprendre des capacit\u00e9s de type Spectre."
+  },
+  {
+    "nom": "Feunard",
+    "description": "Feunard est un grand Pok\u00e9mon quadrup\u00e8de, ayant un pelage couleur cr\u00eame. Il poss\u00e8de une crini\u00e8re passant entre ses deux oreilles, ainsi que neufs queues touffues dont l'extr\u00eamit\u00e9 de chacune est orange. Les yeux de Feunard brillent d\u2019une couleur \u00e9carlate.Feunard semble \u00eatre inspir\u00e9 du renard \u00e0 neuf queues, une cr\u00e9ature l\u00e9gendaire du folklore asiatique et qui porte le nom de ky\u016bbi no kitsune au Japon. D'apr\u00e8s les l\u00e9gendes, le renard \u00e0 neuf queues serait capable pendant un mill\u00e9naire, et aurait acquis des pouvoirs surnaturels comme celui de cracher du feu. Avec le temps, le renard \u00e0 neuf queues est capable de prendre la forme d'un esprit, une particularit\u00e9 du mythe qui expliquerait la capacit\u00e9 de Feunard d'apprendre des capacit\u00e9s de type Spectre ou Psy."
+  },
+  {
+    "nom": "Rondoudou",
+    "description": "Rondoudou ressemble \u00e0 une boule rose avec de petits bras et de petits pieds. Il poss\u00e8de deux petites oreilles en pointe roses et noires \u00e0 l'int\u00e9rieur. Il a \u00e9galement une \u00e9paisse m\u00e8che qui retombe entre deux grands yeux bleus qui lui donnent un air tendre.Rondoudou poss\u00e8de une voix m\u00e9lodieuse et adore chanter. Il est notamment r\u00e9put\u00e9 pour ses berceuses, qui provoquent le sommeil de tout individu ou Pok\u00e9mon qui les entendent."
+  },
+  {
+    "nom": "Grodoudou",
+    "description": "Grodoudou ressemble \u00e0 une grosse peluche rose aux oreilles de lapin. Il poss\u00e8de deux grands yeux bleus ainsi qu'une large houppette sur le front. Il poss\u00e8de deux courts bras, et de petites jambes termin\u00e9es par deux longs pieds. Son ventre est recouvert d'un duvet blanc.Il n'y a aucune diff\u00e9rence entre les individus m\u00e2les et femelles de cette esp\u00e8ce."
+  },
+  {
+    "nom": "Nosferapti",
+    "description": "Nosferapti est une petite chauve-souris bleu fonc\u00e9. La membrane de ses ailes est violette, tout comme le creux de ses grandes oreilles. Sa m\u00e2choire poss\u00e8de quatre crocs apparents. Ses membres inf\u00e9rieurs ne sont pas munis de pieds et son visage ne poss\u00e8de pas d'yeux, puisque ce Pok\u00e9mon utilise des ultrasons pour se d\u00e9placer dans l'obscurit\u00e9 des grottes o\u00f9 il vit principalement.Dans L\u00e9gendes Pok\u00e9mon\u00a0: Arceus, ce Pok\u00e9mon a par d\u00e9faut un comportement agressif et attaque le protagoniste d\u00e8s qu'il le voit."
+  },
+  {
+    "nom": "Nosferalto",
+    "description": "Nosferalto est une grosse chauve-souris bleu fonc\u00e9. Il poss\u00e8de de grandes ailes \u00e0 la membrane violette, comme le creux de ses minuscules oreilles. Son \u00e9norme m\u00e2choire compte quatre crocs apparents, qu'il utilise afin de transpercer la peau de ses victimes pour en aspirer le sang. \u00c0 la grande diff\u00e9rence de sa pr\u00e9-\u00e9volution Nosferapti, il poss\u00e8de des pieds et des yeux.Dans L\u00e9gendes Pok\u00e9mon\u00a0: Arceus, ce Pok\u00e9mon a par d\u00e9faut un comportement agressif et attaque le protagoniste d\u00e8s qu'il le voit."
+  },
+  {
+    "nom": "Mystherbe",
+    "description": "Mystherbe est un petit Pok\u00e9mon rond de couleur bleu fonc\u00e9 disposant de petits yeux rouges, d'une bouche et d'une paire de pieds. Une touffe de feuilles vertes tr\u00f4ne \u00e9galement sur sa t\u00eate.Ce Pok\u00e9mon est inspir\u00e9 d'un l\u00e9gume-racine, mais aussi de la mandragore car d'apr\u00e8s certaines descriptions du Pok\u00e9dex, Mystherbe se mettrait \u00e0 hurler lorsque l'on tente de le retirer du sol."
+  },
+  {
+    "nom": "Ortide",
+    "description": "Ortide est un Pok\u00e9mon bip\u00e8de bleu avec les mains et les pieds rudimentaires. Il a des feuilles orange et une fleur rouge sur sa t\u00eate, ses yeux sont larges et \u00e9troits et ses l\u00e8vres sont minces et violettes. Du nectar collant sort de sa bouche et son odeur est f\u00e9tide.Les Ortide femelles ont une grosse tache blanche sur chaque gros p\u00e9tale, tandis que les m\u00e2les ont plusieurs petits points blancs."
+  },
+  {
+    "nom": "Rafflesia",
+    "description": "L'\u00e9criture exacte du nom de ce Pok\u00e9mon varie suivant les m\u00e9dias. La s\u00e9rie Pok\u00e9mon Donjon Myst\u00e8re lui a apport\u00e9 un accent qui n'a pas \u00e9t\u00e9 repris par la s\u00e9rie principale.Rafflesia ressemble \u00e0 la plus grande fleur du monde, la Rafflesie. Situ\u00e9e au sommet de sa t\u00eate, elle est compos\u00e9e de cinq larges p\u00e9tales rouges tachet\u00e9s de blanc, avec un tube orange en leur centre. Elle d\u00e9gage d'ailleurs une horrible odeur de viande p\u00e9rim\u00e9e. L'immense fleur cache un corps cylindrique bleu avec deux courts bras et pieds, deux yeux rouges et une bouche."
+  },
+  {
+    "nom": "Paras",
+    "description": "Paras est un Pok\u00e9mon ressemblant \u00e0 un arthropode \u00e0 la carapace orang\u00e9e. Il poss\u00e8de deux yeux globuleux. Deux champignons, \u00e9voquant le champignon parasite cordyceps, se d\u00e9veloppent sur son dos et se nourrissent des nutriments de Paras.Dans L\u00e9gendes Pok\u00e9mon\u00a0: Arceus, ce Pok\u00e9mon a par d\u00e9faut un comportement agressif et attaque le protagoniste d\u00e8s qu'il le voit."
+  },
+  {
+    "nom": "Parasect",
+    "description": "Parasect ressemble \u00e0 un insecte portant un champignon rose fonc\u00e9 \u00e0 pois jaunes sur le dos. Il poss\u00e8de six pattes, dont deux ressemblent \u00e0 des pinces. Ses yeux sont blancs et sans pupille.Dans L\u00e9gendes Pok\u00e9mon\u00a0: Arceus, ce Pok\u00e9mon a par d\u00e9faut un comportement agressif et attaque le protagoniste d\u00e8s qu'il le voit."
+  },
+  {
+    "nom": "Mimitoss",
+    "description": "Mimitoss ressemble \u00e0 une boule de poils violette avec des antennes. Il a de petites dents et de grands yeux rouges. Ces derniers sont identiques aux yeux d'une mouche et lui servent de radar. Il a de petits bras \u00e0 trois doigts beiges et de petits pieds beiges.Il n'y a aucune diff\u00e9rence entre les individus m\u00e2les et femelles de cette esp\u00e8ce."
+  },
+  {
+    "nom": "A\u00e9romite",
+    "description": "A\u00e9romite ressemble \u00e0 une grosse mite violette. Sa t\u00eate \u00e9lanc\u00e9e dispose de deux grands yeux exorbit\u00e9s, deux petites mandibules blanches, et trois grandes cornes courb\u00e9es vers l'arri\u00e8re. le deuxi\u00e8me segment de son corps est \u00e9quip\u00e9 de trois paires de pattes blanches toujours vues rabattues vers le ventre. Son abdomen semble couvert de plusieurs anneaux de poils bruns. Il poss\u00e8de deux paires d'ailes similaires \u00e0 celles d'un papillon\u00a0: une premi\u00e8re paire principale de grande taille, et une plus petite situ\u00e9e en-dessous de la premi\u00e8re.Dans les d\u00e9buts de la franchise, le dos des ailes d'A\u00e9romite contenait une s\u00e9rie de taches jaunes. Elles sont mentionn\u00e9es uniquement dans la description fran\u00e7aise du Pok\u00e9dex d'A\u00e9romite de Pok\u00e9mon Rouge et Bleu. Depuis, ces taches ont disparu."
+  },
+  {
+    "nom": "Taupiqueur",
+    "description": "Taupiqueur est une taupe dont seule la t\u00eate sort de sa galerie souterraine, entour\u00e9e de roche grise. Le reste du corps n'en sort jamais. Il a des yeux noirs et un petit nez dont la couleur varie du rose au rouge suivant les illustrations.Depuis Pok\u00e9mon Soleil et Lune, Taupiqueur poss\u00e8de une nouvelle variante, appel\u00e9e Taupiqueur d'Alola."
+  },
+  {
+    "nom": "Triopikeur",
+    "description": "Triopikeur est un assemblage de trois Taupiqueur de tailles diff\u00e9rentes dans un seul trou. Les trois t\u00eates ont toutes des yeux noirs et un nez rouge.Depuis Pok\u00e9mon Soleil et Lune, Triopikeur poss\u00e8de une nouvelle variante, appel\u00e9e Triopikeur d'Alola."
+  },
+  {
+    "nom": "Miaouss",
+    "description": "Miaouss ressemble \u00e0 un chat, \u00e0 la diff\u00e9rence qu'il n'a pas de museau visible et qu'il se tient la plupart du temps sur ses deux pattes arri\u00e8res o\u00f9 il prend une posture plantigrade. Il a le corps beige, le bout des pattes et de la queue marron et les oreilles noires. Sa pi\u00e8ce dor\u00e9e fix\u00e9e sur son front a une relative ressemblance avec la Pi\u00e8ce Rune.Il est inspir\u00e9 du maneki-neko, une statuette traditionnelle japonaise qui repr\u00e9sente un chat assis avec une de ses pattes lev\u00e9es. D'apr\u00e8s des croyances folkloriques, elle apporterait bonne fortune et richesse aux magasins et foyers qui en poss\u00e8dent une."
+  },
+  {
+    "nom": "Persian",
+    "description": "Contrairement \u00e0 sa pr\u00e9-\u00e9volution, Persian se tient sur ses quatre pattes. Il ressemble plus \u00e0 un puma qu'\u00e0 un chat et poss\u00e8de une perle rouge sur le front. Ses yeux sont blancs avec des pupilles noires et rouges. Il a \u00e9galement deux petites canines qui sortent de sa bouche, ainsi que des vibrisses de chaque c\u00f4t\u00e9 de sa t\u00eate. Ses oreilles sont arrondies. Il a un long corps beige, quatre pattes griffues et une queue au bout recourb\u00e9.Depuis Pok\u00e9mon Soleil et Lune, Persian poss\u00e8de une nouvelle variante, appel\u00e9e Persian d'Alola."
+  },
+  {
+    "nom": "Psykokwak",
+    "description": "Psykokwak a l'allure g\u00e9n\u00e9rale d'un canard jaune. Il a un bec jaune p\u00e2le un peu aplati, les pattes de la m\u00eame couleur que son bec. Il est souvent pris de migraines, qui lui permettent d'utiliser de puissants pouvoirs psychiques. Malgr\u00e9 ces pouvoirs mentionn\u00e9s par le Pok\u00e9dex, il n'est pas de type Psy.Dans L\u00e9gendes Pok\u00e9mon\u00a0: Arceus, ce Pok\u00e9mon a par d\u00e9faut un comportement amical et vient de lui-m\u00eame s'approcher du protagoniste."
+  },
+  {
+    "nom": "Akwakwak",
+    "description": "Akwakwak est une cr\u00e9ature bip\u00e8de bleue \u00e0 bec de canard. Ses doigts sont griffus et palm\u00e9s. Il en a trois \u00e0 chaque main et quatre \u00e0 chaque pied (dont un doigt orient\u00e9 vers l'arri\u00e8re). Un joyau rouge figure sur son front. Il poss\u00e8de quatre larges pics sur le sommet du cr\u00e2ne, et une longue queue en pointe.Akwakwak est inspir\u00e9 du kappa du folklore japonais, une cr\u00e9ature reptilienne vivant dans les lacs et les rivi\u00e8res. Dans Pok\u00e9mon Rouge et Bleu, la description Pok\u00e9dex d'Akwakwak mentionne qu'il est r\u00e9guli\u00e8rement confondu avec ce dernier."
+  },
+  {
+    "nom": "F\u00e9rosinge",
+    "description": "F\u00e9rosinge s'apparente \u00e0 un singe poilu \u00e0 la fourrure cr\u00e8me et marron par endroit. Ses yeux ont un air mena\u00e7ant et vif. De plus, ils sont color\u00e9s d'une couleur rouge. Son nez ressemble \u00e0 un groin de cochon et il poss\u00e8de une longue queue, il poss\u00e8de \u00e9galement trois orteils dont un orient\u00e9 vers l'arri\u00e8re. Il est, comme son nom l'indique, un petit singe tr\u00e8s vif et rapidement en col\u00e8re.Il n'y a aucune diff\u00e9rence entre les individus m\u00e2les et femelles de cette esp\u00e8ce."
+  },
+  {
+    "nom": "Colossinge",
+    "description": "Colossinge ressemble \u00e0 un singe de couleur cr\u00e8me sans corps. Il poss\u00e8de des anneaux noirs autour de ses poignets et de ses pieds. Contrairement \u00e0 F\u00e9rosinge, il ne poss\u00e8de pas de queue, ses mains ressemblent plus \u00e0 des gants de boxe et ses pieds sont plus \u00e9pais. Il a g\u00e9n\u00e9ralement l'air furieux avec deux veines visibles.Il n'y a aucune diff\u00e9rence entre les individus m\u00e2les et femelles de cette esp\u00e8ce."
+  },
+  {
+    "nom": "Caninos",
+    "description": "Caninos est un Pok\u00e9mon quadrup\u00e8de et canin. Il a une fourrure orange avec des stries noires sur le dos et sur les pattes. La fourrure sur sa gueule, sa poitrine, son ventre et sa queue est de couleur cr\u00e8me, comme la touffe de fourrure sur sa t\u00eate. Sa fourrure est plus longue sur sa poitrine et sa queue. Il a les yeux gris, un nez noir et de larges oreilles rondes. Ses pattes avant ont deux griffes visibles, tandis que ses pattes arri\u00e8re ont trois orteils chacune. Chaque patte a un coussinet marron.Caninos est un Pok\u00e9mon amical et loyal qui d\u00e9fendra sans peur son Dresseur et son territoire du danger, m\u00eame si ses ennemis sont plus grands et plus forts. D\u00e8s qu'il aper\u00e7oit une menace envers lui ou envers son Dresseur, il se met \u00e0 violemment aboyer et \u00e0 mordre. Par ailleurs, ce Pok\u00e9mon est tr\u00e8s ob\u00e9issant, et attendra ses ordres sans faire un geste. Caninos a \u00e9galement un puissant sens olfactif. S'il d\u00e9tecte une odeur inconnue dans son territoire, il rugit pour d\u00e9busquer l'intrus. Il est capable de ressentir les \u00e9motions des autres, et n'oublie jamais une odeur. Cependant, de puissantes odeurs d\u00e9plaisantes peuvent d\u00e9sorienter son odorat pour une courte p\u00e9riode, comme montr\u00e9 dans l'anime. Il est commun\u00e9ment trouv\u00e9 dans les plaines."
+  },
+  {
+    "nom": "Arcanin",
+    "description": "Arcanin est un Pok\u00e9mon quadrup\u00e8de et canin avec une fourrure orange marqu\u00e9e par des stries noires, qui font penser \u00e0 des d\u00e9chirures. Il a des oreilles en forme de diamant avec du beige \u00e0 l'int\u00e9rieur, un nez noir et rond et deux dents pointues qui d\u00e9passent de sa m\u00e2choire sup\u00e9rieure. Sa t\u00eate, sa gueule et sa poitrine sont recouvertes par une fourrure beige et hirsute, sauf autour des oreilles et des yeux. De longues touffes de fourrure poussent derri\u00e8re ses genoux et autour de ses chevilles. Son ventre est noir et il a une grosse queue hirsute et beige. Chaque patte a trois orteils et un coussinet rose.Arcanin est un Pok\u00e9mon fier et loyal. Il serait capable de courir 10 000 kilom\u00e8tres en 24 heures avec une vitesse et une gr\u00e2ce qui donnent l'impression qu'il vole. Arcanin a longtemps \u00e9t\u00e9 admir\u00e9 pour sa beaut\u00e9 et sa vitesse, et quiconque entend son aboiement se sent oblig\u00e9 de se prosterner devant lui. La source de son pouvoir provient d'une flamme ardente qui br\u00fble dans son corps. Dans le dessin anim\u00e9, il est montr\u00e9 qu'Arcanin peut stocker des Baies dans sa crini\u00e8re pour ensuite les ramener chez lui et les donner \u00e0 sa prog\u00e9niture. Arcanin vit dans les prairies, mais Pok\u00e9mon Snap a aussi montr\u00e9 qu'il peut vivre dans les volcans actifs."
+  },
+  {
+    "nom": "Ptitard",
+    "description": "Ptitard ressemble \u00e0 un t\u00eatard bleu. Son ventre transparent laisse appara\u00eetre un organe interne ayant la forme d'un disque d'hypnose (une spirale noire sur un disque blanc), une caract\u00e9ristique qui se retrouve r\u00e9ellement sur certains t\u00eatards. Il poss\u00e8de deux petits pieds encore inadapt\u00e9s \u00e0 la marche, deux yeux globuleux et une bouche cercl\u00e9e par d'\u00e9paisses l\u00e8vres roses.Dans les jeux ant\u00e9rieurs \u00e0 la sixi\u00e8me g\u00e9n\u00e9ration, le cri de Ptitard \u00e9tait le m\u00eame que celui de M\u00e9tamorph."
+  },
+  {
+    "nom": "T\u00eatarte",
+    "description": "T\u00eatarte est un Pok\u00e9mon bip\u00e8de bleu avec un corps sph\u00e9rique. Il a les yeux globuleux qui d\u00e9passent du dessus de sa t\u00eate, un tourbillon noir et blanc couvre son ventre. Il a des gants blancs sur ses mains et il a les pieds arrondis.Il n'y a aucune diff\u00e9rence entre les individus m\u00e2les et femelles de cette esp\u00e8ce."
+  },
+  {
+    "nom": "Tartard",
+    "description": "Tartard est un Pok\u00e9mon bip\u00e8de bleu avec des bras muscl\u00e9s. Il a les yeux globuleux qui d\u00e9passent du dessus de sa t\u00eate, son ventre est couvert par un tourbillon blanc et noir. Il semble avoir des gants blancs sur ses mains, et il a les pieds arrondis.Il n'y a aucune diff\u00e9rence entre les individus m\u00e2les et femelles de cette esp\u00e8ce."
+  },
+  {
+    "nom": "Abra",
+    "description": "Abra est une petite cr\u00e9ature bip\u00e8de principalement jaune. Sa t\u00eate est dot\u00e9e de traits \u00e9voquant ceux d'un f\u00e9lin, d'un rongeur ou d'un renard. Ses yeux sont toujours ferm\u00e9s, sauf dans la version Or o\u00f9 il ouvre un \u0153il. Son buste est prot\u00e9g\u00e9 par un plastron marron. Ses pieds tr\u00e8s d\u00e9velopp\u00e9s poss\u00e8dent trois griffes chacun, dont l'une est oppos\u00e9e aux deux autres. Des cols sont pr\u00e9sents au niveau des genoux et coudes, comme si les extr\u00e9mit\u00e9s des jambes et bras \u00e9taient \u00e9quip\u00e9es de bottes et gantelets. Le Pok\u00e9mon poss\u00e8de \u00e9galement une \u00e9paisse queue, cercl\u00e9e d'un anneau marron.Dans L\u00e9gendes Pok\u00e9mon\u00a0: Arceus, ce Pok\u00e9mon a par d\u00e9faut un comportement farouche et fuit le protagoniste en se t\u00e9l\u00e9portant d\u00e8s qu'il l'aper\u00e7oit."
+  },
+  {
+    "nom": "Kadabra",
+    "description": "Kadabra est une cr\u00e9ature humano\u00efde jaune. Il a deux grandes oreilles pointues au-dessus de sa t\u00eate, une \u00e9toile rouge sur son front et des joues larges menant \u00e0 un museau mince. Ses yeux sont enfonc\u00e9s et \u00e9troits, il a une moustache. Le torse de Kadabra est segment\u00e9 avec des \u00e9paules volumineuses, une \u00e9paisse poitrine brune, et un petit ventre marqu\u00e9 par trois lignes rouges ondul\u00e9es. Sa queue est d\u00e9velopp\u00e9e et \u00e9paisse, ses pieds portent trois griffes. Il tient constamment une cuill\u00e8re dans sa main droite.Dans L\u00e9gendes Pok\u00e9mon\u00a0: Arceus, ce Pok\u00e9mon a par d\u00e9faut un comportement agressif et attaque le protagoniste d\u00e8s qu'il le voit. S'il est trouv\u00e9 dans une Distorsion Spatio-Temporelle, il est \u00e9galement agressif."
+  },
+  {
+    "nom": "Alakazam",
+    "description": "Alakazam ressemble \u00e9norm\u00e9ment \u00e0 Kadabra. Ses moustaches et ses oreilles sont plus longues, son \u00e9toile sur le front, sa queue et le segment de son abdomen ont disparu.C'est un Pok\u00e9mon caract\u00e9ris\u00e9 par sa forme humano\u00efde et sa large moustache. Il a un museau long et fin, des yeux \u00e9troits, des pointes ressemblant \u00e0 des oreilles qui sortent de son cr\u00e2ne, ainsi qu'une pointe additionnelle sur chaque joue. Des excroissances marron qui ressemblent \u00e0 une armure prot\u00e8gent son corps jaune et squelettique au niveau du buste, des \u00e9paules, des coudes et des genoux. Il a trois orteils \u00e0 chaque pied, chacun avec une griffe blanche. Il a deux orteils \u00e0 l'avant et un orteil \u00e0 l'arri\u00e8re. Il tient une cuill\u00e8re en argent dans chaque main, qui l'aident \u00e0 amplifier ses pouvoirs psychiques. Ces cuill\u00e8res sont cr\u00e9\u00e9es par Alakazam gr\u00e2ce \u00e0 ses pouvoirs, et il arrive qu'il en donne une \u00e0 une personne de confiance. Alakazam est capable de baisser la pr\u00e9cision de ses adversaires en tordant les cuill\u00e8res qu'il tient."
+  },
+  {
+    "nom": "Machoc",
+    "description": "D'apparence humano\u00efde, Machoc est reconnaissable \u00e0 sa peau bleu-gris, ses yeux rouges et ses trois cr\u00eates beiges. Il poss\u00e8de une queue, et ses pieds n'ont pas d'orteils.Dans les jeux vid\u00e9o, jusqu'\u00e0 la cinqui\u00e8me g\u00e9n\u00e9ration, son cri \u00e9tait le m\u00eame que celui d'Amonita."
+  },
+  {
+    "nom": "Machopeur",
+    "description": "Il ressemble \u00e0 une forme hybride entre un golem et un humain. Il a trois cr\u00eates sur le cr\u00e2ne et des bandes rouges sur les bras . Il est tr\u00e8s serviable, cons\u00e9quence de sa grande force. Machopeur ressemble \u00e0 un catcheur reconnaissable \u00e0 sa ceinture. Il est \u00e9galement pieds nus.Il n'y a aucune diff\u00e9rence entre les individus m\u00e2les et femelles de cette esp\u00e8ce."
+  },
+  {
+    "nom": "Mackogneur",
+    "description": "Ce Pok\u00e9mon ressemble \u00e0 Machopeur ayant retrouv\u00e9 la couleur de Machoc. Il poss\u00e8de deux bras suppl\u00e9mentaires, pour un total de quatre, ses pieds n'ont plus que deux orteils et son torse est encore plus muscl\u00e9. Ses grandes l\u00e8vres sont beiges et il ne poss\u00e8de pas de dents.Dans Pok\u00e9mon Soleil et Lune, Pok\u00e9mon Ultra-Soleil et Ultra-Lune et Pok\u00e9mon\u00a0: Let's Go, Pikachu et Let's Go, \u00c9voli, Mackogneur peut \u00eatre utilis\u00e9 en tant que Pok\u00e9 Monture."
+  },
+  {
+    "nom": "Ch\u00e9tiflor",
+    "description": "Ch\u00e9tiflor ressemble \u00e0 une sorte de plante, sa t\u00eate ressemble \u00e0 une poire et ses l\u00e8vres sont \u00e9normes. Son corps se limite \u00e0 une tige fr\u00eale termin\u00e9e par deux groupes de racines servant de pieds. Il poss\u00e8de deux feuilles en guise de bras. Il ressemble \u00e9galement \u00e0 la Cic\u00e9rone de Ren\u00e9 Magritte.Il n'y a aucune diff\u00e9rence entre les individus m\u00e2les et femelles de cette esp\u00e8ce."
+  },
+  {
+    "nom": "Boustiflor",
+    "description": "L'apparence de Boustiflor peut faire penser \u00e0 une cloche (Bell, en anglais). Ses bras sont deux \u00e9paisses feuilles vertes, qu'il agite comme des ailes. De son pr\u00e9c\u00e9dent corps, il ne reste qu'une petite tige courb\u00e9e au sommet de sa t\u00eate. Il est reconnaissable \u00e0 sa grande bouche b\u00e9ante et ses yeux globuleux.Il n'y a aucune diff\u00e9rence entre les individus m\u00e2les et femelles de cette esp\u00e8ce."
+  },
+  {
+    "nom": "Empiflor",
+    "description": "Empiflor est un Pok\u00e9mon qui a un corps en forme de cloche avec une bouche b\u00e9ante avec deux dents pointues. Ses yeux demi-circulaires apparaissent juste en dessous de sa bouche, et il a plusieurs t\u00e2ches vert fonc\u00e9 sur le corps. Une large feuille avec une longue tige marron au bout jaune couvre la bouche d'Empiflor. La liane est faite en sorte qu'elle imite la queue d'un animal pour attirer les proies. Empiflor cr\u00e9e aussi un doux parfum qu'il d\u00e9gage pour attirer \u00e9galement ses proies. Son acide, quand il a dissous de nombreuses proies, devient plus doux et encore plus efficace pour attirer des proies.Il peut \u00eatre trouv\u00e9 en petit groupe et est tr\u00e8s territorial. Dans le manga, il est montr\u00e9 qu'Empiflor fait des provisions de nourriture, le plus souvent des petits oiseaux et des rongeurs, et r\u00e9colte des Pierres Feuille afin d'organiser des rituels d'\u00e9volution pour faire \u00e9voluer le plus de Boustiflor possibles. Empiflor vit dans les for\u00eats et est inspir\u00e9 du Nepenthes."
+  },
+  {
+    "nom": "Tentacool",
+    "description": "Tentacool ressemble vaguement \u00e0 une m\u00e9duse. Sa t\u00eate bleue en forme d'\u0152uf retourn\u00e9, qui lui sert aussi de corps, poss\u00e8de trois cristaux rouges\u00a0: un petit sur le front, et deux grands situ\u00e9s plus en hauteur et sur les c\u00f4t\u00e9s. L'arri\u00e8re de sa t\u00eate est prot\u00e9g\u00e9 par une collerette. Deux tentacules seulement sont apparents. Il est compos\u00e9 en tr\u00e8s grande partie d'eau, le reste \u00e9tant occup\u00e9 par l'organe s\u00e9cr\u00e9tant les toxines.Il n'y a aucune diff\u00e9rence entre les individus m\u00e2les et femelles de cette esp\u00e8ce."
+  },
+  {
+    "nom": "Tentacruel",
+    "description": "Tentacruel est un Pok\u00e9mon inspir\u00e9 de la m\u00e9duse et de la physalie. Sa t\u00eate est prot\u00e9g\u00e9e par un cr\u00e2ne en triangle duquel ressortent deux grandes sph\u00e8res rouges ainsi qu'une troisi\u00e8me plus petite sur le front. De son corps rond et noir d\u00e9passe un large bec bleu, propri\u00e9t\u00e9 plut\u00f4t reprise des pieuvres.\nLe nombre des tentacules gris-vert varie r\u00e9guli\u00e8rement sur les illustrations de ce Pok\u00e9mon. On en compte souvent entre dix et vingt, bien que les d\u00e9finitions du Pok\u00e9dex en rapportent un total de quatre-vingts.Il n'y a aucune diff\u00e9rence entre les individus m\u00e2les et femelles de cette esp\u00e8ce."
+  },
+  {
+    "nom": "Racaillou",
+    "description": "Racaillou est un Pok\u00e9mon form\u00e9 de roche. Il poss\u00e8de deux bras et n'a pas de pattes. Il peut \u00e9galement l\u00e9viter, bien que ses types ne le lui permettent pas.Dans L\u00e9gendes Pok\u00e9mon\u00a0: Arceus, ce Pok\u00e9mon a par d\u00e9faut un comportement agressif et attaque le protagoniste d\u00e8s qu'il le voit."
+  },
+  {
+    "nom": "Gravalanch",
+    "description": "Gravalanch a l'apparence d'un gros rocher de forme ronde. Il a quatre bras, cependant les deux bras du dessous de son corps semblent coll\u00e9s \u00e0 son abdomen. Il ne peut donc pas les faire bouger. Il est de couleur grise.Dans L\u00e9gendes Pok\u00e9mon\u00a0: Arceus, ce Pok\u00e9mon a par d\u00e9faut un comportement agressif et attaque le protagoniste d\u00e8s qu'il le voit."
+  },
+  {
+    "nom": "Grolem",
+    "description": "Le corps de Grolem est recouvert d'une armure rocheuse sph\u00e9rique. Sa t\u00eate est basse \u2014 au m\u00eame niveau que ses bras \u2014 et pr\u00e9sente des traits reptiliens. Il se tient debout sur deux pattes courtes et larges, termin\u00e9es par quatre griffes. Ses mains comportent trois doigts griffus.Dans L\u00e9gendes Pok\u00e9mon\u00a0: Arceus, ce Pok\u00e9mon est trouvable \u00e0 l'\u00e9tat sauvage uniquement dans sa forme Baron. Il a donc par d\u00e9faut un comportement agressif et attaque le protagoniste d\u00e8s qu'il le voit."
+  },
+  {
+    "nom": "Ponyta",
+    "description": "Ponyta est un Pok\u00e9mon \u00e9quin avec des flammes jaune et rouge orang\u00e9 qui forment sa crini\u00e8re et sa queue. Sa crini\u00e8re et sa queue se d\u00e9veloppent une heure apr\u00e8s l'\u00e9closion. Son corps est principalement de couleur cr\u00e8me et il a quatre longues pattes, qui se terminent chacune par un unique sabot. Ses sabots sont r\u00e9put\u00e9s pour \u00eatre aussi durs que du diamant. Il a d'extraordinaires talents de saut, et est capable d'atteindre de hauts b\u00e2timents en un seul saut. Cependant, un nouveau-n\u00e9 Ponyta est un faible coureur et tient \u00e0 peine debout. Ses jambes se renforcent de plus en plus et deviennent plus rapides en coursant ses parents. Dans l'anim\u00e9, il est montr\u00e9 que Ponyta peut contr\u00f4ler ses flammes afin que son Dresseur ne se br\u00fble pas. Ponyta court dans les plaines et les montagnes toute la journ\u00e9e. Il vit dans les plaines, les prairies, et \u00e0 n'importe quel endroit tant qu'il peut courir librement.Dans L\u00e9gendes Pok\u00e9mon\u00a0: Arceus, ce Pok\u00e9mon a par d\u00e9faut un comportement amical et vient de lui-m\u00eame s'approcher du protagoniste."
+  },
+  {
+    "nom": "Galopa",
+    "description": "Galopa est un Pok\u00e9mon \u00e9quin avec des pattes sveltes et des sabots noirs. Son corps est de couleur cr\u00e8me, et il a une corne sur le front. Il a des petits yeux rouges et des oreilles pointues avec un int\u00e9rieur rouge. Des flammes rouges et orange sortent de sa nuque, de son dos, et de ses p\u00e2turons. Des flammes cr\u00e9ent \u00e9galement la queue de Galopa. Il est partiellement inspir\u00e9 de la licorne.Galopa est un Pok\u00e9mon tr\u00e8s agile. Il court \u00e0 une vitesse d'\u00e0 peu pr\u00e8s 240\u00a0km/h, chassant tout ce qui bouge en esp\u00e9rant pouvoir le courser. Avec une acc\u00e9l\u00e9ration incroyable, il peut atteindre sa vitesse maximale en seulement dix pas. Au galop, ses sabots touchent \u00e0 peine le sol. Le plus vite Galopa va, et plus longue est sa crini\u00e8re. Quand il galope \u00e0 pleine vitesse, sa crini\u00e8re brille, ce qui ne fait qu'amplifier sa beaut\u00e9. Galopa vit dans les plaines, mais Pok\u00e9mon Snap montre qu'on peut le trouver dans les montagnes."
+  },
+  {
+    "nom": "Ramoloss",
+    "description": "Ramoloss est une cr\u00e9ature rose avec un museau beige. Ses yeux ont de minuscules pupilles et ses oreilles sont arrondies. Chacune de ses jambes se termine par une unique griffe blanche et sa queue est pointue avec le bout clair.Depuis Pok\u00e9mon \u00c9p\u00e9e et Bouclier, Ramoloss poss\u00e8de une nouvelle variante, appel\u00e9e Ramoloss de Galar."
+  },
+  {
+    "nom": "Flagadoss",
+    "description": "Flagadoss est une version bip\u00e8de de sa forme de base, Ramoloss. Son bassin plus large et la musculature de ses pattes arri\u00e8re permettent la position debout. L'\u00e9quilibre est aid\u00e9 par la pr\u00e9sence du Kokiyas qui lui mord la queue. Son bas-ventre n'est plus rose, mais comporte une s\u00e9rie de stries jaune clair.Le Kokiyas de Flagadoss est profond\u00e9ment diff\u00e9rent d'un Kokiyas standard. Son corps est maintenant directement la coquille, sur laquelle on retrouve ses yeux. L'orifice \u00e0 la base de cette coquille forme sa m\u00e2choire fournie. Il prend une couleur grise, parsem\u00e9 de petites taches violettes et de pics courb\u00e9s."
+  },
+  {
+    "nom": "Magn\u00e9ti",
+    "description": "Ce Pok\u00e9mon d'apparence m\u00e9canique est compos\u00e9 d'une sph\u00e8re m\u00e9tallique centrale avec un \u0153il blanc et une pupille noire, ainsi que de deux aimants lat\u00e9raux poss\u00e9dant des bouts bleus et rouges. Trois vis sont visibles sur son corps.Ce Pok\u00e9mon est asexu\u00e9, il n'y a donc pas de Magn\u00e9ti m\u00e2le ou femelle."
+  },
+  {
+    "nom": "Magn\u00e9ton",
+    "description": "Magn\u00e9ton est un assemblage de trois Magn\u00e9ti. Les deux Magn\u00e9ti situ\u00e9s en bas de cet assemblage, t\u00eate retourn\u00e9e, ne poss\u00e8dent plus que deux vis (la frontale et un des \u00ab\u00a0bras\u00a0\u00bb). Durant la deuxi\u00e8me et troisi\u00e8me g\u00e9n\u00e9ration, cette particularit\u00e9 a \u00e9t\u00e9 omise. Le poids normal de Magn\u00e9ton est de 60\u00a0kg\u00a0; contrairement \u00e0 son apparence, il est plus lourd que le poids normal de trois Magn\u00e9ti (6\u00a0kg).Dans Pok\u00e9mon \u00c9carlate et Violet, il est \u00e9tabli que Magn\u00e9ton poss\u00e8de des liens avec avec Pelage-Sabl\u00e9, un Pok\u00e9mon Paradoxe du pass\u00e9."
+  },
+  {
+    "nom": "Canarticho",
+    "description": "Canarticho, comme l'indique son nom, ressemble en tout point \u00e0 un canard\u00a0: il a deux pattes palm\u00e9es jaunes poss\u00e9dant trois doigts chacune, deux ailes et un bec. On peut remarquer cependant qu'il poss\u00e8de un sourcil unique noir et des sortes de \u00ab\u00a0doigts\u00a0\u00bb \u00e0 chaque aile. Canarticho tient constamment dans son aile un oignon japonais, avec lequel il se nourrit et se d\u00e9fend.Il est inspir\u00e9 du proverbe japonais \u00ab\u00a0Comme un canard qui apporte les ingr\u00e9dients pour sa propre cuisson\u00a0\u00bb[1]. Le canard aux poireaux est un plat tr\u00e8s populaire au Japon."
+  },
+  {
+    "nom": "Doduo",
+    "description": "Doduo est un Pok\u00e9mon bas\u00e9 sur les ratites, un groupe d'oiseaux coureurs inaptes au vol. Notamment, ce Pok\u00e9mon tient \u00e0 la fois de l'autruche et du kiwi, ayant les longues jambes du premier et le duvet marron du second. Bic\u00e9phale, les deux t\u00eates de ce Pok\u00e9mon ont la m\u00eame personnalit\u00e9.Les cous des Doduo femelles sont beiges, alors que ceux des m\u00e2les sont noirs."
+  },
+  {
+    "nom": "Dodrio",
+    "description": "Compar\u00e9 \u00e0 sa pr\u00e9-\u00e9volution, Dodrio gagne non seulement une troisi\u00e8me t\u00eate, mais chacune d'entre elles gagnent une personnalit\u00e9 \u00e0 part enti\u00e8re\u00a0: la premi\u00e8re repr\u00e9sente la joie, la deuxi\u00e8me la col\u00e8re et la derni\u00e8re la tristesse. Chacune poss\u00e8de \u00e9galement une cr\u00eate, compos\u00e9e de deux plumes noires, ainsi qu'un bec plus allong\u00e9. Le bas du torse de ce Pok\u00e9mon est couvert de duvet noir, et au dessus de son post\u00e9rieur tr\u00f4ne une queue en \u00e9ventail rose.Les Dodrio femelles ont des cous beiges, alors qu'ils sont noirs pour les m\u00e2les."
+  },
+  {
+    "nom": "Otaria",
+    "description": "Otaria a l'apparence g\u00e9n\u00e9rale d'un phoque blanc (non pas une otarie, malgr\u00e9 son nom, car il ne poss\u00e8de pas de pattes arri\u00e8re). Il est le plus souvent vu la langue tir\u00e9e, et deux grands crocs de sa m\u00e2choire inf\u00e9rieure ressortent de la bouche. Il poss\u00e8de \u00e9galement une corne sur le sommet du cr\u00e2ne.Il n'y a aucune diff\u00e9rence entre les individus m\u00e2les et femelles de cette esp\u00e8ce."
+  },
+  {
+    "nom": "Lamantine",
+    "description": "Lamantine s'inspire du lamantin, son apparence y est donc semblable. Deux crocs de sa m\u00e2choire sup\u00e9rieure sont visibles et sa t\u00eate se termine par une corne.Il n'y a aucune diff\u00e9rence entre les individus m\u00e2les et femelles de cette esp\u00e8ce."
+  },
+  {
+    "nom": "Tadmorv",
+    "description": "Tadmorv est une cr\u00e9ature rampante recouverte d'une \u00e9paisse substance toxique violette. Il poss\u00e8de deux bras avec trois doigts \u00e0 chaque main, et est souvent vu la bouche grande ouverte.Depuis Pok\u00e9mon Soleil et Lune, Tadmorv poss\u00e8de une nouvelle variante, appel\u00e9e Tadmorv d'Alola."
+  },
+  {
+    "nom": "Grotadmorv",
+    "description": "Grotadmorv est un immonde m\u00e9lange de plusieurs produits toxiques, son corps est enti\u00e8rement compos\u00e9 d'une mixture p\u00e2teuse et \u00e9paisse grise violac\u00e9e et qui d\u00e9gagerait une odeur insupportable. Un trou b\u00e9ant lui sert de bouche, et on peut y apercevoir sa grande langue bleu-gris. Il poss\u00e8de deux bras avec trois doigts \u00e0 chaque main, comme sa pr\u00e9-\u00e9volution.Depuis Pok\u00e9mon Soleil et Lune, Grotadmorv poss\u00e8de une nouvelle variante, appel\u00e9e Grotadmorv d'Alola."
+  },
+  {
+    "nom": "Kokiyas",
+    "description": "Kokiyas est un mollusque avec une \u00e9paisse coque violette. Chaque partie de cette coque comporte deux pics. Son corps s'apparente \u00e0 une sph\u00e8re noire \u00e9quip\u00e9e de deux grands yeux \u00e0 tr\u00e8s petites pupilles, et d'une bouche laissant le plus souvent ressortir sa large langue.Il n'y a aucune diff\u00e9rence entre les individus m\u00e2les et femelles de cette esp\u00e8ce."
+  },
+  {
+    "nom": "Crustabri",
+    "description": "Crustabri est un petit mollusque prot\u00e9g\u00e9 dans deux paires de coquilles. Sa t\u00eate, une petite sph\u00e8re noire, poss\u00e8de deux yeux mena\u00e7ants et une bouche souriante. Elle est entour\u00e9e de deux petites coquilles grises et d'un dard au dessus de la t\u00eate. Ces deux coquilles grises sont elles-m\u00eames prot\u00e9g\u00e9es par deux grande coquilles violettes, irr\u00e9guli\u00e8res et couvertes de petits dards pointant sur les c\u00f4t\u00e9s.Dans Pok\u00e9mon Rouge et Bleu, sa coquille s'ouvrait horizontalement. Elle s'ouvre verticalement dans tous les autres jeux."
+  },
+  {
+    "nom": "Fantominus",
+    "description": "Fantominus n'a pas de vraie forme, ce qui est d\u00fb au gaz toxique qui compose 95\u00a0% de son corps. Cependant, il appara\u00eet constamment sous la forme d'un Pok\u00e9mon noir et sph\u00e9rique entour\u00e9 d'une brume violette. Il a une large bouche rose avec deux crocs visibles. Ses yeux semblent d\u00e9passer son corps rond, avec des paupi\u00e8res visibles. Le gaz toxique qui entoure son corps peut causer des \u00e9vanouissements et des suffocations, et il est capable de terrasser un \u00e9l\u00e9phant en quelques fractions de seconde. Comme il est principalement constitu\u00e9 de gaz, son corps se rapetisse par temps de forts vents. Fantominus est l'un des Pok\u00e9mon les plus l\u00e9gers connus \u00e0 ce jour.Le dessin anim\u00e9 sugg\u00e8re que Fantominus a une personnalit\u00e9 joueuse en faisant parfois des farces terrifiantes aux gens pour s'amuser. Cependant, il est montr\u00e9 que lorsqu'il rencontre un humain, il s'empresse d'absorber ses souvenirs. Il change souvent de forme et cr\u00e9e des illusions, et est aussi capable de traverser des objets solides ou encore de cr\u00e9er avec son gaz des mains tangibles. Fantominus peut \u00eatre trouv\u00e9 dans les vieux b\u00e2timents d\u00e9saffect\u00e9s ou dans les grottes. C'est aussi l'un des occupants les plus communs des diff\u00e9rentes tours fun\u00e9raires des jeux, comme la Tour Perdue au sud de Bonville."
+  },
+  {
+    "nom": "Spectrum",
+    "description": "Spectrum ressemble \u00e0 un fant\u00f4me violet avec un corps fait de gaz. Il n'a pas de bras visibles et son corps se termine par une queue dentel\u00e9e. Ses mains d\u00e9sincarn\u00e9es ont trois doigts pointus et ses yeux sont larges et triangulaires. Tout comme sa pr\u00e9-\u00e9volution, Spectrum est l'un des plus l\u00e9gers Pok\u00e9mon connus \u00e0 ce jour, ayant le plus grand rapport taille/masse soit 1,60\u00a0m pour seulement 0,1\u00a0kg.Dans Pok\u00e9mon\u00a0: Let's Go, Pikachu et Let's Go, \u00c9voli, Spectrum peut \u00eatre utilis\u00e9 en tant que Pok\u00e9 Monture."
+  },
+  {
+    "nom": "Ectoplasma",
+    "description": "Ectoplasma est un Pok\u00e9mon bip\u00e8de violet fonc\u00e9 avec un corps rondouillard. Il a de grands yeux rouges, une large bouche arborant souvent un rictus sinistre et des oreilles pointues. Il a sur son dos et sur sa t\u00eate des piques qui ressemblent \u00e0 de la fourrure \u00e9bouriff\u00e9e. Ses bras et ses jambes sont trapus avec trois doigts sur chaque bras et chaque jambe. Il a \u00e9galement une petite queue.Ectoplasma a la capacit\u00e9 de se dissimuler parfaitement dans l'ombre de n'importe quel objet, utilisant sa discr\u00e9tion exceptionnelle. Cependant, ses mouvements agissent comme un dissipateur thermique\u00a0: sa pr\u00e9sence rafra\u00eechit l'air de la zone environnante jusqu'\u00e0 environ 5 degr\u00e9s Celsius, car il absorbe la chaleur. Le dessin anim\u00e9 montre \u00e9galement qu'Ectoplasma peut voler et poss\u00e9der les gens, ainsi que les Pok\u00e9mon."
+  },
+  {
+    "nom": "Onix",
+    "description": "Onix est un Pok\u00e9mon semblable \u00e0 un serpent dont le corps est compos\u00e9 d'une quinzaine de gros rochers gris align\u00e9s les uns derri\u00e8re les autres. Il poss\u00e8de une grande corne au sommet de sa t\u00eate et des yeux noirs. Sa m\u00e2choire ne comporte aucune dent et ressemble \u00e0 un bec. Sa consistance le rend inexpressif. Tout comme le serpent, il ne poss\u00e8de pas de membres. Il est le plus grand Pok\u00e9mon de type Roche.Dans Pok\u00e9mon\u00a0: Let's Go, Pikachu et Let's Go, \u00c9voli, Onix peut \u00eatre utilis\u00e9 en tant que Pok\u00e9 Monture."
+  },
+  {
+    "nom": "Soporifik",
+    "description": "Soporifik est un Pok\u00e9mon bip\u00e8de, avec le haut de corps jaune et le bas marron. La fronti\u00e8re entre ces deux couleurs, au niveau de sa ceinture, forme des ondulations. Il poss\u00e8de trois doigts \u00e0 chaque main et deux orteils jaunes \u00e0 chaque pied. Son nez forme une courte trompe stri\u00e9e et tombante. Ses yeux sont pliss\u00e9s, et il est souvent vu souriant. Il est inspir\u00e9 du baku, qui, dans la mythologie japonaise, d\u00e9vore les r\u00eaves.Il n'y a aucune diff\u00e9rence entre les individus m\u00e2les et femelles de cette esp\u00e8ce."
+  },
+  {
+    "nom": "Hypnomade",
+    "description": "Hypnomade a le corps d'un f\u00e9lin de couleur jaune au nez pro\u00e9minent. Bip\u00e8de, il poss\u00e8de une fourrure blanche autour de son cou et une pi\u00e8ce de monnaie accroch\u00e9e a une ficelle faisant office de pendule, lui servant \u00e0 hypnotiser ses adversaires. En effet, une fois endormis, ces derniers sont violemment projet\u00e9s sur un mur ou sur un rocher. Plusieurs l\u00e9gendes urbaines sont cont\u00e9es autour de ce Pok\u00e9mon\u00a0: on raconte notamment qu'il hypnotise les enfants afin de les enlever.Les Hypnomade m\u00e2les ont un collier de fourrure plus petit que celui des femelles."
+  },
+  {
+    "nom": "Krabby",
+    "description": "Krabby a l'apparence d'un petit crabe. Sa carapace est orange vif, tandis que son ventre et ses pattes sont d'un orange tr\u00e8s p\u00e2le. Il a deux grands yeux aux petites pupilles noires. Sa bouche forme un large V, avec deux crocs inf\u00e9rieurs pro\u00e9minents. Il a de petites cornes sur la t\u00eate, deux grandes pinces orange, et deux paires de pattes sur les c\u00f4t\u00e9s.Il n'y a aucune diff\u00e9rence entre les individus m\u00e2les et femelles de cette esp\u00e8ce."
+  },
+  {
+    "nom": "Krabboss",
+    "description": "Krabboss est inspir\u00e9 du crabe violoniste et du crabe araign\u00e9e.\nSa carapace est orange vif, tandis que son ventre et ses pattes sont d'un orange tr\u00e8s p\u00e2le. Il a deux grands yeux en demi-lune. Sa large bouche pr\u00e9sente deux grands crocs inf\u00e9rieurs et quatre crocs centraux plus petits. Il a six longues cornes sur la t\u00eate, et deux paires de pattes sur les c\u00f4t\u00e9s. Il se distingue de sa pr\u00e9-\u00e9volution par sa pince gauche d\u00e9mesur\u00e9e. Tr\u00e8s lourde, il a du mal \u00e0 se d\u00e9placer avec.Une repr\u00e9sentation sp\u00e9cifique \u00e0 Pok\u00e9mon Rouge et Bleu montre Krabboss ayant deux grosses pinces. La description Pok\u00e9dex de ces m\u00eames jeux le d\u00e9crit comme n'en n'ayant qu'une seule."
+  },
+  {
+    "nom": "Voltorbe",
+    "description": "Voltorbe est un Pok\u00e9mon sph\u00e9rique ressemblant \u00e0 une Pok\u00e9 Ball\u00a0; d'ailleurs il utilise cette ressemblance comme un leurre et, d\u00e8s qu'un Pok\u00e9mon ou un humain s'approche de lui, il explose. Cette tendance \u00e0 exploser au moindre choc est due \u00e0 la quantit\u00e9 d\u00e9mentielle d'\u00e9lectricit\u00e9 qu'il stocke. Il erre dans les centrales \u00e9lectriques et en vole l'\u00e9nergie, ce qu'il est aussi capable de faire avec d'autres appareils \u00e9lectriques tels des trains.Il a un regard agressif avec des yeux triangulaires et de petites pupilles noires et ne semble pas poss\u00e9der de bouche."
+  },
+  {
+    "nom": "\u00c9lectrode",
+    "description": "\u00c9lectrode est une grosse Pok\u00e9 Ball retourn\u00e9e. Il poss\u00e8de maintenant des yeux expressifs ainsi qu'une bouche souriante. Comme sa pr\u00e9-\u00e9volution, il est tr\u00e8s sensible et explose au moindre choc.Depuis L\u00e9gendes Pok\u00e9mon\u00a0: Arceus, \u00c9lectrode poss\u00e8de une nouvelle variante, appel\u00e9e \u00c9lectrode de Hisui."
+  },
+  {
+    "nom": "N\u0153un\u0153uf",
+    "description": "Noeunoeuf est habituellement compos\u00e9 de six entit\u00e9s ressemblant \u00e0 des \u0153ufs avec un visage souvent mena\u00e7ant. La plupart de ces \u0153ufs sont craquel\u00e9s par endroits, l'un d'eux est ouvert et laisse appara\u00eetre son jaune.Dans Pok\u00e9mon Rouge et Bleu, l'\u0153uf central \u00e9tait repr\u00e9sent\u00e9 de mani\u00e8re beaucoup plus imposante que les autres."
+  },
+  {
+    "nom": "Noadkoko",
+    "description": "Noadkoko est un grand Pok\u00e9mon bip\u00e8de qui ressemble \u00e0 un cocotier. Son corps et ses jambes, \u00e9paisses et termin\u00e9es par deux gros pieds \u00e0 deux orteils griffus chacun, sont bruns et stri\u00e9s de l\u00e9g\u00e8res lignes noires. Il a un coussinet jaune p\u00e2le sous chaque pied. Il a de grandes feuilles vertes qui poussent sur le haut de son corps. Noadkoko a trois \u00e0 six t\u00eates jaune p\u00e2le qui ressemblent \u00e0 des noix de coco, avec chacune une expression faciale diff\u00e9rente.Noadkoko est inspir\u00e9 d'un cocotier et du Jinmenju, un monstre du folklore japonais souvent repr\u00e9sent\u00e9 comme un arbre dont les fruits sont des t\u00eates humaines souriantes. Il partage \u00e9galement des similitudes avec un Hura crepitans."
+  },
+  {
+    "nom": "Osselait",
+    "description": "Osselait est un Pok\u00e9mon bip\u00e8de, brun, au visage cach\u00e9 par un cr\u00e2ne sans lequel il n'est jamais vu. Selon le Pok\u00e9dex, le cr\u00e2ne qu'il porte est celui de sa m\u00e8re, morte lors de sa naissance. Il porte en permanence ce cr\u00e2ne en guise de casque protecteur, et utilise un os comme moyen de d\u00e9fense. Dans Pok\u00e9mon Rouge, Bleu et Jaune, Pok\u00e9mon Rouge Feu et Vert Feuille, Pok\u00e9mon\u00a0: Let's Go, Pikachu et Let's Go, \u00c9voli, ce Pok\u00e9mon est la cible de braconnage de la part de la Team Rocket, cherchant \u00e0 tout prix \u00e0 s'emparer de son cr\u00e2ne, dit se vendre \u00e0 bon prix.Il n'y a aucune diff\u00e9rence entre les individus m\u00e2les et femelles de cette esp\u00e8ce."
+  },
+  {
+    "nom": "Ossatueur",
+    "description": "Ossatueur est un Pok\u00e9mon bip\u00e8de de couleur brun fonc\u00e9. Son ventre est d'une couleur plus claire. Il est reconnaissable \u00e0 l'apparence osseuse de sa t\u00eate. Il a une griffe \u00e0 chaque main et pied, et se sert d'un os qu'il peut lancer et utiliser comme une arme.Depuis Pok\u00e9mon Soleil et Lune, Ossatueur poss\u00e8de une nouvelle variante, appel\u00e9e Ossatueur d'Alola."
+  },
+  {
+    "nom": "Kicklee",
+    "description": "Kicklee est un Pok\u00e9mon humano\u00efde avec un corps ovo\u00efde. Il ne poss\u00e8de pas de t\u00eate bien d\u00e9finie\u00a0: il n'a ni bouche, oreille ou nez apparents. Seuls des yeux apparaissent au niveau de la poitrine. Ses yeux sont en forme d'amande, entour\u00e9s d'anneaux noirs. Principalement brun, il a les bras et les jambes segment\u00e9s, avec trois doigts et trois orteils griffus respectivement. Les semelles de ses pieds et chevilles sont circulaires. Ses jambes et ses bras sont \u00e9lastiques et extensibles.Cette esp\u00e8ce est compos\u00e9e uniquement d'individus m\u00e2les."
+  },
+  {
+    "nom": "Tygnon",
+    "description": "Tygnon ressemble \u00e0 un boxeur. Son corps marron est habill\u00e9 par une tunique violette, couleur qu'on retrouve au niveau de ses chaussures. Il porte en permanence des gants de boxe. Dans la deuxi\u00e8me g\u00e9n\u00e9ration, les couleurs qu'il porte sont diff\u00e9rentes.Cette esp\u00e8ce est compos\u00e9e uniquement d'individus m\u00e2les."
+  },
+  {
+    "nom": "Excelangue",
+    "description": "Excelangue est un Pok\u00e9mon bip\u00e8de avec un corps rose, rond et une grande queue. Il a des lignes en forme de plaques sur son ventre et un anneau sur ses genoux. Il a une griffe sur chaque main et pied et poss\u00e8de une longue langue.Dans L\u00e9gendes Pok\u00e9mon\u00a0: Arceus, ce Pok\u00e9mon a par d\u00e9faut un comportement amical et vient de lui-m\u00eame s'approcher du protagoniste."
+  },
+  {
+    "nom": "Smogo",
+    "description": "Smogo est un Pok\u00e9mon sph\u00e9rique rempli de gaz toxiques. Il a un regard absent et une large bouche avec, habituellement, deux dents pointues sur la m\u00e2choire sup\u00e9rieure. Cependant, dans le dessin anim\u00e9, un ensemble complet de dents a pu \u00eatre observ\u00e9. Sous sa gueule, une marque en forme de cr\u00e2ne avec deux os crois\u00e9s beige est visible. Plusieurs excroissances en forme de crat\u00e8res, rel\u00e2chant une fum\u00e9e jaun\u00e2tre, recouvrent son corps. Sa peau violette est tr\u00e8s fine, et une inflation peut le faire imploser.Smogo cr\u00e9e des gaz en m\u00e9langeant dans son corps des toxines avec des d\u00e9tritus, et produit plus de gaz lorsque les temp\u00e9ratures sont plus \u00e9lev\u00e9es. Ces gaz sont naus\u00e9abonds et provoquent des reniflements, de la toux et les yeux qui pleurent \u00e0 ceux qui les respirent. Ces gaz sont plus l\u00e9gers que l'air, ce qui permet \u00e0 Smogo de flotter. Quand on l'agite, il cr\u00e9e un gaz plus toxique et l'expulse de tous les trous de son corps. Comme on peut le voir dans le dessin anim\u00e9, le gaz de Smogo peut \u00eatre enflamm\u00e9 par le feu ou l'\u00e9lectricit\u00e9. Smogo se trouve le plus souvent dans les zones urbaines."
+  },
+  {
+    "nom": "Smogogo",
+    "description": "Smogogo est un assemblage de deux Smogo. Les visages de ces derniers sont maintenant tristes et grima\u00e7ants. Le motif sur le ventre du plus petit Smogo n'affiche plus qu'un rond. Un gaz toxique s'\u00e9chappe de leurs orifices. Sa forme fait penser \u00e0 celle d'une mol\u00e9cule. Les canines saillantes du petit Smogo sont toujours sur sa m\u00e2choire sup\u00e9rieure, mais sur la m\u00e2choire inf\u00e9rieure du grand (en haut, il poss\u00e8de d\u00e9sormais deux incisives \u00e9cart\u00e9es).Depuis Pok\u00e9mon \u00c9p\u00e9e et Bouclier, Smogogo poss\u00e8de une nouvelle variante, appel\u00e9e Smogogo de Galar."
+  },
+  {
+    "nom": "Rhinocorne",
+    "description": "Rhinocorne ressemble \u00e0 un rhinoc\u00e9ros indien. Son corps est gris\u00e2tre. Il poss\u00e8de des pics sur le corps. Il a des crocs tranchants ainsi que de puissantes griffes aux pattes.Il faut faire attention et ne pas l'approcher par l'arri\u00e8re. En combat, pour abattre facilement ses adversaires, Rhinocorne les charge comme un sanglier ou un rhinoc\u00e9ros."
+  },
+  {
+    "nom": "Rhinof\u00e9ros",
+    "description": "Rhinof\u00e9ros ressemble \u00e0 un rhinoc\u00e9ros redress\u00e9 sur ses pattes arri\u00e8re. Il poss\u00e8de une unique corne sur le museau, qui a un motif en spirale, tel celui d'une foreuse. Il a une longue queue avec les m\u00eames motifs que sur sa corne.Dans Pok\u00e9mon\u00a0: Let's Go, Pikachu et Let's Go, \u00c9voli, Rhinof\u00e9ros peut \u00eatre utilis\u00e9 en tant que Pok\u00e9 Monture."
+  },
+  {
+    "nom": "Leveinard",
+    "description": "Leveinard est un Pok\u00e9mon qui a l'allure d'un \u0153uf rose, avec plusieurs m\u00e8ches de cheveux qui rebiquent sur les c\u00f4t\u00e9s. Il transporte son \u0153uf dans sa poche ventrale. Il a de petits yeux, une bouche souriante, deux petits pieds roses et une queue pointue dress\u00e9e.Leveinard est connu pour \u00eatre un Pok\u00e9mon tr\u00e8s charitable, n'h\u00e9sitant pas \u00e0 offrir son \u0153uf \u00e0 tout individu bless\u00e9. Les Leveinard sont r\u00e9put\u00e9s pour \u00eatre des Pok\u00e9mon rares, qui offrent beaucoup de points d'exp\u00e9rience \u00e0 ceux qui parviennent \u00e0 les vaincre."
+  },
+  {
+    "nom": "Saquedeneu",
+    "description": "Saquedeneu s'apparente \u00e0 une petite boule de lianes bleues, qui recouvrent la majorit\u00e9 de son petit corps noir sph\u00e9rique. La partie du devant, non recouverte, laisse ses grands yeux blancs d\u00e9gag\u00e9s. Ses deux courtes jambes li\u00e9es \u00e0 des pieds ovales sont rouges.Dans L\u00e9gendes Pok\u00e9mon\u00a0: Arceus, ce Pok\u00e9mon a par d\u00e9faut un comportement amical et vient de lui-m\u00eame s'approcher du protagoniste."
+  },
+  {
+    "nom": "Kangourex",
+    "description": "L'apparence de Kangourex est \u00e0 mi-chemin entre un kangourou femelle et un dinosaure. Il poss\u00e8de un large corps marron, robuste, \u00e9quip\u00e9 de plaques osseuses par endroits. Il poss\u00e8de des yeux rouges, un ventre et des oreille beiges, trois griffes \u00e0 chaque main et \u00e0 chaque pied et le dessus de sa t\u00eate est plus fonc\u00e9 que son corps. Comme les marsupiaux femelles, il poss\u00e8de une poche ventrale dans laquelle il transporte son petit. Ce dernier est semblable \u00e0 sa m\u00e8re en miniature\u00a0; cependant, son corps est violet p\u00e2le au lieu de marron, ses yeux sont presque enti\u00e8rement noirs et il n'a pas de plaques osseuses. Selon le Pok\u00e9dex, il reste aupr\u00e8s de sa m\u00e8re jusqu'\u00e0 ses trois ans, o\u00f9 il quitte alors le confort de la poche ventrale maternelle.Dans Pok\u00e9mon\u00a0: Let's Go, Pikachu et Let's Go, \u00c9voli, Kangourex peut \u00eatre utilis\u00e9 en tant que Pok\u00e9 Monture."
+  },
+  {
+    "nom": "Hypotrempe",
+    "description": "Hypotrempe ressemble \u00e0 un petit hippocampe \u00e0 la peau \u00e9cailleuse. Sa bouche est semblable \u00e0 l'ouverture d'un canon. Il poss\u00e8de une unique nageoire dorsale jaune et un ventre de la m\u00eame couleur stri\u00e9e de noir. Il est dot\u00e9 de grands yeux rouges.Il n'y a aucune diff\u00e9rence entre les individus m\u00e2les et femelles de cette esp\u00e8ce."
+  },
+  {
+    "nom": "Hypoc\u00e9an",
+    "description": "Hypoc\u00e9an ressemble \u00e0 un hippocampe avec la peau \u00e9cailleuse et une queue en forme de spirale. Il a de plus grandes nageoires que sa pr\u00e9-\u00e9volution et celles-ci sont d\u00e9sormais divis\u00e9es en trois branches.Il n'y a aucune diff\u00e9rence entre les individus m\u00e2les et femelles de cette esp\u00e8ce."
+  },
+  {
+    "nom": "Poissir\u00e8ne",
+    "description": "Poissir\u00e8ne est un Pok\u00e9mon blanc qui ressemble \u00e0 un poisson avec des marquages orange sur sa queue, son dos et ses nageoires. Il a une fine nageoire dorsale et de longues nageoires pectorales. Ses nageoires pectorales et dorsale sont plut\u00f4t puissantes et lui permettent de garder une vitesse constante de cinq n\u0153uds quand il nage \u00e0 la surface. La nageoire caudale de Poissir\u00e8ne est admir\u00e9e par beaucoup comme \u00e9tant une ic\u00f4ne de beaut\u00e9, car elle ressemble \u00e0 une robe de bal, valant \u00e0 ce Pok\u00e9mon les surnoms de \"reine des oc\u00e9ans\" et de \"danseur des flots\". Ses yeux circulaires sont bleus, et il a des l\u00e8vres roses. Il a sur le front une fine corne, qui est plus longue chez les m\u00e2les que chez les femelles.Il a un temp\u00e9rament f\u00e9roce, et n'h\u00e9sitera pas \u00e0 user de sa corne pour se lib\u00e9rer s'il reste captif dans un aquarium. Les humains qui nagent pr\u00e8s des Poissir\u00e8ne doivent \u00eatre tr\u00e8s prudents s'ils ne veulent pas que les Poissir\u00e8ne les empalent avec leurs cornes. Poissir\u00e8ne est un Pok\u00e9mon tr\u00e8s commun dans toutes les \u00e9tendues d'eau, comme les \u00e9tangs, les lacs ou les rivi\u00e8res. Il nage \u00e0 la surface quand le printemps revient."
+  },
+  {
+    "nom": "Poissoroy",
+    "description": "Poissoroy ressemble \u00e0 un poisson avec de grandes nageoires blanches parsem\u00e9es de points noirs et une corne sur le front. Il a deux crocs visibles, et sa nageoire caudale est tr\u00e8s \u00e9tendue vers les c\u00f4t\u00e9s.Les Poissoroy femelles ont une corne plus petite que les m\u00e2les."
+  },
+  {
+    "nom": "Stari",
+    "description": "Stari ressemble \u00e0 une \u00e9toile de mer \u00e0 cinq bras. Le centre de son corps est recouvert d'un disque dor\u00e9 entourant un joyau rouge, appel\u00e9 le coeur.Ce Pok\u00e9mon est asexu\u00e9, il n'y a donc pas de Stari m\u00e2le ou femelle."
+  },
+  {
+    "nom": "Staross",
+    "description": "Staross ressemble \u00e0 une \u00e9toile de mer violette avec un joyau rouge au milieu de son corps, qui est son c\u0153ur. Il a cinq bras de plus que sa pr\u00e9-\u00e9volution Stari, et un plus gros joyau.Dans Pok\u00e9mon\u00a0: Let's Go, Pikachu et Let's Go, \u00c9voli, Staross peut \u00eatre utilis\u00e9 en tant que Pok\u00e9 Monture."
+  },
+  {
+    "nom": "M. Mime",
+    "description": "Avant la sixi\u00e8me g\u00e9n\u00e9ration, ce Pok\u00e9mon \u00e9tait uniquement de type Psy.M. Mime est un Pok\u00e9mon humano\u00efde dont l'apparence est emprunt\u00e9e \u00e0 la repr\u00e9sentation traditionnelle des mimes. Son corps semble pris dans une coque blanche, avec une sph\u00e8re rose au niveau du ventre ainsi que quatre autres sph\u00e8res identiques \u00e0 la base de ses membres. Il poss\u00e8de des gants et genouill\u00e8res blancs et des chaussures bleu fonc\u00e9 dont la longue pointe rebique. D'aspect joyeux, il a deux grandes joues roses et des excroissances bleues, ressemblant \u00e0 des cheveux de clown, qui partent en pointes sur les c\u00f4t\u00e9s."
+  },
+  {
+    "nom": "Ins\u00e9cateur",
+    "description": "Ins\u00e9cateur est inspir\u00e9 de la mante religieuse verte. Bip\u00e8de, il se tient sur deux larges pattes \u00e9quip\u00e9es de trois griffes. Il poss\u00e8de deux paires d'ailes, et deux grandes faux en guise de bras.Dans L\u00e9gendes Pok\u00e9mon\u00a0: Arceus, ce Pok\u00e9mon a par d\u00e9faut un comportement agressif et attaque le protagoniste d\u00e8s qu'il le voit. S'il est trouv\u00e9 dans une Distorsion Spatio-Temporelle, il est \u00e9galement agressif. \u00c0 Paldea, Ins\u00e9cateur est souvent pris pour cible par Filentrappe dans les zones o\u00f9 ils cohabitent, selon le Pok\u00e9dex r\u00e9gional."
+  },
+  {
+    "nom": "Lippoutou",
+    "description": "Lippoutou ressemble \u00e0 une chanteuse d'op\u00e9ra et \u00e0 un monstre de la mythologie japonaise\u00a0: Yama-Uba. Elle poss\u00e8de de longs cheveux blonds, une peau violette, des bras blancs \u00e0 cinq doigts comme les humains et une robe rouge et jaune. Elle a \u00e9galement une grosse bouche rouge.Cette esp\u00e8ce est compos\u00e9e uniquement d'individus femelles."
+  },
+  {
+    "nom": "\u00c9lektek",
+    "description": "\u00c9lektek est une cr\u00e9ature simiesque jaune au corps ray\u00e9 de noir. La rayure sur son ventre a la forme d'un \u00e9clair. Il a deux m\u00e8ches et deux antennes sur la t\u00eate. Deux canines de sa m\u00e2choire sup\u00e9rieure sont constamment visibles. Chacun de ses pieds poss\u00e8de deux grandes griffes.Ce Pok\u00e9mon est inspir\u00e9 d'un monstre japonais\u00a0: l'oni"
+  },
+  {
+    "nom": "Magmar",
+    "description": "Magmar a le corps parsem\u00e9 de motifs de flammes orange et jaune. Ses mains sont dot\u00e9es de griffes ac\u00e9r\u00e9es \u00e0 leurs extr\u00e9mit\u00e9s, tout comme ses pieds. Deux flammes ardentes cr\u00e9pitent sur sa t\u00eate et sa queue se termine par une flamme. Son cou et ses jambes sont noirs.Il est inspir\u00e9 d'un monstre de la mythologie bouddhiste\u00a0: le Karura."
+  },
+  {
+    "nom": "Scarabrute",
+    "description": "Scarabrute ressemble \u00e0 un scarab\u00e9e marron bip\u00e8de qui, au lieu d'avoir des mandibules, poss\u00e8de deux cornes avec plusieurs petits pics sur sa t\u00eate. Il a un regard agressif et poss\u00e8de une bouche \u00e0 dix dents (cinq en horizontal de chaque c\u00f4t\u00e9). Il a de petits bras et trois doigts griffus et poss\u00e8de de grands pieds avec trois orteils (deux devant et un derri\u00e8re).Il n'y a aucune diff\u00e9rence entre les individus m\u00e2les et femelles de cette esp\u00e8ce."
+  },
+  {
+    "nom": "Tauros",
+    "description": "Tauros a beaucoup de ressemblance avec un taureau r\u00e9el. On peut tout de m\u00eame noter qu'il poss\u00e8de trois queues et trois marques argent\u00e9es sur son front, de la m\u00eame couleur que ses cornes. \u00c9trangement, les touffes de poils au bout des queues de Tauros n'ont pas la m\u00eame couleur selon les versions du jeu vid\u00e9o. Elles sont de couleur blanche dans les versions Pok\u00e9mon Jaune et Pok\u00e9mon Rouge Feu et Vert Feuille, marron dans Pok\u00e9mon Or, Argent et Cristal et Pok\u00e9mon Rubis, Saphir et \u00c9meraude, noires dans Pok\u00e9mon Rouge et Bleu et Pok\u00e9mon Vert, grises dans Pok\u00e9mon Diamant, Perle et Platine et Pok\u00e9mon Or HeartGold et Argent SoulSilver, etc.Ce Pok\u00e9mon est r\u00e9put\u00e9 pour \u00eatre tr\u00e8s violent et excit\u00e9. S'il d\u00e9cide de charger quelqu'un ou quelque chose, il ne s'arr\u00eatera pas avant qu'il ne l'ait d\u00e9truit. Il vit en troupeau o\u00f9 ils se combattent en se heurtant avec leur corne, le gagnant devient le chef de la tribu. Cependant, on peut pr\u00e9voir une charge de Tauros, en effet il a la manie d'agiter, voire de se fouetter avec ses trois queues avant de se lancer (une sorte de rituel pour augmenter son agressivit\u00e9). S'il ne trouve pas d'adversaire, il est capable de se ruer sur des arbres et de les d\u00e9raciner juste pour se calmer. Il semblerait tout de m\u00eame qu'il poss\u00e8de le point faible de ne charger qu'en ligne droite."
+  },
+  {
+    "nom": "Magicarpe",
+    "description": "Magicarpe est un Pok\u00e9mon ressemblant \u00e0 un poisson rouge avec de grands yeux vitreux au regard absent. Il poss\u00e8de \u00e9galement de longs barbillons, ainsi que des ailerons en forme de couronne sur sa t\u00eate et sur son ventre. Syst\u00e9matiquement d\u00e9crit comme l'un des Pok\u00e9mon les plus inutiles qui soit, il \u00e9tait apparemment bien plus puissant dans les temps anciens, ayant perdu de plus en plus de force avec le temps qui passe.Magicarpe est inspir\u00e9 de la mythologie chinoise. Une tradition voudrait que si une carpe parvenait \u00e0 remonter une chute d'eau ou une cascade parmi plusieurs en Chine nomm\u00e9e La Porte du dragon, elle se transformerait en dragon, d'o\u00f9 est n\u00e9e l'\u00e9volution de Magicarpe, L\u00e9viator."
+  },
+  {
+    "nom": "L\u00e9viator",
+    "description": "L\u00e9viator est un Pok\u00e9mon \u00e0 l'allure serpentine avec un long corps principalement bleu \u00e0 l'exception de son ventre et de quelques une de ses \u00e9cailles qui sont jaune p\u00e2le. Sa bouche aux l\u00e8vres jaunes est tr\u00e8s large et r\u00e9v\u00e8le, une fois grande ouverte, quatre dents pointues. Il a un barbillon et une petite nageoire blanche sur chaque c\u00f4t\u00e9 de la t\u00eate. Il a de petits yeux rouges, une cr\u00eate bleu fonc\u00e9 sur la t\u00eate et quatre nageoires dorsales blanches. Sa queue se termine en une nageoire caudale bleue et blanche.L\u00e9viator est inspir\u00e9 du serpent de mer et du dragon oriental. Sa famille \u00e9volutive vient \u00e9galement d'une l\u00e9gende chinoise qui raconte que si une carpe parvient \u00e0 remonter une cascade surnomm\u00e9e la Porte du Dragon, elle se change en dragon. Cette l\u00e9gende a pour morale qu'il faut redoubler d'efforts pour atteindre ses objectifs malgr\u00e9 les obstacles, \u00e0 l'instar de Magicarpe, qui doit monter de niveau malgr\u00e9 ses capacit\u00e9s m\u00e9diocres pour devenir un puissant L\u00e9viator.\nLe type Vol de L\u00e9viator est peut-\u00eatre une r\u00e9f\u00e9rence aux koi nobori, des manches \u00e0 air en forme de carpes hiss\u00e9es lors de la Kodomo no hi, litt\u00e9ralement \u00ab\u00a0journ\u00e9e des enfants\u00a0\u00bb au Japon, mais \u00e9galement du Inkanyamba, une anguille ail\u00e9e g\u00e9ante qui cr\u00e9e des temp\u00eates lorsqu'elle est \u00e9nerv\u00e9e, tout comme L\u00e9viator."
+  },
+  {
+    "nom": "Lokhlass",
+    "description": "Lokhlass est une grande cr\u00e9ature marine qui ressemble \u00e0 un pl\u00e9siosaure. Son corps est principalement bleu et tachet\u00e9, et son ventre est couleur cr\u00e8me. Il a un long cou et de grands yeux noirs. Il a \u00e9galement une petite corne sur le front et des oreilles qui s'enroulent sur elles-m\u00eames. Il poss\u00e8de quatre nageoires\u00a0: les ant\u00e9rieures sont plus larges et d\u00e9velopp\u00e9es que les post\u00e9rieures. Il a une lourde coquille grise et bossue sur le dos.Lokhlass est un Pok\u00e9mon gentil qui n'h\u00e9site pas \u00e0 venir en aide aux autres \u00eatres, par exemple en transportant des Pok\u00e9mon ou des humains sur l'eau gr\u00e2ce \u00e0 sa coquille. Sa docilit\u00e9 en a donc fait une cible facile pour les chasseurs, qui ont presque conduit \u00e0 son extinction\u00a0: cependant, l'esp\u00e8ce prolif\u00e8re \u00e0 nouveau gr\u00e2ce aux efforts faits pour le prot\u00e9ger. Pok\u00e9mon intelligent, il comprend le langage des humains. Il peut traverser d'immenses \u00e9tendues d'eau. Pour rester en contact avec les autres individus, il chante des m\u00e9lodies. Il est \u00e9galement capable de d\u00e9velopper des pouvoirs psychiques. Son esp\u00e8ce a \u00e9t\u00e9 r\u00e9introduite \u00e0 divers endroits, provoquant une surpopulation due \u00e0 une absence de pr\u00e9dateur naturel et \u00e0 sa protection par les r\u00e9glementations locales."
+  },
+  {
+    "nom": "M\u00e9tamorph",
+    "description": "Dans son \u00e9tat naturel, M\u00e9tamorph ressemble \u00e0 un morceau de gel\u00e9e violet clair avec un visage rudimentaire. Il poss\u00e8de deux \u00ab\u00a0bras\u00a0\u00bb rudimentaires, sans main, qui sortent de son corps. Il a aussi de petits yeux noirs et une bouche souriante. Il est capable de se transformer en n'importe quel objet ou cr\u00e9ature.Cependant, si M\u00e9tamorph essaie de se transformer en quelque chose en utilisant sa m\u00e9moire, il est capable d'oublier quelques d\u00e9tails. Le dessin anim\u00e9 et le jeu de cartes ont montr\u00e9 que M\u00e9tamorph peut ne pas r\u00e9ussir \u00e0 changer son visage. M\u00e9tamorph ne peut pas se retransformer s'il se met \u00e0 rire. M\u00e9tamorph ne peut pas imiter le caract\u00e8re du Pok\u00e9mon en lequel il s'est transform\u00e9, mais il imite sa forme et ses capacit\u00e9s. Quand deux M\u00e9tamorph se rencontrent \u00e0 l'\u00e9tat sauvage, ils essaient de se transformer l'un en l'autre. M\u00e9tamorph peut aussi se transformer en rocher quand il dort afin de ne pas \u00eatre attaqu\u00e9. M\u00e9tamorph ne s'\u00e9loigne jamais des gens et de la civilisation."
+  },
+  {
+    "nom": "\u00c9voli",
+    "description": "\u00c9voli est un Pok\u00e9mon mammalien quadrup\u00e8de, entre canin et f\u00e9lin, avec une fourrure principalement brune. Le bout de sa queue broussailleuse et son gros col de fourrure sont de couleur cr\u00e8me. Il a de petites jambes minces avec trois petits orteils et un coussinet rose \u00e0 chaque patte. \u00c9voli a des yeux marron, de longues oreilles pointues et un petit nez noir. On trouve rarement ce Pok\u00e9mon \u00e0 l'\u00e9tat sauvage, et plus souvent dans les villes et les zones urbaines. Cependant, on dit qu'\u00c9voli a une structure g\u00e9n\u00e9tique irr\u00e9guli\u00e8re qui lui permet de s'habituer \u00e0 tous types d'environnements. \u00c9voli peut \u00e9voluer en huit formes diff\u00e9rentes \u00e0 ce jour, selon son environnement.Motofumi Fujiwara, responsable de la cr\u00e9ation des premiers sprites de ce Pok\u00e9mon, souhaitait une cr\u00e9ature qui ne soit pas inspir\u00e9e d'un animal r\u00e9el en particulier. Le design d'\u00c9voli est bas\u00e9 sur de vagues souvenirs de son enfance, durant laquelle il avait vu une cr\u00e9ature ind\u00e9finissable en for\u00eat. Il reconna\u00eet cependant que l'apparence finale du Pok\u00e9mon est \u00e0 mi-chemin entre un chat touffu et un chien[2]."
+  },
+  {
+    "nom": "Aquali",
+    "description": "Aquali est un Pok\u00e9mon qui partage des traits physiques avec des animaux marins et terrestres. Il est quadrup\u00e8de avec trois petits orteils \u00e0 chaque pied et un coussinet bleu fonc\u00e9 sur ses pattes post\u00e9rieures. Le corps d'Aquali est bleu clair avec une marque bleu fonc\u00e9 sur la t\u00eate et une ar\u00eate sur son dos. Il a une nageoire caudale qui, dans le pass\u00e9, \u00e9tait confondue avec celle d'une sir\u00e8ne. Il a une collerette blanche autour du cou, et trois nageoires beiges autour de la t\u00eate. Il est dit qu'il pleuvra dans les heures qui suivent si les nageoires d'Aquali commencent \u00e0 vibrer.Aquali est souvent trouv\u00e9 dans les zones urbaines et est rarement trouv\u00e9 dans la nature, mais il peut aussi \u00eatre trouv\u00e9 pr\u00e8s des lacs propres. Il a \u00e9volu\u00e9 pour \u00eatre plus adapt\u00e9 \u00e0 un mode de vie sous-marin. Son \u00e9volution lui procure des branchies, ainsi qu'une composition cellulaire semblable \u00e0 celle des mol\u00e9cules d'eau, ce qui lui permet de pouvoir se dissoudre dans l'eau et de rester cach\u00e9 pendant qu'il nage."
+  },
+  {
+    "nom": "Voltali",
+    "description": "Voltali est un Pok\u00e9mon quadrup\u00e8de jaune avec de longues oreilles et une crini\u00e8re blanche. Son pelage est h\u00e9riss\u00e9 et il poss\u00e8de une queue extr\u00eamement courte, en comparaison avec les autres membres de sa famille \u00e9volutive.Dans L\u00e9gendes Pok\u00e9mon\u00a0: Arceus, ce Pok\u00e9mon est trouvable \u00e0 l'\u00e9tat sauvage uniquement dans des Distorsions spatio-temporelles. Il a donc par d\u00e9faut un comportement agressif et attaque le protagoniste d\u00e8s qu'il le voit."
+  },
+  {
+    "nom": "Pyroli",
+    "description": "Docile, calme, mais dangereux lorsqu'il est \u00e9nerv\u00e9, ce Pok\u00e9mon emmagasine de la chaleur dans son corps ce qui lui permet d'envoyer par la suite un gigantesque torrent de flammes spectaculaires pouvant atteindre les 3 000\u00a0\u00b0C. Il incarne les flammes ardentes. Son corps est orang\u00e9 avec de longues oreilles. Sa queue beige est touffue comme sa fourrure autour du cou et au-dessus de sa t\u00eate. Physiquement parlant, il est \u00e9galement la forme \u00e9volu\u00e9e la plus proche d'\u00c9voli.Dans L\u00e9gendes Pok\u00e9mon\u00a0: Arceus, ce Pok\u00e9mon est trouvable \u00e0 l'\u00e9tat sauvage uniquement dans des Distorsions spatio-temporelles. Il a donc par d\u00e9faut un comportement agressif et attaque le protagoniste d\u00e8s qu'il le voit."
+  },
+  {
+    "nom": "Porygon",
+    "description": "Porygon est un petit Pok\u00e9mon d'apparence \u00ab\u00a0low-poly\u00a0\u00bb qui aurait \u00e9t\u00e9 cr\u00e9\u00e9 par les Scientifiques du Laboratoire de Cramois'\u00cele, si l'on en croit un des rapports Pok\u00e9mon que l'on peut trouver dans la Sylphe SARLRFVF, ou par le d\u00e9partement Recherche et D\u00e9veloppement de la Sylphe elle-m\u00eameLGPE. La forme de son corps peut faire penser \u00e0 un petit canard. Son corps est de couleur rose bonbon, cependant, le bout de son bec, le milieu de son ventre, ses pattes et sa queue sont de couleur bleu clair. Il poss\u00e8de aussi deux grands yeux hexagonaux avec une pupille noire et ronde \u00e0 l'int\u00e9rieur.Dans L\u00e9gendes Pok\u00e9mon\u00a0: Arceus, ce Pok\u00e9mon est trouvable \u00e0 l'\u00e9tat sauvage uniquement dans des Distorsions spatio-temporelles. Il a donc par d\u00e9faut un comportement agressif et attaque le protagoniste d\u00e8s qu'il le voit."
+  },
+  {
+    "nom": "Amonita",
+    "description": "Il est inspir\u00e9 d'un ammonite, un animal pr\u00e9historique. Il a un corps bleu et une carapace en spirale de couleur jaune. Il a de grands yeux noirs et aucune bouche apparente.Amonita peut \u00eatre obtenu en faisant revivre le Nautile. Dans les jeux vid\u00e9o et jusqu'\u00e0 la cinqui\u00e8me g\u00e9n\u00e9ration, son cri \u00e9tait le m\u00eame que celui de Machoc."
+  },
+  {
+    "nom": "Amonistar",
+    "description": "Amonistar a l'apparence d'une grosse ammonite au corps bleu. Sa coquille comporte une rang\u00e9e de cinq pics et est en forme de spirale. Contrairement \u00e0 sa pr\u00e9-\u00e9volution, il a un bec ac\u00e9r\u00e9 compos\u00e9 de quatre parties, qui lui permet de mordre et de casser des coquilles, comme celles de Kokiyas. Il a quatre tentacules principaux courts qui lui servent de bras et jambes, et six autres longs et fins situ\u00e9s plus \u00e0 l'arri\u00e8re de son corps.Il n'y a aucune diff\u00e9rence entre les individus m\u00e2les et femelles de cette esp\u00e8ce."
+  },
+  {
+    "nom": "Kabuto",
+    "description": "Kabuto fait penser \u00e0 une limule, un Triops ou un trilobite. Son dos est recouvert d'une carapace ronde et marron, laissant appara\u00eetre une premi\u00e8re paire d'yeux, petits et noirs.\nSous cette armure se cache un corps noir poss\u00e9dant deux grands yeux ronds et roses, ainsi que deux paires de pattes courtes et griffues, jaunes.Il n'y a aucune diff\u00e9rence entre les individus m\u00e2les et femelles de cette esp\u00e8ce."
+  },
+  {
+    "nom": "Kabutops",
+    "description": "Kabutops ressemble \u00e0 une limule ou \u00e0 un trilobite dress\u00e9 sur des pattes dont le thorax est allong\u00e9 et ayant quatre membres. En dessous de sa t\u00eate se trouve une petite bouche. Les membres sup\u00e9rieurs sont chacun termin\u00e9s par une griffe g\u00e9ante en forme de faux tandis que les membres inf\u00e9rieurs sont comme des jambes termin\u00e9es par deux griffes. Il poss\u00e8de une queue (ou telson) conique, une t\u00eate triangulaire aux bords qui ressortent et des \u00e9pines lat\u00e9rales sur le dos.Il n'y a aucune diff\u00e9rence entre les individus m\u00e2les et femelles de cette esp\u00e8ce."
+  },
+  {
+    "nom": "Pt\u00e9ra",
+    "description": "Pt\u00e9ra ressemble \u00e0 un grand reptile carnassier gris-violet volant gr\u00e2ce \u00e0 des membranes tendues entre ses doigts, proche du pt\u00e9rodactyle dont il tire son nom. Pt\u00e9ra est constitu\u00e9 de roche (dont le poids ne semble \u00e9tonnement pas l'emp\u00eacher de voler), d'o\u00f9 sa classification en Pok\u00e9mon de type Roche et Vol. Il a une \u00e9norme m\u00e2choire avec douze dents pointues (six de chaque c\u00f4t\u00e9). Il a de petits pieds \u00e0 trois orteils (deux devant et un derri\u00e8re). Il a une esp\u00e8ce de corne entre ses ailes qui sont violettes et de petits bras \u00e0 trois doigts sur celles-ci. Il a \u00e9galement une queue qui se termine en losange.Pt\u00e9ra peut \u00eatre obtenu en faisant revivre le Vieil Ambre. Dans Pok\u00e9mon\u00a0: Let's Go, Pikachu et Let's Go, \u00c9voli, Pt\u00e9ra peut \u00eatre utilis\u00e9 en tant que Pok\u00e9 Monture."
+  },
+  {
+    "nom": "Ronflex",
+    "description": "Ronflex est un Pok\u00e9mon plut\u00f4t lourd (avec un poids de 460\u00a0kg) qui passe son temps \u00e0 dormir et ne se r\u00e9veille que pour manger. Il peut faire penser \u00e0 un ours ou \u00e0 un panda. Dans les \u00e9pisodes du dessin anim\u00e9 o\u00f9 des Ronflex sauvages sont pr\u00e9sents, ils se situent g\u00e9n\u00e9ralement en for\u00eat.Sa puissance coupl\u00e9e \u00e0 son impressionnante capacit\u00e9 \u00e0 encaisser les coups gr\u00e2ce \u00e0 sa carrure massive en a tr\u00e8s vite fait un Pok\u00e9mon int\u00e9ressant pour les tacticiens dans toutes les g\u00e9n\u00e9rations."
+  },
+  {
+    "nom": "Artikodin",
+    "description": "Artikodin est un grand Pok\u00e9mon aviaire avec un plumage bleu pr\u00e9dominant. On dit que ses larges ailes sont faites de glace. Il a sur la t\u00eate une cr\u00eate compos\u00e9e de trois plumes en forme de losanges bleu fonc\u00e9, et des yeux rouges. Son court bec et ses longues pattes sont gris. Il a une queue bleu fonc\u00e9 qui ressemble \u00e0 une banderole et qui est plus longue que son corps.Quand Artikodin bouge ses ailes, il peut faire baisser la temp\u00e9rature de l'air ambiant et faire tomber la neige. Il vole de montagne enneig\u00e9e en montagne enneig\u00e9e. Selon une l\u00e9gende ancienne, il est dit qu'il appara\u00eet aux aventuriers perdus en pleine montagne. Comme vu dans le dessin anim\u00e9, Artikodin aide parfois les humains perdus et les emm\u00e8ne en s\u00fbret\u00e9. Artikodin vit dans les endroits isol\u00e9s et froids, comme le pic des montagnes.\nIl serait bas\u00e9 sur le Simurgh, un grand oiseau bleu pouvant contr\u00f4ler le climat issu d'un conte perse."
+  },
+  {
+    "nom": "\u00c9lecthor",
+    "description": "\u00c9lecthor a un corps jaune, et poss\u00e8de deux paires d'ailes. L'une est jaune comme son plumage et l'autre est noire. Ses ailes sont en pics sur les c\u00f4t\u00e9s. Il a deux petits yeux noirs avec des cernes noirs. Son bec est pointu et orange et il a des serres orange \u00e0 quatre orteils (un derri\u00e8re et trois devant).\nDans les jeux de la premi\u00e8re g\u00e9n\u00e9ration, \u00c9lecthor n'avait que deux serres, contre trois par la suite.\u00c9lecthor serait bas\u00e9 sur le mythe de l'impundulu (signifiant oiseau de foudre), un oiseau de sorcellerie d'Afrique du Sud qui provoquerait le tonnerre et les \u00e9clairs avec ses ailes et ses serres. Cet oiseau mythique est consid\u00e9r\u00e9 comme ressemblant \u00e0 une Ombrette Noire et sous ses deux formes \u00c9lecthor tire sa physionomie de cette m\u00eame esp\u00e8ce. \nD'autres pensent qu'il serait bas\u00e9 sur la l\u00e9gende am\u00e9rindienne de l'oiseau-tonnerre, l'esprit du tonnerre, des \u00e9clairs et de la pluie. Les battements de ses ailes cr\u00e9eraient le tonnerre."
+  },
+  {
+    "nom": "Sulfura",
+    "description": "Sulfura est un grand oiseau de couleur jaune orang\u00e9. Il poss\u00e8de un long bec marron, et est reconnaissable \u00e0 ses ailes, cr\u00eate et panache enflamm\u00e9s rouge et rose. Il a \u00e9galement une queue enflamm\u00e9e rouge et rose. Il a des serres marron \u00e0 quatre orteils (un derri\u00e8re et trois devant). Il a des yeux triangulaires noirs. Il serait bas\u00e9 sur Bennu, l'oiseau de Ra qui est le premier ph\u00e9nix. L'apparition de Bennu annon\u00e7ait la crue et le printemps et il en va de m\u00eame pour Sulfura selon le pok\u00e9dex. le bec effil\u00e9, La cr\u00e8te de Sulfura et la volute de flamme partant des yeux pour sa forme de galar pourraient rappeler le h\u00e9ron cendr\u00e9 qu'\u00e9tait Bennu.Depuis Pok\u00e9mon \u00c9p\u00e9e et Bouclier, Sulfura poss\u00e8de une nouvelle variante, appel\u00e9e Sulfura de Galar."
+  },
+  {
+    "nom": "Minidraco",
+    "description": "Minidraco est un Pok\u00e9mon serpentin avec un corps bleu et un ventre blanc. Il a un aileron blanc \u00e0 trois volets sur chaque c\u00f4t\u00e9 de sa t\u00eate et une perle blanche sur le front. Il a un gros nez rond et blanc et de grands yeux violets.Les Minidraco ne cessent de grandir, et certains atteignent une taille de presque deux m\u00e8tres. Au fur et \u00e0 mesure de leur croissance, leur peau mue r\u00e9guli\u00e8rement. Quand les Minidraco subissent une perte ch\u00e8re, ils vont se tapir derri\u00e8re des chutes d'eau. Ils vivent en colonies sous l'eau. Pendant longtemps, les gens ont cru que l'existence des Minidraco ne relevait que du mythe."
+  },
+  {
+    "nom": "Draco",
+    "description": "Draco est un long dragon sans membre, pouvant faire penser \u00e0 un serpent de mer. Sa t\u00eate et son dos sont bleus, tandis que son ventre est blanc. Il poss\u00e8de deux petites sph\u00e8res bleues au bout de la queue, on en retrouve une troisi\u00e8me au niveau de sa gorge. Il poss\u00e8de une petite corne blanche sur son front, ainsi que deux courtes ailes en guise d'oreilles.Bien que cela ne soit jamais montr\u00e9 directement dans les jeux vid\u00e9o, Draco est capable d'\u00e9tendre ses ailes afin de les utiliser pour voler dans le ciel."
+  },
+  {
+    "nom": "Dracolosse",
+    "description": "Dracolosse est un Pok\u00e9mon bip\u00e8de ressemblant \u00e0 un dragon \u00e0 la peau jaune fonc\u00e9.Il est grand, assez costaud, a des yeux de couleur vert kaki, et il poss\u00e8de deux petites ailes bleu vert dans le dos lui permettant de voler.\nIl poss\u00e8de une corne et deux antennes blanches sur sa t\u00eate, trois griffes sur ses mains et ses pieds et une queue."
+  },
+  {
+    "nom": "Mewtwo",
+    "description": "Mewtwo est un clone de Mew cr\u00e9\u00e9 par la Team Rocket, modifi\u00e9 g\u00e9n\u00e9tiquement pour \u00eatre plus puissant. Son histoire est semblable \u00e0 celle de Genesect (cr\u00e9\u00e9 par la Team Plasma), \u00e9galement modifi\u00e9 dans le m\u00eame but. Ils sont par ailleurs tous les deux les vedettes de Pok\u00e9mon, le film\u00a0: Genesect et l'\u00e9veil de la l\u00e9gende. Dans le Manoir Pok\u00e9mon situ\u00e9 \u00e0 Cramois'\u00cele, une note dat\u00e9e du 6 f\u00e9vrier mentionne la \"naissance\" de Mewtwo\u00a0: on peut en quelque sorte dire que l'anniversaire de Mewtwo est le 6 f\u00e9vrier.Comme Mewtwo a \u00e9t\u00e9 cr\u00e9\u00e9 \u00e0 partir de Mew, il est \u00e9galement \u00e0 mi-chemin entre le chat (pour la t\u00eate) et la gerboise (pour le reste du corps), \u00e0 la diff\u00e9rence qu'il mesure 2 m\u00e8tres et a des membres plus longs que ceux de Mew, lui donnant une apparence presque humano\u00efde. Il se d\u00e9place la plupart du temps en l\u00e9vitant.\nMewtwo est un Pok\u00e9mon principalement mauve (ou blanc selon les versions). Il poss\u00e8de une longue queue violette qui remonte jusqu'au bas de son ventre. Il poss\u00e8de trois doigts bulbeux, deux \u00ab\u00a0cornes\u00a0\u00bb en haut de la t\u00eate, une sorte de tuyau derri\u00e8re son cou et des yeux violets avec une pupille ovale."
+  },
+  {
+    "nom": "Mew",
+    "description": "Contrairement aux autres Pok\u00e9mon de la premi\u00e8re g\u00e9n\u00e9ration, la conception de Mew n'a pas \u00e9t\u00e9 supervis\u00e9e par Ken Sugimori. Seuls 150 Pok\u00e9mon \u00e9taient normalement pr\u00e9vus.Mew est n\u00e9 d'une blague du programmeur Shigeki Morimoto\u00a0: avec l'aide de toute l'\u00e9quipe, le 151e Pok\u00e9mon a \u00e9t\u00e9 int\u00e9gr\u00e9 dans le jeu au tout dernier moment, lorsque les fonctions de d\u00e9bugage furent retir\u00e9es de la cartouche, lib\u00e9rant 300 octets, malgr\u00e9 la demande de ne plus toucher au code durant la phase de test du jeu. Seuls les membres de GAME FREAK \u00e9taient inform\u00e9s de la pr\u00e9sence de Mew dans le jeu, son existence ne devant pas \u00eatre r\u00e9v\u00e9l\u00e9e au public."
+  }

@@ -227,7 +227,7 @@ function Profil(props) {
                                 <circle className="progress-meter" r="48" cx="60" cy="60" fill="transparent"
                                         stroke-width="20" stroke-dashoffset="0"></circle>
                                 <circle className="progress-value" r="48" cx="60" cy="60" fill="transparent"
-                                        stroke-width="20" stroke-dashoffset="0" stroke-dasharray="301.59"></circle>
+                                        stroke-width="20" stroke-dashoffset="0" stroke-dasharray={parseFloat((profil[0].xp / profil[0].level) * 300).toFixed(2)}></circle>
                             </svg>
                             <span>
                                 <button onClick={handleProfileImage} style={{

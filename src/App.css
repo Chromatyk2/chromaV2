@@ -5372,10 +5372,9 @@ button.navbar-toggler.collapsed {
     stroke-dashoffset: 0;
     transition: stroke-dashoffset 1.5s ease-in-out;
     transition-delay: 1s;
-    stroke: hsl(0, 0%, 40%);
+    stroke: hsl(var(--hue), 100%, 60%);
 }
 
 .progress-bar .progress-value {
-    stroke: hsl(var(--hue), 100%, 60%);
-    stroke-dashoffset: 301.59;
+    stroke: hsl(0, 0%, 40%);
 }

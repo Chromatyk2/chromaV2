@@ -1019,7 +1019,7 @@ p.filterTitle {
 .progress-container:hover {
     cursor: pointer;
     .infoEdit, .xpText{
-        transition: opacity .5s;
+        transition: opacity 0.5s, transform 0.5s;
         opacity: 1;
         transform: translateY(0px);
     }

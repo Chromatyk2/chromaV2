@@ -164,7 +164,39 @@ function Profil(props) {
                 <>
                     <OnStream/>
                     <div className={"profilVisuals"}>
-
+                        <p className={"pseudoProfil"}>{profil[0].pseudo}</p>
+                        <div className="progress-container" data-value="1">
+                            <svg className="progress-bar" id="svg" width="120" height="120" viewPort="0 0 100 100"
+                                 version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <circle className="progress-meter" r="48" cx="60" cy="60" fill="transparent"
+                                        stroke-width="20" stroke-dashoffset="0"></circle>
+                                <circle className="progress-value" r="48" cx="60" cy="60" fill="transparent"
+                                        stroke-width="20" stroke-dashoffset="0" stroke-dasharray="301.59"></circle>
+                            </svg>
+                            <span>
+                                <button onClick={handleProfileImage} style={{
+                                    width: "100px",
+                                    display: "block",
+                                    margin: "auto",
+                                    borderRadius: "100px",
+                                    border: "none",
+                                    filter: "drop-shadow(5px 0px 0px black)"
+                                }}
+                                        className="anchorTooltip uniquePokemonContainer">
+                                    {profil[0].box > 0 &&
+                                        <div className="infoPkm">
+                                            <div className="infoNbBox">{profil[0].box}</div>
+                                        </div>
+                                    }
+                                    {profil[0].profil_picture ?
+                                        <img style={{width: "100%"}}
+                                             src={"/images/Trainers/Trainer" + profil[0].profil_picture + ".png"}/>
+                                        :
+                                        <img style={{width: "100%"}} src={"/images/random.png"}/>
+                                    }
+                                </button>
+                            </span>
+                        </div>
                         <div style={{display: "flex", width: "800px", justifyContent: "center", flexWrap: "wrap"}}>
 
                             <div style={{margin: "0", width: "65px", display: pourcent >= 10 ? "block" : "none"}}
@@ -229,28 +261,22 @@ function Profil(props) {
                         </div>
 
                         <Tooltip style={{zIndex: "1"}} anchorSelect=".anchorTooltip"/>
-
-                        <button onClick={handleProfileImage} style={{width: "200px", display: "block", margin: "auto"}}
-                                className="anchorTooltip uniquePokemonContainer">
-                            {profil[0].box > 0 &&
-                                <div className="infoPkm">
-                                    <div className="infoNbBox">{profil[0].box}</div>
-                                </div>
-                            }
-                            {profil[0].profil_picture ?
-                                <img style={{width: "100%"}}
-                                     src={"/images/Trainers/Trainer" + profil[0].profil_picture + ".png"}/>
-                                :
-                                <img style={{width: "100%"}} src={"/images/random.png"}/>
-                            }
-                        </button>
-                        <p className={"pseudoProfil"}>{profil[0].pseudo}</p>
-                        <div style={{display: "flex", alignItems: "center", marginBottom: "20px", justifyContent:"center",flexWrap:"wrap"}}>
+                        <div style={{
+                            display: "flex",
+                            alignItems: "center",
+                            marginBottom: "20px",
+                            justifyContent: "center",
+                            flexWrap: "wrap"
+                        }}>
                             {profil[0].pkmToken > 0 &&
                                 <button disabled={openTime} className={"openLeaderBoardButton"} onClick={openToken}
-                                        style={{filter: "drop-shadow(0px 0px 15px white)", backgroundImage: "url(/token.png)"}}>
+                                        style={{
+                                            filter: "drop-shadow(0px 0px 15px white)",
+                                            backgroundImage: "url(/token.png)"
+                                        }}>
                                     <div className="infoPkm">
-                                        <div className="infoNbPkmToken">{profil[0].pkmToken != 0 ? profil[0].pkmToken : 0}</div>
+                                        <div
+                                            className="infoNbPkmToken">{profil[0].pkmToken != 0 ? profil[0].pkmToken : 0}</div>
                                     </div>
                                 </button>}
                             <div>
@@ -307,14 +333,15 @@ function Profil(props) {
                         </div>
                     </div>
                 </>
-        }
+            }
         </div>
-    <Modal isOpen={modalIsOpen} onRequestClose={closeModal} style={customStyles} contentLabel="Example Modal">
+            <Modal isOpen={modalIsOpen} onRequestClose={closeModal} style={customStyles} contentLabel="Example Modal">
                 <p style={{textAlign: "center"}}>Choisis ton Skin</p>
                 {profil &&
                     profil.length > 0 &&
                     profil[0].box > 0 &&
-                    <button className={"openSkinBox"} onClick={openSkin} style={{backgroundImage: "url(/images/skinClose.png)"}}>
+                    <button className={"openSkinBox"} onClick={openSkin}
+                            style={{backgroundImage: "url(/images/skinClose.png)"}}>
                         <div className="infoPkm">
                             <div className="infoNbBoxSkin">{profil[0].box}</div>
                         </div>

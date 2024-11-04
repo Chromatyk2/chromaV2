@@ -1012,13 +1012,16 @@ p.filterTitle {
     padding: 10px;
 }
 
-.infoEdit, .xptext{
-    display: none;
+.infoEdit, .xpText{
+    opacity: 0;
+    transform: translateY(10px);
 }
 .progress-container:hover {
     cursor: pointer;
-    .infoEdit, .xptext{
-        display: block;
+    .infoEdit, .xpText{
+        transition: opacity .5s;
+        opacity: 1;
+        transform: translateY(0px);
     }
 
 }

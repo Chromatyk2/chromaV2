@@ -224,10 +224,10 @@ function Profil(props) {
                         <div  onClick={handleProfileImage} className="progress-container" data-value="100">
                             <svg className="progress-bar" id="svg" width="120" height="120" viewPort="0 0 100 100"
                                  version="1.1" xmlns="http://www.w3.org/2000/svg">
-                                <circle className="progress-meter" r="13" cx="30" cy="90" fill="transparent"
-                                        stroke-width="20" strokeDashoffset="0"></circle>
-                                <circle className="progress-value" r="13" cx="30" cy="90" fill="transparent"
-                                        stroke-width="20" style={{strokeDashoffset:-parseFloat(profil[0].xp / (profil[0].level * 500) * 300).toFixed(2)}} stroke-dasharray="301.59"></circle>
+                                <circle className="progress-meter" r="16" cx="30" cy="90" fill="transparent"
+                                        stroke-width="13" strokeDashoffset="0"></circle>
+                                <circle className="progress-value" r="16" cx="30" cy="90" fill="transparent"
+                                        stroke-width="13" style={{strokeDashoffset:-parseFloat(profil[0].xp / (profil[0].level * 500) * 100).toFixed(2)}} stroke-dasharray="301.59"></circle>
                             </svg>
                             <span>
                                 <button style={{

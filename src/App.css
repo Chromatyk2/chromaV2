@@ -3734,13 +3734,12 @@ span.navbar-brand {
 .profilVisuals {
     align-items: center;
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
     flex-wrap: wrap;
     gap: 0;
     justify-content: center;
     width: fit-content;
     margin: auto;
-    background: rgba(0, 0, 0, 0.5);
     padding: 0 50px 0 50px;
     border-radius: 50px;
 }
@@ -5375,6 +5374,7 @@ button.navbar-toggler.collapsed {
     transition: stroke-dashoffset 1.5s ease-in-out;
     transition-delay: 1s;
     stroke: hsl(var(--hue), 100%, 60%);
+    filter: drop-shadow(0px 0px 2px white);
 }
 
 .progress-bar .progress-value {

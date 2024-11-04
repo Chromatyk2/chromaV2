@@ -221,6 +221,8 @@ function Profil(props) {
                     <OnStream/>
                     <p className={"pseudoProfil"}>{profil[0].pseudo}</p>
                     <div className={"profilVisuals"}>
+                        <div style={{width:"120px"}}>
+                        </div>
                         <div onClick={handleProfileImage} className="progress-container" data-value="100">
                             <svg className="progress-bar" id="svg" width="120" height="120" viewPort="0 0 100 100"
                                  version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -254,9 +256,9 @@ function Profil(props) {
                                 </button>
                             </span>
                         </div>
-                        <div className={"xpText"}>
-                            <p className={"levelProfil"}>Niveau {profil[0].level}</p>
-                            <p className={"levelProfil"}>{profil[0].xp + " / " + profil[0].level * 500}</p>
+                        <div style={{width:"120px"}} className={"xpText"}>
+                            <p style={{fontSize:"13px", textAlign:"left"}} className={"levelProfil"}>Niveau {profil[0].level}</p>
+                            <p style={{fontSize:"13px", textAlign:"left"}} className={"levelProfil"}>{profil[0].xp + " / " + profil[0].level * 500}</p>
                         </div>
                         {/*<div style={{display: "flex", width: "800px", justifyContent: "center", flexWrap: "wrap"}}>*/}
 

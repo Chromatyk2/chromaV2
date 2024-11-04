@@ -990,17 +990,17 @@ p.filterTitle {
     top: 100px;
 }
 .openLeaderBoardButton{
-    background-position: center center;
+    background-color: initial;
+    background-position: 50%;
     background-repeat: no-repeat;
+    background-size: contain;
     border: none;
     border-radius: 25px;
-    padding: 20px;
-    width: 100px;
-    height: 100px;
-    background-size: contain;
     display: block;
-    background-color: transparent;
+    height: 100px;
     margin: 20px;
+    padding: 20px;
+    width: 60px;
 }
 .uniquePokemonContainer {
     background-position: 50%;
@@ -4176,19 +4176,18 @@ span.navbar-brand {
     width:250px;
 }
 .infoNbPkmToken {
-
     background-color: #fff;
     border-radius: 20px;
     color: #007bb3;
-    font-size: 20px;
+    font-size: 13px;
     font-weight: 700;
-    height: 30px;
+    height: 17px;
     left: -30px;
+    padding: 0 10px;
     position: absolute;
     text-align: center;
-    width: fit-content;
     top: 60px;
-    padding: 0 10px 0 10px;
+    width: fit-content;
 }
 .rainbow_text_animated_token {
     -webkit-animation: rainbow_animation 6s ease-in-out infinite;

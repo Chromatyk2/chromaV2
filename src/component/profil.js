@@ -254,8 +254,10 @@ function Profil(props) {
                                 </button>
                             </span>
                         </div>
-                        <p className={"levelProfil"}>Niveau {profil[0].level}</p>
-                        <p className={"levelProfil"}>{profil[0].xp + " / " + profil[0].level * 500}</p>
+                        <div className={"xpText"}>
+                            <p className={"levelProfil"}>Niveau {profil[0].level}</p>
+                            <p className={"levelProfil"}>{profil[0].xp + " / " + profil[0].level * 500}</p>
+                        </div>
                         {/*<div style={{display: "flex", width: "800px", justifyContent: "center", flexWrap: "wrap"}}>*/}
 
                         {/*    <div style={{margin: "0", width: "65px", display: pourcent >= 10 ? "block" : "none"}}*/}
@@ -318,7 +320,7 @@ function Profil(props) {
                         {/*             src={"/images/star.png"}/>*/}
                         {/*    </div>*/}
                         {/*</div>*/}
-                        
+
                         {/*<Tooltip style={{zIndex: "1"}} anchorSelect=".anchorTooltip"/>*/}
                         {/*<div style={{*/}
                         {/*    display: "flex",*/}

@@ -5362,7 +5362,6 @@ button.navbar-toggler.collapsed {
     position: absolute;
     right: 0;
     top: 0;
-    overflow: hidden;
     height: 100px;
 }
 
@@ -5379,6 +5378,6 @@ button.navbar-toggler.collapsed {
 }
 
 .progress-bar .progress-value {
-    stroke: hsl(0, 0%, 40%);
+    stroke: white;
     stroke-dashoffset: 301.59;
 }

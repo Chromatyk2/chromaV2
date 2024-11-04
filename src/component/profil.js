@@ -165,7 +165,7 @@ function Profil(props) {
                     <OnStream/>
                     <div className={"profilVisuals"}>
                         <p className={"pseudoProfil"}>{profil[0].pseudo}</p>
-                        <div className="progress-container" data-value="1">
+                        <div className="progress-container" data-value="100">
                             <svg className="progress-bar" id="svg" width="120" height="120" viewPort="0 0 100 100"
                                  version="1.1" xmlns="http://www.w3.org/2000/svg">
                                 <circle className="progress-meter" r="48" cx="60" cy="60" fill="transparent"

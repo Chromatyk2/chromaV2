@@ -225,9 +225,9 @@ function Profil(props) {
                             <svg className="progress-bar" id="svg" width="120" height="120" viewPort="0 0 100 100"
                                  version="1.1" xmlns="http://www.w3.org/2000/svg">
                                 <circle className="progress-meter" r="48" cx="60" cy="60" fill="transparent"
-                                        stroke-width="20" stroke-dashoffset="0"></circle>
+                                        stroke-width="20" strokeDashoffset="0"></circle>
                                 <circle className="progress-value" r="48" cx="60" cy="60" fill="transparent"
-                                        stroke-width="20" stroke-dashoffset={parseFloat(profil[0].xp / (profil[0].level * 500) * 300).toFixed(2)} stroke-dasharray="301.59"></circle>
+                                        stroke-width="20" strokeDashoffset={parseFloat(profil[0].xp / (profil[0].level * 500) * 300).toFixed(2)} stroke-dasharray="301.59"></circle>
                             </svg>
                             <span>
                                 <button onClick={handleProfileImage} style={{

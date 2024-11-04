@@ -1018,7 +1018,12 @@ p.filterTitle {
 }
 .progress-container:hover {
     cursor: pointer;
-    .infoEdit, .xpText{
+    .infoEdit{
+        transition: opacity 0.5s, transform 0.5s;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    .xpText{
         transition: opacity 0.5s, transform 0.5s;
         opacity: 1;
         transform: translateY(0px);

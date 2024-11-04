@@ -1011,7 +1011,15 @@ p.filterTitle {
     filter: drop-shadow(0 0 12px black);
     padding: 10px;
 }
-.uniquePokemonContainer:hover {
+
+.infoEdit{
+    display: none;
+}
+.progress-container:hover {
+    cursor: pointer;
+    .infoEdit{
+        display: block;
+    }
 
 }
 .uniquePokemonContainerTeam {
@@ -3750,14 +3758,29 @@ span.navbar-brand {
     background-color: #fff;
     border-radius: 50%;
     color: #007bb3;
-    height: 50px;
+    height: 25px;
     position: absolute;
     width: fit-content;
-    font-size: 35px;
+    font-size: 15px;
     font-weight: 700;
     left: -19px;
     text-align: center;
-    padding: 0 15px 0 15px;
+    padding: 0 10px;
+    line-height: 25px;
+}
+.infoEdit{
+    background-color: #fff;
+    border-radius: 20px;
+    color: #007bb3;
+    font-size: 13px;
+    font-weight: 700;
+    height: 17px;
+    left: -5px;
+    padding: 0 10px;
+    position: absolute;
+    text-align: center;
+    top: 80px;
+    width: fit-content;
 }
 .infoNbBoxSkin{
      background-color: #fff;

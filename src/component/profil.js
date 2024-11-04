@@ -266,8 +266,7 @@ function Profil(props) {
                                         <img style={{width: "75px"}} src={"/images/random.png"}/>
                                     }
                                     <div className="infoPkm">
-                                        <div
-                                            className="infoNbPkmToken">{profil[0].pkmToken != 0 ? profil[0].pkmToken : 0}</div>
+                                        <div className="infoEdit"><i className="fa-solid fa-pencil"></i></div>
                                     </div>
                                 </button>
                             </span>

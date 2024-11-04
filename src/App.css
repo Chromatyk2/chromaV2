@@ -5353,19 +5353,22 @@ button.navbar-toggler.collapsed {
 
 
 .progress-container span {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
     align-items: center;
-    justify-content: center;
+    bottom: 0;
+    display: flex;
     font-size: 1.2rem;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    height: 100px;
 }
 
 .progress-bar {
     transform: rotate(-90deg);
+    z-index: 1;
 }
 
 .progress-bar circle {

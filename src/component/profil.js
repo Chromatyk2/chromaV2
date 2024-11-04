@@ -221,7 +221,7 @@ function Profil(props) {
                     <OnStream/>
                     <div className={"profilVisuals"}>
                         <p className={"pseudoProfil"}>{profil[0].pseudo}</p>
-                        <div className="progress-container" data-value="100">
+                        <div  onClick={handleProfileImage} className="progress-container" data-value="100">
                             <svg className="progress-bar" id="svg" width="120" height="120" viewPort="0 0 100 100"
                                  version="1.1" xmlns="http://www.w3.org/2000/svg">
                                 <circle className="progress-meter" r="48" cx="60" cy="60" fill="transparent"
@@ -230,13 +230,12 @@ function Profil(props) {
                                         stroke-width="20" style={{strokeDashoffset:-parseFloat(profil[0].xp / (profil[0].level * 500) * 300).toFixed(2)}} stroke-dasharray="301.59"></circle>
                             </svg>
                             <span>
-                                <button onClick={handleProfileImage} style={{
+                                <button style={{
                                     width: "100px",
                                     display: "block",
                                     margin: "auto",
                                     borderRadius: "100px",
-                                    border: "none",
-                                    filter: "drop-shadow(5px 0px 0px black)"
+                                    border: "solid (0,0,0,0.1)",
                                 }}
                                         className="anchorTooltip uniquePokemonContainer">
                                     {profil[0].box > 0 &&
@@ -245,7 +244,7 @@ function Profil(props) {
                                         </div>
                                     }
                                     {profil[0].profil_picture ?
-                                        <img style={{width: "100%"}}
+                                        <img style={{width: "150px",left: "-35px",position: "relative";}}
                                              src={"/images/Trainers/Trainer" + profil[0].profil_picture + ".png"}/>
                                         :
                                         <img style={{width: "100%"}} src={"/images/random.png"}/>

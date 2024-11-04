@@ -221,7 +221,7 @@ function Profil(props) {
                     <OnStream/>
                     <p className={"pseudoProfil"}>{profil[0].pseudo}</p>
                     <div className={"profilVisuals"}>
-                        <div style={{width:"120px"}}>
+                        <div style={{width: "120px"}}>
                             {profil[0].pkmToken > 0 &&
                                 <button disabled={openTime} className={"openLeaderBoardButton"} onClick={openToken}
                                         style={{
@@ -271,12 +271,15 @@ function Profil(props) {
                                     </div>
                                 </button>
                             </span>
-                            <div style={{width: "120px"}} className={"xpText"}>
+                            <div style={{width: "120px", left: "130px", osition: "absolute", top: "75px"}}
+                                 className={"xpText"}>
                                 <p style={{fontSize: "13px", textAlign: "left"}}
                                    className={"levelProfil"}>N.{profil[0].level}</p>
                                 <p style={{fontSize: "13px", textAlign: "left"}}
                                    className={"levelProfil"}>{profil[0].xp + " / " + profil[0].level * 500}</p>
                             </div>
+                        </div>
+                        <div style={{width: "120px"}}>
                         </div>
                         {/*<div style={{display: "flex", width: "800px", justifyContent: "center", flexWrap: "wrap"}}>*/}
 
@@ -350,7 +353,7 @@ function Profil(props) {
                         {/*    flexWrap: "wrap"*/}
                         {/*}}>*/}
 
-                            {/*<div>*/}
+                        {/*<div>*/}
                         {/*        <div style={customStyles.extBar} className="fullProgressBar">*/}
                         {/*            <div*/}
                         {/*                style={{*/}

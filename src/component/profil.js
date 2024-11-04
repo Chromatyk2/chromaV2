@@ -224,10 +224,10 @@ function Profil(props) {
                                  className="anchorTooltip uniquePokemonContainer"
                                  data-tooltip-content="100% du pokédex complété">
                                 {profil[0].profil_picture ?
-                                    <img style={{width: "50px"}}
+                                    <img onClick={handleProfileImage} style={{width: "50px"}}
                                          src={"/images/Trainers/Trainer" + profil[0].profil_picture + ".png"}/>
                                     :
-                                    <img style={{width: "50px"}} src={"/images/random.png"}/>
+                                    <img onClick={handleProfileImage} style={{width: "50px"}} src={"/images/random.png"}/>
                                 }
                             </div>
                         </div>

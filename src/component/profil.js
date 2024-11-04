@@ -244,10 +244,10 @@ function Profil(props) {
                                         </div>
                                     }
                                     {profil[0].profil_picture ?
-                                        <img style={{width: "150px",left: "-35px",position: "relative";}}
+                                        <img style={{width: "150px",left: "-35px",position: "relative"}}
                                              src={"/images/Trainers/Trainer" + profil[0].profil_picture + ".png"}/>
                                         :
-                                        <img style={{width: "100%"}} src={"/images/random.png"}/>
+                                        <img style={{width: "150px",left: "-35px",position: "relative"}} src={"/images/random.png"}/>
                                     }
                                 </button>
                             </span>

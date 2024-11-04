@@ -2114,6 +2114,9 @@ a.linkOnAirOff {
     padding: 10px;
     background: gray;
     margin-top: 0px;
+    position: absolute;
+    bottom:80px;
+    left:8px;
 }
 .pagePokemonContainer{
     min-height: 100vh;
@@ -4236,6 +4239,9 @@ span.navbar-brand {
     }
 }
 @media screen and (min-width: 380px) and (max-width: 943px) {
+    a.linkOnAirOff {
+        display: none;
+    }
     .profilVisuals {
         align-items: center;
         background: rgba(0, 0, 0, .5);

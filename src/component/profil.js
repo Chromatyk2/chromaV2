@@ -266,7 +266,7 @@ function Profil(props) {
                                         <img style={{width: "75px"}} src={"/images/random.png"}/>
                                     }
                                     <div className="infoPkm">
-                                        <div className="infoEdit"><i className="fa-solid fa-pencil"></i></div>
+                                        <div className="infoEdit"><i style={{marginLeft: "-6px",marginTop: "4px"}} className="fa-solid fa-pencil"></i></div>
                                     </div>
                                 </button>
                             </span>

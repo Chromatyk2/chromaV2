@@ -1012,12 +1012,12 @@ p.filterTitle {
     padding: 10px;
 }
 
-.infoEdit{
+.infoEdit, .xptext{
     display: none;
 }
 .progress-container:hover {
     cursor: pointer;
-    .infoEdit{
+    .infoEdit, .xptext{
         display: block;
     }
 
@@ -3774,13 +3774,13 @@ span.navbar-brand {
     color: #007bb3;
     font-size: 13px;
     font-weight: 700;
-    height: 17px;
+    height: 20px;
     left: -5px;
     padding: 0 10px;
     position: absolute;
     text-align: center;
     top: 80px;
-    width: fit-content;
+    width: 20px;
 }
 .infoNbBoxSkin{
      background-color: #fff;

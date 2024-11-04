@@ -1028,6 +1028,9 @@ p.filterTitle {
         opacity: 1;
         transform: translateY(0px);
     }
+    .uniquePokemonContainer{
+        filter: drop-shadow(black 3px 3px 1px);
+    }
 
 }
 .uniquePokemonContainerTeam {

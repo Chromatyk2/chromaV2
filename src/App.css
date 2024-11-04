@@ -1029,7 +1029,7 @@ p.filterTitle {
         transform: translateY(0px);
     }
     .uniquePokemonContainer{
-        filter: drop-shadow(black 3px 3px 1px);
+        filter: drop-shadow( 3px 3px 1px black);
     }
 
 }

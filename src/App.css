@@ -1015,6 +1015,7 @@ p.filterTitle {
 .infoEdit, .xpText{
     opacity: 0;
     transform: translateY(10px);
+    transition: opacity 0.5s, transform 0.5s;
 }
 .progress-container:hover {
     cursor: pointer;

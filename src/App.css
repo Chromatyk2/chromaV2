@@ -5337,3 +5337,47 @@ button.navbar-toggler.collapsed {
 .lazy-load-image-background.blur.lazy-load-image-loaded>img {
     width: 250px;
 }
+
+
+
+.progress-container {
+    --hue: 0;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-container + .progress-container {
+    margin-top: 1rem;
+}
+
+
+.progress-container span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.progress-bar {
+    transform: rotate(-90deg);
+}
+
+.progress-bar circle {
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 1.5s ease-in-out;
+    transition-delay: 1s;
+    stroke: hsl(0, 0%, 40%);
+}
+
+.progress-bar .progress-value {
+    stroke: hsl(var(--hue), 100%, 60%);
+    stroke-dashoffset: 301.59;
+}

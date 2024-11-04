@@ -251,9 +251,9 @@ function Profil(props) {
                                     display: "block",
                                     margin: "auto",
                                     borderRadius: "100px",
-                                    border: "none",
+                                    filter: "drop-shadow(0px 0px 5px black)"
                                 }}
-                                        className="anchorTooltip uniquePokemonContainer">
+                                        className="uniquePokemonContainer">
                                     {profil[0].box > 0 &&
                                         <div className="infoPkm">
                                             <div className="infoNbBox">{profil[0].box}</div>
@@ -265,11 +265,16 @@ function Profil(props) {
                                         :
                                         <img style={{width: "75px"}} src={"/images/random.png"}/>
                                     }
+                                    <div className="infoPkm">
+                                        <div
+                                            className="infoNbPkmToken">{profil[0].pkmToken != 0 ? profil[0].pkmToken : 0}</div>
+                                    </div>
                                 </button>
                             </span>
                         </div>
-                        <div style={{width:"120px"}} className={"xpText"}>
-                            <p style={{fontSize:"13px", textAlign:"left"}} className={"levelProfil"}>N.{profil[0].level}</p>
+                        <div style={{width: "120px"}} className={"xpText"}>
+                            <p style={{fontSize: "13px", textAlign: "left"}}
+                               className={"levelProfil"}>N.{profil[0].level}</p>
                             <p style={{fontSize:"13px", textAlign:"left"}} className={"levelProfil"}>{profil[0].xp + " / " + profil[0].level * 500}</p>
                         </div>
                         {/*<div style={{display: "flex", width: "800px", justifyContent: "center", flexWrap: "wrap"}}>*/}

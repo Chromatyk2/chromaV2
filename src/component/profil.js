@@ -223,21 +223,12 @@ function Profil(props) {
                             <div style={{margin: "0", width: "65px", display: pourcent >= 100 ? "block" : "none"}}
                                  className="anchorTooltip uniquePokemonContainer"
                                  data-tooltip-content="100% du pokédex complété">
-                                <button onClick={handleProfileImage}
-                                        style={{width: "50px", display: "block", margin: "auto"}}
-                                        className="anchorTooltip uniquePokemonContainer">
-                                    {profil[0].box > 0 &&
-                                        <div className="infoPkm">
-                                            <div className="infoNbBox">{profil[0].box}</div>
-                                        </div>
-                                    }
-                                    {profil[0].profil_picture ?
-                                        <img style={{width: "100%"}}
-                                             src={"/images/Trainers/Trainer" + profil[0].profil_picture + ".png"}/>
-                                        :
-                                        <img style={{width: "100%"}} src={"/images/random.png"}/>
-                                    }
-                                </button>
+                                {profil[0].profil_picture ?
+                                    <img style={{width: "50px"}}
+                                         src={"/images/Trainers/Trainer" + profil[0].profil_picture + ".png"}/>
+                                    :
+                                    <img style={{width: "50px"}} src={"/images/random.png"}/>
+                                }
                             </div>
                         </div>
 

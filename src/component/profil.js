@@ -250,8 +250,7 @@ function Profil(props) {
                                     width: "100px",
                                     display: "block",
                                     margin: "auto",
-                                    borderRadius: "100px",
-                                    filter: "drop-shadow(0px 0px 5px black)"
+                                    borderRadius: "100px"
                                 }}
                                         className="uniquePokemonContainer">
                                     {profil[0].box > 0 &&

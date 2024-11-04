@@ -3732,7 +3732,7 @@ span.navbar-brand {
     color: white;
 }
 .profilVisuals {
-    align-items: center;
+    align-items: end;
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
@@ -5373,7 +5373,7 @@ button.navbar-toggler.collapsed {
     stroke-dashoffset: 0;
     transition: stroke-dashoffset 1.5s ease-in-out;
     transition-delay: 1s;
-    stroke: hsl(var(--hue), 100%, 60%);
+    stroke: #120747;
     filter: drop-shadow(0px 0px 2px white);
 }
 

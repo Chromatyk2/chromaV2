@@ -257,7 +257,7 @@ function Profil(props) {
                             </span>
                         </div>
                         <div style={{width:"120px"}} className={"xpText"}>
-                            <p style={{fontSize:"13px", textAlign:"left"}} className={"levelProfil"}>Niveau {profil[0].level}</p>
+                            <p style={{fontSize:"13px", textAlign:"left"}} className={"levelProfil"}>N.{profil[0].level}</p>
                             <p style={{fontSize:"13px", textAlign:"left"}} className={"levelProfil"}>{profil[0].xp + " / " + profil[0].level * 500}</p>
                         </div>
                         {/*<div style={{display: "flex", width: "800px", justifyContent: "center", flexWrap: "wrap"}}>*/}

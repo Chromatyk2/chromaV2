@@ -222,6 +222,18 @@ function Profil(props) {
                     <p className={"pseudoProfil"}>{profil[0].pseudo}</p>
                     <div className={"profilVisuals"}>
                         <div style={{width:"120px"}}>
+                            {profil[0].pkmToken > 0 &&
+                                <button disabled={openTime} className={"openLeaderBoardButton"} onClick={openToken}
+                                        style={{
+                                            filter: "drop-shadow(0px 0px 15px white)",
+                                            backgroundImage: "url(/token.png)"
+                                        }}>
+                                    <div className="infoPkm">
+                                        <div
+                                            className="infoNbPkmToken">{profil[0].pkmToken != 0 ? profil[0].pkmToken : 0}</div>
+                                    </div>
+                                </button>
+                            }
                         </div>
                         <div onClick={handleProfileImage} className="progress-container" data-value="100">
                             <svg className="progress-bar" id="svg" width="120" height="120" viewPort="0 0 100 100"
@@ -331,18 +343,8 @@ function Profil(props) {
                         {/*    justifyContent: "center",*/}
                         {/*    flexWrap: "wrap"*/}
                         {/*}}>*/}
-                        {/*    {profil[0].pkmToken > 0 &&*/}
-                        {/*        <button disabled={openTime} className={"openLeaderBoardButton"} onClick={openToken}*/}
-                        {/*                style={{*/}
-                        {/*                    filter: "drop-shadow(0px 0px 15px white)",*/}
-                        {/*                    backgroundImage: "url(/token.png)"*/}
-                        {/*                }}>*/}
-                        {/*            <div className="infoPkm">*/}
-                        {/*                <div*/}
-                        {/*                    className="infoNbPkmToken">{profil[0].pkmToken != 0 ? profil[0].pkmToken : 0}</div>*/}
-                        {/*            </div>*/}
-                        {/*        </button>}*/}
-                        {/*    <div>*/}
+
+                            {/*<div>*/}
                         {/*        <div style={customStyles.extBar} className="fullProgressBar">*/}
                         {/*            <div*/}
                         {/*                style={{*/}

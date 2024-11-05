@@ -5412,6 +5412,7 @@ button.navbar-toggler.collapsed {
     justify-content: space-around;
     padding: 10px;
     width: 100%;
+    margin-top: 50px;
 }
 .progress-bar {
     transform: rotate(-90deg);

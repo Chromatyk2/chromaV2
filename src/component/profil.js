@@ -289,7 +289,7 @@ function Profil(props) {
                                     </div>
                                 </button>
                             </span>
-                                <div style={{width: "120px", left: "130px", position: "absolute", top: "75px"}}
+                                <div style={{width: "120px", left: "95px", position: "absolute", top: "-5px"}}
                                      className={"xpText"}>
                                     <p style={{fontSize: "13px", textAlign: "left"}}
                                        className={"levelProfil"}>N.{profil[0].level}</p>
@@ -297,134 +297,134 @@ function Profil(props) {
                                        className={"levelProfil"}>{profil[0].xp + " / " + profil[0].level * 500}</p>
                                 </div>
                             </div>
-                            <div className="anchorTooltip" data-tooltip-content={pourcent == 100 ? "100% du Pokedex Complété" : pourcent >= 80 ? "80% du Pokedex Complété"  : pourcent >= 60 ? "60% du Pokedex Complété" : pourcent >= 40 ? "40% du Pokedex Complété" : pourcent >= 20 ? "20% du Pokedex Complété": "Au moins 1 Pokémon capturé"} style={{width: "120px", height:"100px"}}>
+                            <div className="anchorTooltip" data-tooltip-content={pourcent == 100 ? "100% du Pokedex Complété" : pourcent >= 80 ? "80% du Pokedex Complété"  : pourcent >= 60 ? "60% du Pokedex Complété" : pourcent >= 40 ? "40% du Pokedex Complété" : pourcent >= 20 ? "20% du Pokedex Complété": "Au moins 1 Pokémon capturé"} style={{width: "120px", height:"95px"}}>
                                 <img style={{width: "60px"}} src={pourcent == 100 ? Lv6 : pourcent >= 80 ? Lv5  : pourcent >= 60 ? Lv4 : pourcent >= 40 ? Lv3 : pourcent >= 20 ? Lv2: Lv1}/>
                             </div>
                             <Tooltip style={{zIndex: "1"}} anchorSelect=".anchorTooltip"/>
-                            {/*<div style={{display: "flex", width: "800px", justifyContent: "center", flexWrap: "wrap"}}>*/}
-
-                            {/*    <div style={{margin: "0", width: "65px", display: pourcent >= 10 ? "block" : "none"}}*/}
-                            {/*         className="anchorTooltip uniquePokemonContainer"*/}
-                            {/*         data-tooltip-content="10% du pokédex complété">*/}
-                            {/*        <img style={{width: "100%"}} src={"/images/star.png"}/>*/}
-                            {/*    </div>*/}
-                            {/*    <div style={{margin: "0", width: "65px", display: pourcent >= 20 ? "block" : "none"}}*/}
-                            {/*         className="anchorTooltip uniquePokemonContainer"*/}
-                            {/*         data-tooltip-content="20% du pokédex complété">*/}
-                            {/*        <img style={{width: "100%"}}*/}
-                            {/*             src={"/images/star.png"}/>*/}
-                            {/*    </div>*/}
-                            {/*    <div style={{margin: "0", width: "65px", display: pourcent >= 30 ? "block" : "none"}}*/}
-                            {/*         className="anchorTooltip uniquePokemonContainer"*/}
-                            {/*         data-tooltip-content="30% du pokédex complété">*/}
-                            {/*        <img style={{width: "100%"}}*/}
-                            {/*             src={"/images/star.png"}/>*/}
-                            {/*    </div>*/}
-                            {/*    <div style={{margin: "0", width: "65px", display: pourcent >= 40 ? "block" : "none"}}*/}
-                            {/*         className="anchorTooltip uniquePokemonContainer"*/}
-                            {/*         data-tooltip-content="40% du pokédex complété">*/}
-                            {/*        <img style={{width: "100%"}}*/}
-                            {/*             src={"/images/star.png"}/>*/}
-                            {/*    </div>*/}
-                            {/*    <div style={{margin: "0", width: "65px", display: pourcent >= 50 ? "block" : "none"}}*/}
-                            {/*         className="anchorTooltip uniquePokemonContainer"*/}
-                            {/*         data-tooltip-content="50% du pokédex complété">*/}
-                            {/*        <img style={{width: "100%"}}*/}
-                            {/*             src={"/images/star.png"}/>*/}
-                            {/*    </div>*/}
-                            {/*    <div style={{margin: "0", width: "65px", display: pourcent >= 60 ? "block" : "none"}}*/}
-                            {/*         className="anchorTooltip uniquePokemonContainer"*/}
-                            {/*         data-tooltip-content="60% du pokédex complété">*/}
-                            {/*        <img style={{width: "100%"}}*/}
-                            {/*             src={"/images/star.png"}/>*/}
-                            {/*    </div>*/}
-                            {/*    <div style={{margin: "0", width: "65px", display: pourcent >= 70 ? "block" : "none"}}*/}
-                            {/*         className="anchorTooltip uniquePokemonContainer"*/}
-                            {/*         data-tooltip-content="70% du pokédex complété">*/}
-                            {/*        <img style={{width: "100%"}}*/}
-                            {/*             src={"/images/star.png"}/>*/}
-                            {/*    </div>*/}
-                            {/*    <div style={{margin: "0", width: "65px", display: pourcent >= 80 ? "block" : "none"}}*/}
-                            {/*         className="anchorTooltip uniquePokemonContainer"*/}
-                            {/*         data-tooltip-content="80% du pokédex complété">*/}
-                            {/*        <img style={{width: "100%"}}*/}
-                            {/*             src={"/images/star.png"}/>*/}
-                            {/*    </div>*/}
-                            {/*    <div style={{margin: "0", width: "65px", display: pourcent >= 90 ? "block" : "none"}}*/}
-                            {/*         className="anchorTooltip uniquePokemonContainer"*/}
-                            {/*         data-tooltip-content="90% du pokédex complété">*/}
-                            {/*        <img style={{width: "100%"}}*/}
-                            {/*             src={"/images/star.png"}/>*/}
-                            {/*    </div>*/}
-                            {/*    <div style={{margin: "0", width: "65px", display: pourcent >= 100 ? "block" : "none"}}*/}
-                            {/*         className="anchorTooltip uniquePokemonContainer"*/}
-                            {/*         data-tooltip-content="100% du pokédex complété">*/}
-                            {/*        <img style={{width: "100%"}}*/}
-                            {/*             src={"/images/star.png"}/>*/}
-                            {/*    </div>*/}
-                            {/*</div>*/}
-
-
-                            {/*<div style={{*/}
-                            {/*    display: "flex",*/}
-                            {/*    alignItems: "center",*/}
-                            {/*    marginBottom: "20px",*/}
-                            {/*    justifyContent: "center",*/}
-                            {/*    flexWrap: "wrap"*/}
-                            {/*}}>*/}
-
-                            {/*<div>*/}
-                            {/*        <div style={customStyles.extBar} className="fullProgressBar">*/}
-                            {/*            <div*/}
-                            {/*                style={{*/}
-                            {/*                    width: parseFloat(profil[0].xp / (profil[0].level * 500) * 100).toFixed(2) + "%",*/}
-                            {/*                    position: 'relative',*/}
-                            {/*                    background: '#120747',*/}
-                            {/*                    textWrap: 'nowrap',*/}
-                            {/*                    color: 'white',*/}
-                            {/*                    borderRadius: '50px 50px 50px 50px',*/}
-                            {/*                    height: '30px'*/}
-                            {/*                }}>*/}
-                            {/*            </div>*/}
-                            {/*            <div className={"pourcentLevel"}>*/}
-                            {/*                {profil[0].xp + " / " + profil[0].level * 500 + "(" + parseFloat(profil[0].xp / (profil[0].level * 500) * 100).toFixed(2) + "%)"}*/}
-                            {/*            </div>*/}
-                            {/*        </div>*/}
-                            {/*    </div>*/}
-                            {/*</div>*/}
-                            {/*<div className={"allPokemonTeam"}>*/}
-                            {/*    <button*/}
-                            {/*        style={{backgroundImage: profil[0].first_pokemon ? 'url(' + profil[0].first_pokemon + ')' : 'url(/images/random.png)'}}*/}
-                            {/*        onClick={handleTeam} value={"first_pokemon"}*/}
-                            {/*        className="anchorTooltip uniquePokemonContainerTeam">*/}
-                            {/*    </button>*/}
-                            {/*    <button*/}
-                            {/*        style={{backgroundImage: profil[0].second_pokemon ? 'url(' + profil[0].second_pokemon + ')' : 'url(/images/random.png)'}}*/}
-                            {/*        onClick={handleTeam} value={"second_pokemon"}*/}
-                            {/*        className="anchorTooltip uniquePokemonContainerTeam middlePokemonProfil">*/}
-                            {/*    </button>*/}
-                            {/*    <button*/}
-                            {/*        style={{backgroundImage: profil[0].third_pokemon ? 'url(' + profil[0].third_pokemon + ')' : 'url(/images/random.png)'}}*/}
-                            {/*        onClick={handleTeam} value={"third_pokemon"}*/}
-                            {/*        className="anchorTooltip uniquePokemonContainerTeam closePokemonProfil">*/}
-                            {/*    </button>*/}
-                            {/*    <button*/}
-                            {/*        style={{backgroundImage: profil[0].fourth_pokemon ? 'url(' + profil[0].fourth_pokemon + ')' : 'url(/images/random.png)'}}*/}
-                            {/*        onClick={handleTeam} value={"fourth_pokemon"}*/}
-                            {/*        className="anchorTooltip uniquePokemonContainerTeam closePokemonProfil">*/}
-                            {/*    </button>*/}
-                            {/*    <button*/}
-                            {/*        style={{backgroundImage: profil[0].fifth_pokemon ? 'url(' + profil[0].fifth_pokemon + ')' : 'url(/images/random.png)'}}*/}
-                            {/*        onClick={handleTeam} value={"fifth_pokemon"}*/}
-                            {/*        className="anchorTooltip uniquePokemonContainerTeam middlePokemonProfil">*/}
-                            {/*    </button>*/}
-                            {/*    <button*/}
-                            {/*        style={{backgroundImage: profil[0].sixth_pokemon ? 'url(' + profil[0].sixth_pokemon + ')' : 'url(/images/random.png)'}}*/}
-                            {/*        onClick={handleTeam} value={"sixth_pokemon"}*/}
-                            {/*        className="anchorTooltip uniquePokemonContainerTeam">*/}
-                            {/*    </button>*/}
-                            {/*</div>*/}
                         </div>
+                        {/*<div style={{display: "flex", width: "800px", justifyContent: "center", flexWrap: "wrap"}}>*/}
+
+                        {/*    <div style={{margin: "0", width: "65px", display: pourcent >= 10 ? "block" : "none"}}*/}
+                        {/*         className="anchorTooltip uniquePokemonContainer"*/}
+                        {/*         data-tooltip-content="10% du pokédex complété">*/}
+                        {/*        <img style={{width: "100%"}} src={"/images/star.png"}/>*/}
+                        {/*    </div>*/}
+                        {/*    <div style={{margin: "0", width: "65px", display: pourcent >= 20 ? "block" : "none"}}*/}
+                        {/*         className="anchorTooltip uniquePokemonContainer"*/}
+                        {/*         data-tooltip-content="20% du pokédex complété">*/}
+                        {/*        <img style={{width: "100%"}}*/}
+                        {/*             src={"/images/star.png"}/>*/}
+                        {/*    </div>*/}
+                        {/*    <div style={{margin: "0", width: "65px", display: pourcent >= 30 ? "block" : "none"}}*/}
+                        {/*         className="anchorTooltip uniquePokemonContainer"*/}
+                        {/*         data-tooltip-content="30% du pokédex complété">*/}
+                        {/*        <img style={{width: "100%"}}*/}
+                        {/*             src={"/images/star.png"}/>*/}
+                        {/*    </div>*/}
+                        {/*    <div style={{margin: "0", width: "65px", display: pourcent >= 40 ? "block" : "none"}}*/}
+                        {/*         className="anchorTooltip uniquePokemonContainer"*/}
+                        {/*         data-tooltip-content="40% du pokédex complété">*/}
+                        {/*        <img style={{width: "100%"}}*/}
+                        {/*             src={"/images/star.png"}/>*/}
+                        {/*    </div>*/}
+                        {/*    <div style={{margin: "0", width: "65px", display: pourcent >= 50 ? "block" : "none"}}*/}
+                        {/*         className="anchorTooltip uniquePokemonContainer"*/}
+                        {/*         data-tooltip-content="50% du pokédex complété">*/}
+                        {/*        <img style={{width: "100%"}}*/}
+                        {/*             src={"/images/star.png"}/>*/}
+                        {/*    </div>*/}
+                        {/*    <div style={{margin: "0", width: "65px", display: pourcent >= 60 ? "block" : "none"}}*/}
+                        {/*         className="anchorTooltip uniquePokemonContainer"*/}
+                        {/*         data-tooltip-content="60% du pokédex complété">*/}
+                        {/*        <img style={{width: "100%"}}*/}
+                        {/*             src={"/images/star.png"}/>*/}
+                        {/*    </div>*/}
+                        {/*    <div style={{margin: "0", width: "65px", display: pourcent >= 70 ? "block" : "none"}}*/}
+                        {/*         className="anchorTooltip uniquePokemonContainer"*/}
+                        {/*         data-tooltip-content="70% du pokédex complété">*/}
+                        {/*        <img style={{width: "100%"}}*/}
+                        {/*             src={"/images/star.png"}/>*/}
+                        {/*    </div>*/}
+                        {/*    <div style={{margin: "0", width: "65px", display: pourcent >= 80 ? "block" : "none"}}*/}
+                        {/*         className="anchorTooltip uniquePokemonContainer"*/}
+                        {/*         data-tooltip-content="80% du pokédex complété">*/}
+                        {/*        <img style={{width: "100%"}}*/}
+                        {/*             src={"/images/star.png"}/>*/}
+                        {/*    </div>*/}
+                        {/*    <div style={{margin: "0", width: "65px", display: pourcent >= 90 ? "block" : "none"}}*/}
+                        {/*         className="anchorTooltip uniquePokemonContainer"*/}
+                        {/*         data-tooltip-content="90% du pokédex complété">*/}
+                        {/*        <img style={{width: "100%"}}*/}
+                        {/*             src={"/images/star.png"}/>*/}
+                        {/*    </div>*/}
+                        {/*    <div style={{margin: "0", width: "65px", display: pourcent >= 100 ? "block" : "none"}}*/}
+                        {/*         className="anchorTooltip uniquePokemonContainer"*/}
+                        {/*         data-tooltip-content="100% du pokédex complété">*/}
+                        {/*        <img style={{width: "100%"}}*/}
+                        {/*             src={"/images/star.png"}/>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
+
+
+                        {/*<div style={{*/}
+                        {/*    display: "flex",*/}
+                        {/*    alignItems: "center",*/}
+                        {/*    marginBottom: "20px",*/}
+                        {/*    justifyContent: "center",*/}
+                        {/*    flexWrap: "wrap"*/}
+                        {/*}}>*/}
+
+                        {/*<div>*/}
+                        {/*        <div style={customStyles.extBar} className="fullProgressBar">*/}
+                        {/*            <div*/}
+                        {/*                style={{*/}
+                        {/*                    width: parseFloat(profil[0].xp / (profil[0].level * 500) * 100).toFixed(2) + "%",*/}
+                        {/*                    position: 'relative',*/}
+                        {/*                    background: '#120747',*/}
+                        {/*                    textWrap: 'nowrap',*/}
+                        {/*                    color: 'white',*/}
+                        {/*                    borderRadius: '50px 50px 50px 50px',*/}
+                        {/*                    height: '30px'*/}
+                        {/*                }}>*/}
+                        {/*            </div>*/}
+                        {/*            <div className={"pourcentLevel"}>*/}
+                        {/*                {profil[0].xp + " / " + profil[0].level * 500 + "(" + parseFloat(profil[0].xp / (profil[0].level * 500) * 100).toFixed(2) + "%)"}*/}
+                        {/*            </div>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
+                        {/*<div className={"allPokemonTeam"}>*/}
+                        {/*    <button*/}
+                        {/*        style={{backgroundImage: profil[0].first_pokemon ? 'url(' + profil[0].first_pokemon + ')' : 'url(/images/random.png)'}}*/}
+                        {/*        onClick={handleTeam} value={"first_pokemon"}*/}
+                        {/*        className="anchorTooltip uniquePokemonContainerTeam">*/}
+                        {/*    </button>*/}
+                        {/*    <button*/}
+                        {/*        style={{backgroundImage: profil[0].second_pokemon ? 'url(' + profil[0].second_pokemon + ')' : 'url(/images/random.png)'}}*/}
+                        {/*        onClick={handleTeam} value={"second_pokemon"}*/}
+                        {/*        className="anchorTooltip uniquePokemonContainerTeam middlePokemonProfil">*/}
+                        {/*    </button>*/}
+                        {/*    <button*/}
+                        {/*        style={{backgroundImage: profil[0].third_pokemon ? 'url(' + profil[0].third_pokemon + ')' : 'url(/images/random.png)'}}*/}
+                        {/*        onClick={handleTeam} value={"third_pokemon"}*/}
+                        {/*        className="anchorTooltip uniquePokemonContainerTeam closePokemonProfil">*/}
+                        {/*    </button>*/}
+                        {/*    <button*/}
+                        {/*        style={{backgroundImage: profil[0].fourth_pokemon ? 'url(' + profil[0].fourth_pokemon + ')' : 'url(/images/random.png)'}}*/}
+                        {/*        onClick={handleTeam} value={"fourth_pokemon"}*/}
+                        {/*        className="anchorTooltip uniquePokemonContainerTeam closePokemonProfil">*/}
+                        {/*    </button>*/}
+                        {/*    <button*/}
+                        {/*        style={{backgroundImage: profil[0].fifth_pokemon ? 'url(' + profil[0].fifth_pokemon + ')' : 'url(/images/random.png)'}}*/}
+                        {/*        onClick={handleTeam} value={"fifth_pokemon"}*/}
+                        {/*        className="anchorTooltip uniquePokemonContainerTeam middlePokemonProfil">*/}
+                        {/*    </button>*/}
+                        {/*    <button*/}
+                        {/*        style={{backgroundImage: profil[0].sixth_pokemon ? 'url(' + profil[0].sixth_pokemon + ')' : 'url(/images/random.png)'}}*/}
+                        {/*        onClick={handleTeam} value={"sixth_pokemon"}*/}
+                        {/*        className="anchorTooltip uniquePokemonContainerTeam">*/}
+                        {/*    </button>*/}
+                        {/*</div>*/}
                     </>
                 }
             </div>

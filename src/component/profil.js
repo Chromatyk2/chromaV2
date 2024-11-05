@@ -9,6 +9,12 @@ import {useParams} from "react-router-dom";
 import {Tooltip} from "react-tooltip";
 import OnStream from "./onStream";
 import SpawnPokemonToken from "./spawnPokemonToken";
+import Lv1 from "../lv1.png";
+import Lv2 from "../lv2.png";
+import Lv3 from "../lv3.png";
+import Lv4 from "../lv4.png";
+import Lv5 from "../lv5.png";
+import Lv6 from "../lv6.png";
 function Profil(props) {
     const pseudo = props.cookies.user.data[0].login;
     const [profil, setProfil] = useState(null);
@@ -280,6 +286,7 @@ function Profil(props) {
                                 </div>
                             </div>
                             <div style={{width: "120px"}}>
+                                <img style={{width: "100%"}} src={pourcent == 100 ? Lv6 : pourcent >= 80 Lv5 ? : pourcent >= 60 ? Lv4 : pourcent >= 40 ? Lv3 : pourcent >= 20 ? Lv2 : Lv1}/>
                             </div>
                             {/*<div style={{display: "flex", width: "800px", justifyContent: "center", flexWrap: "wrap"}}>*/}
 

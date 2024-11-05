@@ -228,7 +228,7 @@ function Profil(props) {
                         <OnStream/>
                         <p className={"pseudoProfil"}>{profil[0].pseudo}</p>
                         <div className={"profilVisuals"}>
-                            <div style={{width: "120px"}}>
+                            <div style={{width: "120px", display:"flex", margin:"auto"}}>
                                 {profil[0].pkmToken > 0 &&
                                     <button disabled={openTime} className={"openLeaderBoardButton"} onClick={openToken}
                                             style={{

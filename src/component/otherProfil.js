@@ -22,7 +22,7 @@ import Lv4c from "../lv4c.png";
 import Lv5c from "../lv5c.png";
 import Lv6c from "../lv6c.png";
 function Profil(props) {
-    const pseudo = props.cookies.user.data[0].login;
+    const { pseudo } = useParams()
     const [profil, setProfil] = useState(null);
     const [skins, setSkins] = useState(null);
     const [myTotalsCards, setMyTotalsCards] = useState(null);
@@ -253,7 +253,7 @@ function Profil(props) {
                                         <button className="anchorTooltip"
                                                 data-tooltip-content="Clique our capturer un pokemon"
                                                 disabled={openTime}
-                                                className={"openLeaderBoardButton"} onClick={openToken}
+                                                className={"openLeaderBoardButton"}
                                                 style={{
                                                     width: "120px",
                                                     backgroundSize: "80px",
@@ -279,7 +279,7 @@ function Profil(props) {
                                         </button>
                                     }
                                 </div>
-                                <div onClick={handleProfileImage} className="progress-container" data-value="100">
+                                <div className="progress-container" data-value="100">
                                     <svg className="progress-bar" id="svg" width="120" height="120"
                                          viewPort="0 0 100 100"
                                          version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -336,34 +336,34 @@ function Profil(props) {
                             <div className={"threePokemon"}>
                                 <button
                                     style={{backgroundImage: profil[0].first_pokemon ? 'url(' + profil[0].first_pokemon + ')' : 'url(/images/random.png)'}}
-                                    onClick={handleTeam} value={"first_pokemon"}
+                                    value={"first_pokemon"}
                                     className="anchorTooltip uniquePokemonContainerTeam">
                                 </button>
                                 <button
                                     style={{backgroundImage: profil[0].second_pokemon ? 'url(' + profil[0].second_pokemon + ')' : 'url(/images/random.png)'}}
-                                    onClick={handleTeam} value={"second_pokemon"}
+                                    value={"second_pokemon"}
                                     className="anchorTooltip uniquePokemonContainerTeam">
                                 </button>
                                 <button
                                     style={{backgroundImage: profil[0].third_pokemon ? 'url(' + profil[0].third_pokemon + ')' : 'url(/images/random.png)'}}
-                                    onClick={handleTeam} value={"third_pokemon"}
+                                    value={"third_pokemon"}
                                     className="anchorTooltip uniquePokemonContainerTeam">
                                 </button>
                             </div>
                             <div className={"threePokemon"}>
                                 <button
                                     style={{backgroundImage: profil[0].fourth_pokemon ? 'url(' + profil[0].fourth_pokemon + ')' : 'url(/images/random.png)'}}
-                                    onClick={handleTeam} value={"fourth_pokemon"}
+                                    value={"fourth_pokemon"}
                                     className="anchorTooltip uniquePokemonContainerTeam">
                                 </button>
                                 <button
                                     style={{backgroundImage: profil[0].fifth_pokemon ? 'url(' + profil[0].fifth_pokemon + ')' : 'url(/images/random.png)'}}
-                                    onClick={handleTeam} value={"fifth_pokemon"}
+                                    value={"fifth_pokemon"}
                                     className="anchorTooltip uniquePokemonContainerTeam">
                                 </button>
                                 <button
                                     style={{backgroundImage: profil[0].sixth_pokemon ? 'url(' + profil[0].sixth_pokemon + ')' : 'url(/images/random.png)'}}
-                                    onClick={handleTeam} value={"sixth_pokemon"}
+                                    value={"sixth_pokemon"}
                                     className="anchorTooltip uniquePokemonContainerTeam">
                                 </button>
                             </div>
@@ -388,51 +388,6 @@ function Profil(props) {
                     }
                 </div>
             </div>
-            <Modal isOpen={modalIsOpen} onRequestClose={closeModal} style={customStyles} contentLabel="Example Modal">
-                <p style={{textAlign: "center"}}>Choisis ton Skin</p>
-                {profil &&
-                    profil.length > 0 &&
-                    profil[0].box > 0 &&
-                    <button className={"openSkinBox"} onClick={openSkin}
-                            style={{backgroundImage: "url(/images/skinClose.png)"}}>
-                        <div className="infoPkm">
-                            <div className="infoNbBoxSkin">{profil[0].box}</div>
-                        </div>
-                    </button>
-                }
-                <div style={{
-                    overflow: "overlay",
-                    display: "flex",
-                    gap: "10px",
-                    flexFlow: "row",
-                    flexWrap: "wrap",
-                    justifyContent: "center"
-                }}>
-                    {skins &&
-                        skins.map((val, key) => {
-                            return (
-                                <button value={val.skin} style={{
-                                    backgroundPosition: "center",
-                                    backgroundRepeat: "no-repeat",
-                                    backgroundImage: "url(/images/Trainers/Trainer" + val.skin + ".png)",
-                                    border: "solid",
-                                    borderRadius: "25px",
-                                    padding: "20px",
-                                    width: "100px",
-                                    height: "100px"
-                                }} onClick={changeSkin}></button>
-                            )
-                        })
-                    }
-                < /div>
-            </Modal>
-            <Modal isOpen={modalTeamIsOpen} onRequestClose={closeModalTeam} style={customStyles}
-                   contentLabel="Example Modal">
-                <PokedexTeam list={list} change={handleState} pkmToUpdate={teamToHandle} cookies={props.cookies}/>
-            </Modal>
-            <Modal overlayClassName={"overlayModalToken"} className={"modalToken"} isOpen={modalIsOpenToken} onRequestClose={closeModalToken} contentLabel="Example Modal">
-                <SpawnPokemonToken  change={closeModalToken} pseudo={pseudo}/>
-            </Modal>
         </>
     )
 }

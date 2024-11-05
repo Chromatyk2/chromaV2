@@ -3692,7 +3692,7 @@ span.navbar-brand {
     color: white;
 }
 .ReactModal__Overlay.ReactModal__Overlay--after-open.overlayModalToken {
-    background-color: #101010;
+    background-color: rgba(0,0,0,0.8);
     height: 100vh;
     position: absolute;
     top: 0;

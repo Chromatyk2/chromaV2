@@ -61,9 +61,8 @@ function OtherProfil(props) {
         <>
             <div className={"contentContainer"}>
                 <div className={"profilContainer"}>
-                    {isLoad === false &&
+                    {
                         profil &&
-                        profil.length > 0 &&
                         <>
                             <OnStream/>
                             <p className={"pseudoProfil"}>{profil[0].pseudo}</p>
@@ -71,7 +70,7 @@ function OtherProfil(props) {
                                 <div style={{width: "120px", display: "flex", justifyContent: "center"}}>
                                     {profil[0].pkmToken > 0 ?
                                         <button className="anchorTooltip"
-                                                data-tooltip-content="Clique our capturer un pokemon" disabled={openTime}
+                                                data-tooltip-content="Clique our capturer un pokemon"
                                                 className={"openLeaderBoardButton"}
                                                 style={{
                                                     filter: "drop-shadow(0px 0px 15px white)",
@@ -83,7 +82,7 @@ function OtherProfil(props) {
                                             </div>
                                         </button>
                                         :
-                                        <button disabled={openTime} className={"openLeaderBoardButton"}
+                                        <button className={"openLeaderBoardButton"}
                                                 style={{
                                                     filter: "drop-shadow(0px 0px 15px white)",
                                                     backgroundImage: "url(/token.png)"

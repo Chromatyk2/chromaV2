@@ -75,8 +75,8 @@ function SpawnPokemonToken(props) {
                                                         Axios.post('/api/addXp',
                                                             {
                                                                 user: pseudo,
-                                                                win: 1000,
-                                                                wins: 1000
+                                                                win: 100,
+                                                                wins: 100
                                                             }
                                                         )
                                                             .then(function(response){
@@ -148,8 +148,8 @@ function SpawnPokemonToken(props) {
                                                                 Axios.post('/api/addXp',
                                                                     {
                                                                         user: pseudo,
-                                                                        win: 3000,
-                                                                        wins: 3000
+                                                                        win: 300,
+                                                                        wins: 300
                                                                     }
                                                                 )
                                                                     .then(function(response){
@@ -217,8 +217,8 @@ function SpawnPokemonToken(props) {
                                                         Axios.post('/api/addXp',
                                                             {
                                                                 user: pseudo,
-                                                                win: 200,
-                                                                wins: 200
+                                                                win: 20,
+                                                                wins: 20
                                                             }
                                                         )
                                                             .then(function(response){

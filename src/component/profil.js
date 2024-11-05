@@ -231,7 +231,7 @@ function Profil(props) {
                         <div className={"profilVisuals"}>
                             <div style={{width: "120px", display:"flex", margin:"auto"}}>
                                 {profil[0].pkmToken > 0 ?
-                                    <button disabled={openTime} className={"openLeaderBoardButton"} onClick={openToken}
+                                    <button  className="anchorTooltip" data-tooltip-content="Clique our capturer un pokemon" disabled={openTime} className={"openLeaderBoardButton"} onClick={openToken}
                                             style={{
                                                 filter: "drop-shadow(0px 0px 15px white)",
                                                 backgroundImage: "url(/token.png)"

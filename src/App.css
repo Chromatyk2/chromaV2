@@ -873,7 +873,6 @@ p.filterTitle {
 #root{
     min-height: 92vh;
     background: transparent;
-    position: absolute;
     width: 100%;
 }
 .labelStats {
@@ -5395,10 +5394,11 @@ button.navbar-toggler.collapsed {
 }
 .profilCards{
     display: flex;
+    flex-wrap: wrap;
     gap: 35px;
     justify-content: center;
     margin: 20px;
-    flex-wrap: wrap;
+    padding-bottom: 30px;
 }
 .progress-bar {
     transform: rotate(-90deg);

@@ -214,7 +214,7 @@ function Profil(props) {
     return (
         <>
         <div className={"contentContainer"}>
-            <div className={"profilContent"}>
+            <div className={"profilContainer"}>
                 {isLoad === false &&
                     profil &&
                     profil.length > 0 &&
@@ -408,6 +408,7 @@ function Profil(props) {
                     </>
                 }
             </div>
+        </div>
             <Modal isOpen={modalIsOpen} onRequestClose={closeModal} style={customStyles} contentLabel="Example Modal">
                 <p style={{textAlign: "center"}}>Choisis ton Skin</p>
                 {profil &&
@@ -444,8 +445,7 @@ function Profil(props) {
                             )
                         })
                     }
-            </div>
-        < /div>
+                < /div>
             </Modal>
             <Modal isOpen={modalTeamIsOpen} onRequestClose={closeModalTeam} style={customStyles}
                    contentLabel="Example Modal">

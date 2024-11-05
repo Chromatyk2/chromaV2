@@ -871,7 +871,7 @@ p.filterTitle {
   font-weight: bold;
 }
 #root{
-  min-height: 100vh;
+  min-height: 92vh;
   background: transparent;
     position: absolute;
     width: 100%;
@@ -2150,7 +2150,7 @@ a.linkOnAirOff {
     justify-content: center;
 }
 .contentContainer{
-    min-height: 100vh;
+    min-height: 92vh;
     padding-top: 67px;
     background: linear-gradient(140deg, rgba(18, 7, 71, 1) 0%, rgba(3, 80, 120, 1) 100%);
 }

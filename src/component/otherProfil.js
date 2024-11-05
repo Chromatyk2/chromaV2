@@ -146,7 +146,7 @@ function OtherProfil(props) {
                                 </div>
                                 <Tooltip style={{zIndex: "1"}} anchorSelect=".anchorTooltip"/>
                             </div>
-                            <p className={"pseudoProfil"}>Mon équipe</p>
+                            <p className={"pseudoProfil"}>Son équipe</p>
                             <div className={"threePokemon"}>
                                 <button
                                     style={{backgroundImage: profil[0].first_pokemon ? 'url(' + profil[0].first_pokemon + ')' : 'url(/images/random.png)'}}

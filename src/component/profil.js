@@ -229,7 +229,7 @@ function Profil(props) {
                         <OnStream/>
                         <p className={"pseudoProfil"}>{profil[0].pseudo}</p>
                         <div className={"profilVisuals"}>
-                            <div style={{width: "120px", display:"flex", margin:"auto"}}>
+                            <div style={{width: "120px", display:"flex", justifyContent:"center"}}>
                                 {profil[0].pkmToken > 0 ?
                                     <button  className="anchorTooltip" data-tooltip-content="Clique our capturer un pokemon" disabled={openTime} className={"openLeaderBoardButton"} onClick={openToken}
                                             style={{

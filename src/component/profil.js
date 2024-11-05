@@ -359,7 +359,7 @@ function Profil(props) {
                                     className="anchorTooltip uniquePokemonContainerTeam">
                                 </button>
                             </div>
-                            <p className={"pseudoProfil"}>Cartes TCG</p>
+                            <p style={{marginTop:"20px",marginBottom:"20px"}} className={"pseudoProfil"}>Dernier Booster</p>
                             <div className={"threePokemon"}>
                                 {myLastTenCards.map((val, key) => {
                                     return (

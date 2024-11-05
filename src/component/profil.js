@@ -131,7 +131,7 @@ function Profil(props) {
                 Axios.get("/api/getMyTotalCards/"+pseudo)
                     .then(function (response){
                         console.log(response.data);
-                        setPourcentCard(Math.round((response.data.length / 1025) * 100));
+                        setPourcentCard(Math.round((response.data[0].nbCard / 15937) * 100));
                         setMyTotalsCards(response.data)
                         Axios.get("/api/getMyLastTenCards/"+pseudo)
                             .then(function(response){
@@ -371,7 +371,7 @@ function Profil(props) {
                             <p style={{marginTop:"20px",marginBottom:"20px"}} className={"pseudoProfil"}>Dernier Booster</p>
                             <Tooltip style={{zIndex: "1"}} anchorSelect=".anchorTooltip"/>
                             <img className="anchorTooltip"
-                                data-tooltip-content={pourcent == 100 ? "100% du Cartodex Complété" : pourcent >= 80 ? "80% du Cartodex Complété" : pourcent >= 60 ? "60% du Cartodex Complété" : pourcent >= 40 ? "40% du Cartodex Complété" : pourcent >= 20 ? "20% du Cartodex Complété" : "Au moins 1 carte obtenue"} src={pourcent == 100 ? Lv6c : pourcent >= 80 ? Lv5c : pourcent >= 60 ? Lv4c : pourcent >= 40 ? Lv3c : pourcent >= 20 ? Lv2c : Lv1c} />
+                                data-tooltip-content={pourcentCard == 100 ? "100% du Cartodex Complété" : pourcentCard >= 80 ? "80% du Cartodex Complété" : pourcentCard >= 60 ? "60% du Cartodex Complété" : pourcentCard >= 40 ? "40% du Cartodex Complété" : pourcentCard >= 20 ? "20% du Cartodex Complété" : "Au moins 1 carte obtenue"} src={pourcentCard == 100 ? Lv6c : pourcentCard >= 80 ? Lv5c : pourcentCard >= 60 ? Lv4c : pourcentCard >= 40 ? Lv3c : pourcentCard >= 20 ? Lv2c : Lv1c} />
                             <div className={"profilCards"}>
                                 {myLastTenCards.map((val, key) => {
                                     return (

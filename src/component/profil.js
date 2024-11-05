@@ -364,7 +364,7 @@ function Profil(props) {
                                 {myLastTenCards.map((val, key) => {
                                     return (
                                         <img style={{filter:val.stade == 1 ? "drop-shadow(rgb(17, 208, 154) 0px 0px 5px) drop-shadow(rgb(17, 210, 154) 0px 0px 5px) drop-shadow(rgb(17, 208, 154) 0px 0px 5px)" : val.stade == 2 ? "drop-shadow(rgb(14, 208, 214) 0px 0px 3px) drop-shadow(rgb(14, 208, 214) 0px 0px 5px) drop-shadow(rgb(14, 208, 214) 0px 0px 5px)" : val.stade == 3 && "drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px)"}}
-                                        src={"https://images.pokemontcg.io/"+val.booster+"/"+val.number+"_hires.png"} />
+                                        src={"https://images.pokemontcg.io/"+val.booster+"/"+val.card.split("-").pop()+"_hires.png"} />
                                     )
                                 })
 

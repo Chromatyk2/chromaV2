@@ -267,7 +267,7 @@ function MyCardsSet(props) {
                                                             // If you need to, you can tweak the effect transition using the wrapper style.
                                                             style: {transitionDelay: "1s"},
                                                         }}
-                                                        src={"https://images.pokemontcg.io/"+val.set.id+"/"+val.card.split("-").pop()+"_hires.png"} />
+                                                        src={"https://images.pokemontcg.io/"+val.set.id+"/"+val.number+"_hires.png"} />
                                                     {/*<img className={"shadowBangerCard"} style={{width:"250px",filter:"brightness(1.2)"}} src={"https://images.pokemontcg.io/"+val.set.id+"/"+val.number+"_hires.png"}/>*/}
                                                 </div>
                                             </div>

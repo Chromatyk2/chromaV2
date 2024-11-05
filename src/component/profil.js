@@ -15,6 +15,12 @@ import Lv3 from "../lv3.png";
 import Lv4 from "../lv4.png";
 import Lv5 from "../lv5.png";
 import Lv6 from "../lv6.png";
+import Lv1c from "../lv1c.png";
+import Lv2c from "../lv2c.png";
+import Lv3c from "../lv3c.png";
+import Lv4c from "../lv4c.png";
+import Lv5c from "../lv5c.png";
+import Lv6c from "../lv6c.png";
 function Profil(props) {
     const pseudo = props.cookies.user.data[0].login;
     const [profil, setProfil] = useState(null);
@@ -26,6 +32,7 @@ function Profil(props) {
     const [teamToHandle, setTeamToHandle] = React.useState("");
     const [list,setList] = useState([]);
     const [pourcent, setPourcent] = useState();
+    const [pourcentCard, setPourcentCard] = useState();
     const [modalIsOpenToken, setIsOpenToken] = React.useState(false);
     const [openTime, setOpenTime] = React.useState(false);
     const [isLoad, setIsLoad] = React.useState(true);
@@ -123,6 +130,8 @@ function Profil(props) {
             .then(function (response){
                 Axios.get("/api/getMyTotalCards/"+pseudo)
                     .then(function (response){
+                        console.log(response.data);
+                        setPourcentCard(Math.round((response.data.length / 1025) * 100));
                         setMyTotalsCards(response.data)
                         Axios.get("/api/getMyLastTenCards/"+pseudo)
                             .then(function(response){
@@ -360,10 +369,11 @@ function Profil(props) {
                                 </button>
                             </div>
                             <p style={{marginTop:"20px",marginBottom:"20px"}} className={"pseudoProfil"}>Dernier Booster</p>
-                            <div className={"threePokemon"}>
+                            <img src={pourcent == 100 ? Lv6c : pourcent >= 80 ? Lv5c : pourcent >= 60 ? Lv4c : pourcent >= 40 ? Lv3c : pourcent >= 20 ? Lv2c : Lv1c} />
+                            <div className={"profilCards"}>
                                 {myLastTenCards.map((val, key) => {
                                     return (
-                                        <img style={{filter:val.stade == 1 ? "drop-shadow(rgb(17, 208, 154) 0px 0px 5px) drop-shadow(rgb(17, 210, 154) 0px 0px 5px) drop-shadow(rgb(17, 208, 154) 0px 0px 5px)" : val.stade == 2 ? "drop-shadow(rgb(14, 208, 214) 0px 0px 3px) drop-shadow(rgb(14, 208, 214) 0px 0px 5px) drop-shadow(rgb(14, 208, 214) 0px 0px 5px)" : val.stade == 3 && "drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px)"}}
+                                        <img className={profilCard} style={{filter:val.stade == 1 ? "drop-shadow(rgb(17, 208, 154) 0px 0px 5px) drop-shadow(rgb(17, 210, 154) 0px 0px 5px) drop-shadow(rgb(17, 208, 154) 0px 0px 5px)" : val.stade == 2 ? "drop-shadow(rgb(14, 208, 214) 0px 0px 3px) drop-shadow(rgb(14, 208, 214) 0px 0px 5px) drop-shadow(rgb(14, 208, 214) 0px 0px 5px)" : val.stade == 3 && "drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px)"}}
                                         src={"https://images.pokemontcg.io/"+val.booster+"/"+val.card.split("-").pop()+"_hires.png"} />
                                     )
                                 })

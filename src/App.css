@@ -5390,7 +5390,16 @@ button.navbar-toggler.collapsed {
     top: 0;
     height: 100px;
 }
-
+.profilCard:hover{
+    transform: scale(3);
+}
+.profilCards{
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    margin: 20px;
+    flex-wrap: wrap;
+}
 .progress-bar {
     transform: rotate(-90deg);
     z-index: 1;

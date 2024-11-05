@@ -264,7 +264,7 @@ function Profil(props) {
                                             stroke-width="13" strokeDashoffset="0"></circle>
                                     <circle className="progress-value" r="16" cx="30" cy="90" fill="transparent"
                                             stroke-width="13"
-                                            style={{strokeDashoffset: -parseFloat(profil[0].xp / (profil[0].level * 500) * 100).toFixed(2)}}
+                                            style={{strokeDashoffset: -parseFloat(profil[0].xp / (profil[0].level * 50) * 100).toFixed(2)}}
                                             stroke-dasharray="301.59"></circle>
                                 </svg>
                                 <span>
@@ -297,7 +297,7 @@ function Profil(props) {
                                     <p style={{fontSize: "13px", textAlign: "left"}}
                                        className={"levelProfil"}>N.{profil[0].level}</p>
                                     <p style={{fontSize: "13px", textAlign: "left"}}
-                                       className={"levelProfil"}>{profil[0].xp + " / " + profil[0].level * 500}</p>
+                                       className={"levelProfil"}>{profil[0].xp + " / " + profil[0].level * 50}</p>
                                 </div>
                             </div>
                             <div className="anchorTooltip"

@@ -292,11 +292,11 @@ function Profil(props) {
                                     </div>
                                 </button>
                             </span>
-                                <div style={{width: "120px", left: "95px", position: "absolute", top: "-5px"}}
+                                <div style={{width: "max-content", left: "-20px", position: "absolute", top: "85px"}}
                                      className={"xpText"}>
-                                    <p style={{fontSize: "13px", textAlign: "left"}}
+                                    <p style={{fontSize: "13px", textAlign: "left", width:"fit-content"}}
                                        className={"levelProfil"}>N.{profil[0].level}</p>
-                                    <p style={{fontSize: "13px", textAlign: "left"}}
+                                    <p style={{fontSize: "13px", textAlign: "left", width:"fit-content"}}
                                        className={"levelProfil"}>{profil[0].xp + " / " + profil[0].level * 50}</p>
                                 </div>
                             </div>
@@ -318,24 +318,24 @@ function Profil(props) {
                             <button
                                 style={{backgroundImage: profil[0].second_pokemon ? 'url(' + profil[0].second_pokemon + ')' : 'url(/images/random.png)'}}
                                 onClick={handleTeam} value={"second_pokemon"}
-                                className="anchorTooltip uniquePokemonContainerTeam middlePokemonProfil">
+                                className="anchorTooltip uniquePokemonContainerTeam">
                             </button>
                             <button
                                 style={{backgroundImage: profil[0].third_pokemon ? 'url(' + profil[0].third_pokemon + ')' : 'url(/images/random.png)'}}
                                 onClick={handleTeam} value={"third_pokemon"}
-                                className="anchorTooltip uniquePokemonContainerTeam closePokemonProfil">
+                                className="anchorTooltip uniquePokemonContainerTeam">
                             </button>
                         </div>
                         <div className={"threePokemon"}>
                             <button
                                 style={{backgroundImage: profil[0].fourth_pokemon ? 'url(' + profil[0].fourth_pokemon + ')' : 'url(/images/random.png)'}}
                                 onClick={handleTeam} value={"fourth_pokemon"}
-                                className="anchorTooltip uniquePokemonContainerTeam closePokemonProfil">
+                                className="anchorTooltip uniquePokemonContainerTeam">
                             </button>
                             <button
                                 style={{backgroundImage: profil[0].fifth_pokemon ? 'url(' + profil[0].fifth_pokemon + ')' : 'url(/images/random.png)'}}
                                 onClick={handleTeam} value={"fifth_pokemon"}
-                                className="anchorTooltip uniquePokemonContainerTeam middlePokemonProfil">
+                                className="anchorTooltip uniquePokemonContainerTeam">
                             </button>
                             <button
                                 style={{backgroundImage: profil[0].sixth_pokemon ? 'url(' + profil[0].sixth_pokemon + ')' : 'url(/images/random.png)'}}

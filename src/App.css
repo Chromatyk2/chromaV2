@@ -272,13 +272,14 @@ font-size: 32px;
 margin-top: 50px;
 }
 .socialContainer {
-display: flex;
-flex-flow: row;
-gap: 20px;
-justify-content: center;
-align-items: center;
-margin-top: 3%;
-padding-bottom: 50px;
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 3%;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
 }
 .loginButton{
 display: flex;
@@ -4290,19 +4291,6 @@ span.navbar-brand {
     a.linkOnAirOff {
         display: none;
     }
-    .profilVisuals {
-        align-items: center;
-        background: rgba(0, 0, 0, .5);
-        border-radius: 50px;
-        display: flex;
-        flex-flow: row;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-        margin: auto;
-        padding: 15px;
-        width: 100%;
-    }
     button.anchorTooltip.uniquePokemonContainerTeam {
         width: 100px;
         height: 100px;
@@ -4389,18 +4377,8 @@ span.navbar-brand {
     }
 }
 @media screen and (max-width: 379px) {
-    .profilVisuals {
-        align-items: center;
-        background: rgba(0, 0, 0, .5);
-        border-radius: 50px;
-        display: flex;
-        flex-flow: row;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-        margin: auto;
-        padding: 15px;
-        width: 100%;
+    a.linkOnAirOff {
+        display: none;
     }
     button.anchorTooltip.uniquePokemonContainerTeam {
         width: 100px;

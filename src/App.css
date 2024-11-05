@@ -3761,8 +3761,11 @@ span.navbar-brand {
     flex-flow: row;
     flex-wrap: wrap;
     gap: 0;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
+    padding: 10px;
+    border-bottom: solid black 1px;
+    box-shadow: 0px 6px 5px black;
 }
 .infoNbBox{
     background-color: #fff;

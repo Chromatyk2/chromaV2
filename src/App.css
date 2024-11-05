@@ -3756,15 +3756,13 @@ span.navbar-brand {
 }
 .profilVisuals {
     align-items: end;
+    border-radius: 50px;
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
     gap: 0;
-    justify-content: center;
-    width: fit-content;
-    margin: auto;
-    padding: 0 50px 0 50px;
-    border-radius: 50px;
+    justify-content: space-between;
+    width: 100%;
 }
 .infoNbBox{
     background-color: #fff;
@@ -3809,6 +3807,11 @@ span.navbar-brand {
 }
 .openSkinBox:hover{
     background-image: url('../public/images/skinOpen.png')!important;
+}
+.profilContainer{
+    max-width: 800px;
+    display: block;
+    margin: auto;
 }
 .profilPicture{
     width: 400px;

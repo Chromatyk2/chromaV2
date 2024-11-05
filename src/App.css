@@ -5400,6 +5400,19 @@ button.navbar-toggler.collapsed {
     margin: 20px;
     padding-bottom: 50px;
 }
+.profilVisualsCard{
+    align-items: end;
+    border-top: 1px solid #000;
+    border-radius: 50px;
+    box-shadow: 0 6px 5px #000;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    gap: 0;
+    justify-content: space-around;
+    padding: 10px;
+    width: 100%;
+}
 .progress-bar {
     transform: rotate(-90deg);
     z-index: 1;

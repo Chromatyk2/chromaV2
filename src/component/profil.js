@@ -121,12 +121,12 @@ function Profil(props) {
             .then(function(response){
                 setProfil(response.data);
                 setIsLoad(false)
-                    Axios
-                        .get("/api/getByUser/"+pseudo)
-                        .then(function(response){
-                            setList(response.data);
-                            setPourcent(Math.round((response.data.length / 1025) * 100));
-                        })
+                Axios
+                    .get("/api/getByUser/"+pseudo)
+                    .then(function(response){
+                        setList(response.data);
+                        setPourcent(Math.round((response.data.length / 1025) * 100));
+                    })
             })
     }, [])
     useEffect(() => {
@@ -137,16 +137,16 @@ function Profil(props) {
             })
     }, [setIsOpen])
 
-        const customStyles = {
-            extBar: {
-                backgroundColor: '#00368a',
-                position: 'relative',
-                zIndex: '1',
-                borderRadius: '50px',
-                height:'30px',
-                width:'300px'
-            }
-        };
+    const customStyles = {
+        extBar: {
+            backgroundColor: '#00368a',
+            position: 'relative',
+            zIndex: '1',
+            borderRadius: '50px',
+            height:'30px',
+            width:'300px'
+        }
+    };
     function handleProfileImage() {
         setIsOpen(true);
     }
@@ -169,14 +169,14 @@ function Profil(props) {
                 skin:e.target.value
             }
         )
-        .then(function(response){
-            Axios
-                .get("/api/getProfil/"+pseudo)
-                .then(function(response){
-                    setProfil(response.data);
-                    setIsOpen(false);
-                })
-        })
+            .then(function(response){
+                Axios
+                    .get("/api/getProfil/"+pseudo)
+                    .then(function(response){
+                        setProfil(response.data);
+                        setIsOpen(false);
+                    })
+            })
     }
     function openSkin(e) {
         if(profil[0].box - 1 > -1){
@@ -215,61 +215,62 @@ function Profil(props) {
                     .then(function(response){
                         setSkins(response.data);
                         setIsOpenTeam(false);
+                        setIsOpen(false);
                     })
             })
     }
     return (
         <>
-        <div className={"contentContainer"}>
-            <div className={"profilContainer"}>
-                {isLoad === false &&
-                    profil &&
-                    profil.length > 0 &&
-                    <>
-                        <OnStream/>
-                        <p className={"pseudoProfil"}>{profil[0].pseudo}</p>
-                        <div className={"profilVisuals"}>
-                            <div style={{width: "120px"}}>
-                                {profil[0].pkmToken > 0 ?
-                                    <button className="anchorTooltip"
-                                            data-tooltip-content="Clique our capturer un pokemon" disabled={openTime}
-                                            className={"openLeaderBoardButton"} onClick={openToken}
-                                            style={{
-                                                width: "120px",
-                                                backgroundSize: "80px",
-                                                filter: "drop-shadow(white 0 0 4px)",
-                                                backgroundImage: "url(/token.png)"
-                                            }}>
-                                        <div className="infoPkm">
-                                            <div
-                                                className="infoNbPkmToken">{profil[0].pkmToken != 0 ? profil[0].pkmToken : 0}</div>
-                                        </div>
-                                    </button>
-                                    :
-                                    <button disabled={openTime} className={"openLeaderBoardButton"}
-                                            style={{
-                                                filter: "drop-shadow(0px 0px 15px white)",
-                                                backgroundImage: "url(/token.png)"
-                                            }}>
-                                        <div className="infoPkm">
-                                            <div
-                                                className="infoNbPkmToken">0
+            <div className={"contentContainer"}>
+                <div className={"profilContainer"}>
+                    {isLoad === false &&
+                        profil &&
+                        profil.length > 0 &&
+                        <>
+                            <OnStream/>
+                            <p className={"pseudoProfil"}>{profil[0].pseudo}</p>
+                            <div className={"profilVisuals"}>
+                                <div style={{width: "120px"}}>
+                                    {profil[0].pkmToken > 0 ?
+                                        <button className="anchorTooltip"
+                                                data-tooltip-content="Clique our capturer un pokemon" disabled={openTime}
+                                                className={"openLeaderBoardButton"} onClick={openToken}
+                                                style={{
+                                                    width: "120px",
+                                                    backgroundSize: "80px",
+                                                    filter: "drop-shadow(white 0 0 4px)",
+                                                    backgroundImage: "url(/token.png)"
+                                                }}>
+                                            <div className="infoPkm">
+                                                <div
+                                                    className="infoNbPkmToken">{profil[0].pkmToken != 0 ? profil[0].pkmToken : 0}</div>
                                             </div>
-                                        </div>
-                                    </button>
-                                }
-                            </div>
-                            <div onClick={handleProfileImage} className="progress-container" data-value="100">
-                                <svg className="progress-bar" id="svg" width="120" height="120" viewPort="0 0 100 100"
-                                     version="1.1" xmlns="http://www.w3.org/2000/svg">
-                                    <circle className="progress-meter" r="16" cx="30" cy="90" fill="transparent"
-                                            stroke-width="13" strokeDashoffset="0"></circle>
-                                    <circle className="progress-value" r="16" cx="30" cy="90" fill="transparent"
-                                            stroke-width="13"
-                                            style={{strokeDashoffset: -parseFloat(profil[0].xp / (profil[0].level * 50) * 100).toFixed(2)}}
-                                            stroke-dasharray="301.59"></circle>
-                                </svg>
-                                <span>
+                                        </button>
+                                        :
+                                        <button disabled={openTime} className={"openLeaderBoardButton"}
+                                                style={{
+                                                    filter: "drop-shadow(0px 0px 15px white)",
+                                                    backgroundImage: "url(/token.png)"
+                                                }}>
+                                            <div className="infoPkm">
+                                                <div
+                                                    className="infoNbPkmToken">0
+                                                </div>
+                                            </div>
+                                        </button>
+                                    }
+                                </div>
+                                <div onClick={handleProfileImage} className="progress-container" data-value="100">
+                                    <svg className="progress-bar" id="svg" width="120" height="120" viewPort="0 0 100 100"
+                                         version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                        <circle className="progress-meter" r="16" cx="30" cy="90" fill="transparent"
+                                                stroke-width="13" strokeDashoffset="0"></circle>
+                                        <circle className="progress-value" r="16" cx="30" cy="90" fill="transparent"
+                                                stroke-width="13"
+                                                style={{strokeDashoffset: -parseFloat(profil[0].xp / (profil[0].level * 50) * 100).toFixed(2)}}
+                                                stroke-dasharray="301.59"></circle>
+                                    </svg>
+                                    <span>
                                 <button style={{
                                     width: "100px",
                                     display: "block",
@@ -294,61 +295,61 @@ function Profil(props) {
                                     </div>
                                 </button>
                             </span>
-                                <div style={{width: "max-content", left: "-20px", position: "absolute", top: "85px"}}
-                                     className={"xpText"}>
-                                    <p style={{fontSize: "13px", textAlign: "left", width:"fit-content"}}
-                                       className={"levelProfil"}>N.{profil[0].level}</p>
-                                    <p style={{fontSize: "13px", textAlign: "left", width:"fit-content"}}
-                                       className={"levelProfil"}>{profil[0].xp + " / " + profil[0].level * 50}</p>
+                                    <div style={{width: "max-content", left: "-20px", position: "absolute", top: "85px"}}
+                                         className={"xpText"}>
+                                        <p style={{fontSize: "13px", textAlign: "left", width:"fit-content"}}
+                                           className={"levelProfil"}>N.{profil[0].level}</p>
+                                        <p style={{fontSize: "13px", textAlign: "left", width:"fit-content"}}
+                                           className={"levelProfil"}>{profil[0].xp + " / " + profil[0].level * 50}</p>
+                                    </div>
                                 </div>
+                                <div className="anchorTooltip"
+                                     data-tooltip-content={pourcent == 100 ? "100% du Pokedex Complété" : pourcent >= 80 ? "80% du Pokedex Complété" : pourcent >= 60 ? "60% du Pokedex Complété" : pourcent >= 40 ? "40% du Pokedex Complété" : pourcent >= 20 ? "20% du Pokedex Complété" : "Au moins 1 Pokémon capturé"}
+                                     style={{width: "120px", height: "95px"}}>
+                                    <img style={{width: "60px"}}
+                                         src={pourcent == 100 ? Lv6 : pourcent >= 80 ? Lv5 : pourcent >= 60 ? Lv4 : pourcent >= 40 ? Lv3 : pourcent >= 20 ? Lv2 : Lv1}/>
+                                </div>
+                                <Tooltip style={{zIndex: "1"}} anchorSelect=".anchorTooltip"/>
                             </div>
-                            <div className="anchorTooltip"
-                                 data-tooltip-content={pourcent == 100 ? "100% du Pokedex Complété" : pourcent >= 80 ? "80% du Pokedex Complété" : pourcent >= 60 ? "60% du Pokedex Complété" : pourcent >= 40 ? "40% du Pokedex Complété" : pourcent >= 20 ? "20% du Pokedex Complété" : "Au moins 1 Pokémon capturé"}
-                                 style={{width: "120px", height: "95px"}}>
-                                <img style={{width: "60px"}}
-                                     src={pourcent == 100 ? Lv6 : pourcent >= 80 ? Lv5 : pourcent >= 60 ? Lv4 : pourcent >= 40 ? Lv3 : pourcent >= 20 ? Lv2 : Lv1}/>
+                            <p className={"pseudoProfil"}>Mon équipe</p>
+                            <div className={"threePokemon"}>
+                                <button
+                                    style={{backgroundImage: profil[0].first_pokemon ? 'url(' + profil[0].first_pokemon + ')' : 'url(/images/random.png)'}}
+                                    onClick={handleTeam} value={"first_pokemon"}
+                                    className="anchorTooltip uniquePokemonContainerTeam">
+                                </button>
+                                <button
+                                    style={{backgroundImage: profil[0].second_pokemon ? 'url(' + profil[0].second_pokemon + ')' : 'url(/images/random.png)'}}
+                                    onClick={handleTeam} value={"second_pokemon"}
+                                    className="anchorTooltip uniquePokemonContainerTeam">
+                                </button>
+                                <button
+                                    style={{backgroundImage: profil[0].third_pokemon ? 'url(' + profil[0].third_pokemon + ')' : 'url(/images/random.png)'}}
+                                    onClick={handleTeam} value={"third_pokemon"}
+                                    className="anchorTooltip uniquePokemonContainerTeam">
+                                </button>
                             </div>
-                            <Tooltip style={{zIndex: "1"}} anchorSelect=".anchorTooltip"/>
-                        </div>
-                        <p className={"pseudoProfil"}>Mon équipe</p>
-                        <div className={"threePokemon"}>
-                            <button
-                                style={{backgroundImage: profil[0].first_pokemon ? 'url(' + profil[0].first_pokemon + ')' : 'url(/images/random.png)'}}
-                                onClick={handleTeam} value={"first_pokemon"}
-                                className="anchorTooltip uniquePokemonContainerTeam">
-                            </button>
-                            <button
-                                style={{backgroundImage: profil[0].second_pokemon ? 'url(' + profil[0].second_pokemon + ')' : 'url(/images/random.png)'}}
-                                onClick={handleTeam} value={"second_pokemon"}
-                                className="anchorTooltip uniquePokemonContainerTeam">
-                            </button>
-                            <button
-                                style={{backgroundImage: profil[0].third_pokemon ? 'url(' + profil[0].third_pokemon + ')' : 'url(/images/random.png)'}}
-                                onClick={handleTeam} value={"third_pokemon"}
-                                className="anchorTooltip uniquePokemonContainerTeam">
-                            </button>
-                        </div>
-                        <div className={"threePokemon"}>
-                            <button
-                                style={{backgroundImage: profil[0].fourth_pokemon ? 'url(' + profil[0].fourth_pokemon + ')' : 'url(/images/random.png)'}}
-                                onClick={handleTeam} value={"fourth_pokemon"}
-                                className="anchorTooltip uniquePokemonContainerTeam">
-                            </button>
-                            <button
-                                style={{backgroundImage: profil[0].fifth_pokemon ? 'url(' + profil[0].fifth_pokemon + ')' : 'url(/images/random.png)'}}
-                                onClick={handleTeam} value={"fifth_pokemon"}
-                                className="anchorTooltip uniquePokemonContainerTeam">
-                            </button>
-                            <button
-                                style={{backgroundImage: profil[0].sixth_pokemon ? 'url(' + profil[0].sixth_pokemon + ')' : 'url(/images/random.png)'}}
-                                onClick={handleTeam} value={"sixth_pokemon"}
-                                className="anchorTooltip uniquePokemonContainerTeam">
-                            </button>
-                        </div>
-                    </>
-                }
+                            <div className={"threePokemon"}>
+                                <button
+                                    style={{backgroundImage: profil[0].fourth_pokemon ? 'url(' + profil[0].fourth_pokemon + ')' : 'url(/images/random.png)'}}
+                                    onClick={handleTeam} value={"fourth_pokemon"}
+                                    className="anchorTooltip uniquePokemonContainerTeam">
+                                </button>
+                                <button
+                                    style={{backgroundImage: profil[0].fifth_pokemon ? 'url(' + profil[0].fifth_pokemon + ')' : 'url(/images/random.png)'}}
+                                    onClick={handleTeam} value={"fifth_pokemon"}
+                                    className="anchorTooltip uniquePokemonContainerTeam">
+                                </button>
+                                <button
+                                    style={{backgroundImage: profil[0].sixth_pokemon ? 'url(' + profil[0].sixth_pokemon + ')' : 'url(/images/random.png)'}}
+                                    onClick={handleTeam} value={"sixth_pokemon"}
+                                    className="anchorTooltip uniquePokemonContainerTeam">
+                                </button>
+                            </div>
+                        </>
+                    }
+                </div>
             </div>
-        </div>
             <Modal isOpen={modalIsOpen} onRequestClose={closeModal} style={customStyles} contentLabel="Example Modal">
                 <p style={{textAlign: "center"}}>Choisis ton Skin</p>
                 {profil &&
@@ -392,7 +393,7 @@ function Profil(props) {
                 <PokedexTeam list={list} change={handleState} pkmToUpdate={teamToHandle} cookies={props.cookies}/>
             </Modal>
             <Modal overlayClassName={"overlayModalToken"} className={"modalToken"} isOpen={modalIsOpenToken} onRequestClose={closeModalToken} contentLabel="Example Modal">
-                <SpawnPokemonToken pseudo={pseudo}/>
+                <SpawnPokemonToken  change={closeModalToken} pseudo={pseudo}/>
             </Modal>
         </>
     )

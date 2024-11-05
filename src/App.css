@@ -990,16 +990,14 @@ p.filterTitle {
     top: 100px;
 }
 .openLeaderBoardButton{
-    background-color: initial;
     background-position: 50%;
     background-repeat: no-repeat;
+    background-color: initial;
     background-size: contain;
     border: none;
     border-radius: 25px;
     display: block;
-    height: 100px;
-    margin: 20px;
-    padding: 20px;
+    height: 125px;
     width: 60px;
 }
 .uniquePokemonContainer {
@@ -4226,11 +4224,13 @@ span.navbar-brand {
     font-size: 13px;
     font-weight: 700;
     height: 17px;
-    left: -30px;
+    left: 0px;
     padding: 0 10px;
     position: absolute;
     text-align: center;
-    top: 60px;
+    top: 70px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 .rainbow_text_animated_token {

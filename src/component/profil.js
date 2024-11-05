@@ -285,8 +285,8 @@ function Profil(props) {
                                        className={"levelProfil"}>{profil[0].xp + " / " + profil[0].level * 500}</p>
                                 </div>
                             </div>
-                            <div style={{width: "120px"}}>
-                                <img style={{width: "100%"}} src={pourcent == 100 ? Lv6 : pourcent >= 80 ? Lv5  : pourcent >= 60 ? Lv4 : pourcent >= 40 ? Lv3 : pourcent >= 20 ? Lv2: Lv1}/>
+                            <div style={{width: "120px", height:"100px"}}>
+                                <img style={{width: "60px"}} src={pourcent == 100 ? Lv6 : pourcent >= 80 ? Lv5  : pourcent >= 60 ? Lv4 : pourcent >= 40 ? Lv3 : pourcent >= 20 ? Lv2: Lv1}/>
                             </div>
                             {/*<div style={{display: "flex", width: "800px", justifyContent: "center", flexWrap: "wrap"}}>*/}
 

@@ -128,19 +128,18 @@ function Profil(props) {
         Axios
             .get("/api/getProfil/"+pseudo)
             .then(function (response){
+                setProfil(response.data);
                 Axios.get("/api/getMyTotalCards/"+pseudo)
                     .then(function (response){
-                        console.log(response.data);
                         setPourcentCard(Math.round((response.data[0].nbCard / 15937) * 100));
                         setMyTotalsCards(response.data)
                         Axios.get("/api/getMyLastTenCards/"+pseudo)
                             .then(function(response){
                                 setMyLastTenCards(response.data)
-                                setProfil(response.data);
-                                setIsLoad(false)
                                 Axios
                                     .get("/api/getByUser/"+pseudo)
                                     .then(function(response){
+                                        setIsLoad(false)
                                         setList(response.data);
                                         setPourcent(Math.round((response.data.length / 1025) * 100));
                                     })

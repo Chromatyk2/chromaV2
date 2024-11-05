@@ -217,6 +217,7 @@ function Profil(props) {
                     })
             })
     }
+    console.log(pourcent)
     return (
         <>
         <div className={"contentContainer"}>
@@ -285,9 +286,10 @@ function Profil(props) {
                                        className={"levelProfil"}>{profil[0].xp + " / " + profil[0].level * 500}</p>
                                 </div>
                             </div>
-                            <div style={{width: "120px", height:"100px"}}>
+                            <div className="anchorTooltip" data-tooltip-content={pourcent == 100 ? "100% du Pokedex Complété" : pourcent >= 80 ? "80% du Pokedex Complété"  : pourcent >= 60 ? "60% du Pokedex Complété" : pourcent >= 40 ? "40% du Pokedex Complété" : pourcent >= 20 ? "20% du Pokedex Complété": "Au moins 1 Pokémon capturé"} style={{width: "120px", height:"100px"}}>
                                 <img style={{width: "60px"}} src={pourcent == 100 ? Lv6 : pourcent >= 80 ? Lv5  : pourcent >= 60 ? Lv4 : pourcent >= 40 ? Lv3 : pourcent >= 20 ? Lv2: Lv1}/>
                             </div>
+                            <Tooltip style={{zIndex: "1"}} anchorSelect=".anchorTooltip"/>
                             {/*<div style={{display: "flex", width: "800px", justifyContent: "center", flexWrap: "wrap"}}>*/}
 
                             {/*    <div style={{margin: "0", width: "65px", display: pourcent >= 10 ? "block" : "none"}}*/}
@@ -351,7 +353,7 @@ function Profil(props) {
                             {/*    </div>*/}
                             {/*</div>*/}
 
-                            {/*<Tooltip style={{zIndex: "1"}} anchorSelect=".anchorTooltip"/>*/}
+
                             {/*<div style={{*/}
                             {/*    display: "flex",*/}
                             {/*    alignItems: "center",*/}

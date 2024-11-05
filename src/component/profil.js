@@ -369,7 +369,7 @@ function Profil(props) {
                             </div>
                             <p style={{marginTop:"20px",marginBottom:"20px"}} className={"pseudoProfil"}>Dernier Booster</p>
                             <Tooltip style={{zIndex: "1"}} anchorSelect=".anchorTooltip"/>
-                            <img className="anchorTooltip"
+                            <img style={{marginBottom:"35px"}} className="anchorTooltip"
                                 data-tooltip-content={pourcentCard == 100 ? "100% du Cartodex Complété" : pourcentCard >= 80 ? "80% du Cartodex Complété" : pourcentCard >= 60 ? "60% du Cartodex Complété" : pourcentCard >= 40 ? "40% du Cartodex Complété" : pourcentCard >= 20 ? "20% du Cartodex Complété" : "Au moins 1 carte obtenue"} src={pourcentCard == 100 ? Lv6c : pourcentCard >= 80 ? Lv5c : pourcentCard >= 60 ? Lv4c : pourcentCard >= 40 ? Lv3c : pourcentCard >= 20 ? Lv2c : Lv1c} />
                             <div className={"profilCards"}>
                                 {myLastTenCards.map((val, key) => {

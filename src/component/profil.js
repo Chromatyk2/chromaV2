@@ -112,6 +112,7 @@ function Profil(props) {
             })
     }
     function closeModalToken() {
+        Axios.get("/api/getProfil/"+pseudo)
         setIsOpenToken(false);
     }
     useEffect(() => {

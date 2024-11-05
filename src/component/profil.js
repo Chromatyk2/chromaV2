@@ -230,7 +230,7 @@ function Profil(props) {
                         <p className={"pseudoProfil"}>{profil[0].pseudo}</p>
                         <div className={"profilVisuals"}>
                             <div style={{width: "120px", display:"flex", margin:"auto"}}>
-                                {profil[0].pkmToken > 0 &&
+                                {profil[0].pkmToken > 0 ?
                                     <button disabled={openTime} className={"openLeaderBoardButton"} onClick={openToken}
                                             style={{
                                                 filter: "drop-shadow(0px 0px 15px white)",
@@ -239,6 +239,17 @@ function Profil(props) {
                                         <div className="infoPkm">
                                             <div
                                                 className="infoNbPkmToken">{profil[0].pkmToken != 0 ? profil[0].pkmToken : 0}</div>
+                                        </div>
+                                    </button>
+                                    :
+                                    <button disabled={openTime} className={"openLeaderBoardButton"}
+                                            style={{
+                                                filter: "drop-shadow(0px 0px 15px white)",
+                                                backgroundImage: "url(/token.png)"
+                                            }}>
+                                        <div className="infoPkm">
+                                            <div
+                                                className="infoNbPkmToken">0</div>
                                         </div>
                                     </button>
                                 }

@@ -2136,7 +2136,7 @@ a.linkOnAirOff {
     padding: 10px;
     background: gray;
     margin-top: 0px;
-    position: absolute;
+    position: fixed;
     bottom:30px;
     left:30px;
 }

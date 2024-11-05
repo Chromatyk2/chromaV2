@@ -7,6 +7,14 @@ import Modal from 'react-modal';
 import PokedexTeam from "./pokedexTeam";
 import {useParams} from "react-router-dom";
 import {Tooltip} from "react-tooltip";
+import OnStream from "./onStream";
+import SpawnPokemonToken from "./spawnPokemonToken";
+import Lv1 from "../lv1.png";
+import Lv2 from "../lv2.png";
+import Lv3 from "../lv3.png";
+import Lv4 from "../lv4.png";
+import Lv5 from "../lv5.png";
+import Lv6 from "../lv6.png";
 function OtherProfil(props) {
     const [profil, setProfil] = useState(null);
     const [skins, setSkins] = useState(null);
@@ -50,139 +58,134 @@ function OtherProfil(props) {
         }
     };
     return (
-
         <>
-            {profil &&
-                <div className={"contentContainer"}>
-                    <div className={"profilVisualsOther"}>
-
-
-                        <div style={{display: "flex", width: "800px", justifyContent: "flex-start"}}>
-
-                            <div style={{margin: "0", width: "10%", display: pourcent >= 10 ? "block" : "none"}}
-                                 className="anchorTooltip uniquePokemonContainer"
-                                 data-tooltip-content="10% du pokédex complété">
-                                <img style={{width: "100%"}} src={"/images/star.png"}/>
+            <div className={"contentContainer"}>
+                <div className={"profilContainer"}>
+                    {isLoad === false &&
+                        profil &&
+                        profil.length > 0 &&
+                        <>
+                            <OnStream/>
+                            <p className={"pseudoProfil"}>{profil[0].pseudo}</p>
+                            <div className={"profilVisuals"}>
+                                <div style={{width: "120px", display: "flex", justifyContent: "center"}}>
+                                    {profil[0].pkmToken > 0 ?
+                                        <button className="anchorTooltip"
+                                                data-tooltip-content="Clique our capturer un pokemon" disabled={openTime}
+                                                className={"openLeaderBoardButton"}
+                                                style={{
+                                                    filter: "drop-shadow(0px 0px 15px white)",
+                                                    backgroundImage: "url(/token.png)"
+                                                }}>
+                                            <div className="infoPkm">
+                                                <div
+                                                    className="infoNbPkmToken">{profil[0].pkmToken != 0 ? profil[0].pkmToken : 0}</div>
+                                            </div>
+                                        </button>
+                                        :
+                                        <button disabled={openTime} className={"openLeaderBoardButton"}
+                                                style={{
+                                                    filter: "drop-shadow(0px 0px 15px white)",
+                                                    backgroundImage: "url(/token.png)"
+                                                }}>
+                                            <div className="infoPkm">
+                                                <div
+                                                    className="infoNbPkmToken">0
+                                                </div>
+                                            </div>
+                                        </button>
+                                    }
+                                </div>
+                                <div className="progress-container" data-value="100">
+                                    <svg className="progress-bar" id="svg" width="120" height="120" viewPort="0 0 100 100"
+                                         version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                        <circle className="progress-meter" r="16" cx="30" cy="90" fill="transparent"
+                                                stroke-width="13" strokeDashoffset="0"></circle>
+                                        <circle className="progress-value" r="16" cx="30" cy="90" fill="transparent"
+                                                stroke-width="13"
+                                                style={{strokeDashoffset: -parseFloat(profil[0].xp / (profil[0].level * 50) * 100).toFixed(2)}}
+                                                stroke-dasharray="301.59"></circle>
+                                    </svg>
+                                    <span>
+                                <button style={{
+                                    width: "100px",
+                                    display: "block",
+                                    margin: "auto",
+                                    borderRadius: "100px"
+                                }}
+                                        className="uniquePokemonContainer">
+                                    {profil[0].box > 0 &&
+                                        <div className="infoPkm">
+                                            <div className="infoNbBox">{profil[0].box}</div>
+                                        </div>
+                                    }
+                                    {profil[0].profil_picture ?
+                                        <img style={{width: "75px"}}
+                                             src={"/images/Trainers/Trainer" + profil[0].profil_picture + ".png"}/>
+                                        :
+                                        <img style={{width: "75px"}} src={"/images/random.png"}/>
+                                    }
+                                    <div className="infoPkm">
+                                        <div className="infoEdit"><i style={{marginLeft: "-6px", marginTop: "4px"}}
+                                                                     className="fa-solid fa-pencil"></i></div>
+                                    </div>
+                                </button>
+                            </span>
+                                    <div style={{width: "max-content", left: "-20px", position: "absolute", top: "85px"}}
+                                         className={"xpText"}>
+                                        <p style={{fontSize: "13px", textAlign: "left", width:"fit-content"}}
+                                           className={"levelProfil"}>N.{profil[0].level}</p>
+                                        <p style={{fontSize: "13px", textAlign: "left", width:"fit-content"}}
+                                           className={"levelProfil"}>{profil[0].xp + " / " + profil[0].level * 50}</p>
+                                    </div>
+                                </div>
+                                <div className="anchorTooltip"
+                                     data-tooltip-content={pourcent == 100 ? "100% du Pokedex Complété" : pourcent >= 80 ? "80% du Pokedex Complété" : pourcent >= 60 ? "60% du Pokedex Complété" : pourcent >= 40 ? "40% du Pokedex Complété" : pourcent >= 20 ? "20% du Pokedex Complété" : "Au moins 1 Pokémon capturé"}
+                                     style={{width: "120px", height: "95px"}}>
+                                    <img style={{width: "60px"}}
+                                         src={pourcent == 100 ? Lv6 : pourcent >= 80 ? Lv5 : pourcent >= 60 ? Lv4 : pourcent >= 40 ? Lv3 : pourcent >= 20 ? Lv2 : Lv1}/>
+                                </div>
+                                <Tooltip style={{zIndex: "1"}} anchorSelect=".anchorTooltip"/>
                             </div>
-                            <div style={{margin: "0", width: "10%", display: pourcent >= 20 ? "block" : "none"}}
-                                 className="anchorTooltip uniquePokemonContainer"
-                                 data-tooltip-content="20% du pokédex complété">
-                                <img style={{width: "100%"}}
-                                     src={"/images/star.png"}/>
+                            <p className={"pseudoProfil"}>Mon équipe</p>
+                            <div className={"threePokemon"}>
+                                <button
+                                    style={{backgroundImage: profil[0].first_pokemon ? 'url(' + profil[0].first_pokemon + ')' : 'url(/images/random.png)'}}
+                                    value={"first_pokemon"}
+                                    className="anchorTooltip uniquePokemonContainerTeam">
+                                </button>
+                                <button
+                                    style={{backgroundImage: profil[0].second_pokemon ? 'url(' + profil[0].second_pokemon + ')' : 'url(/images/random.png)'}}
+                                    value={"second_pokemon"}
+                                    className="anchorTooltip uniquePokemonContainerTeam">
+                                </button>
+                                <button
+                                    style={{backgroundImage: profil[0].third_pokemon ? 'url(' + profil[0].third_pokemon + ')' : 'url(/images/random.png)'}}
+                                    value={"third_pokemon"}
+                                    className="anchorTooltip uniquePokemonContainerTeam">
+                                </button>
                             </div>
-                            <div style={{margin: "0", width: "10%", display: pourcent >= 30 ? "block" : "none"}}
-                                 className="anchorTooltip uniquePokemonContainer"
-                                 data-tooltip-content="30% du pokédex complété">
-                                <img style={{width: "100%"}}
-                                     src={"/images/star.png"}/>
+                            <div className={"threePokemon"}>
+                                <button
+                                    style={{backgroundImage: profil[0].fourth_pokemon ? 'url(' + profil[0].fourth_pokemon + ')' : 'url(/images/random.png)'}}
+                                    value={"fourth_pokemon"}
+                                    className="anchorTooltip uniquePokemonContainerTeam">
+                                </button>
+                                <button
+                                    style={{backgroundImage: profil[0].fifth_pokemon ? 'url(' + profil[0].fifth_pokemon + ')' : 'url(/images/random.png)'}}
+                                    value={"fifth_pokemon"}
+                                    className="anchorTooltip uniquePokemonContainerTeam">
+                                </button>
+                                <button
+                                    style={{backgroundImage: profil[0].sixth_pokemon ? 'url(' + profil[0].sixth_pokemon + ')' : 'url(/images/random.png)'}}
+                                    value={"sixth_pokemon"}
+                                    className="anchorTooltip uniquePokemonContainerTeam">
+                                </button>
                             </div>
-                            <div style={{margin: "0", width: "10%", display: pourcent >= 40 ? "block" : "none"}}
-                                 className="anchorTooltip uniquePokemonContainer"
-                                 data-tooltip-content="40% du pokédex complété">
-                                <img style={{width: "100%"}}
-                                     src={"/images/star.png"}/>
-                            </div>
-                            <div style={{margin: "0", width: "10%", display: pourcent >= 50 ? "block" : "none"}}
-                                 className="anchorTooltip uniquePokemonContainer"
-                                 data-tooltip-content="50% du pokédex complété">
-                                <img style={{width: "100%"}}
-                                     src={"/images/star.png"}/>
-                            </div>
-                            <div style={{margin: "0", width: "10%", display: pourcent >= 60 ? "block" : "none"}}
-                                 className="anchorTooltip uniquePokemonContainer"
-                                 data-tooltip-content="60% du pokédex complété">
-                                <img style={{width: "100%"}}
-                                     src={"/images/star.png"}/>
-                            </div>
-                            <div style={{margin: "0", width: "10%", display: pourcent >= 70 ? "block" : "none"}}
-                                 className="anchorTooltip uniquePokemonContainer"
-                                 data-tooltip-content="70% du pokédex complété">
-                                <img style={{width: "100%"}}
-                                     src={"/images/star.png"}/>
-                            </div>
-                            <div style={{margin: "0", width: "10%", display: pourcent >= 80 ? "block" : "none"}}
-                                 className="anchorTooltip uniquePokemonContainer"
-                                 data-tooltip-content="80% du pokédex complété">
-                                <img style={{width: "100%"}}
-                                     src={"/images/star.png"}/>
-                            </div>
-                            <div style={{margin: "0", width: "10%", display: pourcent >= 90 ? "block" : "none"}}
-                                 className="anchorTooltip uniquePokemonContainer"
-                                 data-tooltip-content="90% du pokédex complété">
-                                <img style={{width: "100%"}}
-                                     src={"/images/star.png"}/>
-                            </div>
-                            <div style={{margin: "0", width: "10%", display: pourcent >= 100 ? "block" : "none"}}
-                                 className="anchorTooltip uniquePokemonContainer"
-                                 data-tooltip-content="100% du pokédex complété">
-                                <img style={{width: "100%"}}
-                                     src={"/images/star.png"}/>
-                            </div>
-                        </div>
-
-                        <Tooltip style={{zIndex: "1"}} anchorSelect=".anchorTooltip"/>
-                        <div style={{width: "200px", display: "block", margin: "auto"}}
-                             className="anchorTooltip uniquePokemonContainer">
-                            {profil[0].profil_picture ?
-                                <img style={{width: "100%"}}
-                                     src={"/images/Trainers/Trainer" + profil[0].profil_picture + ".png"}/>
-                                :
-                                <img style={{width: "100%"}} src={"/images/random.png"}/>
-                            }
-                        </div>
-                        <p className={"pseudoProfil"}>{profil[0].pseudo}</p>
-                        <p className={"levelProfil"}>Niveau {profil[0].level}</p>
-                        <div style={customStyles.extBar} className="fullProgressBar">
-                            <div
-                                style={{
-                                    width: parseFloat(profil[0].xp / (profil[0].level * 500) * 100).toFixed(2) + "%",
-                                    position: 'relative',
-                                    background: '#74fbcf',
-                                    textWrap: 'nowrap',
-                                    color: 'black',
-                                    borderRadius: '50px 50px 50px 50px',
-                                    height: '30px'
-                                }}>
-                            </div>
-                            <div className={"pourcentLevel"}>
-                                {profil[0].xp + " / " + profil[0].level * 500 + "(" + parseFloat(profil[0].xp / (profil[0].level * 500) * 100).toFixed(2) + "%)"}
-                            </div>
-                        </div>
-                        <div className={"allPokemonTeam"}>
-                            <div
-                                style={{backgroundImage: profil[0].first_pokemon ? 'url(' + profil[0].first_pokemon + ')' : 'url(/images/random.png)'}}
-                                value={"first_pokemon"}
-                                className="anchorTooltip uniquePokemonContainerTeam">
-                            </div>
-                            <div
-                                style={{backgroundImage: profil[0].second_pokemon ? 'url(' + profil[0].second_pokemon + ')' : 'url(/images/random.png)'}}
-                                value={"second_pokemon"}
-                                className="anchorTooltip uniquePokemonContainerTeam middlePokemonProfil">
-                            </div>
-                            <div
-                                style={{backgroundImage: profil[0].third_pokemon ? 'url(' + profil[0].third_pokemon + ')' : 'url(/images/random.png)'}}
-                                value={"third_pokemon"}
-                                className="anchorTooltip uniquePokemonContainerTeam closePokemonProfil">
-                            </div>
-                            <div
-                                style={{backgroundImage: profil[0].fourth_pokemon ? 'url(' + profil[0].fourth_pokemon + ')' : 'url(/images/random.png)'}}
-                                value={"fourth_pokemon"}
-                                className="anchorTooltip uniquePokemonContainerTeam closePokemonProfil">
-                            </div>
-                            <div
-                                style={{backgroundImage: profil[0].fifth_pokemon ? 'url(' + profil[0].fifth_pokemon + ')' : 'url(/images/random.png)'}}
-                                value={"fifth_pokemon"}
-                                className="anchorTooltip uniquePokemonContainerTeam middlePokemonProfil">
-                            </div>
-                            <div
-                                style={{backgroundImage: profil[0].sixth_pokemon ? 'url(' + profil[0].sixth_pokemon + ')' : 'url(/images/random.png)'}}
-                                value={"sixth_pokemon"}
-                                className="anchorTooltip uniquePokemonContainerTeam">
-                            </div>
-                        </div>
-                    </div>
+                        </>
+                    }
                 </div>
-            }
+            </div>
         </>
     )
 }

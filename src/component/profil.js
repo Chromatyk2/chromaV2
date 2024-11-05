@@ -217,7 +217,6 @@ function Profil(props) {
                     })
             })
     }
-    console.log(pourcent)
     return (
         <>
         <div className={"contentContainer"}>

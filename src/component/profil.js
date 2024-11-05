@@ -369,11 +369,13 @@ function Profil(props) {
                                 </button>
                             </div>
                             <p style={{marginTop:"20px",marginBottom:"20px"}} className={"pseudoProfil"}>Dernier Booster</p>
-                            <img src={pourcent == 100 ? Lv6c : pourcent >= 80 ? Lv5c : pourcent >= 60 ? Lv4c : pourcent >= 40 ? Lv3c : pourcent >= 20 ? Lv2c : Lv1c} />
+                            <Tooltip style={{zIndex: "1"}} anchorSelect=".anchorTooltip"/>
+                            <img className="anchorTooltip"
+                                data-tooltip-content={pourcent == 100 ? "100% du Cartodex Complété" : pourcent >= 80 ? "80% du Cartodex Complété" : pourcent >= 60 ? "60% du Cartodex Complété" : pourcent >= 40 ? "40% du Cartodex Complété" : pourcent >= 20 ? "20% du Cartodex Complété" : "Au moins 1 carte obtenue"} src={pourcent == 100 ? Lv6c : pourcent >= 80 ? Lv5c : pourcent >= 60 ? Lv4c : pourcent >= 40 ? Lv3c : pourcent >= 20 ? Lv2c : Lv1c} />
                             <div className={"profilCards"}>
                                 {myLastTenCards.map((val, key) => {
                                     return (
-                                        <img className={profilCard} style={{filter:val.stade == 1 ? "drop-shadow(rgb(17, 208, 154) 0px 0px 5px) drop-shadow(rgb(17, 210, 154) 0px 0px 5px) drop-shadow(rgb(17, 208, 154) 0px 0px 5px)" : val.stade == 2 ? "drop-shadow(rgb(14, 208, 214) 0px 0px 3px) drop-shadow(rgb(14, 208, 214) 0px 0px 5px) drop-shadow(rgb(14, 208, 214) 0px 0px 5px)" : val.stade == 3 && "drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px)"}}
+                                        <img className={"profilCard"} style={{filter:val.stade == 1 ? "drop-shadow(rgb(17, 208, 154) 0px 0px 5px) drop-shadow(rgb(17, 210, 154) 0px 0px 5px) drop-shadow(rgb(17, 208, 154) 0px 0px 5px)" : val.stade == 2 ? "drop-shadow(rgb(14, 208, 214) 0px 0px 3px) drop-shadow(rgb(14, 208, 214) 0px 0px 5px) drop-shadow(rgb(14, 208, 214) 0px 0px 5px)" : val.stade == 3 && "drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px)"}}
                                         src={"https://images.pokemontcg.io/"+val.booster+"/"+val.card.split("-").pop()+"_hires.png"} />
                                     )
                                 })

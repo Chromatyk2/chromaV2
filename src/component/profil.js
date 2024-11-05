@@ -229,9 +229,11 @@ function Profil(props) {
                         <OnStream/>
                         <p className={"pseudoProfil"}>{profil[0].pseudo}</p>
                         <div className={"profilVisuals"}>
-                            <div style={{width: "120px", display:"flex", justifyContent:"center"}}>
+                            <div style={{width: "120px", display: "flex", justifyContent: "center"}}>
                                 {profil[0].pkmToken > 0 ?
-                                    <button  className="anchorTooltip" data-tooltip-content="Clique our capturer un pokemon" disabled={openTime} className={"openLeaderBoardButton"} onClick={openToken}
+                                    <button className="anchorTooltip"
+                                            data-tooltip-content="Clique our capturer un pokemon" disabled={openTime}
+                                            className={"openLeaderBoardButton"} onClick={openToken}
                                             style={{
                                                 filter: "drop-shadow(0px 0px 15px white)",
                                                 backgroundImage: "url(/token.png)"
@@ -249,7 +251,8 @@ function Profil(props) {
                                             }}>
                                         <div className="infoPkm">
                                             <div
-                                                className="infoNbPkmToken">0</div>
+                                                className="infoNbPkmToken">0
+                                            </div>
                                         </div>
                                     </button>
                                 }
@@ -297,11 +300,15 @@ function Profil(props) {
                                        className={"levelProfil"}>{profil[0].xp + " / " + profil[0].level * 500}</p>
                                 </div>
                             </div>
-                            <div className="anchorTooltip" data-tooltip-content={pourcent == 100 ? "100% du Pokedex Complété" : pourcent >= 80 ? "80% du Pokedex Complété"  : pourcent >= 60 ? "60% du Pokedex Complété" : pourcent >= 40 ? "40% du Pokedex Complété" : pourcent >= 20 ? "20% du Pokedex Complété": "Au moins 1 Pokémon capturé"} style={{width: "120px", height:"95px"}}>
-                                <img style={{width: "60px"}} src={pourcent == 100 ? Lv6 : pourcent >= 80 ? Lv5  : pourcent >= 60 ? Lv4 : pourcent >= 40 ? Lv3 : pourcent >= 20 ? Lv2: Lv1}/>
+                            <div className="anchorTooltip"
+                                 data-tooltip-content={pourcent == 100 ? "100% du Pokedex Complété" : pourcent >= 80 ? "80% du Pokedex Complété" : pourcent >= 60 ? "60% du Pokedex Complété" : pourcent >= 40 ? "40% du Pokedex Complété" : pourcent >= 20 ? "20% du Pokedex Complété" : "Au moins 1 Pokémon capturé"}
+                                 style={{width: "120px", height: "95px"}}>
+                                <img style={{width: "60px"}}
+                                     src={pourcent == 100 ? Lv6 : pourcent >= 80 ? Lv5 : pourcent >= 60 ? Lv4 : pourcent >= 40 ? Lv3 : pourcent >= 20 ? Lv2 : Lv1}/>
                             </div>
                             <Tooltip style={{zIndex: "1"}} anchorSelect=".anchorTooltip"/>
                         </div>
+                        <p className={"pseudoProfil"}>Mon équipe</p>
                         <div className={"threePokemon"}>
                             <button
                                 style={{backgroundImage: profil[0].first_pokemon ? 'url(' + profil[0].first_pokemon + ')' : 'url(/images/random.png)'}}

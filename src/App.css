@@ -3682,8 +3682,8 @@ span.navbar-brand {
     top: 300px;
 }
 .pseudoProfil{
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
     font-size: 25px;
     text-transform: uppercase;
@@ -4233,6 +4233,12 @@ span.navbar-brand {
     width: -moz-fit-content;
     width: fit-content;
 }
+.threePokemon {
+     display: flex;
+     justify-content: center;
+     margin: 20px;
+     gap: 20px;
+ }
 .rainbow_text_animated_token {
     -webkit-animation: rainbow_animation 6s ease-in-out infinite;
     animation: rainbow_animation 2s ease-in-out infinite;

@@ -385,7 +385,7 @@ function OpeningCards(props) {
                                         </div>
                                         :
                                         <div
-                                            style={{overflow: "unset"}}
+                                            style={{overflow: "unset", height:"480px"}}
                                             stade={stadeC} rarity={val.rarity} style={{display: key < 9 && "none"}}
                                             keyCard={key}
                                             cardId={val.id}

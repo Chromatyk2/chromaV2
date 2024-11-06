@@ -452,12 +452,14 @@ function OpeningCards(props) {
                                                     onError={errorImage}
                                                     alt="Grapefruit slice atop a pile of other slices"/>
                                                 <p style={{
+                                                    color:"white",
+                                                    fontSize:"30px",
+                                                    left: "-180px",
+                                                    top: "-190px",
                                                     display: key == 0 ? "block" : "none",
                                                     position: "relative",
                                                     zIndex: "100",
-                                                    top: "-203px",
                                                     width: "100px",
-                                                    left: "-137px",
                                                     margin: 0,
                                                     filter: "drop-shadow(0px 4px 4px black)",
                                                     textShadow: "4px 0 #000, -2px 0 #000, 0 4px #000, 0 -4px #000, 4px 3px #000, -1px -1px #000, 4px -3px #000, -8px 1px #000"

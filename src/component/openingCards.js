@@ -106,41 +106,6 @@ function OpeningCards(props) {
                     setNbCards (nbCards + 1);
                 }
             }else if(tenCards.length == 8){
-                var bonus = Math.floor(Math.random() * 5);
-                if(bonus == 0){
-                    var bonusPlus = Math.floor(Math.random() * 100);
-                    if(stadeFour > 94){
-                        var rarityArray = props.rarities.filter(item => item.stade == 3|| item.stade == 4);
-                        const finalArray = props.items.filter(item => item.rarity == rarityArray[Math.floor(Math.random() * rarityArray.length)].rarity);
-                        const randomFinal = finalArray[Math.floor(Math.random() * finalArray.length)];
-                        Axios.post('/api/addCard',
-                            {
-                                pseudo:props.user,
-                                idCard:randomFinal.id,
-                                booster:props.idBooster,
-                                rarity:randomFinal.rarity,
-                                stade:props.rarities.find((uc) => uc.rarity.includes(randomFinal.rarity)).stade
-                            })
-                        setTenCards(tenCards => [...tenCards,randomFinal]);
-                        setNbCards (nbCards + 1);
-                        setIsLoaded(false);
-                    }else{
-                        var rarityArray = props.rarities.filter(item => item.stade == 1 || item.stade == 2);
-                        const bonusArray = props.items.filter(item => item.rarity == rarityArray[Math.floor(Math.random() * rarityArray.length)].rarity);
-                        const randomBonus = bonusArray[Math.floor(Math.random() * bonusArray.length)];
-                        Axios.post('/api/addCard',
-                            {
-                                pseudo:props.user,
-                                idCard:randomBonus.id,
-                                booster:props.idBooster,
-                                rarity:randomBonus.rarity,
-                                stade:props.rarities.find((uc) => uc.rarity.includes(randomBonus.rarity)).stade
-                            })
-                        setTenCards(tenCards => [...tenCards,randomBonus]);
-                        setNbCards (nbCards + 1);
-                        setIsLoaded(false);
-                    }
-                }else{
                     const uncommonArray = props.items.filter(item => item.rarity == 'Uncommon');
                     const randomUncommon = uncommonArray[Math.floor(Math.random() * uncommonArray.length)];
                     Axios.post('/api/addCard',
@@ -154,7 +119,6 @@ function OpeningCards(props) {
                     setIsLoaded(true);
                     setTenCards(tenCards => [...tenCards,randomUncommon]);
                     setNbCards (nbCards + 1);
-                }
             }else if(tenCards.length == 9){
                 if(getToken === true){
                     Axios.post('/api/addPkmToken',

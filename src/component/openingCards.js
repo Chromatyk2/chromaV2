@@ -312,12 +312,24 @@ function OpeningCards(props) {
                     </div>
                 </div>
             }
+            {stadeC == 4 && getToken === true &&
+                <div className={"getTokenContainer"}>
+                    <img
+                        rarity={4}
+                        onClick={getLastCard}
+                        id={"tokenContainer"}
+                        style={{display: "none"}}
+                        className={isHidden === true ? "fit-picture dropCards hiddenCards" : "fit-picture dropCards glowGet"}
+                        src={token}
+                        onError={errorImage} alt="Grapefruit slice atop a pile of other slices"/>
+                </div>
+            }
             {tenCards.length == 10 &&
                 <>
                     {tenCards.slice(0).reverse().map((val, key) => {
-                        if(val.rarity != "Common" && val.rarity != "Uncommon" && typeof val.rarity !== "undefined"){
+                        if (val.rarity != "Common" && val.rarity != "Uncommon" && typeof val.rarity !== "undefined") {
                             var stadeC = props.rarities.find((uc) => uc.rarity.includes(val.rarity)).stade;
-                        }else{
+                        } else {
                             var stadeC = 0;
                         }
                         return(
@@ -335,16 +347,6 @@ function OpeningCards(props) {
                                                 className={isHidden === true ? "fit-picture dropCards hiddenCards" : endPull === true ? "fit-picture dropCards showCards gettedCard endPull cardBangerAlert" : key == 9 ? "fit-picture dropCards showCards glowGet cardBangerAlert" : "fit-picture dropCards glowGet cardBangerAlert"} id={"cardNb" + key}
                                                 src={"https://images.pokemontcg.io/" + val.set.id + "/" + val.number + ".png"}
                                                 onError={errorImage} alt="Grapefruit slice atop a pile of other slices"/>
-                                            {getToken === true &&
-                                                <img
-                                                    rarity={4}
-                                                    onClick={getLastCard}
-                                                    id={"tokenContainer"}
-                                                    style={{display:"none"}}
-                                                    className={isHidden === true ? "fit-picture dropCards hiddenCards" : "fit-picture dropCards glowGet"}
-                                                    src={token}
-                                                    onError={errorImage} alt="Grapefruit slice atop a pile of other slices"/>
-                                            }
                                         </div>
                                     :
                                         stadeC == 3 ?

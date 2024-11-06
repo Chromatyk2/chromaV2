@@ -1584,6 +1584,7 @@ object{
     width: 100%;
     margin: auto;
     flex-flow: column;
+    position: fixed;
 }
 .fit-picture{
     width: 150px;

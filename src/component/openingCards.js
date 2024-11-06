@@ -336,13 +336,7 @@ function OpeningCards(props) {
                                                 src={"https://images.pokemontcg.io/" + val.set.id + "/" + val.number + ".png"}
                                                 onError={errorImage} alt="Grapefruit slice atop a pile of other slices"/>
                                             {getToken === true &&
-                                                <img
-                                                    rarity={4}
-                                                    onClick={getLastCard}
-                                                    id={"tokenContainer"}
-                                                    className={"fit-picture dropCards showCards glowGet"}
-                                                    src={token}
-                                                    onError={errorImage} alt="Grapefruit slice atop a pile of other slices"/>
+                                                <img src={token}/>
                                             }
                                         </div>
                                     :

@@ -295,12 +295,14 @@ function Profil(props) {
                                            className={"levelProfil"}>{profil[0].xp + " / " + profil[0].level * 50}</p>
                                     </div>
                                 </div>
-                                <div className="anchorTooltip"
-                                     data-tooltip-content={pourcent == 100 ? "100% du Pokedex Complété" : pourcent >= 80 ? "80% du Pokedex Complété" : pourcent >= 60 ? "60% du Pokedex Complété" : pourcent >= 40 ? "40% du Pokedex Complété" : pourcent >= 20 ? "20% du Pokedex Complété" : "Au moins 1 Pokémon capturé"}
-                                     style={{width: "120px", height: "95px"}}>
-                                    <img style={{width: "60px"}}
-                                         src={pourcent == 100 ? Lv6 : pourcent >= 80 ? Lv5 : pourcent >= 60 ? Lv4 : pourcent >= 40 ? Lv3 : pourcent >= 20 ? Lv2 : Lv1}/>
-                                </div>
+                                {pourcent > 0 &&
+                                    <div className="anchorTooltip"
+                                         data-tooltip-content={pourcent == 100 ? "100% du Pokedex Complété" : pourcent >= 80 ? "80% du Pokedex Complété" : pourcent >= 60 ? "60% du Pokedex Complété" : pourcent >= 40 ? "40% du Pokedex Complété" : pourcent >= 20 ? "20% du Pokedex Complété" : "Au moins 1 Pokémon capturé"}
+                                         style={{width: "120px", height: "95px"}}>
+                                        <img style={{width: "60px"}}
+                                             src={pourcent == 100 ? Lv6 : pourcent >= 80 ? Lv5 : pourcent >= 60 ? Lv4 : pourcent >= 40 ? Lv3 : pourcent >= 20 ? Lv2 : Lv1}/>
+                                    </div>
+                                }
                                 <Tooltip style={{zIndex: "1"}} anchorSelect=".anchorTooltip"/>
                             </div>
                             <p className={"pseudoProfil"}>Mon équipe</p>
@@ -338,23 +340,29 @@ function Profil(props) {
                                     className="anchorTooltip uniquePokemonContainerTeam">
                                 </button>
                             </div>
+                            { pourcentCard > 0 &&
+                                <>
+                                    <div className={"profilVisualsCard"}>
+                                        <Tooltip style={{zIndex: "1"}} anchorSelect=".anchorTooltip"/>
+                                        <img style={{width: "60px"}} className="anchorTooltip"
+                                             data-tooltip-content={pourcentCard == 100 ? "100% du Cartodex Complété" : pourcentCard >= 80 ? "80% du Cartodex Complété" : pourcentCard >= 60 ? "60% du Cartodex Complété" : pourcentCard >= 40 ? "40% du Cartodex Complété" : pourcentCard >= 20 ? "20% du Cartodex Complété" : "Au moins 1 carte obtenue"}
+                                             src={pourcentCard == 100 ? Lv6c : pourcentCard >= 80 ? Lv5c : pourcentCard >= 60 ? Lv4c : pourcentCard >= 40 ? Lv3c : pourcentCard >= 20 ? Lv2c : Lv1c}/>
+                                    </div>
+                                    <p style={{marginTop: "20px", marginBottom: "20px"}}
+                                       className={"pseudoProfil"}>Dernier Booster</p>
+                                    <div className={"profilCards"}>
+                                        {myLastTenCards.map((val, key) => {
+                                            return (
+                                                <img className={"profilCard"}
+                                                     style={{filter: val.stade == 1 ? "drop-shadow(rgb(17, 208, 154) 0px 0px 5px) drop-shadow(rgb(17, 210, 154) 0px 0px 5px) drop-shadow(rgb(17, 208, 154) 0px 0px 5px)" : val.stade == 2 ? "drop-shadow(rgb(14, 208, 214) 0px 0px 3px) drop-shadow(rgb(14, 208, 214) 0px 0px 5px) drop-shadow(rgb(14, 208, 214) 0px 0px 5px)" : val.stade == 3 && "drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px)"}}
+                                                     src={"https://images.pokemontcg.io/" + val.booster + "/" + val.card.split("-").pop() + "_hires.png"}/>
+                                            )
+                                        })
 
-                            <div className={"profilVisualsCard"}>
-                                <Tooltip style={{zIndex: "1"}} anchorSelect=".anchorTooltip"/>
-                                <img style={{width: "60px"}} className="anchorTooltip"
-                                     data-tooltip-content={pourcentCard == 100 ? "100% du Cartodex Complété" : pourcentCard >= 80 ? "80% du Cartodex Complété" : pourcentCard >= 60 ? "60% du Cartodex Complété" : pourcentCard >= 40 ? "40% du Cartodex Complété" : pourcentCard >= 20 ? "20% du Cartodex Complété" : "Au moins 1 carte obtenue"} src={pourcentCard == 100 ? Lv6c : pourcentCard >= 80 ? Lv5c : pourcentCard >= 60 ? Lv4c : pourcentCard >= 40 ? Lv3c : pourcentCard >= 20 ? Lv2c : Lv1c} />
-                            </div>
-                                <p style={{marginTop:"20px",marginBottom:"20px"}} className={"pseudoProfil"}>Dernier Booster</p>
-                            <div className={"profilCards"}>
-                                {myLastTenCards.map((val, key) => {
-                                    return (
-                                        <img className={"profilCard"} style={{filter:val.stade == 1 ? "drop-shadow(rgb(17, 208, 154) 0px 0px 5px) drop-shadow(rgb(17, 210, 154) 0px 0px 5px) drop-shadow(rgb(17, 208, 154) 0px 0px 5px)" : val.stade == 2 ? "drop-shadow(rgb(14, 208, 214) 0px 0px 3px) drop-shadow(rgb(14, 208, 214) 0px 0px 5px) drop-shadow(rgb(14, 208, 214) 0px 0px 5px)" : val.stade == 3 && "drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px)"}}
-                                             src={"https://images.pokemontcg.io/"+val.booster+"/"+val.card.split("-").pop()+"_hires.png"} />
-                                    )
-                                })
-
-                                }
-                            </div>
+                                        }
+                                    </div>
+                                </>
+                            }
                         </>
                     }
                 </div>

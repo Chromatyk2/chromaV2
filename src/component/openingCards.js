@@ -373,6 +373,7 @@ function OpeningCards(props) {
                                                 }
                                             </div>
                                         :
+                                            <>
                                                 <img stade={stadeC} rarity={val.rarity}
                                                      style={{display: key < 9 && "none"}}
                                                      id={"cardNb" + key} keyCard={key}
@@ -393,6 +394,7 @@ function OpeningCards(props) {
                                                         onError={errorImage}
                                                         alt="Grapefruit slice atop a pile of other slices"/>
                                                 }
+                                            </>
                                 }
                             </>
                         )

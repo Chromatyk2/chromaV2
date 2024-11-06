@@ -438,14 +438,7 @@ function OpeningCards(props) {
                                                     onClick={getLastCard}
                                                     id={"tokenContainer"}
                                                     style={{
-                                                        display: key == 0 ? "block" : "none",
-                                                        position: "relative",
-                                                        zIndex: "100",
-                                                        top: "-203px",
-                                                        width: "100px",
-                                                        left: "-137px",
-                                                        margin: 0,
-                                                        filter: "drop-shadow(0px 4px 4px black)"
+                                                        display: key == 0 ? "block" : "none"
                                                     }}
                                                     className={isHidden === true ? "fit-picture dropCards hiddenCards" : endPull === true ? "fit-picture dropCards showCards gettedCard endPull" : key == 9 ? "fit-picture dropCards showCards glowGet" : "fit-picture dropCards glowGet"}
                                                     src={token}

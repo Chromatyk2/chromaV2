@@ -5060,7 +5060,6 @@ button.uniqueBoxContainer:last-child{
     font-size: 10px;
 }
 .moreTokencard{
-    display: block;
     z-index: 100;
     top: -203px;
     left: -170px;

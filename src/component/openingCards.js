@@ -451,7 +451,16 @@ function OpeningCards(props) {
                                                     src={token}
                                                     onError={errorImage}
                                                     alt="Grapefruit slice atop a pile of other slices"/>
-                                                <p className={"moreToken"}>+1</p>
+                                                <p style={{
+                                                    display: key == 0 ? "block" : "none",
+                                                    position: "relative",
+                                                    zIndex: "100",
+                                                    top: "-203px",
+                                                    width: "100px",
+                                                    left: "-137px",
+                                                    margin: 0,
+                                                    filter: "drop-shadow(0px 4px 4px black)"
+                                                }} className={isHidden === true ? "fit-picture dropCards hiddenCards" : endPull === true ? "fit-picture dropCards showCards gettedCard endPull" : key == 9 ? "fit-picture dropCards showCards glowGet" : "fit-picture dropCards glowGet"}>+1</p>
                                             </>
                                         }
                                         </>

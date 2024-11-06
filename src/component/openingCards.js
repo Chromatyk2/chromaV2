@@ -348,43 +348,81 @@ function OpeningCards(props) {
                                             }
                                         </div>
                                     :
-                                        stadeC == 3 ?
-                                            <div
-                                                style={{overflow:"unset"}}
-                                                stade={stadeC} rarity={val.rarity} style={{display: key < 9 && "none"}}
-                                                keyCard={key}
-                                                cardId={val.id}
+                                    stadeC == 3 ?
+                                        <div
+                                            style={{overflow: "unset"}}
+                                            stade={stadeC} rarity={val.rarity} style={{display: key < 9 && "none"}}
+                                            keyCard={key}
+                                            cardId={val.id}
+                                            onClick={key == 0 ? getLastCard : getCard}
+                                            className={isHidden === true ? "fit-picture dropCards hiddenCards" : endPull === true ? "fit-picture dropCards showCards gettedCard endPull cardBangerAlert" : key == 9 ? "fit-picture dropCards showCards glowGet cardBangerAlert" : "fit-picture dropCards glowGet cardBangerAlert"}
+                                            id={"cardNb" + key}>
+                                            <img
                                                 onClick={key == 0 ? getLastCard : getCard}
-                                                className={isHidden === true ? "fit-picture dropCards hiddenCards" : endPull === true ? "fit-picture dropCards showCards gettedCard endPull cardBangerAlert" : key == 9 ? "fit-picture dropCards showCards glowGet cardBangerAlert" : "fit-picture dropCards glowGet cardBangerAlert"} id={"cardNb" + key}>
+                                                className={isHidden === true ? "fit-picture dropCards hiddenCards" : endPull === true ? "fit-picture dropCards showCards gettedCard endPull cardBangerAlert" : key == 9 ? "fit-picture dropCards showCards glowGet cardBangerAlert" : "fit-picture dropCards glowGet cardBangerAlert"}
+                                                id={"cardNb" + key}
+                                                src={"https://images.pokemontcg.io/" + val.set.id + "/" + val.number + ".png"}
+                                                onError={errorImage}
+                                                alt="Grapefruit slice atop a pile of other slices"/>
+                                            {getToken === true &&
                                                 <img
-                                                    onClick={key == 0 ? getLastCard : getCard}
-                                                    className={isHidden === true ? "fit-picture dropCards hiddenCards" : endPull === true ? "fit-picture dropCards showCards gettedCard endPull cardBangerAlert" : key == 9 ? "fit-picture dropCards showCards glowGet cardBangerAlert" : "fit-picture dropCards glowGet cardBangerAlert"} id={"cardNb" + key}
-                                                    src={"https://images.pokemontcg.io/" + val.set.id + "/" + val.number + ".png"}
-                                                    onError={errorImage} alt="Grapefruit slice atop a pile of other slices"/>
-                                                {getToken === true &&
-                                                    <img
-                                                        rarity={4}
-                                                        onClick={getLastCard}
-                                                        id={"tokenContainer"}
-                                                        style={{display:"block", position:"absolute", zIndex:"100", top:"-50px", width:"100px", left:"-35px"}}
-                                                        className={isHidden === true ? "fit-picture dropCards hiddenCards" : "fit-picture dropCards glowGet"}
-                                                        src={token}
-                                                        onError={errorImage} alt="Grapefruit slice atop a pile of other slices"/>
-                                                }
-                                            </div>
+                                                    rarity={4}
+                                                    onClick={getLastCard}
+                                                    id={"tokenContainer"}
+                                                    style={{
+                                                        display: "block",
+                                                        position: "absolute",
+                                                        zIndex: "100",
+                                                        top: "-50px",
+                                                        width: "100px",
+                                                        left: "-35px"
+                                                    }}
+                                                    className={isHidden === true ? "fit-picture dropCards hiddenCards" : "fit-picture dropCards glowGet"}
+                                                    src={token}
+                                                    onError={errorImage}
+                                                    alt="Grapefruit slice atop a pile of other slices"/>
+                                            }
+                                        </div>
                                         :
-                                                <img stade={stadeC} rarity={val.rarity}
-                                                     style={{display: key < 9 && "none"}}
-                                                     id={"cardNb" + key} keyCard={key}
-                                                     cardId={val.id}
-                                                     onClick={key == 0 ? getLastCard : getCard}
-                                                     className={isHidden === true ? "fit-picture dropCards hiddenCards" : endPull === true ? "fit-picture dropCards showCards gettedCard endPull" : key == 9 ? "fit-picture dropCards showCards glowGet" : "fit-picture dropCards glowGet"}
-                                                     src={"https://images.pokemontcg.io/" + val.set.id + "/" + val.number + ".png"}
-                                                     onError={errorImage}
-                                                     alt="Grapefruit slice atop a pile of other slices"/>
-                                }
-                            </>
-                        )
+                                        <div
+                                            style={{overflow: "unset"}}
+                                            stade={stadeC} rarity={val.rarity} style={{display: key < 9 && "none"}}
+                                            keyCard={key}
+                                            cardId={val.id}
+                                            onClick={key == 0 ? getLastCard : getCard}
+                                            className={isHidden === true ? "fit-picture dropCards hiddenCards" : endPull === true ? "fit-picture dropCards showCards gettedCard endPull cardBangerAlert" : key == 9 ? "fit-picture dropCards showCards glowGet cardBangerAlert" : "fit-picture dropCards glowGet cardBangerAlert"}
+                                            id={"cardNb" + key}>
+                                            <img stade={stadeC} rarity={val.rarity}
+                                                 style={{display: key < 9 && "none"}}
+                                                 id={"cardNb" + key} keyCard={key}
+                                                 cardId={val.id}
+                                                 onClick={key == 0 ? getLastCard : getCard}
+                                                 className={isHidden === true ? "fit-picture dropCards hiddenCards" : endPull === true ? "fit-picture dropCards showCards gettedCard endPull" : key == 9 ? "fit-picture dropCards showCards glowGet" : "fit-picture dropCards glowGet"}
+                                                 src={"https://images.pokemontcg.io/" + val.set.id + "/" + val.number + ".png"}
+                                                 onError={errorImage}
+                                                 alt="Grapefruit slice atop a pile of other slices"/>
+                                            {getToken === true && key == 0 &&
+                                                <img
+                                                    rarity={4}
+                                                    onClick={getLastCard}
+                                                    id={"tokenContainer"}
+                                                    style={{
+                                                        display: "block",
+                                                        position: "absolute",
+                                                        zIndex: "100",
+                                                        top: "-50px",
+                                                        width: "100px",
+                                                        left: "-35px"
+                                                    }}
+                                                    className={isHidden === true ? "fit-picture dropCards hiddenCards" : "fit-picture dropCards glowGet"}
+                                                    src={token}
+                                                    onError={errorImage}
+                                                    alt="Grapefruit slice atop a pile of other slices"/>
+                                            }
+                                        </div>
+                    }
+                    </>
+                    )
                     })}
                 </>
 

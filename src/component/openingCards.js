@@ -383,7 +383,7 @@ function OpeningCards(props) {
                                                      src={"https://images.pokemontcg.io/" + val.set.id + "/" + val.number + ".png"}
                                                      onError={errorImage}
                                                      alt="Grapefruit slice atop a pile of other slices"/>
-                                                {getToken === true && key == 0 &&
+                                                {getToken === true && endPull === true &&
                                                     <img
                                                         rarity={4}
                                                         onClick={getLastCard}

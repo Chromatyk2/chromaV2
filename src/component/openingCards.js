@@ -396,7 +396,7 @@ function OpeningCards(props) {
                                                      id={"cardNb" + key} keyCard={key}
                                                      cardId={val.id}
                                                      onClick={key == 0 ? getLastCard : getToken === true && key == 1 ? getNextToken : getCard}
-                                                     className={isHidden === true ? "fit-picture dropCards hiddenCards" : endPull === true ? "fit-picture dropCards endPull" : key == 9 ? "fit-picture dropCards showCards glowGet" : "fit-picture dropCards glowGet"}
+                                                     className={isHidden === true ? "fit-picture dropCards hiddenCards" : endPull === true && key == 0 ? "fit-picture dropCards endPull" : key == 9 ? "fit-picture dropCards showCards glowGet" : "fit-picture dropCards glowGet"}
                                                      src={"https://images.pokemontcg.io/" + val.set.id + "/" + val.number + ".png"}
                                                      onError={errorImage}
                                                      alt="Grapefruit slice atop a pile of other slices"/>

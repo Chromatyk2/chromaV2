@@ -256,7 +256,7 @@ function Profil(props) {
                                                 className={"openLeaderBoardButton"} onClick={openToken}
                                                 style={{
                                                     width: "120px",
-                                                    backgroundSize: "80px",
+                                                    backgroundSize: "100px",
                                                     filter: "drop-shadow(white 0 0 4px)",
                                                     backgroundImage: "url(/token.png)"
                                                 }}>

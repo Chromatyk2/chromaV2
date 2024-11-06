@@ -385,17 +385,14 @@ function OpeningCards(props) {
                                         </div>
                                         :
                                         <div
-                                            style={{overflow: "unset", height:"480px"}}
-                                            stade={stadeC} rarity={val.rarity} style={{display: key < 9 && "none"}}
+                                            stade={stadeC} rarity={val.rarity} style={{overflow: "unset"}}
                                             keyCard={key}
                                             cardId={val.id}
                                             onClick={key == 0 ? getLastCard : getCard}
-                                            className={isHidden === true ? "fit-picture dropCards hiddenCards" : endPull === true ? "fit-picture dropCards showCards gettedCard endPull cardBangerAlert" : key == 9 ? "fit-picture dropCards showCards glowGet cardBangerAlert" : "fit-picture dropCards glowGet cardBangerAlert"}
+                                            className={isHidden === true ? "fit-picture dropCards hiddenCards" : endPull === true ? "fit-picture dropCards showCards gettedCard endPull" : key == 9 ? "fit-picture dropCards showCards glowGet" : "fit-picture dropCards glowGet"}
                                             id={"cardNb" + key}>
-                                            <img stade={stadeC} rarity={val.rarity}
-                                                 style={{display: key < 9 && "none"}}
-                                                 id={"cardNb" + key} keyCard={key}
-                                                 cardId={val.id}
+                                            <img
+                                                 id={"cardNb" + key}
                                                  onClick={key == 0 ? getLastCard : getCard}
                                                  className={isHidden === true ? "fit-picture dropCards hiddenCards" : endPull === true ? "fit-picture dropCards showCards gettedCard endPull" : key == 9 ? "fit-picture dropCards showCards glowGet" : "fit-picture dropCards glowGet"}
                                                  src={"https://images.pokemontcg.io/" + val.set.id + "/" + val.number + ".png"}

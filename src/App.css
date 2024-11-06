@@ -5059,6 +5059,23 @@ button.uniqueBoxContainer:last-child{
     text-align: center;
     font-size: 10px;
 }
+.moreTokencard{
+    display: block;
+    z-index: 100;
+    top: -203px;
+    left: -170px;
+    margin: 0px;
+    filter: drop-shadow(0px 4px 4px black);
+    transform: scale(-2, 2);
+    position: relative;
+    color: white;
+    border-radius: 100px;
+    height: 13px;
+    width: 13px;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 4px 0 #000, -2px 0 #000, 0 4px #000, 0 -4px #000, 4px 3px #000, -1px -1px #000, 4px -3px #000, -8px 1px #000;
+}
 .fav-star2 {
     position: absolute;
     width: 2rem;

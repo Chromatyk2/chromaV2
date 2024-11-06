@@ -359,7 +359,7 @@ function OpeningCards(props) {
                                                     rarity={4}
                                                     onClick={getLastCard}
                                                     id={"tokenContainer"}
-                                                    style={{display:"block", position:"absolute", zIndex:"100", top:"-50px", width:"100px", left:"-35px", margin:0, filter: "drop-shadow(0px 4px 4px black)"}}
+                                                    style={{display:"block", position:"absolute", zIndex:"100", top:"-13px", width:"100px", left:"-13px", margin:0, filter: "drop-shadow(0px 4px 4px black)"}}
                                                     className={isHidden === true ? "fit-picture dropCards hiddenCards" : "fit-picture dropCards glowGet"}
                                                     src={token}
                                                     onError={errorImage} alt="Grapefruit slice atop a pile of other slices"/>
@@ -383,7 +383,7 @@ function OpeningCards(props) {
                                                         rarity={4}
                                                         onClick={getLastCard}
                                                         id={"tokenContainer"}
-                                                        style={{display:"block", position:"absolute", zIndex:"100", top:"-50px", width:"100px", left:"-35px", margin:0, filter: "drop-shadow(0px 4px 4px black)"}}
+                                                        style={{display:"block", position:"absolute", zIndex:"100", top:"-13px", width:"100px", left:"-13px", margin:0, filter: "drop-shadow(0px 4px 4px black)"}}
                                                         className={isHidden === true ? "fit-picture dropCards hiddenCards" : "fit-picture dropCards glowGet"}
                                                         src={token}
                                                         onError={errorImage} alt="Grapefruit slice atop a pile of other slices"/>

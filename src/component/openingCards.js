@@ -383,6 +383,7 @@ function OpeningCards(props) {
                                                      onError={errorImage}
                                                      alt="Grapefruit slice atop a pile of other slices"/>
                                                 {getToken === true &&
+                                                    endPull === true &&
                                                     <img
                                                         rarity={4}
                                                         onClick={getLastCard}

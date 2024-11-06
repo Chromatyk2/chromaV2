@@ -406,7 +406,7 @@ function OpeningCards(props) {
                                                         rarity={4}
                                                         onClick={getLastCard}
                                                         id={"tokenContainer"}
-                                                        style={{display: key == 0 ? "block" : "none", position:"absolute", zIndex:"100", top:"-50px", width:"100px", left:"-35px"}}
+                                                        style={{display: key == 0 ? "block" : "none", position:"relative", zIndex:"100", top:"-230px", width:"100px", left:"-170px"}}
                                                         className={isHidden === true ? "fit-picture dropCards hiddenCards" : endPull === true ? "fit-picture dropCards showCards gettedCard endPull" : key == 9 ? "fit-picture dropCards showCards glowGet" : "fit-picture dropCards glowGet"}
                                                         src={token}
                                                         onError={errorImage}

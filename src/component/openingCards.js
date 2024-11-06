@@ -24,7 +24,7 @@ function OpeningCards(props) {
     const [isToken, setIsToken] = useState(false);
 
     useEffect(() => {
-        var tokenBonus = Math.floor(Math.random() * 10);
+        var tokenBonus = Math.floor(Math.random() * 1);
         if(tokenBonus == 0){
             setGetToken(true);
         }
@@ -312,26 +312,8 @@ function OpeningCards(props) {
                     </div>
                 </div>
             }
-            {isToken === true &&
-                <div style={{position: "absolute"}} id={"shadowBox"}>
-                    <div className={"newTokenContainer"}>
-                        <p className={"rainbow rainbow_text_animated_token"}>1 Token Pokemon !!</p>
-                        <p className="rainbow rainbow_text_animated" style={{fontSize: "10px",marginTop: "-15px"}}>Utilisez le sur la page profil</p>
-                    </div>
-                </div>
-            }
             {tenCards.length == 10 &&
                 <>
-                    {getToken === true &&
-                        <img
-                            rarity={4}
-                            onClick={getLastCard}
-                            id={"tokenContainer"}
-                            style={{display:"none"}}
-                            className={isHidden === true ? "fit-picture dropCards hiddenCards" : "fit-picture dropCards glowGet"}
-                            src={token}
-                            onError={errorImage} alt="Grapefruit slice atop a pile of other slices"/>
-                    }
                     {tenCards.slice(0).reverse().map((val, key) => {
                         if(val.rarity != "Common" && val.rarity != "Uncommon" && typeof val.rarity !== "undefined"){
                             var stadeC = props.rarities.find((uc) => uc.rarity.includes(val.rarity)).stade;
@@ -353,6 +335,16 @@ function OpeningCards(props) {
                                                 className={isHidden === true ? "fit-picture dropCards hiddenCards" : endPull === true ? "fit-picture dropCards showCards gettedCard endPull cardBangerAlert" : key == 9 ? "fit-picture dropCards showCards glowGet cardBangerAlert" : "fit-picture dropCards glowGet cardBangerAlert"} id={"cardNb" + key}
                                                 src={"https://images.pokemontcg.io/" + val.set.id + "/" + val.number + ".png"}
                                                 onError={errorImage} alt="Grapefruit slice atop a pile of other slices"/>
+                                            {getToken === true &&
+                                                <img
+                                                    rarity={4}
+                                                    onClick={getLastCard}
+                                                    id={"tokenContainer"}
+                                                    style={{display:"none"}}
+                                                    className={isHidden === true ? "fit-picture dropCards hiddenCards" : "fit-picture dropCards glowGet"}
+                                                    src={token}
+                                                    onError={errorImage} alt="Grapefruit slice atop a pile of other slices"/>
+                                            }
                                         </div>
                                     :
                                         stadeC == 3 ?

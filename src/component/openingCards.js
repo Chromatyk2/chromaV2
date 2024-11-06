@@ -472,7 +472,8 @@ function OpeningCards(props) {
                                             alignItems: "center",
                                             left: "50px",
                                             position: "relative"
-                                        }}>
+                                        }}
+                                             onClick={getLastCard}>
                                             <img
                                                 rarity={4}
                                                 onClick={getLastCard}

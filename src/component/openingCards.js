@@ -373,7 +373,6 @@ function OpeningCards(props) {
                                                 }
                                             </div>
                                         :
-                                            <div style={{overflow:"unset"}}>
                                                 <img stade={stadeC} rarity={val.rarity}
                                                      style={{display: key < 9 && "none"}}
                                                      id={"cardNb" + key} keyCard={key}
@@ -383,18 +382,6 @@ function OpeningCards(props) {
                                                      src={"https://images.pokemontcg.io/" + val.set.id + "/" + val.number + ".png"}
                                                      onError={errorImage}
                                                      alt="Grapefruit slice atop a pile of other slices"/>
-                                                {getToken === true &&
-                                                    <img
-                                                        rarity={4}
-                                                        onClick={getLastCard}
-                                                        id={"tokenContainer"}
-                                                        style={{display:"block", position:"absolute", zIndex:"100", top:"-50px", width:"100px", left:"-35px"}}
-                                                        className={isHidden === true ? "fit-picture dropCards hiddenCards" : "fit-picture dropCards glowGet"}
-                                                        src={token}
-                                                        onError={errorImage}
-                                                        alt="Grapefruit slice atop a pile of other slices"/>
-                                                }
-                                            </div>
                                 }
                             </>
                         )

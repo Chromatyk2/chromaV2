@@ -267,13 +267,31 @@ function OpeningCards(props) {
         setIndex(index + 1);
     }
     function getNextToken(e) {
-        setIsNew(false);
         setIsToken(true);
-        var next = document.getElementById("tokenContainer");
-        next.classList.toggle('glowGetRainbow');
+        var id = (e.target.getAttribute("keyCard"));
+        var nextId = parseInt(id,10) - 1;
+        var next = document.getElementById("cardNb"+nextId);
+        var rarity = next.getAttribute("rarity");
+        var nextCardId = next.getAttribute("cardId");
+        var stadeCurrent = next.getAttribute("stade");
+        if(stadeCurrent == 1){
+            next.classList.toggle('glowGetGreen');
+        }else if(stadeCurrent == 2){
+            next.classList.toggle('glowGetBlue');
+        }else if(stadeCurrent == 3){
+            next.classList.toggle('glowGetGold');
+        }else if(stadeCurrent == 4){
+            next.classList.toggle('glowGetRainbow');
+        }
+        if(!myCardsId.includes(nextCardId)){
+            setIsNew(true);
+        }else{
+            setIsNew(false);
+        }
         next.style.display = "block";
         e.target.classList.toggle('glowGet');
         e.target.classList.toggle('gettedCard');
+        setIndex(index + 1);
     }
     function getLastCard(e) {
         setIsNew(false);

@@ -325,6 +325,7 @@ function OpeningCards(props) {
                                 {key == 0 &&
                                     stadeC == 4 ?
                                         <div
+                                            style={{overflow:"unset"}}
                                             stade={stadeC} rarity={val.rarity} style={{display: key < 9 && "none", animation: stadeC == 4 && "bounceLastBangerAlertBooster 9s forwards"}}
                                             keyCard={key}
                                             cardId={val.id}
@@ -340,7 +341,7 @@ function OpeningCards(props) {
                                                     rarity={4}
                                                     onClick={getLastCard}
                                                     id={"tokenContainer"}
-                                                    style={{display:"none"}}
+                                                    style={{display:"block", position:"absolute", zIndex:"100", top:"-50px", width:"100px", left:"-35px"}}
                                                     className={isHidden === true ? "fit-picture dropCards hiddenCards" : "fit-picture dropCards glowGet"}
                                                     src={token}
                                                     onError={errorImage} alt="Grapefruit slice atop a pile of other slices"/>
@@ -349,6 +350,7 @@ function OpeningCards(props) {
                                     :
                                         stadeC == 3 ?
                                             <div
+                                                style={{overflow:"unset"}}
                                                 stade={stadeC} rarity={val.rarity} style={{display: key < 9 && "none"}}
                                                 keyCard={key}
                                                 cardId={val.id}
@@ -364,14 +366,14 @@ function OpeningCards(props) {
                                                         rarity={4}
                                                         onClick={getLastCard}
                                                         id={"tokenContainer"}
-                                                        style={{display:"none"}}
+                                                        style={{display:"block", position:"absolute", zIndex:"100", top:"-50px", width:"100px", left:"-35px"}}
                                                         className={isHidden === true ? "fit-picture dropCards hiddenCards" : "fit-picture dropCards glowGet"}
                                                         src={token}
                                                         onError={errorImage} alt="Grapefruit slice atop a pile of other slices"/>
                                                 }
                                             </div>
                                         :
-                                            <>
+                                            <div style={{overflow:"unset"}}>
                                                 <img stade={stadeC} rarity={val.rarity}
                                                      style={{display: key < 9 && "none"}}
                                                      id={"cardNb" + key} keyCard={key}
@@ -386,13 +388,13 @@ function OpeningCards(props) {
                                                         rarity={4}
                                                         onClick={getLastCard}
                                                         id={"tokenContainer"}
-                                                        style={{display: "none"}}
+                                                        style={{display:"block", position:"absolute", zIndex:"100", top:"-50px", width:"100px", left:"-35px"}}
                                                         className={isHidden === true ? "fit-picture dropCards hiddenCards" : "fit-picture dropCards glowGet"}
                                                         src={token}
                                                         onError={errorImage}
                                                         alt="Grapefruit slice atop a pile of other slices"/>
                                                 }
-                                            </>
+                                            </div>
                                 }
                             </>
                         )

@@ -326,7 +326,7 @@ function OpeningCards(props) {
                                     stadeC == 4 ?
                                         <div
                                             style={{overflow:"unset"}}
-                                            stade={stadeC} rarity={val.rarity} style={{display: key < 9 && "none", animation: stadeC == 4 && "bounceLastBangerAlertBooster 9s forwards"}}
+                                            stade={stadeC} rarity={val.rarity} style={{overflow:"unset", display: key < 9 && "none", animation: stadeC == 4 && "bounceLastBangerAlertBooster 9s forwards"}}
                                             keyCard={key}
                                             cardId={val.id}
                                             onClick={key == 0 ? getLastCard : getCard}
@@ -350,8 +350,7 @@ function OpeningCards(props) {
                                     :
                                         stadeC == 3 ?
                                             <div
-                                                style={{overflow:"unset"}}
-                                                stade={stadeC} rarity={val.rarity} style={{display: key < 9 && "none"}}
+                                                stade={stadeC} rarity={val.rarity} style={{display: key < 9 && "none", overflow:"unset"}}
                                                 keyCard={key}
                                                 cardId={val.id}
                                                 onClick={key == 0 ? getLastCard : getCard}
@@ -383,17 +382,6 @@ function OpeningCards(props) {
                                                      src={"https://images.pokemontcg.io/" + val.set.id + "/" + val.number + ".png"}
                                                      onError={errorImage}
                                                      alt="Grapefruit slice atop a pile of other slices"/>
-                                                {getToken === true && endPull === true &&
-                                                    <img
-                                                        rarity={4}
-                                                        onClick={getLastCard}
-                                                        id={"tokenContainer"}
-                                                        style={{display: key == 0 ? "block" : "none", position:"absolute", zIndex:"100", top:"-50px", width:"100px", left:"-35px"}}
-                                                        className={isHidden === true ? "fit-picture dropCards hiddenCards" : "fit-picture dropCards glowGet"}
-                                                        src={token}
-                                                        onError={errorImage}
-                                                        alt="Grapefruit slice atop a pile of other slices"/>
-                                                }
                                             </>
                                 }
                             </>

@@ -380,7 +380,7 @@ function Profil(props) {
                                     <p style={{marginTop: "20px", marginBottom: "20px"}}
                                        className={"pseudoProfil"}>Dernier Booster</p>
                                     <div className={"profilCards"}>
-                                        {myLastTenCards.map((val, key) => {
+                                        {myLastTenCards.sort((a, b) => a.stade - b.stade).map((val, key) => {
                                             return (
                                                 <img className={"profilCard"}
                                                      style={{filter: val.stade == 1 ? "drop-shadow(rgb(17, 208, 154) 0px 0px 5px) drop-shadow(rgb(17, 210, 154) 0px 0px 5px) drop-shadow(rgb(17, 208, 154) 0px 0px 5px)" : val.stade == 2 ? "drop-shadow(rgb(14, 208, 214) 0px 0px 3px) drop-shadow(rgb(14, 208, 214) 0px 0px 5px) drop-shadow(rgb(14, 208, 214) 0px 0px 5px)" : val.stade == 3 && "drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px)"}}

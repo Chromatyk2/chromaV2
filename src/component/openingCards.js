@@ -432,7 +432,7 @@ function OpeningCards(props) {
                                              alt="Grapefruit slice atop a pile of other slices"/>
                                         {getToken === true &&
                                             isToken === true &&
-                                            <div syle={{display: "flex",alignItems: "center",left: "50px",position: "relative"}}>
+                                            <div style={{display: "flex",alignItems: "center",left: "50px",position: "relative"}}>
                                                 <img
                                                     rarity={4}
                                                     onClick={getLastCard}

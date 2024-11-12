@@ -24,7 +24,7 @@ function OpeningCards(props) {
     const [isToken, setIsToken] = useState(false);
 
     useEffect(() => {
-        var tokenBonus = Math.floor(Math.random() * 1);
+        var tokenBonus = Math.floor(Math.random() * 10);
         if(tokenBonus == 0){
             setGetToken(true);
         }

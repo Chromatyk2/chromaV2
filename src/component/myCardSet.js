@@ -63,7 +63,10 @@ function MyCardsSet(props) {
             .then(res => res.json())
             .then(
                 (result) => {
-                    setItems(result.data);
+                    setInterval(() => {
+                        setItems(items => [...items,result.data + 1]);
+                    }, 10000)
+
                     if(result.data.length == 250){
                         fetch("https://api.pokemontcg.io/v2/cards?q=set.id:"+props.idBooster+"&page=2")
                             .then(res => res.json())
@@ -241,10 +244,12 @@ function MyCardsSet(props) {
                                         <div onClick={openModal} style={{animation: "glowGetRainbow 10s infinite alternate"}} id={"lastBangerContainer"} className={"lastBangerContainer"}>
                                             <div cardId={val.id} pokemonId={val.dexId} myCardNb={cardNb.nbCard} image={val.image} stade={stadeC} className="cardBangerAlertSet">
                                                 <LazyLoadImage
+                                                    placeholderSrc={"https://images.pokemontcg.io"}
                                                     width={"250"}
                                                     style={{width:"250px",filter:"brightness(1)"}}
                                                     wrapperClassName={"shadowBangerCard"}
                                                     effect="opacity"
+                                                    delayTime={5}
                                                     wrapperProps={{
                                                         // If you need to, you can tweak the effect transition using the wrapper style.
                                                         style: {transitionDelay: "1s"},
@@ -259,6 +264,7 @@ function MyCardsSet(props) {
                                             <div cardId={val.id} pokemonId={val.dexId} myCardNb={cardNb.nbCard} image={val.image} stade={stadeC} onClick={openModal} style={{filter: "drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px)"}} id={"lastBangerContainer"} className={"lastBangerContainer"}>
                                                 <div cardId={val.id} pokemonId={val.dexId} myCardNb={cardNb.nbCard} image={val.image} stade={stadeC} className="cardBangerAlertSetThree">
                                                     <LazyLoadImage
+                                                        placeholderSrc={"https://images.pokemontcg.io"}
                                                         width={"250"}
                                                         style={{width:"250px",filter:"brightness(1.2)"}}
                                                         wrapperClassName={"shadowBangerCard"}
@@ -276,6 +282,7 @@ function MyCardsSet(props) {
                                         return (
                                             <button stade={stadeC} style={customStyles.buttonMyCard} onClick={openModal} className={"cardBox"}>
                                                 <LazyLoadImage
+                                                    placeholderSrc={"https://images.pokemontcg.io"}
                                                     width={"250"}
                                                     stade={stadeC}
                                                     style={{filter:stadeC == 1 ? "drop-shadow(rgb(17, 208, 154) 0px 0px 5px) drop-shadow(rgb(17, 210, 154) 0px 0px 5px) drop-shadow(rgb(17, 208, 154) 0px 0px 5px)" : stadeC == 2 ? "drop-shadow(rgb(14, 208, 214) 0px 0px 3px) drop-shadow(rgb(14, 208, 214) 0px 0px 5px) drop-shadow(rgb(14, 208, 214) 0px 0px 5px)" : stadeC == 3 && "drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px)"}} cardId={val.id} pokemonId={val.dexId} myCardNb={cardNb.nbCard}
@@ -297,6 +304,7 @@ function MyCardsSet(props) {
                                 }else if(!onlyMine){
                                     return (
                                         <LazyLoadImage
+                                            placeholderSrc={"https://images.pokemontcg.io"}
                                             delayTime={0}
                                             threshold={200}
                                             width={"250"}

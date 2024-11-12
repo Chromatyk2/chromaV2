@@ -64,7 +64,7 @@ function MyCardsSet(props) {
             .then(
                 (result) => {
                     setInterval(() => {
-                        setItems(items => [...items,result.data + 1]);
+                        setItems(items => [...items,result.data.length + 1]);
                     }, 10000)
 
                     if(result.data.length == 250){

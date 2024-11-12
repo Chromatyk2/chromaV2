@@ -70,12 +70,10 @@ function MyCardsSet(props) {
                     .then(res => res.json())
                     .then(
                         (result) => {
-                            setItems(items => [...items,result.data[0]])
-                            // for (let i = 0; i <= result.data.length - 1; i++) {
-                            //     console.log(items)
-                            //     setIsLoaded(false);
-                            //     setTimeout(() => setItems(items => [...items,result.data[0]]), 1000);
-                            // }
+                            for(let i = 0; i <= result.data.length - 1; i++) {
+                                setItems(items => [...items,result.data[0]])
+                                setIsLoaded(false)
+                            }
                             if(items.length == result.data.length){
                                 if(result.data.length == 250){
                                     fetch("https://api.pokemontcg.io/v2/cards?q=set.id:"+props.idBooster+"&page=2")

@@ -13,8 +13,10 @@ import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 function MyCardsSet(props) {
     const [error, setError] = useState(null);
-    const [isLoaded, setIsLoaded] = useState(true);
+    const [isLoaded, setIsLoaded] = useState(false);
     const [items, setItems] = useState(  []);
+    const [sets, setSets] = useState(  []);
+    const [setsBis, setSetBis] = useState(  []);
     const [myCards, setMyCards] = useState([]);
     const [myCardsId, setMyCardsId] = useState([]);
     const [modalIsOpen, setIsOpen] = React.useState(false);
@@ -22,6 +24,7 @@ function MyCardsSet(props) {
     const [myCardImage, setMyCardImage] = React.useState(null);
     const [pokemonName, setPokemonName] = React.useState(null);
     const [cardId, setCardId] = React.useState(null);
+    const [errorCard, setErrorCard] = React.useState("");
     const [rarities, setRarities] = useState(null);
     const [stadeCard, setStadeCard] = useState(0);
     const [filterRarity, setFilterRarity] = React.useState("");
@@ -77,6 +80,7 @@ function MyCardsSet(props) {
                                         .then(res => res.json())
                                         .then(
                                             (result) => {
+                                                setSetBis(result.data)
                                                 result.data.map((val, key) => {
                                                     setItems(items => [...items,val]);
                                                 })
@@ -225,7 +229,6 @@ function MyCardsSet(props) {
                                         <div onClick={openModal} style={{animation: "glowGetRainbow 10s infinite alternate"}} id={"lastBangerContainer"} className={"lastBangerContainer"}>
                                             <div cardId={val.id} pokemonId={val.dexId} myCardNb={cardNb.nbCard} image={val.image} stade={stadeC} className="cardBangerAlertSet">
                                                 <LazyLoadImage
-                                                    visibleByDefault={true}
                                                     placeholderSrc={"https://images.pokemontcg.io/defaut.png"}
                                                     width={"250"}
                                                     style={{width:"250px",filter:"brightness(1)"}}
@@ -246,7 +249,6 @@ function MyCardsSet(props) {
                                             <div cardId={val.id} pokemonId={val.dexId} myCardNb={cardNb.nbCard} image={val.image} stade={stadeC} onClick={openModal} style={{filter: "drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px)"}} id={"lastBangerContainer"} className={"lastBangerContainer"}>
                                                 <div cardId={val.id} pokemonId={val.dexId} myCardNb={cardNb.nbCard} image={val.image} stade={stadeC} className="cardBangerAlertSetThree">
                                                     <LazyLoadImage
-                                                        visibleByDefault={true}
                                                         placeholderSrc={"https://images.pokemontcg.io/defaut.png"}
                                                         width={"250"}
                                                         style={{width:"250px",filter:"brightness(1.2)"}}
@@ -265,7 +267,6 @@ function MyCardsSet(props) {
                                         return (
                                             <button stade={stadeC} style={customStyles.buttonMyCard} onClick={openModal} className={"cardBox"}>
                                                 <LazyLoadImage
-                                                    visibleByDefault={true}
                                                     delayTime={0}
                                                     threshold={200}
                                                     placeholderSrc={"https://images.pokemontcg.io/defaut.png"}
@@ -290,7 +291,6 @@ function MyCardsSet(props) {
                                 }else if(!onlyMine){
                                     return (
                                         <LazyLoadImage
-                                            visibleByDefault={true}
                                             placeholderSrc={"https://images.pokemontcg.io/defaut.png"}
                                             delayTime={0}
                                             threshold={200}

@@ -77,7 +77,6 @@ function MyCardsSet(props) {
                                         .then(res => res.json())
                                         .then(
                                             (result) => {
-                                                setSetBis(result.data)
                                                 result.data.map((val, key) => {
                                                     setItems(items => [...items,val]);
                                                 })

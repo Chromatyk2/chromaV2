@@ -65,7 +65,7 @@ function MyCardsSet(props) {
                 (result) => {
                     for (let i = 0; i <= result.data.length - 1; i++) {
                         setIsLoaded(false);
-                        setTimeout(() => setItems(items => [...items,result.data.sort((a, b) => a.number - b.number)[i]]), 3000);
+                        setTimeout(() => setItems(items => [...items,result.data.sort((a, b) => a.number - b.number)[i]]), 10000);
                     }
                     if(items.length == result.data.length){
                         if(result.data.length == 250){
@@ -230,8 +230,7 @@ function MyCardsSet(props) {
                         </label>
                     </div>
                     <div id={"cardsContainer"}>
-                        {items &&
-                            items.sort((a, b) => a.number - b.number).map((val, key) => {
+                        {items.sort((a, b) => a.number - b.number).map((val, key) => {
                                 if (myCardsId.includes(val.id)) {
                                     if(val.rarity != "Common" && val.rarity != "Uncommon" && typeof val.rarity !== "undefined"){
                                         var stadeC = rarities.find((uc) => uc.rarity.includes(val.rarity)).stade;

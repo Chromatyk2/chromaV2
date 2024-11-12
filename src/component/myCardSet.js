@@ -74,11 +74,7 @@ function MyCardsSet(props) {
                     .then(res => res.json())
                     .then(
                         (result) => {
-                            setSets(result.data)
                             setItems(result.data)
-                            // for(let i = 0; i <= result.data.length - 1; i++) {
-                            //         setTimeout(() => setItems((items) => [...items, result.data[i]]), 10 * i)
-                            // }
                                 if(result.data.length == 250){
                                     fetch("https://api.pokemontcg.io/v2/cards?q=set.id:"+props.idBooster+"&page=2")
                                         .then(res => res.json())
@@ -97,7 +93,6 @@ function MyCardsSet(props) {
                                         .then(res => res.json())
                                         .then(
                                             (result) => {
-                                                setSetBis(result.data)
                                                 result.data.map((val, key) => {
                                                     setItems(items => [...items,val]);
                                                 })
@@ -108,7 +103,6 @@ function MyCardsSet(props) {
                                         .then(res => res.json())
                                         .then(
                                             (result) => {
-                                                setSetBis(result.data)
                                                 result.data.map((val, key) => {
                                                     setItems(items => [...items,val]);
                                                 })
@@ -120,7 +114,6 @@ function MyCardsSet(props) {
                                         .then(res => res.json())
                                         .then(
                                             (result) => {
-                                                setSetBis(result.data)
                                                 result.data.map((val, key) => {
                                                     setItems(items => [...items,val]);
                                                 })
@@ -132,7 +125,6 @@ function MyCardsSet(props) {
                                         .then(res => res.json())
                                         .then(
                                             (result) => {
-                                                setSetBis(result.data)
                                                 result.data.map((val, key) => {
                                                     setItems(items => [...items,val]);
                                                 })
@@ -144,7 +136,6 @@ function MyCardsSet(props) {
                                         .then(res => res.json())
                                         .then(
                                             (result) => {
-                                                setSetBis(result.data)
                                                 result.data.map((val, key) => {
                                                     setItems(items => [...items,val]);
                                                 })
@@ -156,13 +147,14 @@ function MyCardsSet(props) {
                                         .then(res => res.json())
                                         .then(
                                             (result) => {
-                                                setSetBis(result.data)
                                                 result.data.map((val, key) => {
                                                     setItems(items => [...items,val]);
                                                 })
                                                 setIsLoaded(false);
                                             })
 
+                                }else{
+                                    setIsLoaded(false);
                                 }
 
                         },
@@ -211,9 +203,9 @@ function MyCardsSet(props) {
 
             {isLoaded === false &&
                 sets.length > 0 &&
-                <ProgressBarCard getNb={myCards.length} item={sets.length + setsBis.length}/>
+                <ProgressBarCard getNb={myCards.length} item={items.length}/>
             }
-            {sets.length > 0 ?
+            {isLoaded === false ?
                 <>
                     <div style={{color:"white",display:"flex",width:"100%",justifyContent:"center",flexWrap:"wrap"}}>
                         <label htmlFor="subscribe">

@@ -71,6 +71,7 @@ function MyCardsSet(props) {
                     .then(
                         (result) => {
                             for(let i = 0; i <= result.data.length - 1; i++) {
+                                setIsLoaded(false)
                                 setTimeout(
                                     setItems(items => [...items,result.data[i]])
                                 , 2000)

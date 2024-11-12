@@ -9,14 +9,12 @@ import ProgressBarCard from "./progressBarCard";
 import UniqueCard from "./UniqueCard.js";
 import Modal from "react-modal";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/opacity.css';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function MyCardsSet(props) {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(true);
     const [items, setItems] = useState(  []);
-    const [sets, setSets] = useState(  []);
-    const [setsBis, setSetBis] = useState(  []);
     const [myCards, setMyCards] = useState([]);
     const [myCardsId, setMyCardsId] = useState([]);
     const [modalIsOpen, setIsOpen] = React.useState(false);
@@ -24,7 +22,6 @@ function MyCardsSet(props) {
     const [myCardImage, setMyCardImage] = React.useState(null);
     const [pokemonName, setPokemonName] = React.useState(null);
     const [cardId, setCardId] = React.useState(null);
-    const [errorCard, setErrorCard] = React.useState("");
     const [rarities, setRarities] = useState(null);
     const [stadeCard, setStadeCard] = useState(0);
     const [filterRarity, setFilterRarity] = React.useState("");

@@ -239,7 +239,7 @@ function MyCardsSet(props) {
                                                     delayTime={5}
                                                     wrapperProps={{
                                                         // If you need to, you can tweak the effect transition using the wrapper style.
-                                                        style: {transitionDelay: "1s"},
+                                                        style: {transitionDelay: "0.1s"},
                                                     }}
                                                     src={"https://images.pokemontcg.io/"+val.set.id+"/"+val.number+"_hires.png"} />
                                                 {/*<img className={"shadowBangerCard"} style={{width:"250px",filter:"brightness(1)"}} src={"https://images.pokemontcg.io/"+val.set.id+"/"+val.number+"_hires.png"}/>*/}

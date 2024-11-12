@@ -285,7 +285,7 @@ function CardsShop(props) {
                                                 delayTime={5}
                                                 wrapperProps={{
                                                     // If you need to, you can tweak the effect transition using the wrapper style.
-                                                    style: {transitionDelay: "1s"},
+                                                    style: {transitionDelay: "0.1s"},
                                                 }}
                                                 src={"https://images.pokemontcg.io/" + val.name + "/logo.png"} />
                                             {/*<img className="fit-picture"*/}

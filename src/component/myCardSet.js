@@ -269,7 +269,7 @@ function MyCardsSet(props) {
                                         )
                                     }else{
                                         return (
-                                            <button stade={stadeC} style={customStyles.buttonMyCard} onClick={openModal} className={"cardBox"}>
+                                            <button style={{width:"250px",height: "350px"}} stade={stadeC} style={customStyles.buttonMyCard} onClick={openModal} className={"cardBox"}>
                                                 <LazyLoadImage
                                                     placeholderSrc={"https://images.pokemontcg.io"}
                                                     width={"250"}

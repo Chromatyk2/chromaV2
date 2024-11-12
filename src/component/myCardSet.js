@@ -70,12 +70,6 @@ function MyCardsSet(props) {
                     .then(res => res.json())
                     .then(
                         (result) => {
-                            for(let i = 0; i <= result.data.length - 1; i++) {
-                                setTimeout(() => {
-                                    // setItems(items => [...items,result.data[i]]);
-                                    console.log(result.data[i])
-                                }, 2000);
-                            }
                             setIsLoaded(false)
                             if(items.length == result.data.length){
                                 if(result.data.length == 250){
@@ -155,6 +149,13 @@ function MyCardsSet(props) {
                                                 setIsLoaded(false);
                                             })
 
+                                }
+                            }else{
+                                for(let i = 0; i <= result.data.length - 1; i++) {
+                                    setTimeout(() => {
+                                        // setItems(items => [...items,result.data[i]]);
+                                        console.log(result.data[i])
+                                    }, 2000);
                                 }
                             }
 

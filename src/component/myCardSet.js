@@ -70,11 +70,12 @@ function MyCardsSet(props) {
                     .then(res => res.json())
                     .then(
                         (result) => {
-                            for (let i = 0; i <= result.data.length - 1; i++) {
-                                console.log(items)
-                                setIsLoaded(false);
-                                setTimeout(() => setItems(items => [...items,result.data[i]]), 1000);
-                            }
+                            setItems(items => [...items,result.data[0]])
+                            // for (let i = 0; i <= result.data.length - 1; i++) {
+                            //     console.log(items)
+                            //     setIsLoaded(false);
+                            //     setTimeout(() => setItems(items => [...items,result.data[0]]), 1000);
+                            // }
                             if(items.length == result.data.length){
                                 if(result.data.length == 250){
                                     fetch("https://api.pokemontcg.io/v2/cards?q=set.id:"+props.idBooster+"&page=2")
@@ -164,8 +165,6 @@ function MyCardsSet(props) {
                     )
             })
     }, []);
-    useEffect(() => {
-    }, [myCards]);
     function openModal(e) {
         console.log(e.target);
         setMyCardImage(e.target.getAttribute("image"));

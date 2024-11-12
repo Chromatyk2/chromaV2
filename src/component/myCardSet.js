@@ -63,7 +63,7 @@ function MyCardsSet(props) {
             .then(res => res.json())
             .then(
                 (result) => {
-                    for (let i = 0; i <= result.data.length; i++) {
+                    for (let i = 0; i <= result.data.length - 1; i++) {
                         setTimeout(() => setItems(items => [...items,result.data[i]]), 1000);
                     }
                     if(result.data.length == 250){

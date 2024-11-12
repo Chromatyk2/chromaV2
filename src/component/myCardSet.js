@@ -13,7 +13,7 @@ import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 function MyCardsSet(props) {
     const [error, setError] = useState(null);
-    const [isLoaded, setIsLoaded] = useState(false);
+    const [isLoaded, setIsLoaded] = useState(true);
     const [items, setItems] = useState(  []);
     const [sets, setSets] = useState(  []);
     const [setsBis, setSetBis] = useState(  []);
@@ -200,13 +200,9 @@ function MyCardsSet(props) {
     };
     return (
         <>
-
-            {isLoaded === false &&
-                sets.length > 0 &&
-                <ProgressBarCard getNb={myCards.length} item={items.length}/>
-            }
             {isLoaded === false ?
                 <>
+                    <ProgressBarCard getNb={myCards.length} item={items.length}/>
                     <div style={{color:"white",display:"flex",width:"100%",justifyContent:"center",flexWrap:"wrap"}}>
                         <label htmlFor="subscribe">
                             <input

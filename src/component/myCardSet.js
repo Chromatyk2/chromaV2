@@ -202,9 +202,9 @@ function MyCardsSet(props) {
 
             {isLoaded === false &&
                 sets.length < items.length &&
-                <ProgressBarCard getNb={myCards.length} item={sets.length}/>
+                <ProgressBarCard getNb={myCards.length} item={items.length}/>
             }
-            {sets.length > 0 &&
+            {sets.length > 0 ?
                 <>
                     <div style={{color:"white",display:"flex",width:"100%",justifyContent:"center",flexWrap:"wrap"}}>
                         <label htmlFor="subscribe">
@@ -319,6 +319,13 @@ function MyCardsSet(props) {
                         <UniqueCard stade={stadeCard} pokemonName={pokemonName} onClick={closeModal} cardImage={myCardImage} cardNb={myCardNb}
                                     cardId={cardId} idBooster={props.idBooster} change={handleState}/>
                     </Modal>
+                </>
+                :
+                <>
+                    <div className={"loaderPokemon"}>
+                        <h2 className="u-text-center">Chargement ...</h2>
+                        <div className="pokemon"></div>
+                    </div>
                 </>
             }
         </>

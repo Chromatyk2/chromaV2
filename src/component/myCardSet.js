@@ -64,10 +64,8 @@ function MyCardsSet(props) {
             .then(
                 (result) => {
                     for (let i = 0; i <= result.data.length - 1; i++) {
-                        setTimeout(() => setItems(items => [...items,result.data.sort((a, b) => a.number - b.number)[i]]), 3000);
-                    }
-                    if(items.length != 0){
                         setIsLoaded(false);
+                        setTimeout(() => setItems(items => [...items,result.data.sort((a, b) => a.number - b.number)[i]]), 3000);
                     }
                     if(items.length == result.data.length){
                         if(result.data.length == 250){

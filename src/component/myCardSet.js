@@ -49,7 +49,9 @@ function MyCardsSet(props) {
         buttonMyCard: {
             border:'none',
             background:'none',
-            padding:0
+            padding:0,
+            width:"250px",
+            height:"350px"
         },
     };
     useEffect(() => {
@@ -268,7 +270,7 @@ function MyCardsSet(props) {
                                         )
                                     }else{
                                         return (
-                                            <button style={{width:"250px",height: "350px"}} stade={stadeC} style={customStyles.buttonMyCard} onClick={openModal} className={"cardBox"}>
+                                            <button stade={stadeC} style={customStyles.buttonMyCard} onClick={openModal} className={"cardBox"}>
                                                 <LazyLoadImage
                                                     placeholderSrc={"https://images.pokemontcg.io"}
                                                     width={"250"}

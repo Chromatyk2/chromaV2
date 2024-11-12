@@ -11,6 +11,8 @@ import OpeningBooster from "./openingBooster";
 import Countdown from "react-countdown";
 import token from "../cards.png"
 import OpeningBoosterTest from "./test/openingBooster";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 function CardsShop(props) {
     const [error, setError] = useState(null);

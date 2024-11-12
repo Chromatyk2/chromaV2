@@ -280,8 +280,7 @@ function CardsShop(props) {
                                                 threshold={200}
                                                 placeholderSrc={"https://images.pokemontcg.io/defaut.png"}
                                                 width={"150"}
-                                                style={{width:"250px",filter:"brightness(1)"}}
-                                                wrapperClassName={"shadowBangerCard"}
+                                                style={{width:"150px",filter:"brightness(1)"}}
                                                 effect="opacity"
                                                 delayTime={5}
                                                 wrapperProps={{

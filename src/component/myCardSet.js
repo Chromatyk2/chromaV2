@@ -71,6 +71,7 @@ function MyCardsSet(props) {
                     .then(
                         (result) => {
                             for (let i = 0; i <= result.data.length - 1; i++) {
+                                consoe.log(items)
                                 setIsLoaded(false);
                                 setTimeout(() => setItems(items => [...items,result.data.sort((a, b) => a.number - b.number)[i]]), 10000);
                             }

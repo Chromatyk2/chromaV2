@@ -5436,3 +5436,6 @@ button.navbar-toggler.collapsed {
     stroke: white;
     stroke-dashoffset: 301.59;
 }
+button.guessTradeButton {
+    margin-top: 25px;
+}

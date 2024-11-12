@@ -294,7 +294,7 @@ function CardsShop(props) {
                                         </div>
                                         {points > 0 ?
                                             loading === false ?
-                                                <div style={{position: "relative", bottom: "-44px"}}>
+                                                <div>
 
                                                     <button value={val.name}
                                                             onClick={openModal}
@@ -302,16 +302,16 @@ function CardsShop(props) {
                                                     </button>
                                                 </div>
                                                 :
-                                                <div style={{position: "relative", bottom: "-44px"}}>
+                                                <div >
                                                     <button className="guessTradeButton">Chargement</button>
                                                 </div>
                                             :
-                                            <div style={{position: "relative", bottom: "-44px"}}>
+                                            <div>
                                                 <button className="guessTradeButton">Aucun Token</button>
                                             </div>
                                         }
                                         {canOpenLive == 1 &&
-                                            <div style={{position: "relative", bottom: "-44px"}}>
+                                            <div>
 
                                                 <button value={val.name}
                                                         onClick={freeBooster}

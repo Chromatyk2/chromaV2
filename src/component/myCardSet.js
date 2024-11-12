@@ -64,87 +64,90 @@ function MyCardsSet(props) {
             .then(
                 (result) => {
                     for (let i = 0; i <= result.data.length - 1; i++) {
-                        setTimeout(() => setItems(items => [...items,result.data[i]]), 10000);
+                        setTimeout(() => setItems(items => [...items,result.data.sort((a, b) => a.number - b.number)[i]]), 10000);
                     }
-                    if(result.data.length == 250){
-                        fetch("https://api.pokemontcg.io/v2/cards?q=set.id:"+props.idBooster+"&page=2")
-                            .then(res => res.json())
-                            .then(
-                                (result) => {
-                                    result.data.map((val, key) => {
-                                        setItems(items => [...items,val]);
-                                    })
-                                    setIsLoaded(false);
-                                })
-                    }
-                    if(props.idBooster == "swsh45"){
-                        setBonusSet(true);
-                        fetch("https://api.pokemontcg.io/v2/cards?q=set.id:swsh45sv")
-                            .then(res => res.json())
-                            .then(
-                                (result) => {
-                                    result.data.map((val, key) => {
-                                        setItems(items => [...items,val]);
-                                    })
-                                    setIsLoaded(false);
-                                })
-                    }else if(props.idBooster == "swsh9"){
-                        fetch("https://api.pokemontcg.io/v2/cards?q=set.id:swsh9tg")
-                            .then(res => res.json())
-                            .then(
-                                (result) => {
-                                    result.data.map((val, key) => {
-                                        setItems(items => [...items,val]);
-                                    })
-                                    setIsLoaded(false);
-                                })
+                    if(items.length == result.data.length){
 
-                    }else if(props.idBooster == "swsh10"){
-                        fetch("https://api.pokemontcg.io/v2/cards?q=set.id:swsh10tg")
-                            .then(res => res.json())
-                            .then(
-                                (result) => {
-                                    result.data.map((val, key) => {
-                                        setItems(items => [...items,val]);
+                        if(result.data.length == 250){
+                            fetch("https://api.pokemontcg.io/v2/cards?q=set.id:"+props.idBooster+"&page=2")
+                                .then(res => res.json())
+                                .then(
+                                    (result) => {
+                                        result.data.map((val, key) => {
+                                            setItems(items => [...items,val]);
+                                        })
+                                        setIsLoaded(false);
                                     })
-                                    setIsLoaded(false);
-                                })
-
-                    }else if(props.idBooster == "swsh12"){
-                        fetch("https://api.pokemontcg.io/v2/cards?q=set.id:swsh12tg")
-                            .then(res => res.json())
-                            .then(
-                                (result) => {
-                                    result.data.map((val, key) => {
-                                        setItems(items => [...items,val]);
+                        }
+                        if(props.idBooster == "swsh45"){
+                            setBonusSet(true);
+                            fetch("https://api.pokemontcg.io/v2/cards?q=set.id:swsh45sv")
+                                .then(res => res.json())
+                                .then(
+                                    (result) => {
+                                        result.data.map((val, key) => {
+                                            setItems(items => [...items,val]);
+                                        })
+                                        setIsLoaded(false);
                                     })
-                                    setIsLoaded(false);
-                                })
-
-                    }else if(props.idBooster == "swsh12pt5"){
-                        fetch("https://api.pokemontcg.io/v2/cards?q=set.id:swsh12pt5gg")
-                            .then(res => res.json())
-                            .then(
-                                (result) => {
-                                    result.data.map((val, key) => {
-                                        setItems(items => [...items,val]);
+                        }else if(props.idBooster == "swsh9"){
+                            fetch("https://api.pokemontcg.io/v2/cards?q=set.id:swsh9tg")
+                                .then(res => res.json())
+                                .then(
+                                    (result) => {
+                                        result.data.map((val, key) => {
+                                            setItems(items => [...items,val]);
+                                        })
+                                        setIsLoaded(false);
                                     })
-                                    setIsLoaded(false);
-                                })
 
-                    }else if(props.idBooster == "sm115"){
-                        fetch("https://api.pokemontcg.io/v2/cards?q=set.id:sma")
-                            .then(res => res.json())
-                            .then(
-                                (result) => {
-                                    result.data.map((val, key) => {
-                                        setItems(items => [...items,val]);
+                        }else if(props.idBooster == "swsh10"){
+                            fetch("https://api.pokemontcg.io/v2/cards?q=set.id:swsh10tg")
+                                .then(res => res.json())
+                                .then(
+                                    (result) => {
+                                        result.data.map((val, key) => {
+                                            setItems(items => [...items,val]);
+                                        })
+                                        setIsLoaded(false);
                                     })
-                                    setIsLoaded(false);
-                                })
 
-                    }else{
-                        setIsLoaded(false);
+                        }else if(props.idBooster == "swsh12"){
+                            fetch("https://api.pokemontcg.io/v2/cards?q=set.id:swsh12tg")
+                                .then(res => res.json())
+                                .then(
+                                    (result) => {
+                                        result.data.map((val, key) => {
+                                            setItems(items => [...items,val]);
+                                        })
+                                        setIsLoaded(false);
+                                    })
+
+                        }else if(props.idBooster == "swsh12pt5"){
+                            fetch("https://api.pokemontcg.io/v2/cards?q=set.id:swsh12pt5gg")
+                                .then(res => res.json())
+                                .then(
+                                    (result) => {
+                                        result.data.map((val, key) => {
+                                            setItems(items => [...items,val]);
+                                        })
+                                        setIsLoaded(false);
+                                    })
+
+                        }else if(props.idBooster == "sm115"){
+                            fetch("https://api.pokemontcg.io/v2/cards?q=set.id:sma")
+                                .then(res => res.json())
+                                .then(
+                                    (result) => {
+                                        result.data.map((val, key) => {
+                                            setItems(items => [...items,val]);
+                                        })
+                                        setIsLoaded(false);
+                                    })
+
+                        }else{
+                            setIsLoaded(false);
+                        }
                     }
 
                 },

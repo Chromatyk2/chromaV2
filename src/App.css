@@ -1608,6 +1608,8 @@ object{
 .containerImgBooster {
     display: flex;
     height: 150px;
+    justify-content: center;
+    align-items: center;
 }
 #twitch-chat-embed{
     position: fixed;

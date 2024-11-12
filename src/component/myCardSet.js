@@ -71,10 +71,9 @@ function MyCardsSet(props) {
                     .then(
                         (result) => {
                             for(let i = 0; i <= result.data.length - 1; i++) {
-                                setTimeout(
-                                    // setItems(items => [...items,result.data[0]])
-                                    console.log(result.data[i]);
-                                , 10000)
+                                setTimeout(() => {
+                                    setItems(items => [...items,result.data[i]]);
+                                }, 2000);
                             }
                             setIsLoaded(false)
                             if(items.length == result.data.length){

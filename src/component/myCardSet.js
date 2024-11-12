@@ -16,6 +16,7 @@ function MyCardsSet(props) {
     const [isLoaded, setIsLoaded] = useState(false);
     const [items, setItems] = useState(  []);
     const [sets, setSets] = useState(  []);
+    const [setsBis, setSetBis] = useState(  []);
     const [myCards, setMyCards] = useState([]);
     const [myCardsId, setMyCardsId] = useState([]);
     const [modalIsOpen, setIsOpen] = React.useState(false);
@@ -82,6 +83,7 @@ function MyCardsSet(props) {
                                         .then(res => res.json())
                                         .then(
                                             (result) => {
+                                                setSetBis(result.data)
                                                 result.data.map((val, key) => {
                                                     setItems(items => [...items,val]);
                                                 })
@@ -94,6 +96,7 @@ function MyCardsSet(props) {
                                         .then(res => res.json())
                                         .then(
                                             (result) => {
+                                                setSetBis(result.data)
                                                 result.data.map((val, key) => {
                                                     setItems(items => [...items,val]);
                                                 })
@@ -104,6 +107,7 @@ function MyCardsSet(props) {
                                         .then(res => res.json())
                                         .then(
                                             (result) => {
+                                                setSetBis(result.data)
                                                 result.data.map((val, key) => {
                                                     setItems(items => [...items,val]);
                                                 })
@@ -115,6 +119,7 @@ function MyCardsSet(props) {
                                         .then(res => res.json())
                                         .then(
                                             (result) => {
+                                                setSetBis(result.data)
                                                 result.data.map((val, key) => {
                                                     setItems(items => [...items,val]);
                                                 })
@@ -126,6 +131,7 @@ function MyCardsSet(props) {
                                         .then(res => res.json())
                                         .then(
                                             (result) => {
+                                                setSetBis(result.data)
                                                 result.data.map((val, key) => {
                                                     setItems(items => [...items,val]);
                                                 })
@@ -137,6 +143,7 @@ function MyCardsSet(props) {
                                         .then(res => res.json())
                                         .then(
                                             (result) => {
+                                                setSetBis(result.data)
                                                 result.data.map((val, key) => {
                                                     setItems(items => [...items,val]);
                                                 })
@@ -148,6 +155,7 @@ function MyCardsSet(props) {
                                         .then(res => res.json())
                                         .then(
                                             (result) => {
+                                                setSetBis(result.data)
                                                 result.data.map((val, key) => {
                                                     setItems(items => [...items,val]);
                                                 })
@@ -202,7 +210,7 @@ function MyCardsSet(props) {
 
             {isLoaded === false &&
                 sets.length < items.length &&
-                <ProgressBarCard getNb={myCards.length} item={items.length}/>
+                <ProgressBarCard getNb={myCards.length} item={sets.length + setsBis.length}/>
             }
             {sets.length > 0 ?
                 <>

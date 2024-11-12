@@ -14,7 +14,7 @@ import 'react-lazy-load-image-component/src/effects/opacity.css';
 function MyCardsSet(props) {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(true);
-    const [items, setItems] = useState(null);
+    const [items, setItems] = useState(  []);
     const [myCards, setMyCards] = useState([]);
     const [myCardsId, setMyCardsId] = useState([]);
     const [modalIsOpen, setIsOpen] = React.useState(false);
@@ -63,10 +63,9 @@ function MyCardsSet(props) {
             .then(res => res.json())
             .then(
                 (result) => {
-                    setItems(result.data[0]);
-                    setInterval(() => {
-                        setItems(items => [...items,result.data[1]]);
-                    }, 10000)
+                    for (let i = 0; i <= result.data.length; i++) {
+                        setTimeout(() => setItems(items => [...items,result.data[i]]), 3000 * i);
+                    }
                     if(result.data.length == 250){
                         fetch("https://api.pokemontcg.io/v2/cards?q=set.id:"+props.idBooster+"&page=2")
                             .then(res => res.json())

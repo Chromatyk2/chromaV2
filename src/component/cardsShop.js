@@ -273,9 +273,23 @@ function CardsShop(props) {
                                 return (
                                     <div className="uniqueTradeContainer">
                                         <div className={"containerImgBooster"}>
-                                            <img className="fit-picture"
-                                                 src={"https://images.pokemontcg.io/" + val.name + "/logo.png"}
-                                                 alt="Grapefruit slice atop a pile of other slices"/>
+                                            <LazyLoadImage
+                                                delayTime={0}
+                                                threshold={200}
+                                                placeholderSrc={"https://images.pokemontcg.io/defaut.png"}
+                                                width={"150"}
+                                                style={{width:"250px",filter:"brightness(1)"}}
+                                                wrapperClassName={"shadowBangerCard"}
+                                                effect="opacity"
+                                                delayTime={5}
+                                                wrapperProps={{
+                                                    // If you need to, you can tweak the effect transition using the wrapper style.
+                                                    style: {transitionDelay: "1s"},
+                                                }}
+                                                src={"https://images.pokemontcg.io/" + val.name + "/logo.png"} />
+                                            {/*<img className="fit-picture"*/}
+                                            {/*     src={"https://images.pokemontcg.io/" + val.name + "/logo.png"}*/}
+                                            {/*     alt="Grapefruit slice atop a pile of other slices"/>*/}
                                         </div>
                                         {points > 0 ?
                                             loading === false ?

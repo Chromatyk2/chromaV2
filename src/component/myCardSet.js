@@ -202,7 +202,7 @@ function MyCardsSet(props) {
         <>
 
             {isLoaded === false &&
-                myCards.length > 0s &&
+                myCards.length > 0 &&
                 <ProgressBarCard getNb={myCards.length} item={sets.length}/>
             }
             {sets.length > 0 &&

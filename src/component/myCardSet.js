@@ -71,9 +71,7 @@ function MyCardsSet(props) {
                     .then(
                         (result) => {
                             for(let i = 0; i <= result.data.length - 1; i++) {
-                                setTimeout(() => {
                                     setTimeout(() => setItems((items) => [...items, i]), 100 * i)
-                                }, 2000);
                             }
                             if(items.length == result.data.length){
                                 if(result.data.length == 250){

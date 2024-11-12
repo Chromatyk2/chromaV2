@@ -229,6 +229,8 @@ function MyCardsSet(props) {
                                         <div onClick={openModal} style={{animation: "glowGetRainbow 10s infinite alternate"}} id={"lastBangerContainer"} className={"lastBangerContainer"}>
                                             <div cardId={val.id} pokemonId={val.dexId} myCardNb={cardNb.nbCard} image={val.image} stade={stadeC} className="cardBangerAlertSet">
                                                 <LazyLoadImage
+                                                    delayTime={0}
+                                                    threshold={200}
                                                     placeholderSrc={"https://images.pokemontcg.io/defaut.png"}
                                                     width={"250"}
                                                     style={{width:"250px",filter:"brightness(1)"}}
@@ -249,6 +251,8 @@ function MyCardsSet(props) {
                                             <div cardId={val.id} pokemonId={val.dexId} myCardNb={cardNb.nbCard} image={val.image} stade={stadeC} onClick={openModal} style={{filter: "drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px)"}} id={"lastBangerContainer"} className={"lastBangerContainer"}>
                                                 <div cardId={val.id} pokemonId={val.dexId} myCardNb={cardNb.nbCard} image={val.image} stade={stadeC} className="cardBangerAlertSetThree">
                                                     <LazyLoadImage
+                                                        delayTime={0}
+                                                        threshold={200}
                                                         placeholderSrc={"https://images.pokemontcg.io/defaut.png"}
                                                         width={"250"}
                                                         style={{width:"250px",filter:"brightness(1.2)"}}

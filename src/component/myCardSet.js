@@ -13,8 +13,9 @@ import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 function MyCardsSet(props) {
     const [error, setError] = useState(null);
-    const [isLoaded, setIsLoaded] = useState(true);
+    const [isLoaded, setIsLoaded] = useState(false);
     const [items, setItems] = useState(  []);
+    const [sets, setSets] = useState(  []);
     const [myCards, setMyCards] = useState([]);
     const [myCardsId, setMyCardsId] = useState([]);
     const [modalIsOpen, setIsOpen] = React.useState(false);
@@ -70,6 +71,7 @@ function MyCardsSet(props) {
                     .then(res => res.json())
                     .then(
                         (result) => {
+                            setSets(result.data)
                             for(let i = 0; i <= result.data.length - 1; i++) {
                                     setTimeout(() => setItems((items) => [...items, result.data[i]]), 100 * i)
                             }
@@ -200,18 +202,10 @@ function MyCardsSet(props) {
         <>
 
             {isLoaded === false &&
-                items &&
-                <ProgressBarCard getNb={myCards.length} item={items.length}/>
+                myCards.length > 0s &&
+                <ProgressBarCard getNb={myCards.length} item={sets.length}/>
             }
-            {isLoaded === true &&
-                <>
-                    <div className={"loaderPokemon"}>
-                        <h2 className="u-text-center">Chargement ...</h2>
-                        <div className="pokemon"></div>
-                    </div>
-                </>
-            }
-            {isLoaded === false &&
+            {sets.length > 0 &&
                 <>
                     <div style={{color:"white",display:"flex",width:"100%",justifyContent:"center",flexWrap:"wrap"}}>
                         <label htmlFor="subscribe">

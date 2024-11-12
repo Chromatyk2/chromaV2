@@ -13,7 +13,7 @@ import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 function MyCardsSet(props) {
     const [error, setError] = useState(null);
-    const [isLoaded, setIsLoaded] = useState(true);
+    const [isLoaded, setIsLoaded] = useState(false);
     const [items, setItems] = useState(  []);
     const [myCards, setMyCards] = useState([]);
     const [myCardsId, setMyCardsId] = useState([]);

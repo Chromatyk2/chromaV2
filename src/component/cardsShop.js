@@ -274,7 +274,7 @@ function CardsShop(props) {
                         }
                         {items &&
                                     <Carousel
-                                        items={items.map((val, key) => {<div className="uniqueTradeContainer">
+                                        items={[items.map((val, key) => {<div className="uniqueTradeContainer">
                                             <div className={"containerImgBooster"}>
                                                 <LazyLoadImage
                                                     delayTime={0}
@@ -321,7 +321,7 @@ function CardsShop(props) {
                                                 </div>
                                             }
                                         </div>
-                                        })}
+                                        })]}
                                         startIndex={0}
                                         onChange={(currentIndex) => console.log(currentIndex)}
                                     />

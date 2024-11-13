@@ -194,7 +194,7 @@ function CardsShop(props) {
     useEffect(() => {
         if(canOpenLive !== null){
             items.map((val, key) => {
-                setItems(items => [...items,
+                setArray(items => [...items,
                     <div className="uniqueTradeContainer">
                         <div className={"containerImgBooster"}>
                             <LazyLoadImage

@@ -144,6 +144,7 @@ function CardsShop(props) {
         setCanOpenLive(1)
     }
     function selectGen(e) {
+        setArray([])
         if(e.target.value == "all"){
             Axios
                 .get("/api/getBoostersList")
@@ -207,7 +208,6 @@ function CardsShop(props) {
                 .get("/api/getBoostersListByGen/"+ e.target.value)
                 .then(function(response){
                     setItems(response.data);
-
                     response.data.map((val, key) => {
                         setArray(array => [...array,
                             <div className="uniqueTradeContainer">

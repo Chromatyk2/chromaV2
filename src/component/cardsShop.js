@@ -217,7 +217,7 @@ function CardsShop(props) {
                                         threshold={200}
                                         placeholderSrc={"https://images.pokemontcg.io/defaut.png"}
                                         width={"150"}
-                                        style={{width: "150px", filter: "brightness(1)"}}
+                                        style={{width: "220px", filter: "brightness(1) drop-shadow(2px 4px 6px black)",borderRadius: "25px"}}
                                         effect="opacity"
                                         delayTime={5}
                                         wrapperProps={{

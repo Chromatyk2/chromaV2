@@ -71,56 +71,59 @@ function CardsShop(props) {
                                         console.log(points);
                                         console.log(canOpenLive);
                                         setItems(response.data);
-                                        response.data.map((val, key) => {
-                                            setArray(array => [...array,
-                                                <div className="uniqueTradeContainer">
-                                                    <div className={"containerImgBooster"}>
-                                                        <LazyLoadImage
-                                                            delayTime={0}
-                                                            threshold={200}
-                                                            placeholderSrc={"https://images.pokemontcg.io/defaut.png"}
-                                                            width={"150"}
-                                                            style={{width: "150px", filter: "brightness(1)"}}
-                                                            effect="opacity"
-                                                            delayTime={5}
-                                                            wrapperProps={{
-                                                                // If you need to, you can tweak the effect transition using the wrapper style.
-                                                                style: {transitionDelay: "0.1s"},
-                                                            }}
-                                                            src={"/Boosters/" + val.name + ".png"}/>
-                                                        {/*<img className="fit-picture"*/}
-                                                        {/*     src={"https://images.pokemontcg.io/" + val.name + "/logo.png"}*/}
-                                                        {/*     alt="Grapefruit slice atop a pile of other slices"/>*/}
-                                                    </div>
-                                                    {points > 0 ?
-                                                        loading === false ?
+                                            setArray(
+                                                response.data.map((val, key) => {
+                                                    <div className="uniqueTradeContainer">
+                                                        <div className={"containerImgBooster"}>
+                                                            <LazyLoadImage
+                                                                delayTime={0}
+                                                                threshold={200}
+                                                                placeholderSrc={"https://images.pokemontcg.io/defaut.png"}
+                                                                width={"150"}
+                                                                style={{width: "150px", filter: "brightness(1)"}}
+                                                                effect="opacity"
+                                                                delayTime={5}
+                                                                wrapperProps={{
+                                                                    // If you need to, you can tweak the effect transition using the wrapper style.
+                                                                    style: {transitionDelay: "0.1s"},
+                                                                }}
+                                                                src={"/Boosters/" + val.name + ".png"}/>
+                                                            {/*<img className="fit-picture"*/}
+                                                            {/*     src={"https://images.pokemontcg.io/" + val.name + "/logo.png"}*/}
+                                                            {/*     alt="Grapefruit slice atop a pile of other slices"/>*/}
+                                                        </div>
+                                                        {points > 0 ?
+                                                            loading === false ?
+                                                                <div>
+
+                                                                    <button value={val.name}
+                                                                            onClick={openModal}
+                                                                            className="guessTradeButton">Ouvrir
+                                                                    </button>
+                                                                </div>
+                                                                :
+                                                                <div>
+                                                                    <button className="guessTradeButton">Chargement
+                                                                    </button>
+                                                                </div>
+                                                            :
+                                                            <div>
+                                                                <button className="guessTradeButton">Aucun Token
+                                                                </button>
+                                                            </div>
+                                                        }
+                                                        {canOpenLive == 1 &&
                                                             <div>
 
                                                                 <button value={val.name}
-                                                                        onClick={openModal}
-                                                                        className="guessTradeButton">Ouvrir
+                                                                        onClick={freeBooster}
+                                                                        className="guessTradeButton">Booster Gratuit
                                                                 </button>
                                                             </div>
-                                                            :
-                                                            <div>
-                                                                <button className="guessTradeButton">Chargement</button>
-                                                            </div>
-                                                        :
-                                                        <div>
-                                                            <button className="guessTradeButton">Aucun Token</button>
-                                                        </div>
-                                                    }
-                                                    {canOpenLive == 1 &&
-                                                        <div>
-
-                                                            <button value={val.name}
-                                                                    onClick={freeBooster}
-                                                                    className="guessTradeButton">Booster Gratuit
-                                                            </button>
-                                                        </div>
-                                                    }
-                                                </div>
-                                            ]);
+                                                        }
+                                                    </div>
+                                                })
+                                            );
                                         })
                                     })
                             })
@@ -151,12 +154,118 @@ function CardsShop(props) {
                 .get("/api/getBoostersList")
                 .then(function(response){
                     setItems(response.data);
+                    setArray(
+                        response.data.map((val, key) => {
+                            <div className="uniqueTradeContainer">
+                                <div className={"containerImgBooster"}>
+                                    <LazyLoadImage
+                                        delayTime={0}
+                                        threshold={200}
+                                        placeholderSrc={"https://images.pokemontcg.io/defaut.png"}
+                                        width={"150"}
+                                        style={{width: "150px", filter: "brightness(1)"}}
+                                        effect="opacity"
+                                        delayTime={5}
+                                        wrapperProps={{
+                                            // If you need to, you can tweak the effect transition using the wrapper style.
+                                            style: {transitionDelay: "0.1s"},
+                                        }}
+                                        src={"/Boosters/" + val.name + ".png"}/>
+                                    {/*<img className="fit-picture"*/}
+                                    {/*     src={"https://images.pokemontcg.io/" + val.name + "/logo.png"}*/}
+                                    {/*     alt="Grapefruit slice atop a pile of other slices"/>*/}
+                                </div>
+                                {points > 0 ?
+                                    loading === false ?
+                                        <div>
+
+                                            <button value={val.name}
+                                                    onClick={openModal}
+                                                    className="guessTradeButton">Ouvrir
+                                            </button>
+                                        </div>
+                                        :
+                                        <div>
+                                            <button className="guessTradeButton">Chargement
+                                            </button>
+                                        </div>
+                                    :
+                                    <div>
+                                        <button className="guessTradeButton">Aucun Token
+                                        </button>
+                                    </div>
+                                }
+                                {canOpenLive == 1 &&
+                                    <div>
+
+                                        <button value={val.name}
+                                                onClick={freeBooster}
+                                                className="guessTradeButton">Booster Gratuit
+                                        </button>
+                                    </div>
+                                }
+                            </div>
+                        })
+                    );
                 })
         }else{
             Axios
                 .get("/api/getBoostersListByGen/"+ e.target.value)
                 .then(function(response){
                     setItems(response.data);
+                    setArray(
+                        response.data.map((val, key) => {
+                            <div className="uniqueTradeContainer">
+                                <div className={"containerImgBooster"}>
+                                    <LazyLoadImage
+                                        delayTime={0}
+                                        threshold={200}
+                                        placeholderSrc={"https://images.pokemontcg.io/defaut.png"}
+                                        width={"150"}
+                                        style={{width: "150px", filter: "brightness(1)"}}
+                                        effect="opacity"
+                                        delayTime={5}
+                                        wrapperProps={{
+                                            // If you need to, you can tweak the effect transition using the wrapper style.
+                                            style: {transitionDelay: "0.1s"},
+                                        }}
+                                        src={"/Boosters/" + val.name + ".png"}/>
+                                    {/*<img className="fit-picture"*/}
+                                    {/*     src={"https://images.pokemontcg.io/" + val.name + "/logo.png"}*/}
+                                    {/*     alt="Grapefruit slice atop a pile of other slices"/>*/}
+                                </div>
+                                {points > 0 ?
+                                    loading === false ?
+                                        <div>
+
+                                            <button value={val.name}
+                                                    onClick={openModal}
+                                                    className="guessTradeButton">Ouvrir
+                                            </button>
+                                        </div>
+                                        :
+                                        <div>
+                                            <button className="guessTradeButton">Chargement
+                                            </button>
+                                        </div>
+                                    :
+                                    <div>
+                                        <button className="guessTradeButton">Aucun Token
+                                        </button>
+                                    </div>
+                                }
+                                {canOpenLive == 1 &&
+                                    <div>
+
+                                        <button value={val.name}
+                                                onClick={freeBooster}
+                                                className="guessTradeButton">Booster Gratuit
+                                        </button>
+                                    </div>
+                                }
+                            </div>
+                        })
+                    );
                 })
         }
     }

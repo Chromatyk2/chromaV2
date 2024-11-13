@@ -411,9 +411,9 @@ function CardsShop(props) {
                                                 </button>
                                             </div>
                                             :
-                                            <button style={{margin:0}} className="guessTradeButton">Chargement</button>
+                                            <button style={{margin:0,width:"200px"}} className="guessTradeButton">Chargement</button>
                                         :
-                                        <button style={{margin:0}} className="guessTradeButton">Aucun Token</button>
+                                        <button style={{width:"200px"}} className="guessTradeButton">Aucun Token</button>
                                     }
                                     {canOpenLive == 1 &&
                                         <div>

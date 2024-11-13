@@ -5446,9 +5446,13 @@ li.react-responsive-3d-carousel__item.fixed-width.fixed-height {
 ul.react-responsive-3d-carousel__list {
     height:450px!important
 }
-.uniqueTradeContainerRandom{
-    display: flex;
-    height: 100px;
-    gap: 20px;
+.uniqueTradeContainerRandom {
     align-items: center;
+    display: flex;
+    gap: 20px;
+    height: 100px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
 }

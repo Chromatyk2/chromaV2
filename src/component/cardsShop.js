@@ -423,10 +423,12 @@ function CardsShop(props) {
                         }
                         {items &&
                                     <Carousel
+                                        defaultOption={{ numOfSlides: 3 }}
                                         items={array}
                                         startIndex={0}
                                         interval={10000}
                                         pauseOnHover={false}
+                                        onChange={}
                                     />
                         }
                     </div>

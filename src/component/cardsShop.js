@@ -422,11 +422,10 @@ function CardsShop(props) {
                             </div>
                         }
                         {items &&
-                            <div style={{width: "250px"}}>
+                            <div style={{width: "100%"}}>
                                 <Carousel
                                     transformDuration={100}
                                     transformTimingFn={"linear"}
-                                    defaultOption={{ widthFactor: 2}}
                                     items={array}
                                     startIndex={0}
                                     interval={10000}

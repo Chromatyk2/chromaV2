@@ -68,9 +68,10 @@ function CardsShop(props) {
                                 Axios
                                     .get("/api/getBoostersList")
                                     .then(function(response){
+                                        console.log(points);
+                                        console.log(canOpenLive);
                                         setItems(response.data);
                                         response.data.map((val, key) => {
-                                            console.log(array)
                                             setArray(array => [...array,
                                                 <div className="uniqueTradeContainer">
                                                     <div className={"containerImgBooster"}>

@@ -430,8 +430,6 @@ function CardsShop(props) {
                                         items={array}
                                         startIndex={0}
                                         interval={10000}
-                                        sizeDuration={100}
-                                        transformDuration={100}
                                         pauseOnHover={false}
                                     />
                         }

@@ -1606,7 +1606,7 @@ object{
 }
 .containerImgBooster {
     display: flex;
-    height: 250px;
+    height: 300px;
     justify-content: center;
     align-items: center;
 }
@@ -5439,10 +5439,10 @@ button.guessTradeButton {
     margin-top: 25px;
 }
 li.react-responsive-3d-carousel__item.fixed-width.fixed-height {
-    height: 400px !important;
+    height: 450px !important;
     border: none !important;
     box-shadow: none !important;
 }
-li.react-responsive-3d-carousel__item.fixed-width.fixed-height {
-    height: 400px !important;
+ul.react-responsive-3d-carousel__list {
+    height:450px!important
 }

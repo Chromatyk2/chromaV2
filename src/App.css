@@ -5443,28 +5443,14 @@ li.react-responsive-3d-carousel__item.fixed-width.fixed-height {
     border: none !important;
     box-shadow: none !important;
 }
-li.react-responsive-3d-carousel__item.fixed-width.fixed-height button {
-    display: none;
-}
 li.react-responsive-3d-carousel__item.fixed-width.fixed-height:hover {
     background: none;
-    button {
-        display: block;
-    }
 }
 li.react-responsive-3d-carousel__item.fixed-width.fixed-height:focus {
     background: none;
-    button {
-        display: block;
-    }
 }
 ul.react-responsive-3d-carousel__list {
     height:450px!important
-}
-.uniqueTradeContainer:hover {
-    button{
-        display: block;
-    }
 }
 .uniqueTradeContainerRandom {
     align-items: center;

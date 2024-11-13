@@ -345,7 +345,7 @@ function CardsShop(props) {
         setOnOpen(false);
     }
     function changeCarousel(e) {
-        items[e].display = "none"
+        console.log(items[e].html)
     }
     return (
         <>

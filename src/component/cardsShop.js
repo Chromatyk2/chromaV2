@@ -344,6 +344,9 @@ function CardsShop(props) {
     function handleState() {
         setOnOpen(false);
     }
+    function changeCarousel(e) {
+        e.target.style.display = "block";
+    }
     return (
         <>
             {onOpen === true ?
@@ -422,7 +425,7 @@ function CardsShop(props) {
                             </div>
                         }
                         {items &&
-                            <div style={{width: "100%"}}>
+                            <div style={{width: "100%"}} onChange={(item) => changeCarousel(item)} >
                                 <Carousel
                                     transformDuration={100}
                                     transformTimingFn={"linear"}

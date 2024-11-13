@@ -345,7 +345,7 @@ function CardsShop(props) {
         setOnOpen(false);
     }
     function changeCarousel(e) {
-        console.log(array[e].props.children[1].props.style)
+        console.log(array[e].props.children[1].props)
     }
     return (
         <>

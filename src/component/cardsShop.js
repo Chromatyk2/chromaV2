@@ -246,7 +246,7 @@ function CardsShop(props) {
             })
         }
     }, []);
-
+console.log(array)
     return (
         <>
             {onOpen === true ?

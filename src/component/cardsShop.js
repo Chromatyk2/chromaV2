@@ -396,7 +396,7 @@ function CardsShop(props) {
                     </select>
                     <div id={"cardsContainer"}>
                         {items &&
-                            <div className="uniqueTradeContainer">
+                            <div className="uniqueTradeContainerRandom">
                                 <p className="pokemonNameTrade">Booster Aléatoire</p>
                                 <div className={"containerImgBooster"}>
                                     <img className="fit-picture" src={"/images/random.png"}

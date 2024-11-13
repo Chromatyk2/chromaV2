@@ -1215,12 +1215,12 @@ p.titleMyCaptures{
     margin-left: 25px;
 }
 .uniqueTradeContainer {
-    background: rgba(37, 87, 95, .2);
+    background: #0a2e61;
     border-radius: 25px;
     padding: 20px;
 }
 .uniqueMyCardContainer {
-    background: rgba(37,87,95,.2);
+    background: transparent;
     border-radius: 25px;
     padding: 20px;
 }
@@ -5438,8 +5438,10 @@ button.navbar-toggler.collapsed {
 button.guessTradeButton {
     margin-top: 25px;
 }
-ul.react-responsive-3d-carousel__list {
-    height: 400px!important;
+li.react-responsive-3d-carousel__item.fixed-width.fixed-height {
+    height: 400px !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 li.react-responsive-3d-carousel__item.fixed-width.fixed-height {
     height: 400px !important;

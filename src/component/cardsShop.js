@@ -422,7 +422,7 @@ function CardsShop(props) {
                             </div>
                         }
                         {items &&
-                            <div style={{width: "300px"}}>
+                            <div style={{width: "250px"}}>
                                 <Carousel
                                     defaultOption={{ numOfSlides: 3, widthFactor: -10, depthFactor:3.5,angleFactor:-3 }}
                                     items={array}

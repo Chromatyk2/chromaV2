@@ -396,8 +396,7 @@ function CardsShop(props) {
                     <div id={"cardsContainer"}>
                         {items &&
                             <div className="uniqueTradeContainerRandom">
-                                <p className="pokemonNameTrade">Booster Aléatoire</p>
-                                <div className={"containerImgBooster"}>
+                                <div style={{height:"70px"}} className={"containerImgBooster"}>
                                     <img style={{width:"80px"}} className="fit-picture" src={"/images/random.png"}
                                          alt="Grapefruit slice atop a pile of other slices"/>
                                 </div>

@@ -25,6 +25,7 @@
     "react-lazyload": "^3.2.1",
     "react-modal": "^3.16.1",
     "react-paginate": "^8.1.4",
+    "react-responsive-3d-carousel": "^2.0.1",
     "react-router-dom": "^6.24.0",
     "react-scripts": "5.0.1",
     "react-search-autocomplete": "^8.3.2",

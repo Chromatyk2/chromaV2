@@ -273,7 +273,7 @@ function CardsShop(props) {
                             </div>
                         }
                         {items &&
-                                    <Carousel3D
+                                    <Carousel
                                         items={items.map((val, key) => {<div className="uniqueTradeContainer">
                                             <div className={"containerImgBooster"}>
                                                 <LazyLoadImage

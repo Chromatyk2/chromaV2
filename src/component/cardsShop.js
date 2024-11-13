@@ -192,6 +192,7 @@ function CardsShop(props) {
     }
 
     useEffect(() => {
+        if(canOpenLive !== null){
             items.map((val, key) => {
                 console.log(array)
                 setArray(array => [...array,
@@ -244,7 +245,9 @@ function CardsShop(props) {
                     </div>
                 ]);
             })
-    }, [items]);
+        }
+    }, []);
+console.log(array)
     return (
         <>
             {onOpen === true ?

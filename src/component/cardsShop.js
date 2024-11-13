@@ -421,7 +421,7 @@ function CardsShop(props) {
                         }
                         {items &&
                             <div style={{width: "250px"}}>
-                                <Carousel show={1} slide={3} swiping={true}>
+                                <Carousel show={1} slide={1} swiping={true}>
                                     {items.map((val, key) => {
                                         return(<div className="uniqueTradeContainer">
                                             <div className={"containerImgBooster"}>

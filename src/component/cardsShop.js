@@ -399,32 +399,32 @@ function CardsShop(props) {
                             <div className="uniqueTradeContainerRandom">
                                 <p className="pokemonNameTrade">Booster Aléatoire</p>
                                 <div className={"containerImgBooster"}>
-                                    <img style={{width: "80px"}} className="fit-picture" src={"/images/random.png"}
+                                    <img style={{width:"80px"}} className="fit-picture" src={"/images/random.png"}
                                          alt="Grapefruit slice atop a pile of other slices"/>
                                 </div>
                                 <div>
                                     {points > 0 ?
                                         loading === false ?
-                                            <button style={{margin: 0}}
-                                                    value={items[Math.floor(Math.random() * items.length)].name}
-                                                    onClick={openModal}
-                                                    className="guessTradeButton">Ouvrir
-                                            </button>
+                                            <div>
+                                                <button style={{margin:0}} value={items[Math.floor(Math.random() * items.length)].name}
+                                                        onClick={openModal}
+                                                        className="guessTradeButton">Ouvrir
+                                                </button>
+                                            </div>
                                             :
-                                            <button style={{margin:0}} className="guessTradeButton">Chargement
-                                            </button>
+                                            <button style={{margin:0}} className="guessTradeButton">Chargement</button>
                                         :
-                                        <button style={{margin: 0}} className="guessTradeButton">Aucun Token</button>
+                                        <button style={{margin:0}} className="guessTradeButton">Aucun Token</button>
+                                    }
+                                    {canOpenLive == 1 &&
+                                        <div>
+                                            <button style={{margin:0}} value={items[Math.floor(Math.random() * items.length)].name}
+                                                    onClick={freeBooster}
+                                                    className="guessTradeButton">Booster Gratuit
+                                            </button>
+                                        </div>
                                     }
                                 </div>
-                                {canOpenLive == 1 &&
-                                    <div>
-                                        <button value={items[Math.floor(Math.random() * items.length)].name}
-                                                onClick={freeBooster}
-                                                className="guessTradeButton">Booster Gratuit
-                                        </button>
-                                    </div>
-                                }
                             </div>
                         }
                         {items &&

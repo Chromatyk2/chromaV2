@@ -192,9 +192,9 @@ function CardsShop(props) {
     }
 
     useEffect(() => {
-        if(canOpenLive !== null){
             items.map((val, key) => {
-                setArray(items => [...items,
+                console.log(array)
+                setArray(array => [...array,
                     <div className="uniqueTradeContainer">
                         <div className={"containerImgBooster"}>
                             <LazyLoadImage
@@ -244,9 +244,7 @@ function CardsShop(props) {
                     </div>
                 ]);
             })
-        }
-    }, []);
-console.log(array)
+    }, [items]);
     return (
         <>
             {onOpen === true ?

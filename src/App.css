@@ -4125,17 +4125,10 @@ span.navbar-brand {
 }
 
 
-#icomp-neon p span{
-    color:#BA01FF;
-}
-#icomp-neon p span{
-    -webkit-animation: neon6 1.5s ease-in-out infinite alternate;
-    -moz-animation: neon6 1.5s ease-in-out infinite alternate;
-    animation: neon6 1.5s ease-in-out infinite alternate;
-}
 
 #icomp-neon p span{
-    color:#ffffff;
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #24275d, 0 0 70px #24275d, 0 0 80px #24275d, 0 0 100px #24275d, 0 0 150px #24275d;
 }
 @-webkit-keyframes neon6 {
     from {

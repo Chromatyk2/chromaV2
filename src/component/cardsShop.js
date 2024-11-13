@@ -351,76 +351,76 @@ function CardsShop(props) {
                 :
                 canOpenLive !== null &&
                 <>
-                    {/*<div>*/}
-                    {/*    {points &&*/}
-                    {/*    points == -1 ?*/}
-                    {/*        <div className="myPointsDisplay">*/}
-                    {/*        </div>*/}
-                    {/*        :*/}
-                    {/*        <div style={{marginBottom:"-25px",marginTop:"10px"}} className="myPointsDisplay">*/}
-                    {/*            <img style={{display:"block",margin:"auto",width:"50px"}} src={token} />*/}
-                    {/*            <p style={{color: "white",textAlign:"center"}}>Token TCG : {points}</p>*/}
-                    {/*        </div>*/}
-                    {/*    }*/}
-                    {/*    {canOpenLive == 1 ?*/}
-                    {/*        <div id="icomp-neon">*/}
-                    {/*            <p><span href="http://tuts.icomp.ir">*/}
-                    {/*            Booster Gratuit Disponible*/}
-                    {/*        </span></p>*/}
-                    {/*        </div>*/}
-                    {/*        :*/}
-                    {/*        <div style={{marginTop:"15px"}} className="myPointsDisplay">*/}
-                    {/*            <p style={{marginBottom:"10px", textAlign:"center"}}>*/}
-                    {/*                <span>Prochain booster Gratuit dans : </span>*/}
-                    {/*                <Countdown*/}
-                    {/*                    date={nextFree}*/}
-                    {/*                    intervalDelay={0}*/}
-                    {/*                    precision={3}*/}
-                    {/*                    onComplete={checkEndCountdown}*/}
-                    {/*                />*/}
-                    {/*            </p>*/}
-                    {/*        </div>*/}
-                    {/*    }*/}
-                    {/*</div>*/}
-                    {/*<select className={"selectGen"} onChange={selectGen} name="pets" id="pet-select">*/}
-                    {/*    <option value="1">Gen 1</option>*/}
-                    {/*    <option value="2">Gen 2</option>*/}
-                    {/*    <option value="3">Gen 3</option>*/}
-                    {/*    <option value="4">Gen 4</option>*/}
-                    {/*    <option value="5">Gen 5</option>*/}
-                    {/*    <option value="6">Gen 6</option>*/}
-                    {/*    <option value="7">Gen 7</option>*/}
-                    {/*    <option value="8">Gen 8</option>*/}
-                    {/*    <option value="9">Gen 9</option>*/}
-                    {/*</select>*/}
+                    <div>
+                        {points &&
+                        points == -1 ?
+                            <div className="myPointsDisplay">
+                            </div>
+                            :
+                            <div style={{marginBottom:"-25px",marginTop:"10px"}} className="myPointsDisplay">
+                                <img style={{display:"block",margin:"auto",width:"50px"}} src={token} />
+                                <p style={{color: "white",textAlign:"center"}}>Token TCG : {points}</p>
+                            </div>
+                        }
+                        {canOpenLive == 1 ?
+                            <div id="icomp-neon">
+                                <p><span href="http://tuts.icomp.ir">
+                                Booster Gratuit Disponible
+                            </span></p>
+                            </div>
+                            :
+                            <div style={{marginTop:"15px"}} className="myPointsDisplay">
+                                <p style={{marginBottom:"10px", textAlign:"center"}}>
+                                    <span>Prochain booster Gratuit dans : </span>
+                                    <Countdown
+                                        date={nextFree}
+                                        intervalDelay={0}
+                                        precision={3}
+                                        onComplete={checkEndCountdown}
+                                    />
+                                </p>
+                            </div>
+                        }
+                    </div>
+                    <select className={"selectGen"} onChange={selectGen} name="pets" id="pet-select">
+                        <option value="1">Gen 1</option>
+                        <option value="2">Gen 2</option>
+                        <option value="3">Gen 3</option>
+                        <option value="4">Gen 4</option>
+                        <option value="5">Gen 5</option>
+                        <option value="6">Gen 6</option>
+                        <option value="7">Gen 7</option>
+                        <option value="8">Gen 8</option>
+                        <option value="9">Gen 9</option>
+                    </select>
                     <div id={"cardsContainer"}>
-                        {/*{items &&*/}
-                        {/*    <div className="uniqueTradeContainerRandom">*/}
-                        {/*        <div style={{height:"70px"}} className={"containerImgBooster"}>*/}
-                        {/*            <img style={{width:"80px"}} className="fit-picture" src={"/images/random.png"}*/}
-                        {/*                 alt="Grapefruit slice atop a pile of other slices"/>*/}
-                        {/*        </div>*/}
-                        {/*        <div>*/}
-                        {/*            {points > 0 ?*/}
-                        {/*                loading === false ?*/}
-                        {/*                        <button style={{margin:0,width:"200px"}} value={items[Math.floor(Math.random() * items.length)].name}*/}
-                        {/*                                onClick={openModal}*/}
-                        {/*                                className="guessTradeButton">Ouvrir*/}
-                        {/*                        </button>*/}
-                        {/*                    :*/}
-                        {/*                    <button style={{margin:0,width:"200px"}} className="guessTradeButton">Chargement</button>*/}
-                        {/*                :*/}
-                        {/*                <button style={{margin:0,width:"200px"}} className="guessTradeButton">Aucun Token</button>*/}
-                        {/*            }*/}
-                        {/*            {canOpenLive == 1 &&*/}
-                        {/*                    <button style={{width:"200px"}} value={items[Math.floor(Math.random() * items.length)].name}*/}
-                        {/*                            onClick={freeBooster}*/}
-                        {/*                            className="guessTradeButton">Booster Gratuit*/}
-                        {/*                    </button>*/}
-                        {/*            }*/}
-                        {/*        </div>*/}
-                        {/*    </div>*/}
-                        {/*}*/}
+                        {items &&
+                            <div className="uniqueTradeContainerRandom">
+                                <div style={{height:"70px"}} className={"containerImgBooster"}>
+                                    <img style={{width:"80px"}} className="fit-picture" src={"/images/random.png"}
+                                         alt="Grapefruit slice atop a pile of other slices"/>
+                                </div>
+                                <div>
+                                    {points > 0 ?
+                                        loading === false ?
+                                                <button style={{margin:0,width:"200px"}} value={items[Math.floor(Math.random() * items.length)].name}
+                                                        onClick={openModal}
+                                                        className="guessTradeButton">Ouvrir
+                                                </button>
+                                            :
+                                            <button style={{margin:0,width:"200px"}} className="guessTradeButton">Chargement</button>
+                                        :
+                                        <button style={{margin:0,width:"200px"}} className="guessTradeButton">Aucun Token</button>
+                                    }
+                                    {canOpenLive == 1 &&
+                                            <button style={{width:"200px"}} value={items[Math.floor(Math.random() * items.length)].name}
+                                                    onClick={freeBooster}
+                                                    className="guessTradeButton">Booster Gratuit
+                                            </button>
+                                    }
+                                </div>
+                            </div>
+                        }
                         {items &&
                             <div style={{width: "250px"}}>
                                 <Carousel

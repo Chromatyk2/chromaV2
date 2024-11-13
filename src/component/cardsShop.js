@@ -50,27 +50,77 @@ function CardsShop(props) {
             .get("/api/getBoostersList")
             .then(function(response){
                 setItems(response.data);
-            })
-    }, [])
-    useEffect(() => {
-        Axios
-            .get("/api/getCardsPoint/"+props.user)
-            .then(function(response){
-                setPoints(response.data[0].cardToken);
-                Axios.get("/api/getProfil/"+props.user)
+                Axios
+                    .get("/api/getCardsPoint/"+props.user)
                     .then(function(response){
-                        const dateNow = moment(Date.now()).tz("Europe/Paris").format('YYYY-MM-DD HH:mm:ss');
-                        const lastDrawing = new Date(response.data[0].lastOpening).toISOString().replace('T', ' ').split(".")[0];
-                        if(response.data[0].canOpen == 1){
-                            setCanOpenLive(response.data[0].canOpen)
-                        }else{
-                            setNextFree(moment(lastDrawing).valueOf() + 7200000);
-                            if(moment(dateNow).valueOf() - moment(lastDrawing).valueOf() >= 7200000){
-                                setCanOpenLive(1)
-                            }else{
-                                setCanOpenLive(0)
-                            }
-                        }
+                        setPoints(response.data[0].cardToken);
+                        Axios.get("/api/getProfil/"+props.user)
+                            .then(function(response){
+                                const dateNow = moment(Date.now()).tz("Europe/Paris").format('YYYY-MM-DD HH:mm:ss');
+                                const lastDrawing = new Date(response.data[0].lastOpening).toISOString().replace('T', ' ').split(".")[0];
+                                if(response.data[0].canOpen == 1){
+                                    setCanOpenLive(response.data[0].canOpen)
+                                }else{
+                                    setNextFree(moment(lastDrawing).valueOf() + 7200000);
+                                    if(moment(dateNow).valueOf() - moment(lastDrawing).valueOf() >= 7200000){
+                                        setCanOpenLive(1)
+                                    }else{
+                                        setCanOpenLive(0)
+                                    }
+                                }
+                                items.map((val, key) => {
+                                    console.log(array)
+                                    setArray(array => [...array,
+                                        <div className="uniqueTradeContainer">
+                                            <div className={"containerImgBooster"}>
+                                                <LazyLoadImage
+                                                    delayTime={0}
+                                                    threshold={200}
+                                                    placeholderSrc={"https://images.pokemontcg.io/defaut.png"}
+                                                    width={"150"}
+                                                    style={{width: "150px", filter: "brightness(1)"}}
+                                                    effect="opacity"
+                                                    delayTime={5}
+                                                    wrapperProps={{
+                                                        // If you need to, you can tweak the effect transition using the wrapper style.
+                                                        style: {transitionDelay: "0.1s"},
+                                                    }}
+                                                    src={"/Boosters/" + val.name + ".png"}/>
+                                                {/*<img className="fit-picture"*/}
+                                                {/*     src={"https://images.pokemontcg.io/" + val.name + "/logo.png"}*/}
+                                                {/*     alt="Grapefruit slice atop a pile of other slices"/>*/}
+                                            </div>
+                                            {points > 0 ?
+                                                loading === false ?
+                                                    <div>
+
+                                                        <button value={val.name}
+                                                                onClick={openModal}
+                                                                className="guessTradeButton">Ouvrir
+                                                        </button>
+                                                    </div>
+                                                    :
+                                                    <div>
+                                                        <button className="guessTradeButton">Chargement</button>
+                                                    </div>
+                                                :
+                                                <div>
+                                                    <button className="guessTradeButton">Aucun Token</button>
+                                                </div>
+                                            }
+                                            {canOpenLive == 1 &&
+                                                <div>
+
+                                                    <button value={val.name}
+                                                            onClick={freeBooster}
+                                                            className="guessTradeButton">Booster Gratuit
+                                                    </button>
+                                                </div>
+                                            }
+                                        </div>
+                                    ]);
+                                })
+                            })
                     })
             })
     }, [])
@@ -190,63 +240,6 @@ function CardsShop(props) {
     function handleState() {
         setOnOpen(false);
     }
-
-    useEffect(() => {
-        if(canOpenLive !== null){
-            items.map((val, key) => {
-                console.log(array)
-                setArray(array => [...array,
-                    <div className="uniqueTradeContainer">
-                        <div className={"containerImgBooster"}>
-                            <LazyLoadImage
-                                delayTime={0}
-                                threshold={200}
-                                placeholderSrc={"https://images.pokemontcg.io/defaut.png"}
-                                width={"150"}
-                                style={{width: "150px", filter: "brightness(1)"}}
-                                effect="opacity"
-                                delayTime={5}
-                                wrapperProps={{
-                                    // If you need to, you can tweak the effect transition using the wrapper style.
-                                    style: {transitionDelay: "0.1s"},
-                                }}
-                                src={"/Boosters/" + val.name + ".png"}/>
-                            {/*<img className="fit-picture"*/}
-                            {/*     src={"https://images.pokemontcg.io/" + val.name + "/logo.png"}*/}
-                            {/*     alt="Grapefruit slice atop a pile of other slices"/>*/}
-                        </div>
-                        {points > 0 ?
-                            loading === false ?
-                                <div>
-
-                                    <button value={val.name}
-                                            onClick={openModal}
-                                            className="guessTradeButton">Ouvrir
-                                    </button>
-                                </div>
-                                :
-                                <div>
-                                    <button className="guessTradeButton">Chargement</button>
-                                </div>
-                            :
-                            <div>
-                                <button className="guessTradeButton">Aucun Token</button>
-                            </div>
-                        }
-                        {canOpenLive == 1 &&
-                            <div>
-
-                                <button value={val.name}
-                                        onClick={freeBooster}
-                                        className="guessTradeButton">Booster Gratuit
-                                </button>
-                            </div>
-                        }
-                    </div>
-                ]);
-            })
-        }
-    }, []);
 console.log(array)
     return (
         <>

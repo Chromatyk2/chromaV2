@@ -404,7 +404,7 @@ function CardsShop(props) {
                                     {points > 0 ?
                                         loading === false ?
                                             <div>
-                                                <button style={{margin:0}} value={items[Math.floor(Math.random() * items.length)].name}
+                                                <button style={{margin:0,width:"200px"}} value={items[Math.floor(Math.random() * items.length)].name}
                                                         onClick={openModal}
                                                         className="guessTradeButton">Ouvrir
                                                 </button>
@@ -412,11 +412,11 @@ function CardsShop(props) {
                                             :
                                             <button style={{margin:0,width:"200px"}} className="guessTradeButton">Chargement</button>
                                         :
-                                        <button style={{width:"200px"}} className="guessTradeButton">Aucun Token</button>
+                                        <button style={{margin:0,width:"200px"}} className="guessTradeButton">Aucun Token</button>
                                     }
                                     {canOpenLive == 1 &&
                                         <div>
-                                            <button style={{margin:0}} value={items[Math.floor(Math.random() * items.length)].name}
+                                            <button style={{width:"200px"}} value={items[Math.floor(Math.random() * items.length)].name}
                                                     onClick={freeBooster}
                                                     className="guessTradeButton">Booster Gratuit
                                             </button>

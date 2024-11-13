@@ -396,12 +396,12 @@ function CardsShop(props) {
                     </select>
                     <div id={"cardsContainer"}>
                         {items &&
-                            <div className="uniqueTradeContainer">
-                                <p className="pokemonNameTrade">Booster Aléatoire</p>
-                                <div className={"containerImgBooster"}>
-                                    <img className="fit-picture" src={"/images/random.png"}
-                                         alt="Grapefruit slice atop a pile of other slices"/>
-                                </div>
+                            // <div className="uniqueTradeContainer">
+                            //     <p className="pokemonNameTrade">Booster Aléatoire</p>
+                            //     <div className={"containerImgBooster"}>
+                            //         <img className="fit-picture" src={"/images/random.png"}
+                            //              alt="Grapefruit slice atop a pile of other slices"/>
+                            //     </div>
                                 {points > 0 ?
                                     loading === false ?
                                         <div>

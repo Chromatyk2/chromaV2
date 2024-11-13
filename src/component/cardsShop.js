@@ -345,7 +345,7 @@ function CardsShop(props) {
         setOnOpen(false);
     }
     function changeCarousel(e) {
-        e.target.style.display = "block";
+        e.target.style.className = "testclass";
     }
     return (
         <>

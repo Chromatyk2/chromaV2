@@ -323,7 +323,7 @@ function CardsShop(props) {
                                                                 </button>
                                                             </div>
                                                         }
-                                                    </div>,
+                                                    </div>
                                                 </>
                                             )
                                         })]}

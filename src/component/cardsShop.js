@@ -191,7 +191,7 @@ function CardsShop(props) {
         setOnOpen(false);
     }
 
-    function setBoostersArray(){
+    useEffect(() => {
         if(canOpenLive !== null){
             items.map((val, key) => {
                 setItems(items => [...items,
@@ -245,7 +245,7 @@ function CardsShop(props) {
                 ]);
             })
         }
-    }
+    }, []);
 
     return (
         <>

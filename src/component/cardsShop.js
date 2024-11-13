@@ -332,7 +332,6 @@ function CardsShop(props) {
                                     <Carousel
                                         items={array}
                                         startIndex={0}
-                                        onChange={(currentIndex) => console.log(currentIndex)}
                                     />
                         }
                     </div>

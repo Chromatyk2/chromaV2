@@ -426,9 +426,8 @@ function CardsShop(props) {
                             </div>
                         }
                         {items &&
-                            <div style={{width: "100%"}} >
+                            <div style={{width: "100%"}}  onChange={(item) => changeCarousel(item)} >
                                 <Carousel
-                                    onChange={changeCarousel}
                                     transformDuration={100}
                                     transformTimingFn={"linear"}
                                     items={array}

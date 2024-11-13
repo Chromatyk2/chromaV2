@@ -424,7 +424,7 @@ function CardsShop(props) {
                         {items &&
                             <div style={{width: "300px"}}>
                                 <Carousel
-                                    defaultOption={{ numOfSlides: 3, widthFactor: 1 }}
+                                    defaultOption={{ numOfSlides: 3, widthFactor: 10, depthFactor:3.5,angleFactor:3 }}
                                     items={array}
                                     startIndex={0}
                                     interval={10000}

@@ -428,7 +428,6 @@ function CardsShop(props) {
                                         startIndex={0}
                                         interval={10000}
                                         pauseOnHover={false}
-                                        onChange={}
                                     />
                         }
                     </div>

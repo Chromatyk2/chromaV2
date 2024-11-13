@@ -13,7 +13,7 @@ import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 function MyCardsSet(props) {
     const [error, setError] = useState(null);
-    const [isLoaded, setIsLoaded] = useState(false);
+    const [isLoaded, setIsLoaded] = useState(true);
     const [items, setItems] = useState(  []);
     const [sets, setSets] = useState(  []);
     const [setsBis, setSetBis] = useState(  []);
@@ -229,6 +229,8 @@ function MyCardsSet(props) {
                                         <div onClick={openModal} style={{animation: "glowGetRainbow 10s infinite alternate"}} id={"lastBangerContainer"} className={"lastBangerContainer"}>
                                             <div cardId={val.id} pokemonId={val.dexId} myCardNb={cardNb.nbCard} image={val.image} stade={stadeC} className="cardBangerAlertSet">
                                                 <LazyLoadImage
+                                                    delayTime={0}
+                                                    threshold={200}
                                                     placeholderSrc={"https://images.pokemontcg.io/defaut.png"}
                                                     width={"250"}
                                                     style={{width:"250px",filter:"brightness(1)"}}
@@ -237,7 +239,7 @@ function MyCardsSet(props) {
                                                     delayTime={5}
                                                     wrapperProps={{
                                                         // If you need to, you can tweak the effect transition using the wrapper style.
-                                                        style: {transitionDelay: "1s"},
+                                                        style: {transitionDelay: "0.1s"},
                                                     }}
                                                     src={"https://images.pokemontcg.io/"+val.set.id+"/"+val.number+"_hires.png"} />
                                                 {/*<img className={"shadowBangerCard"} style={{width:"250px",filter:"brightness(1)"}} src={"https://images.pokemontcg.io/"+val.set.id+"/"+val.number+"_hires.png"}/>*/}
@@ -249,6 +251,8 @@ function MyCardsSet(props) {
                                             <div cardId={val.id} pokemonId={val.dexId} myCardNb={cardNb.nbCard} image={val.image} stade={stadeC} onClick={openModal} style={{filter: "drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px)"}} id={"lastBangerContainer"} className={"lastBangerContainer"}>
                                                 <div cardId={val.id} pokemonId={val.dexId} myCardNb={cardNb.nbCard} image={val.image} stade={stadeC} className="cardBangerAlertSetThree">
                                                     <LazyLoadImage
+                                                        delayTime={0}
+                                                        threshold={200}
                                                         placeholderSrc={"https://images.pokemontcg.io/defaut.png"}
                                                         width={"250"}
                                                         style={{width:"250px",filter:"brightness(1.2)"}}

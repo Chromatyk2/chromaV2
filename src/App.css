@@ -1218,7 +1218,6 @@ p.titleMyCaptures{
     background: rgba(37, 87, 95, .2);
     border-radius: 25px;
     padding: 20px;
-    height: 360px;
 }
 .uniqueMyCardContainer {
     background: rgba(37,87,95,.2);
@@ -1608,6 +1607,8 @@ object{
 .containerImgBooster {
     display: flex;
     height: 150px;
+    justify-content: center;
+    align-items: center;
 }
 #twitch-chat-embed{
     position: fixed;
@@ -5433,4 +5434,7 @@ button.navbar-toggler.collapsed {
 .progress-bar .progress-value {
     stroke: white;
     stroke-dashoffset: 301.59;
+}
+button.guessTradeButton {
+    margin-top: 25px;
 }

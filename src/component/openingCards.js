@@ -7,6 +7,8 @@ import '../App.css'
 import moment from 'moment';
 import Modal from 'react-modal';
 import token from '../token.png'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 function OpeningCards(props) {
 

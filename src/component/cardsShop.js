@@ -127,7 +127,6 @@ function CardsShop(props) {
                                         })
                                     })
                             })
-                    })
     }, [])
 
     function registerCards(e) {

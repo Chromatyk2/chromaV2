@@ -274,7 +274,7 @@ function CardsShop(props) {
                                     <div className="uniqueTradeContainer">
                                         <div className={"containerImgBooster"}>
                                             <img className="fit-picture"
-                                                 src={"https://images.pokemontcg.io/" + val.name + "/logo.png"}
+                                                 src={"/Boosters/" + val.name + ".png"}
                                                  alt="Grapefruit slice atop a pile of other slices"/>
                                         </div>
                                         {points > 0 ?

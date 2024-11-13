@@ -274,7 +274,7 @@ function CardsShop(props) {
                         }
                         {items &&
                                     <Carousel
-                                        items={[items.map((val, key) => {<div className="uniqueTradeContainer">
+                                        items={[<div className="uniqueTradeContainer">
                                             <div className={"containerImgBooster"}>
                                                 <LazyLoadImage
                                                     delayTime={0}
@@ -288,7 +288,7 @@ function CardsShop(props) {
                                                         // If you need to, you can tweak the effect transition using the wrapper style.
                                                         style: {transitionDelay: "0.1s"},
                                                     }}
-                                                    src={"/Boosters/" + val.name + ".png"}/>
+                                                    src={"/Boosters/" + items[0].name + ".png"}/>
                                                 {/*<img className="fit-picture"*/}
                                                 {/*     src={"https://images.pokemontcg.io/" + val.name + "/logo.png"}*/}
                                                 {/*     alt="Grapefruit slice atop a pile of other slices"/>*/}
@@ -297,7 +297,7 @@ function CardsShop(props) {
                                                 loading === false ?
                                                     <div>
 
-                                                        <button value={val.name}
+                                                        <button value={items[0].name}
                                                                 onClick={openModal}
                                                                 className="guessTradeButton">Ouvrir
                                                         </button>
@@ -314,14 +314,13 @@ function CardsShop(props) {
                                             {canOpenLive == 1 &&
                                                 <div>
 
-                                                    <button value={val.name}
+                                                    <button value={items[0].name}
                                                             onClick={freeBooster}
                                                             className="guessTradeButton">Booster Gratuit
                                                     </button>
                                                 </div>
                                             }
-                                        </div>
-                                        })]}
+                                        </div>]}
                                         startIndex={0}
                                         onChange={(currentIndex) => console.log(currentIndex)}
                                     />

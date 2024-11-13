@@ -273,11 +273,8 @@ function CardsShop(props) {
                             </div>
                         }
                         {items &&
-                            items.map((val, key) => {
-                                return (
-
                                     <Carousel3D
-                                        items={[<div className="uniqueTradeContainer">
+                                        items={items.map((val, key) => {<div className="uniqueTradeContainer">
                                             <div className={"containerImgBooster"}>
                                                 <LazyLoadImage
                                                     delayTime={0}
@@ -323,12 +320,11 @@ function CardsShop(props) {
                                                     </button>
                                                 </div>
                                             }
-                                        </div>]}
+                                        </div>
+                                        })}
                                         startIndex={0}
                                         onChange={(currentIndex) => console.log(currentIndex)}
                                     />
-                                )
-                            })
                         }
                     </div>
                 </>

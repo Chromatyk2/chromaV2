@@ -1215,7 +1215,7 @@ p.titleMyCaptures{
     margin-left: 25px;
 }
 .uniqueTradeContainer {
-    background: #0a2e61;
+    background: transparent;
     border-radius: 25px;
     padding: 20px;
 }

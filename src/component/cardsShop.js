@@ -423,7 +423,7 @@ function CardsShop(props) {
                         }
                         {items &&
                                     <Carousel
-                                        defaultOption={{ numOfSlides: 1 }}
+                                        defaultOption={{ numOfSlides: 2 }}
                                         items={array}
                                         startIndex={0}
                                         interval={10000}

@@ -66,7 +66,7 @@ function CardsShop(props) {
                                 }
 
                                 Axios
-                                    .get("/api/getBoostersList")
+                                    .get("/api/getBoostersListByGen/1")
                                     .then(function(response){
                                         setItems(response.data);
                                         response.data.map((val, key) => {

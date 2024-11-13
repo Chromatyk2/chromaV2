@@ -427,7 +427,7 @@ function CardsShop(props) {
                         }
                         {items &&
                             <div style={{width: "100%"}} >
-                                <Carousel  onChange={(item) => item.target.style.className="testClass"}
+                                <Carousel  onChange={(item) => console.log(item)}
                                     transformDuration={100}
                                     transformTimingFn={"linear"}
                                     items={array}

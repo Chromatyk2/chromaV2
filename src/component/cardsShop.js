@@ -288,23 +288,24 @@ function CardsShop(props) {
                         {items &&
                             <div className="uniqueTradeContainerRandom">
                                 <div style={{height:"70px"}} className={"containerImgBooster"}>
-                                    <img style={{width:"80px"}} className="fit-picture" src={"/images/random.png"}
+                                    <img style={{width:"70px"}} className="fit-picture" src={"/images/random.png"}
                                          alt="Grapefruit slice atop a pile of other slices"/>
                                 </div>
                                 <div>
                                     {points > 0 ?
                                         loading === false ?
-                                                <button style={{margin:0,width:"200px"}} value={items[Math.floor(Math.random() * items.length)].name}
+                                                <button style={{margin:" 0px",fontsize: "13px",height: "25px",lineHeight: "8px",width: "180px"}}
+                                                        value={items[Math.floor(Math.random() * items.length)].name}
                                                         onClick={openModal}
                                                         className="guessTradeButton">Ouvrir
                                                 </button>
                                             :
-                                            <button style={{margin:0,width:"200px"}} className="guessTradeButton">Chargement</button>
+                                            <button style={{margin:" 0px",fontsize: "13px",height: "25px",lineHeight: "8px",width: "180px"}}  className="guessTradeButton">Chargement</button>
                                         :
-                                        <button style={{margin:0,width:"200px"}} className="guessTradeButton">Aucun Token</button>
+                                        <button style={{margin:" 0px",fontsize: "13px",height: "25px",lineHeight: "8px",width: "180px"}}  className="guessTradeButton">Aucun Token</button>
                                     }
                                     {canOpenLive == 1 &&
-                                            <button style={{width:"200px"}} value={items[Math.floor(Math.random() * items.length)].name}
+                                            <button style={{margin:" 0px",fontsize: "13px",height: "25px",lineHeight: "8px",width: "180px", marginTop:"10px"}}  value={items[Math.floor(Math.random() * items.length)].name}
                                                     onClick={freeBooster}
                                                     className="guessTradeButton">Booster Gratuit
                                             </button>

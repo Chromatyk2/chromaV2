@@ -325,33 +325,23 @@ function CardsShop(props) {
                                     <div className={"buttonsBooster"}>
                                         {points > 0 ?
                                             loading === false ?
-                                                <div>
-
-                                                    <button
-                                                            style={{fontSize: "13px", width: "180px"}}
+                                                <button
+                                                            style={{fontSize: "13px", width: "180px", margin:"0"}}
                                                             value={items[selectedBoosterId].name}
                                                             onClick={openModal}
                                                             className="guessTradeButton">Ouvrir
                                                     </button>
-                                                </div>
                                                 :
-                                                <div>
-                                                    <button style={{fontSize: "13px", width: "180px"}} className="guessTradeButton">Chargement</button>
-                                                </div>
+                                                    <button style={{fontSize: "13px", width: "180px", margin:"0"}} className="guessTradeButton">Chargement</button>
                                             :
-                                            <div>
-                                                <button style={{fontSize: "13px", width: "180px"}} className="guessTradeButton">Aucun Token</button>
-                                            </div>
+                                                <button style={{fontSize: "13px", width: "180px", margin:"0"}} className="guessTradeButton">Aucun Token</button>
                                         }
                                         {canOpenLive == 1 &&
-                                            <div>
-
-                                                <button style={{fontSize: "13px", width: "180px"}}
+                                            <button style={{fontSize: "13px", width: "180px", margin:"0"}}
                                                         value={items[selectedBoosterId].name}
                                                         onClick={freeBooster}
                                                         className="guessTradeButton">Booster Gratuit
-                                                </button>
-                                            </div>
+                                            </button>
                                         }
                                     </div>
                                 </Carousel>

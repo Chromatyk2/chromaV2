@@ -28,6 +28,7 @@ function CardsShop(props) {
     const [canOpenLive, setCanOpenLive] = React.useState(null);
     const [nextFree, setNextFree] = React.useState(null);
     const [onOpen, setOnOpen] = React.useState(false);
+    const [selectedBoosterId, setSelectedBoosterId] = React.useState(0);
     const customStyles = {
         content: {
             position:'initial',
@@ -345,7 +346,7 @@ function CardsShop(props) {
         setOnOpen(false);
     }
     function changeCarousel(e) {
-        array[e].props.className = "testClass"
+        setSelectedBoosterId(e)
     }
     return (
         <>
@@ -434,18 +435,23 @@ function CardsShop(props) {
                                           interval={10000}
                                           pauseOnHover={false}
                                 >
-                                    <div style={{
-                                        position: 'absolute',
-                                        top: '50%',
-                                        left: '50%',
-                                        transform: 'translate3d(-50%, -50%, -10px)',
-                                        padding: '2em',
-                                        borderRadius: '50%',
-                                        backgroundColor: 'pink',
-                                        color: 'white',
-                                        fontWeight: 'bold',
-                                    }}>Peek A Boo
-                                    </div>
+                                    {points > 0 ?
+                                        loading === false ?
+                                            <button style={{margin:0,width:"200px"}} value={items[selectedBoosterId].name}
+                                                    onClick={openModal}
+                                                    className="guessTradeButton">Ouvrir
+                                            </button>
+                                            :
+                                            <button style={{margin:0,width:"200px"}} className="guessTradeButton">Chargement</button>
+                                        :
+                                        <button style={{margin:0,width:"200px"}} className="guessTradeButton">Aucun Token</button>
+                                    }
+                                    {canOpenLive == 1 &&
+                                        <button style={{width:"200px"}} value={items[selectedBoosterId].name}
+                                                onClick={freeBooster}
+                                                className="guessTradeButton">Booster Gratuit
+                                        </button>
+                                    }
                                 </Carousel>
                             </div>
                         }

@@ -425,15 +425,28 @@ function CardsShop(props) {
                             </div>
                         }
                         {array.length > 0 &&
-                            <div style={{width: "100%"}} >
-                                <Carousel  onChange={(item) => changeCarousel(item)}
-                                    transformDuration={100}
-                                    transformTimingFn={"linear"}
-                                    items={array}
-                                    startIndex={0}
-                                    interval={10000}
-                                    pauseOnHover={false}
-                                />
+                            <div style={{width: "100%"}}>
+                                <Carousel onChange={(item) => changeCarousel(item)}
+                                          transformDuration={100}
+                                          transformTimingFn={"linear"}
+                                          items={array}
+                                          startIndex={0}
+                                          interval={10000}
+                                          pauseOnHover={false}
+                                >
+                                    <div style={{
+                                        position: 'absolute',
+                                        top: '50%',
+                                        left: '50%',
+                                        transform: 'translate3d(-50%, -50%, -10px)',
+                                        padding: '2em',
+                                        borderRadius: '50%',
+                                        backgroundColor: 'pink',
+                                        color: 'white',
+                                        fontWeight: 'bold',
+                                    }}>Peek A Boo
+                                    </div>
+                                </Carousel>
                             </div>
                         }
                     </div>

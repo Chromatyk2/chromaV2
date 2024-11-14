@@ -144,7 +144,6 @@ function CardsShop(props) {
         setCanOpenLive(1)
     }
     function selectGen(e) {
-        setArray([])
         if(e.target.value == "all"){
             Axios
                 .get("/api/getBoostersList")

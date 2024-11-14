@@ -322,29 +322,32 @@ function CardsShop(props) {
                                           interval={10000}
                                           pauseOnHover={false}
                                 >
-                                    <div>
+                                    <div className={"buttonsBooster"}>
                                         {points > 0 ?
                                             loading === false ?
                                                 <div>
 
-                                                    <button value={items[selectedBoosterId].name}
+                                                    <button
+                                                            style={{fontSize: "13px", width: "180px"}}
+                                                            value={items[selectedBoosterId].name}
                                                             onClick={openModal}
                                                             className="guessTradeButton">Ouvrir
                                                     </button>
                                                 </div>
                                                 :
                                                 <div>
-                                                    <button className="guessTradeButton">Chargement</button>
+                                                    <button style={{fontSize: "13px", width: "180px"}} className="guessTradeButton">Chargement</button>
                                                 </div>
                                             :
                                             <div>
-                                                <button className="guessTradeButton">Aucun Token</button>
+                                                <button style={{fontSize: "13px", width: "180px"}} className="guessTradeButton">Aucun Token</button>
                                             </div>
                                         }
                                         {canOpenLive == 1 &&
                                             <div>
 
-                                                <button value={items[selectedBoosterId].name}
+                                                <button style={{fontSize: "13px", width: "180px"}}
+                                                        value={items[selectedBoosterId].name}
                                                         onClick={freeBooster}
                                                         className="guessTradeButton">Booster Gratuit
                                                 </button>

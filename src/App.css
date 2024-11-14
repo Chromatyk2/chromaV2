@@ -5455,12 +5455,13 @@ ul.react-responsive-3d-carousel__list {
     justify-content: center;
     margin-bottom: 20px;
 }
-.buttonsBooster{
-    display: flex;
-    justify-content: center;
-    height: 390px;
+.buttonsBooster {
     align-items: end;
-    gap: 40px;
-    z-index: 10;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
     position: relative;
+    z-index: 10;
+    flex-wrap: wrap;
+    top: 350px;
 }

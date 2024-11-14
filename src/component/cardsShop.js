@@ -322,23 +322,33 @@ function CardsShop(props) {
                                           interval={10000}
                                           pauseOnHover={false}
                                 >
-                                    <div className={"buttonsToBuyBoosters"}>
+                                    <div>
                                         {points > 0 ?
                                             loading === false ?
-                                                <button style={{margin:0,width:"200px"}} value={items[selectedBoosterId].name}
-                                                        onClick={openModal}
-                                                        className="guessTradeButton">Ouvrir
-                                                </button>
+                                                <div>
+
+                                                    <button value={items[selectedBoosterId].name}
+                                                            onClick={openModal}
+                                                            className="guessTradeButton">Ouvrir
+                                                    </button>
+                                                </div>
                                                 :
-                                                <button style={{margin:0,width:"200px"}} className="guessTradeButton">Chargement</button>
+                                                <div>
+                                                    <button className="guessTradeButton">Chargement</button>
+                                                </div>
                                             :
-                                            <button style={{margin:0,width:"200px"}} className="guessTradeButton">Aucun Token</button>
+                                            <div>
+                                                <button className="guessTradeButton">Aucun Token</button>
+                                            </div>
                                         }
                                         {canOpenLive == 1 &&
-                                            <button style={{width:"200px"}} value={items[selectedBoosterId].name}
-                                                    onClick={freeBooster}
-                                                    className="guessTradeButton">Booster Gratuit
-                                            </button>
+                                            <div>
+
+                                                <button value={items[selectedBoosterId].name}
+                                                        onClick={freeBooster}
+                                                        className="guessTradeButton">Booster Gratuit
+                                                </button>
+                                            </div>
                                         }
                                     </div>
                                 </Carousel>

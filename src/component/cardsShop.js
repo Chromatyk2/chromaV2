@@ -146,6 +146,7 @@ function CardsShop(props) {
     }
     function selectGen(e) {
         setArray([])
+        setSelectedBoosterId(0)
         if(e.target.value == "all"){
             Axios
                 .get("/api/getBoostersList")

@@ -66,10 +66,10 @@ function CardsShop(props) {
                                 }
 
                                 Axios
-                                    .get("/api/getBoostersListByGen/1")
+                                    .get("/api/getBoostersList")
                                     .then(function(response){
                                         setItems(response.data);
-                                        response.data.map((val, key) => {
+                                        response.data.filter(item => item.gen == 1).map((val, key) => {
                                             setArray(array => [...array,
                                                 <div className="uniqueTradeContainer">
                                                     <div className={"containerImgBooster"}>
@@ -144,6 +144,7 @@ function CardsShop(props) {
         setCanOpenLive(1)
     }
     function selectGen(e) {
+        setArray([])
         if(e.target.value == "all"){
             Axios
                 .get("/api/getBoostersList")
@@ -204,10 +205,10 @@ function CardsShop(props) {
                 })
         }else{
             Axios
-                .get("/api/getBoostersListByGen/"+ e.target.value)
+                .get("/api/getBoostersList")
                 .then(function(response){
                     setItems(response.data);
-                    response.data.map((val, key) => {
+                    response.data.filter(item => item.gen == e.target.value).map((val, key) => {
                         setArray(array => [...array,
                             <div className="uniqueTradeContainer">
                                 <div className={"containerImgBooster"}>
@@ -423,7 +424,7 @@ function CardsShop(props) {
                                 </div>
                             </div>
                         }
-                        {items &&
+                        {array.length > 0 &&
                             <div style={{width: "100%"}} >
                                 <Carousel  onChange={(item) => changeCarousel(item)}
                                     transformDuration={100}

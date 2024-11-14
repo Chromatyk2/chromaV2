@@ -91,33 +91,6 @@ function CardsShop(props) {
                                                         {/*     src={"https://images.pokemontcg.io/" + val.name + "/logo.png"}*/}
                                                         {/*     alt="Grapefruit slice atop a pile of other slices"/>*/}
                                                     </div>
-                                                    {points > 0 ?
-                                                        loading === false ?
-                                                            <div>
-
-                                                                <button value={val.name}
-                                                                        onClick={openModal}
-                                                                        className="guessTradeButton">Ouvrir
-                                                                </button>
-                                                            </div>
-                                                            :
-                                                            <div>
-                                                                <button className="guessTradeButton">Chargement</button>
-                                                            </div>
-                                                        :
-                                                        <div>
-                                                            <button className="guessTradeButton">Aucun Token</button>
-                                                        </div>
-                                                    }
-                                                    {canOpenLive == 1 &&
-                                                        <div>
-
-                                                            <button value={val.name}
-                                                                    onClick={freeBooster}
-                                                                    className="guessTradeButton">Booster Gratuit
-                                                            </button>
-                                                        </div>
-                                                    }
                                                 </div>
                                             ]);
                                         })
@@ -172,33 +145,6 @@ function CardsShop(props) {
                                     {/*     src={"https://images.pokemontcg.io/" + val.name + "/logo.png"}*/}
                                     {/*     alt="Grapefruit slice atop a pile of other slices"/>*/}
                                 </div>
-                                {points > 0 ?
-                                    loading === false ?
-                                        <div>
-
-                                            <button value={val.name}
-                                                    onClick={openModal}
-                                                    className="guessTradeButton">Ouvrir
-                                            </button>
-                                        </div>
-                                        :
-                                        <div>
-                                            <button className="guessTradeButton">Chargement</button>
-                                        </div>
-                                    :
-                                    <div>
-                                        <button className="guessTradeButton">Aucun Token</button>
-                                    </div>
-                                }
-                                {canOpenLive == 1 &&
-                                    <div>
-
-                                        <button value={val.name}
-                                                onClick={freeBooster}
-                                                className="guessTradeButton">Booster Gratuit
-                                        </button>
-                                    </div>
-                                }
                             </div>
                         ]);
                     })
@@ -376,23 +322,25 @@ function CardsShop(props) {
                                           interval={10000}
                                           pauseOnHover={false}
                                 >
-                                    {points > 0 ?
-                                        loading === false ?
-                                            <button style={{margin:0,width:"200px"}} value={items[selectedBoosterId].name}
-                                                    onClick={openModal}
-                                                    className="guessTradeButton">Ouvrir
-                                            </button>
+                                    <div className={"buttonsToBuyBoosters"}>
+                                        {points > 0 ?
+                                            loading === false ?
+                                                <button style={{margin:0,width:"200px"}} value={items[selectedBoosterId].name}
+                                                        onClick={openModal}
+                                                        className="guessTradeButton">Ouvrir
+                                                </button>
+                                                :
+                                                <button style={{margin:0,width:"200px"}} className="guessTradeButton">Chargement</button>
                                             :
-                                            <button style={{margin:0,width:"200px"}} className="guessTradeButton">Chargement</button>
-                                        :
-                                        <button style={{margin:0,width:"200px"}} className="guessTradeButton">Aucun Token</button>
-                                    }
-                                    {canOpenLive == 1 &&
-                                        <button style={{width:"200px"}} value={items[selectedBoosterId].name}
-                                                onClick={freeBooster}
-                                                className="guessTradeButton">Booster Gratuit
-                                        </button>
-                                    }
+                                            <button style={{margin:0,width:"200px"}} className="guessTradeButton">Aucun Token</button>
+                                        }
+                                        {canOpenLive == 1 &&
+                                            <button style={{width:"200px"}} value={items[selectedBoosterId].name}
+                                                    onClick={freeBooster}
+                                                    className="guessTradeButton">Booster Gratuit
+                                            </button>
+                                        }
+                                    </div>
                                 </Carousel>
                             </div>
                         }

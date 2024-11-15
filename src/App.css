@@ -1962,7 +1962,7 @@ img.gettedBoxImg {
     visibility: hidden;
     animation:bounceInCards 0.5s;
     animation-fill-mode: forwards;
-    animation-delay: 0.6s;
+    animation-delay: 1.5s;
 }
 .gettedCard{
     animation: moveCard 0.5s forwards;

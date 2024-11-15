@@ -16,7 +16,7 @@ function OpeningCards(props) {
     const [isLoaded, setIsLoaded] = useState(false);
     const [error, setError] = useState(null);
     const [nbCards, setNbCards] = useState(0);
-    const [isHidden, setIsHidden] = useState(false);
+    const [isHidden, setIsHidden] = useState(true);
     const [index, setIndex] = React.useState(0)
     const [endPull, setEndPull] = React.useState(false)
     const [myCards, setMyCards] = useState([]);
@@ -283,10 +283,16 @@ function OpeningCards(props) {
         e.target.onerror = null;
         e.target.src = "https://images.pokemoncard.io/images/"+props.idBooster+"/"+e.target.getAttribute("cardId")+".png";
     }
+
+    useEffect(() => {
+        if(tenCards.length == 10){
+            setTimeout(setIsHidden(false), 2000);
+        }
+    }, []);
     return (
         <>
 
-                <div onClick={showCards} class={tenCards.length < 10 ? "dropBooster fit-picture showBooster" : "fit-picture dropCards hiddenBooster"}>
+                <div onClick={showCards} class={isHidden === true ? "dropBooster fit-picture showBooster" : "fit-picture dropCards hiddenBooster"}>
                     <img style={customStyles.imgModal} src={"/Boosters/"+props.idBooster+".png"} alt="Grapefruit slice atop a pile of other slices"/>
                 </div>
             {isNew === true &&

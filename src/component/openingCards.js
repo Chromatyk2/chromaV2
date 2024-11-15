@@ -286,7 +286,7 @@ function OpeningCards(props) {
     return (
         <>
 
-                <div onClick={showCards} class={tenCards.length == 10 ? "dropBooster fit-picture showBooster" : "fit-picture dropCards hiddenBooster"}>
+                <div onClick={showCards} class={tenCards.length < 10 ? "dropBooster fit-picture showBooster" : "fit-picture dropCards hiddenBooster"}>
                     <img style={customStyles.imgModal} src={"/Boosters/"+props.idBooster+".png"} alt="Grapefruit slice atop a pile of other slices"/>
                 </div>
             {isNew === true &&

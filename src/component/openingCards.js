@@ -302,7 +302,7 @@ function OpeningCards(props) {
                     </div>
                 </div>
             }
-            {tenCards.length == 10 &&
+            {isHidden === false &&
                 <>
                     {tenCards.slice(0).reverse().map((val, key) => {
                         if(val.rarity != "Common" && val.rarity != "Uncommon" && typeof val.rarity !== "undefined"){

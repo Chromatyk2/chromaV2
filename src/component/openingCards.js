@@ -285,12 +285,10 @@ function OpeningCards(props) {
     }
     return (
         <>
-            {tenCards.length == 10 &&
-                <div onClick={showCards} class={isHidden === true ? "dropBooster fit-picture showBooster" : "fit-picture dropCards hiddenBooster"}>
+
+                <div onClick={showCards} class={tenCards.length == 10 ? "dropBooster fit-picture showBooster" : "fit-picture dropCards hiddenBooster"}>
                     <img style={customStyles.imgModal} src={"/Boosters/"+props.idBooster+".png"} alt="Grapefruit slice atop a pile of other slices"/>
-                    <p style={customStyles.textModal}>Appuie pour découvrir tes cartes</p>
                 </div>
-            }
             {isNew === true &&
                 <div style={{position:"absolute"}} id={"shadowBox"}>
                     <div className={"newContainer"}>
@@ -482,12 +480,6 @@ function OpeningCards(props) {
                     })}
                 </>
 
-            }
-            {tenCards.length < 10 &&
-                <div className={"loaderPokemon"}>
-                    <h2 className="u-text-center">Chargement ...</h2>
-                    <div className="pokemon"></div>
-                </div>
             }
         </>
     )

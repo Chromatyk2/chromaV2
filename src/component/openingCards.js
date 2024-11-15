@@ -16,7 +16,7 @@ function OpeningCards(props) {
     const [isLoaded, setIsLoaded] = useState(false);
     const [error, setError] = useState(null);
     const [nbCards, setNbCards] = useState(0);
-    const [isHidden, setIsHidden] = useState(true);
+    const [isHidden, setIsHidden] = useState(false);
     const [index, setIndex] = React.useState(0)
     const [endPull, setEndPull] = React.useState(false)
     const [myCards, setMyCards] = useState([]);

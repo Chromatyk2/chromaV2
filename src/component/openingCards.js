@@ -274,7 +274,9 @@ function OpeningCards(props) {
         },
         imgModal: {
             width:'200px',
-            marginBottom:'30px'
+            marginBottom:'30px',
+            borderRadius: "25px",
+            filter: "drop-shadow(2px 4px 6px black)"
         },
     };
     function errorImage(e){
@@ -285,7 +287,7 @@ function OpeningCards(props) {
         <>
             {tenCards.length == 10 &&
                 <div onClick={showCards} class={isHidden === true ? "dropBooster fit-picture showBooster" : "fit-picture dropCards hiddenBooster"}>
-                    <img style={customStyles.imgModal} src={"https://images.pokemontcg.io/" + props.idBooster + "/logo.png"} alt="Grapefruit slice atop a pile of other slices"/>
+                    <img style={customStyles.imgModal} src={"/Boosters/"+props.idBooster+".png"} alt="Grapefruit slice atop a pile of other slices"/>
                     <p style={customStyles.textModal}>Appuie pour découvrir tes cartes</p>
                 </div>
             }

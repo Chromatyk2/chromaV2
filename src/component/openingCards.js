@@ -288,7 +288,7 @@ function OpeningCards(props) {
         if(tenCards.length == 10){
             setTimeout(setIsHidden(false), 2000);
         }
-    }, []);
+    }, [tenCards]);
     return (
         <>
 

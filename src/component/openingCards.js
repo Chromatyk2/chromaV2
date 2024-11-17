@@ -169,13 +169,13 @@ function OpeningCards(props) {
         }
         next.style.display = "block";
 
-        if(stadeCurrent == 1){
+        if(e.target.getAttribute("stade") == 1){
             e.target.classList.toggle('glowGetGreen');
-        }else if(stadeCurrent == 2){
+        }else if(e.target.getAttribute("stade") == 2){
             e.target.classList.toggle('glowGetBlue');
-        }else if(stadeCurrent == 3){
+        }else if(e.target.getAttribute("stade") == 3){
             e.target.classList.toggle('glowGetGold');
-        }else if(stadeCurrent == 4){
+        }else if(e.target.getAttribute("stade") == 4){
             e.target.classList.toggle('glowGetRainbow');
         }
         e.target.classList.toggle('glowGet');

@@ -1949,7 +1949,7 @@ img.gettedBoxImg {
     100% {
         transform: translate(0em);
         z-index:-2;
-        dis: hidden;
+        display: none;
     }
 }
 .discoveredCardsContainer{

@@ -151,7 +151,7 @@ function OpeningBooster(props) {
     };
     useEffect(() => {
         const timeout = setTimeout(() => {
-            setIsHidden(false)
+            setIsLoaded(false)
         }, 5000)
 
         return () => clearTimeout(timeout)

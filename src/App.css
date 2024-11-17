@@ -1893,17 +1893,14 @@ img.gettedBoxImg {
     30% {
         visibility: visible;
         transform:scale(1);
-        height: 0;
     }
     60% {
         visibility: visible;
         transform:scale(1);
-        height: 0;
     }
     80% {
         visibility: visible;
         transform:scale(1);
-        height: 0;
     }
     100% {
         visibility: visible;

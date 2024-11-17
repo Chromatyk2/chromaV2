@@ -13,7 +13,7 @@ import 'react-lazy-load-image-component/src/effects/opacity.css';
 function OpeningCards(props) {
 
     const [tenCards, setTenCards] = useState([]);
-    const [isLoaded, setIsLoaded] = useState(false);
+    const [isLoaded, setIsLoaded] = useState(true);
     const [error, setError] = useState(null);
     const [nbCards, setNbCards] = useState(0);
     const [isHidden, setIsHidden] = useState(true);
@@ -225,6 +225,14 @@ function OpeningCards(props) {
         e.target.onerror = null;
         e.target.src = "https://images.pokemoncard.io/images/"+props.idBooster+"/"+e.target.getAttribute("cardId")+".png";
     }
+    useEffect(() => {
+            const timeout = setTimeout(() => {
+                setIsHidden(false)
+                setIsLoaded(false)
+            }, 5200)
+
+            return () => clearTimeout(timeout)
+    }, []);
     return (
         <>
             <div style={{
@@ -234,12 +242,12 @@ function OpeningCards(props) {
                 width: "300px"
             }}>
                 <div onClick={showCards}
-                     className={isHidden === true ? "dropBooster fit-picture showBooster" : "fit-picture dropCards hiddenBooster"}>
+                     className={isLoad === true ? "dropBooster fit-picture showBooster" : "fit-picture dropCards hiddenBooster"}>
                     <img style={customStyles.imgModal2} src={"/Boosters/" + props.idBooster + ".png"}
                          alt="Grapefruit slice atop a pile of other slices"/>
                 </div>
                 <div style={{overflow:"hidden"}} onClick={showCards}
-                     className={isHidden === true ? "dropBooster fit-picture showBooster" : "fit-picture dropCards hiddenBooster"}>
+                     className={isLoad === true ? "dropBooster fit-picture showBooster" : "fit-picture dropCards hiddenBooster"}>
                     <img style={customStyles.imgModal} src={"/Boosters/" + props.idBooster + ".png"}
                          alt="Grapefruit slice atop a pile of other slices"/>
                 </div>

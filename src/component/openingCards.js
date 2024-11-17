@@ -228,30 +228,12 @@ function OpeningCards(props) {
     useEffect(() => {
             const timeout = setTimeout(() => {
                 setIsHidden(false)
-                setIsLoaded(false)
-            }, 5200)
+            }, 6000)
 
             return () => clearTimeout(timeout)
     }, []);
     return (
         <>
-            <div style={{
-                display: "flex",
-                justifyContent: "center",
-                height: "280px",
-                width: "300px"
-            }}>
-                <div onClick={showCards}
-                     className={isLoaded === true ? "dropBooster fit-picture showBooster" : "fit-picture dropCards hiddenBooster"}>
-                    <img style={customStyles.imgModal2} src={"/Boosters/" + props.idBooster + ".png"}
-                         alt="Grapefruit slice atop a pile of other slices"/>
-                </div>
-                <div style={{overflow:"hidden"}} onClick={showCards}
-                     className={isLoaded === true ? "dropBooster fit-picture showBooster" : "fit-picture dropCards hiddenBooster"}>
-                    <img style={customStyles.imgModal} src={"/Boosters/" + props.idBooster + ".png"}
-                         alt="Grapefruit slice atop a pile of other slices"/>
-                </div>
-            </div>
             {isNew === true &&
                 <div style={{position: "absolute"}} id={"shadowBox"}>
                     <div className={"newContainer"}>

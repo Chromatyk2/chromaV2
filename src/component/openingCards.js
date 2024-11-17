@@ -228,7 +228,7 @@ function OpeningCards(props) {
     useEffect(() => {
             const timeout = setTimeout(() => {
                 setIsHidden(false)
-            }, 6000)
+            }, 1000)
 
             return () => clearTimeout(timeout)
     }, []);

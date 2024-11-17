@@ -160,7 +160,7 @@ function OpeningBooster(props) {
         <>
             <div className={"discoveredCardsContainer"}>
                 <div style={{
-                    display: isLoader === true ? "flex" : "none" ,
+                    display: isLoaded === true ? "flex" : "none" ,
                     justifyContent: "center",
                     height: "280px",
                     width: "300px"

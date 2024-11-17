@@ -1918,6 +1918,7 @@ img.gettedBoxImg {
     100% {
         visibility: hidden;
         transform:scale(0);
+        display: none!important;
     }
 }
 @keyframes bounceInCards {
@@ -1949,7 +1950,7 @@ img.gettedBoxImg {
     100% {
         transform: translate(0em);
         z-index:-2;
-        display: none!important;
+        display: none;
     }
 }
 .discoveredCardsContainer{

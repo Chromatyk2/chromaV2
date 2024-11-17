@@ -222,16 +222,17 @@ function OpeningCards(props) {
     }
     return (
         <>
-
-            <div onClick={showCards}
-                 className={isHidden === true ? "dropBooster fit-picture showBooster" : "fit-picture dropCards hiddenBooster"}>
-                <img style={customStyles.imgModal} src={"/Boosters/" + props.idBooster + ".png"}
-                     alt="Grapefruit slice atop a pile of other slices"/>
-            </div>
-            <div onClick={showCards}
-                 className={isHidden === true ? "dropBooster fit-picture showBooster" : "fit-picture dropCards hiddenBooster"}>
-                <img style={customStyles.imgModal} src={"/Boosters/" + props.idBooster + ".png"}
-                     alt="Grapefruit slice atop a pile of other slices"/>
+            <div>
+                <div onClick={showCards}
+                     className={isHidden === true ? "dropBooster fit-picture showBooster" : "fit-picture dropCards hiddenBooster"}>
+                    <img style={customStyles.imgModal} src={"/Boosters/" + props.idBooster + ".png"}
+                         alt="Grapefruit slice atop a pile of other slices"/>
+                </div>
+                <div onClick={showCards}
+                     className={isHidden === true ? "dropBooster fit-picture showBooster" : "fit-picture dropCards hiddenBooster"}>
+                    <img style={customStyles.imgModal} src={"/Boosters/" + props.idBooster + ".png"}
+                         alt="Grapefruit slice atop a pile of other slices"/>
+                </div>
             </div>
             {isNew === true &&
                 <div style={{position: "absolute"}} id={"shadowBox"}>

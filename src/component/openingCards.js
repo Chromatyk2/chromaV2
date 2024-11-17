@@ -72,20 +72,23 @@ function OpeningCards(props) {
                     setTenCards(tenCards => [...tenCards,randomUncommon]);
                     setNbCards (nbCards + 1);
             }else if(tenCards.length == 8){
-                    var randomStade = Math.floor(Math.random() * 100);
-                    if(randomStade < 37 ){
-                        var rarityArray = props.rarities.filter(item => item.stade == 1);
-                        var stade = 1;
-                    }else if(randomStade > 36 && randomStade < 75){
-                        var rarityArray = props.rarities.filter(item => item.stade == 2);
-                        var stade = 2;
-                    }else if(randomStade > 74 && randomStade < 97){
-                        var rarityArray = props.rarities.filter(item => item.stade == 3);
-                        var stade = 3;
-                    }else{
-                        var rarityArray = props.rarities.filter(item => item.stade == 4);
-                        var stade = 4;
-                    }
+                    // var randomStade = Math.floor(Math.random() * 100);
+                    // if(randomStade < 37 ){
+                    //     var rarityArray = props.rarities.filter(item => item.stade == 1);
+                    //     var stade = 1;
+                    // }else if(randomStade > 36 && randomStade < 75){
+                    //     var rarityArray = props.rarities.filter(item => item.stade == 2);
+                    //     var stade = 2;
+                    // }else if(randomStade > 74 && randomStade < 97){
+                    //     var rarityArray = props.rarities.filter(item => item.stade == 3);
+                    //     var stade = 3;
+                    // }else{
+                    //     var rarityArray = props.rarities.filter(item => item.stade == 4);
+                    //     var stade = 4;
+                    // }
+
+                    var rarityArray = props.rarities.filter(item => item.stade == 4);
+                    var stade = 4;
                     const finalArray = props.items.filter(item => item.rarity == rarityArray[Math.floor(Math.random() * rarityArray.length)].rarity);
                     const randomFinal = finalArray[Math.floor(Math.random() * finalArray.length)];
                     Axios.post('/api/addCard',

@@ -1878,6 +1878,7 @@ img.gettedBoxImg {
     0% {
         visibility: visible;
         transform:scale(0.0001);
+        height: 0;
     }
     60% {
         visibility: visible;
@@ -1890,6 +1891,7 @@ img.gettedBoxImg {
     100% {
         visibility: visible;
         transform:scale(1);
+        height: 300px;
     }
 }
 @keyframes bounceOut {
@@ -1948,7 +1950,7 @@ img.gettedBoxImg {
 
 .showBooster{
     visibility: hidden;
-    animation:bounceIn 1s;
+    animation:bounceIn 5s;
     animation-fill-mode: forwards;
     height: 0;
 }

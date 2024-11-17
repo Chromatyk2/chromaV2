@@ -11,6 +11,7 @@ import OpeningCards from "./openingCards";
 function OpeningBooster(props) {
     const [items, setItems] = useState(null);
     const [isLoaded, setIsLoaded] = useState(true);
+    const [things, setThings] = useState(true);
     const [error, setError] = useState(null);
     const [tenCards, setTenCards] = useState([]);
     const [modalIsOpen, setIsOpen] = React.useState(true);
@@ -152,6 +153,11 @@ function OpeningBooster(props) {
     useEffect(() => {
         const timeout = setTimeout(() => {
             setIsLoaded(false)
+            const timeout = setTimeout(() => {
+                setThings(false)
+
+            }, 1000)
+            return () => clearTimeout(timeout)
         }, 5000)
 
         return () => clearTimeout(timeout)
@@ -160,7 +166,7 @@ function OpeningBooster(props) {
         <>
             <div className={"discoveredCardsContainer"}>
                 <div style={{
-                    display: isLoaded === true ? "flex" : "none" ,
+                    display: things === true ? "flex" : "none" ,
                     justifyContent: "center",
                     height: "280px",
                     width: "300px"

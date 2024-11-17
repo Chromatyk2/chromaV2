@@ -194,6 +194,15 @@ function OpeningCards(props) {
         next.style.display = "block";
         e.target.classList.toggle('glowGet');
         e.target.classList.toggle('gettedCard');
+        if(stadeCurrent == 1){
+            e.target.classList.toggle('glowGetGreen');
+        }else if(stadeCurrent == 2){
+            e.target.classList.toggle('glowGetBlue');
+        }else if(stadeCurrent == 3){
+            e.target.classList.toggle('glowGetGold');
+        }else if(stadeCurrent == 4){
+            e.target.classList.toggle('glowGetRainbow');
+        }
         setIndex(index + 1);
     }
     function getLastCard(e) {

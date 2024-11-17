@@ -129,7 +129,7 @@ function OpeningCards(props) {
                         idCard:randomFinal.id,
                         booster:props.idBooster,
                         rarity:randomFinal.rarity,
-                        stade:4
+                        stade:stade
                     })
                 setIsLoaded(false);
                 setTenCards(tenCards => [...tenCards,randomFinal]);

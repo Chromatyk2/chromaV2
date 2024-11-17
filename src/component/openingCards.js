@@ -168,6 +168,16 @@ function OpeningCards(props) {
             setIsNew(false);
         }
         next.style.display = "block";
+
+        if(stadeCurrent == 1){
+            e.target.classList.toggle('glowGetGreen');
+        }else if(stadeCurrent == 2){
+            e.target.classList.toggle('glowGetBlue');
+        }else if(stadeCurrent == 3){
+            e.target.classList.toggle('glowGetGold');
+        }else if(stadeCurrent == 4){
+            e.target.classList.toggle('glowGetRainbow');
+        }
         e.target.classList.toggle('glowGet');
         e.target.classList.toggle('gettedCard');
         setIndex(index + 1);

@@ -1916,7 +1916,6 @@ img.gettedBoxImg {
         transform:scale(1.1);
     }
     100% {
-        visibility: hidden;
         transform:scale(0);
         display: none!important;
     }

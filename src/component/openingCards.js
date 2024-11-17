@@ -43,7 +43,7 @@ function OpeningCards(props) {
     }, [myCards]);
     useEffect(() => {
         if (tenCards.length < 11) {
-            if(tenCards.length < 7){
+            if(tenCards.length < 6){
                 const commonArray = props.items.filter(item => item.rarity == 'Common' || typeof item.rarity === "undefined");
                 const randomCommon = commonArray[Math.floor(Math.random() * commonArray.length)];
                 Axios.post('/api/addCard',
@@ -57,42 +57,7 @@ function OpeningCards(props) {
                 setIsLoaded(true);
                 setTenCards(tenCards => [...tenCards,randomCommon]);
                 setNbCards (nbCards + 1);
-            }else if(tenCards.length > 6 && tenCards.length < 8){
-                var bonus = Math.floor(Math.random() * 100);
-                if(bonus == 0){
-                    var bonusPlus = Math.floor(Math.random() * 100);
-                    if(stadeFour > 94){
-                        var rarityArray = props.rarities.filter(item => item.stade == 3 || item.stade == 4);
-                        const finalArray = props.items.filter(item => item.rarity == rarityArray[Math.floor(Math.random() * rarityArray.length)].rarity);
-                        const randomFinal = finalArray[Math.floor(Math.random() * finalArray.length)];
-                        Axios.post('/api/addCard',
-                            {
-                                pseudo:props.user,
-                                idCard:randomFinal.id,
-                                booster:props.idBooster,
-                                rarity:randomFinal.rarity,
-                                stade:props.rarities.find((uc) => uc.rarity.includes(randomFinal.rarity)).stade
-                            })
-                        setTenCards(tenCards => [...tenCards,randomFinal]);
-                        setNbCards (nbCards + 1);
-                        setIsLoaded(false);
-                    }else{
-                        var rarityArray = props.rarities.filter(item => item.stade == 1 || item.stade == 2);
-                        const bonusArray = props.items.filter(item => item.rarity == rarityArray[Math.floor(Math.random() * rarityArray.length)].rarity);
-                        const randomBonus = bonusArray[Math.floor(Math.random() * bonusArray.length)];
-                        Axios.post('/api/addCard',
-                            {
-                                pseudo:props.user,
-                                idCard:randomBonus.id,
-                                booster:props.idBooster,
-                                rarity:randomBonus.rarity,
-                                stade:props.rarities.find((uc) => uc.rarity.includes(randomBonus.rarity)).stade
-                            })
-                        setTenCards(tenCards => [...tenCards,randomBonus]);
-                        setNbCards (nbCards + 1);
-                        setIsLoaded(false);
-                    }
-                }else{
+            }else if(tenCards.length > 5 && tenCards.length < 8){
                     const uncommonArray = props.items.filter(item => item.rarity == 'Uncommon');
                     const randomUncommon = uncommonArray[Math.floor(Math.random() * uncommonArray.length)];
                     Axios.post('/api/addCard',
@@ -106,20 +71,33 @@ function OpeningCards(props) {
                     setIsLoaded(true);
                     setTenCards(tenCards => [...tenCards,randomUncommon]);
                     setNbCards (nbCards + 1);
-                }
             }else if(tenCards.length == 8){
-                    const uncommonArray = props.items.filter(item => item.rarity == 'Uncommon');
-                    const randomUncommon = uncommonArray[Math.floor(Math.random() * uncommonArray.length)];
+                    var randomStade = Math.floor(Math.random() * 100);
+                    if(randomStade < 37 ){
+                        var rarityArray = props.rarities.filter(item => item.stade == 1);
+                        var stade = 1;
+                    }else if(randomStade > 36 && randomStade < 75){
+                        var rarityArray = props.rarities.filter(item => item.stade == 2);
+                        var stade = 2;
+                    }else if(randomStade > 74 && randomStade < 97){
+                        var rarityArray = props.rarities.filter(item => item.stade == 3);
+                        var stade = 3;
+                    }else{
+                        var rarityArray = props.rarities.filter(item => item.stade == 4);
+                        var stade = 4;
+                    }
+                    const finalArray = props.items.filter(item => item.rarity == rarityArray[Math.floor(Math.random() * rarityArray.length)].rarity);
+                    const randomFinal = finalArray[Math.floor(Math.random() * finalArray.length)];
                     Axios.post('/api/addCard',
                         {
                             pseudo:props.user,
-                            idCard:randomUncommon.id,
+                            idCard:randomFinal.id,
                             booster:props.idBooster,
-                            rarity:randomUncommon.rarity,
-                            stade:0
+                            rarity:randomFinal.rarity,
+                            stade:stade
                         })
                     setIsLoaded(true);
-                    setTenCards(tenCards => [...tenCards,randomUncommon]);
+                    setTenCards(tenCards => [...tenCards,randomFinal]);
                     setNbCards (nbCards + 1);
             }else if(tenCards.length == 9){
                 if(getToken === true){
@@ -129,74 +107,33 @@ function OpeningCards(props) {
                         }
                     )
                 }
-                var stadeTwo = Math.floor(Math.random() * 100);
-                if(stadeTwo > 29){
-                    var stadeThree = Math.floor(Math.random() * 100);
-                    if(stadeThree > 71){
-                        var stadeFour = Math.floor(Math.random() * 100);
-                        if(stadeFour > 74){
-                            var rarityArray = props.rarities.filter(item => item.stade == 4);
-                            const finalArray = props.items.filter(item => item.rarity == rarityArray[Math.floor(Math.random() * rarityArray.length)].rarity);
-                            const randomFinal = finalArray[Math.floor(Math.random() * finalArray.length)];
-                            Axios.post('/api/addCard',
-                                {
-                                    pseudo:props.user,
-                                    idCard:randomFinal.id,
-                                    booster:props.idBooster,
-                                    rarity:randomFinal.rarity,
-                                    stade:4
-                                })
-                            setTenCards(tenCards => [...tenCards,randomFinal]);
-                            setNbCards (nbCards + 1);
-                            setIsLoaded(false);
-                        }else{
-                            var rarityArray = props.rarities.filter(item => item.stade == 3);
-                            const ultraArray = props.items.filter(item => item.rarity == rarityArray[Math.floor(Math.random() * rarityArray.length)].rarity);
-                            const randomUltra = ultraArray[Math.floor(Math.random() * ultraArray.length)];
-                            Axios.post('/api/addCard',
-                                {
-                                    pseudo:props.user,
-                                    idCard:randomUltra.id,
-                                    booster:props.idBooster,
-                                    rarity:randomUltra.rarity,
-                                    stade:3
-                                })
-                            setTenCards(tenCards => [...tenCards,randomUltra]);
-                            setNbCards (nbCards + 1);
-                            setIsLoaded(false);
-                        }
-                    }else{
-                        var rarityArray = props.rarities.filter(item => item.stade == 2);
-                        const stadeTwoArray = props.items.filter(item => item.rarity == rarityArray[Math.floor(Math.random() * rarityArray.length)].rarity);
-                        const randomEpic = stadeTwoArray[Math.floor(Math.random() * stadeTwoArray.length)];
-                        Axios.post('/api/addCard',
-                            {
-                                pseudo:props.user,
-                                idCard:randomEpic.id,
-                                booster:props.idBooster,
-                                rarity:randomEpic.rarity,
-                                stade:2
-                            })
-                        setTenCards(tenCards => [...tenCards,randomEpic]);
-                        setNbCards (nbCards + 1);
-                        setIsLoaded(false);
-                    }
-                }else{
+                var randomStade = Math.floor(Math.random() * 100);
+                if(randomStade < 30 ){
                     var rarityArray = props.rarities.filter(item => item.stade == 1);
-                    const rareArray = props.items.filter(item => item.rarity == rarityArray[Math.floor(Math.random() * rarityArray.length)].rarity);
-                    const randomRare = rareArray[Math.floor(Math.random() * rareArray.length)];
-                    Axios.post('/api/addCard',
-                        {
-                            pseudo:props.user,
-                            idCard:randomRare.id,
-                            booster:props.idBooster,
-                            rarity:randomRare.rarity,
-                            stade:1
-                        })
-                    setTenCards(tenCards => [...tenCards,randomRare]);
-                    setNbCards (nbCards + 1);
-                    setIsLoaded(false);
+                    var stade = 1;
+                }else if(randomStade > 29 && randomStade < 79){
+                    var rarityArray = props.rarities.filter(item => item.stade == 2);
+                    var stade = 2;
+                }else if (randomStade > 79  && randomStade < 96){
+                    var rarityArray = props.rarities.filter(item => item.stade == 3);
+                    var stade = 3;
+                }else{
+                    var rarityArray = props.rarities.filter(item => item.stade == 4);
+                    var stade = 4;
                 }
+                const finalArray = props.items.filter(item => item.rarity == rarityArray[Math.floor(Math.random() * rarityArray.length)].rarity);
+                const randomFinal = finalArray[Math.floor(Math.random() * finalArray.length)];
+                Axios.post('/api/addCard',
+                    {
+                        pseudo:props.user,
+                        idCard:randomFinal.id,
+                        booster:props.idBooster,
+                        rarity:randomFinal.rarity,
+                        stade:4
+                    })
+                setIsLoaded(false);
+                setTenCards(tenCards => [...tenCards,randomFinal]);
+                setNbCards (nbCards + 1);
             }
         }
     }, [nbCards])

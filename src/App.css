@@ -1905,6 +1905,7 @@ img.gettedBoxImg {
     100% {
         visibility: visible;
         height: 300px;
+        display: none;
     }
 }
 @keyframes bounceOut {
@@ -1948,7 +1949,7 @@ img.gettedBoxImg {
     100% {
         transform: translate(0em);
         z-index:-2;
-        visibility: hidden;
+        dis: hidden;
     }
 }
 .discoveredCardsContainer{

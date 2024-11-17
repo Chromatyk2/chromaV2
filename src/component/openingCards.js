@@ -214,6 +214,11 @@ function OpeningCards(props) {
             marginBottom:'30px',
             borderRadius: "25px",
             filter: "drop-shadow(2px 4px 6px black)"
+        },imgModal2: {
+            width:'200px',
+            marginBottom:'30px',
+            borderRadius: "25px",
+            filter: "grayscale(1)"
         },
     };
     function errorImage(e){
@@ -222,13 +227,18 @@ function OpeningCards(props) {
     }
     return (
         <>
-            <div>
+            <div style={{
+                display: "flex",
+                justifyContent: "center",
+                height: "280px",
+                width: "300px"
+            }}>
                 <div onClick={showCards}
                      className={isHidden === true ? "dropBooster fit-picture showBooster" : "fit-picture dropCards hiddenBooster"}>
-                    <img style={customStyles.imgModal} src={"/Boosters/" + props.idBooster + ".png"}
+                    <img style={customStyles.imgModal2} src={"/Boosters/" + props.idBooster + ".png"}
                          alt="Grapefruit slice atop a pile of other slices"/>
                 </div>
-                <div onClick={showCards}
+                <div style={{overflow:"hidden"}} onClick={showCards}
                      className={isHidden === true ? "dropBooster fit-picture showBooster" : "fit-picture dropCards hiddenBooster"}>
                     <img style={customStyles.imgModal} src={"/Boosters/" + props.idBooster + ".png"}
                          alt="Grapefruit slice atop a pile of other slices"/>

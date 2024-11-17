@@ -1950,6 +1950,7 @@ img.gettedBoxImg {
     visibility: hidden;
     animation:bounceIn 1s;
     animation-fill-mode: forwards;
+    height: 0;
 }
 .hiddenBooster{
     animation:bounceOut 1s;

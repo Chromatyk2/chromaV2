@@ -1917,7 +1917,9 @@ img.gettedBoxImg {
     }
     100% {
         transform:scale(0);
-        display: none!important;
+        .containerLoadingBooster{
+            display: none!important;
+        }
     }
 }
 @keyframes bounceInCards {

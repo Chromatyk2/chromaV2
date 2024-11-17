@@ -159,7 +159,7 @@ function OpeningBooster(props) {
     return (
         <>
             <div className={"discoveredCardsContainer"}>
-                <div style={{
+                <div className={"containerLoadingBooster"} style={{
                     display: "flex",
                     justifyContent: "center",
                     height: "280px",

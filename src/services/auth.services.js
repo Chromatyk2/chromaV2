@@ -7,8 +7,7 @@ function AuthService() {
 
   const [cookies, setCookie, removeCookie] = useCookies();
   const CLIENT_ID = process.env.REACT_APP_CLIENT_ID;
-  const REDIRECT_URI = "https://chromav2.netlify.app/";
-  const SCOPES = ['openid'];
+  const REDIRECT_URI = "https://chromatyk.fr/";
   const CLIENT_SECRET = process.env.REACT_APP_CLIENT_SECRET
 
   const encodeQueryString = (params) => {
@@ -23,8 +22,7 @@ function AuthService() {
     const params = {
         client_id: CLIENT_ID,
         redirect_uri: REDIRECT_URI,
-        response_type: "code",
-        scope: SCOPES,
+        response_type: "code"
     };
       const queryString = encodeQueryString(params);
       const authenticationUrl = `https://id.twitch.tv/oauth2/authorize?${queryString}`;
@@ -56,7 +54,7 @@ function AuthService() {
           client_secret:CLIENT_SECRET,
           code:params.code,
           grant_type:"authorization_code",
-          redirect_uri:"https://chromav2.netlify.app/"
+          redirect_uri:"https://chromatyk.fr/"
         }
       )
       .then(

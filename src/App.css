@@ -264,7 +264,7 @@ iframe{
     font-size: 30px;
     font-family: "Charge Vector Black";
 }
-.leaderBoardSwitch button:className={
+.leaderBoardSwitch button:className{
     color: #0a3a2c;
     font-size: 32px;
 }
@@ -916,6 +916,20 @@ p.filterTitle {
     font-size: 18px;
     color: #007bb3;
 }
+.infoNbCard{
+    position: absolute;
+    left: -19px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #120747;
+    font-size: 50px;
+    background: none;
+    letter-spacing: 0px;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
 .infoShiny{
     left: 90px;
     position: absolute;
@@ -1512,9 +1526,9 @@ h1 {
     margin: 0 auto;
 }
 img.done {
+    margin-left: 160px;
+    margin-top: 0px;
     position: absolute;
-    margin-left: 192px;
-    margin-top: -27px;
 }
 
 #again {
@@ -1905,7 +1919,6 @@ img.gettedBoxImg {
     100% {
         visibility: visible;
         height: 300px;
-        display: none;
     }
 }
 @keyframes bounceOut {
@@ -1966,7 +1979,7 @@ img.gettedBoxImg {
 
 .showBooster{
     visibility: hidden;
-    animation:bounceIn 5s;
+    animation:bounceIn 7s;
     animation-fill-mode: forwards;
     height: 0;
 }
@@ -2139,10 +2152,15 @@ a.linkOnAir {
     margin: auto auto 10px;
     text-align: center;
     text-decoration: none;
-    width: 300px;
     flex-flow: column;
     padding: 10px;
     background: red;
+    width: 80px;
+    height: 80px;
+    z-index: 10;
+    position: fixed;
+    right: 10px;
+    top: 10px;
 }
 a.linkOnAirOff {
     border-radius: 50px;
@@ -2152,14 +2170,16 @@ a.linkOnAirOff {
     margin: auto auto 10px;
     text-align: center;
     text-decoration: none;
-    width: 300px;
     flex-flow: column;
     padding: 10px;
     background: gray;
     margin-top: 0px;
+    width: 80px;
+    height: 80px;
+    z-index: 10;
     position: fixed;
-    bottom:30px;
-    left:30px;
+    right: 10px;
+    top: 10px;
 }
 .pagePokemonContainer{
     min-height: 100vh;
@@ -2378,7 +2398,11 @@ a.linkOnAirOff {
     display: block;
     animation: bounceInCards 1s forwards;
 }
-
+.showCards{
+    animation:bounceInCards 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+}
 .glowGetGreen{
     display: block;
     filter: drop-shadow(2px 4px 30px green);
@@ -4143,10 +4167,17 @@ span.navbar-brand {
 }
 
 
+#icomp-neon p span{
+    color:#BA01FF;
+}
+#icomp-neon p span{
+    -webkit-animation: neon6 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon6 1.5s ease-in-out infinite alternate;
+    animation: neon6 1.5s ease-in-out infinite alternate;
+}
 
 #icomp-neon p span{
-    color: #fff;
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #24275d, 0 0 70px #24275d, 0 0 80px #24275d, 0 0 100px #24275d, 0 0 150px #24275d;
+    color:#ffffff;
 }
 @-webkit-keyframes neon6 {
     from {
@@ -4280,6 +4311,9 @@ span.navbar-brand {
     }
 }
 @media screen and (min-width: 850px) {
+    .contentContainer {
+        padding-top: 115px;
+    }
     .twitch {
         position: relative;
         margin-bottom: 50px;
@@ -4302,9 +4336,6 @@ span.navbar-brand {
     }
 }
 @media screen and (min-width: 380px) and (max-width: 943px) {
-    a.linkOnAirOff {
-        display: none;
-    }
     button.anchorTooltip.uniquePokemonContainerTeam {
         width: 100px;
         height: 100px;
@@ -4391,9 +4422,6 @@ span.navbar-brand {
     }
 }
 @media screen and (max-width: 379px) {
-    a.linkOnAirOff {
-        display: none;
-    }
     button.anchorTooltip.uniquePokemonContainerTeam {
         width: 100px;
         height: 100px;
@@ -5405,7 +5433,7 @@ button.navbar-toggler.collapsed {
     height: 100px;
 }
 .profilCard:hover{
-    transform: scale(3);
+    transform: scale(1.8);
 }
 .profilCards{
     display: flex;
@@ -5413,7 +5441,7 @@ button.navbar-toggler.collapsed {
     gap: 35px;
     justify-content: center;
     margin: 20px;
-    padding-bottom: 150px;
+    padding-bottom: 140px;
 }
 .profilVisualsCard{
     align-items: end;
@@ -5483,4 +5511,12 @@ ul.react-responsive-3d-carousel__list {
     z-index: 10;
     flex-wrap: wrap;
     top: 345px;
+}
+@keyframes moveGradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: -200% 0%;
+    }
 }

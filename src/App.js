@@ -43,7 +43,7 @@ import SpecificPedandex from "./component/specificPedandex";
 import CardsHubTest from "./component/test/cardsHub";
 function App(props) {
   const [cookies, setCookie] = useCookies();
-  if(Object.keys(cookies).length == 0) {
+  if(Object.keys(cookies).length == 0 || cookies.token === undefined ) {
     return <Login />
   }
   return(
@@ -51,6 +51,7 @@ function App(props) {
       {cookies.user !== undefined &&
       <BrowserRouter>
           <NavBar cookies={cookies} />
+        <OnStream />
         <Routes>
           <Route path="/" element={<HomePage cookies={cookies} />} />
           <Route path="/pokedex" element={<Pokedex cookies={cookies} />} />

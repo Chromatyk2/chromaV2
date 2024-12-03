@@ -16,9 +16,11 @@ function MyCards(props) {
     const [totalCardUser, setTotalCardUser] = useState(null);
     const [boosterList, setBoosterList] = useState(null);
     const [page, setPage] = useState(null);
-    function displayPage(e,f) {
+    const [guruName, setGuruName] = useState(null);
+    function displayPage(e,f,g) {
         setPage(e);
         setNbCard(f);
+        setGuruName(g);
     }
     function backPage() {
         setPage(null)
@@ -52,15 +54,15 @@ function MyCards(props) {
                 {totalCard &&
                     page ?
                         <>
-                            <button style={{color:"white",width:"100%",margin:"0",padding:"0"}}onClick={backPage} className="backButton">Retour</button>
-                            <MyCardsSet user={props.user} card={nbCard} idBooster={page}/>
+                            <button style={{color:"white",width:"100%",margin:"0",padding:"0",marginTop:"30px"}}onClick={backPage} className="backButton">Retour</button>
+                            <MyCardsSet user={props.user} card={nbCard} idBooster={page} guruName={guruName}/>
                         </>
                     :
                         nbCards &&
                             totalCard &&
                                 nbCards.sort((a, b) => b.nbCard - a.nbCard).map((val, key) => {
                                 return(
-                                    <MyUniqueBooster page={val.booster} change = {displayPage} nbCard={val} maxBooster={boosterList.find((uc) => uc.name == val.booster).totalCards}/>
+                                    <MyUniqueBooster page={val.booster} change = {displayPage} nbCard={val} boosterList={boosterList} maxBooster={boosterList.find((uc) => uc.name == val.booster).totalCards}/>
                                 )
                             })
                 }

@@ -8,7 +8,6 @@ function HomePage(props) {
   return (
       <>
           <div className={"contentContainer"}>
-              <OnStream/>
               <p style={{textAlign: "center", color: "white"}}>Bienvenue, {props.cookies.user.data[0].login}</p>
               <p style={{textAlign: "center", color: "white"}}>Capture des Pokemons, fait ton profil et collectionne les cartes
                   avec les points de chaines que tu gagnes sur les streams de chromatyk, tu gagnes un booster sur le site

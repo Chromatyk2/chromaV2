@@ -30,6 +30,7 @@ function MyCardsSet(props) {
     const [filterRarity, setFilterRarity] = React.useState("");
     const [onlyMine, setOnlyMine] = React.useState(true);
     const [bonusSet, setBonusSet] = React.useState(false);
+    const [lang, setLang] = React.useState(null);
     const customStyles = {
         content: {
             position:'initial',
@@ -52,7 +53,8 @@ function MyCardsSet(props) {
             background:'none',
             padding:0,
             width:"250px",
-            height:"350px"
+            height:"350px",
+            position:"relative"
         },
     };
     useEffect(() => {
@@ -60,6 +62,11 @@ function MyCardsSet(props) {
             .get("/api/getRaritiesByBooster/"+props.idBooster)
             .then(function(response){
                 setRarities(response.data);
+                if(response.data[0].block == "gym" ||response.data[0].block == "col"){
+                    setLang("en")
+                }else{
+                    setLang("fr")
+                }
             })
     }, [])
     useEffect(() => {
@@ -70,92 +77,12 @@ function MyCardsSet(props) {
                 response.data.map((val, key) => {
                     setMyCardsId(myCardsId => [...myCardsId,val.card]);
                 })
-                fetch("https://api.pokemontcg.io/v2/cards?q=set.id:"+props.idBooster)
+                fetch("https://api.tcgdex.net/v2/en/sets/"+props.idBooster)
                     .then(res => res.json())
                     .then(
                         (result) => {
-                            setItems(result.data)
-                                if(result.data.length == 250){
-                                    fetch("https://api.pokemontcg.io/v2/cards?q=set.id:"+props.idBooster+"&page=2")
-                                        .then(res => res.json())
-                                        .then(
-                                            (result) => {
-                                                setSetBis(result.data)
-                                                result.data.map((val, key) => {
-                                                    setItems(items => [...items,val]);
-                                                })
-                                                setIsLoaded(false);
-                                            })
-                                }
-                                if(props.idBooster == "swsh45"){
-                                    setBonusSet(true);
-                                    fetch("https://api.pokemontcg.io/v2/cards?q=set.id:swsh45sv")
-                                        .then(res => res.json())
-                                        .then(
-                                            (result) => {
-                                                result.data.map((val, key) => {
-                                                    setItems(items => [...items,val]);
-                                                })
-                                                setIsLoaded(false);
-                                            })
-                                }else if(props.idBooster == "swsh9"){
-                                    fetch("https://api.pokemontcg.io/v2/cards?q=set.id:swsh9tg")
-                                        .then(res => res.json())
-                                        .then(
-                                            (result) => {
-                                                result.data.map((val, key) => {
-                                                    setItems(items => [...items,val]);
-                                                })
-                                                setIsLoaded(false);
-                                            })
-
-                                }else if(props.idBooster == "swsh10"){
-                                    fetch("https://api.pokemontcg.io/v2/cards?q=set.id:swsh10tg")
-                                        .then(res => res.json())
-                                        .then(
-                                            (result) => {
-                                                result.data.map((val, key) => {
-                                                    setItems(items => [...items,val]);
-                                                })
-                                                setIsLoaded(false);
-                                            })
-
-                                }else if(props.idBooster == "swsh12"){
-                                    fetch("https://api.pokemontcg.io/v2/cards?q=set.id:swsh12tg")
-                                        .then(res => res.json())
-                                        .then(
-                                            (result) => {
-                                                result.data.map((val, key) => {
-                                                    setItems(items => [...items,val]);
-                                                })
-                                                setIsLoaded(false);
-                                            })
-
-                                }else if(props.idBooster == "swsh12pt5"){
-                                    fetch("https://api.pokemontcg.io/v2/cards?q=set.id:swsh12pt5gg")
-                                        .then(res => res.json())
-                                        .then(
-                                            (result) => {
-                                                result.data.map((val, key) => {
-                                                    setItems(items => [...items,val]);
-                                                })
-                                                setIsLoaded(false);
-                                            })
-
-                                }else if(props.idBooster == "sm115"){
-                                    fetch("https://api.pokemontcg.io/v2/cards?q=set.id:sma")
-                                        .then(res => res.json())
-                                        .then(
-                                            (result) => {
-                                                result.data.map((val, key) => {
-                                                    setItems(items => [...items,val]);
-                                                })
-                                                setIsLoaded(false);
-                                            })
-
-                                }else{
-                                    setIsLoaded(false);
-                                }
+                            setItems(result)
+                            setIsLoaded(false);
 
                         },
                         (error) => {
@@ -181,9 +108,31 @@ function MyCardsSet(props) {
     function handleState() {
         setIsOpen(false);
     }
-    function errorImage(e){
+    function errorImages(e, booster, number){
         e.target.onerror = null;
-        e.target.src = "https://images.pokemoncard.io/images/"+props.idBooster+"/"+e.target.getAttribute("cardId")+".png";
+        console.log(e.target);
+        console.log(e.target.src);
+        if(booster == "sm3.5"){
+            e.target.src = "https://images.pokemontcg.io/sm35/"+number+"_hires.png";
+        }else if(booster == "sm7.5"){
+            e.target.src = "https://images.pokemontcg.io/sm75/"+number+"_hires.png";
+        }else if(booster == "sm11.5"){
+            e.target.src = "https://images.pokemontcg.io/sm115/"+number+"_hires.png";
+        }else if(booster == "swsh3.5"){
+            e.target.src = "https://images.pokemontcg.io/swsh35/"+number+"_hires.png";
+        }else if(booster == "swsh4.5"){
+            e.target.src = "https://images.pokemontcg.io/swsh4.5/"+number+"_hires.png";
+        }else if(booster == "swsh12.5"){
+            e.target.src = "https://images.pokemontcg.io/swsh12pt5/"+number+"_hires.png";
+        }else if(booster == "sv03.5"){
+            e.target.src = "https://images.pokemontcg.io/sv3pt5/"+number+"_hires.png";
+        }else if(booster == "sv04.5"){
+            e.target.src = "https://images.pokemontcg.io/sv4pt5/"+number+"_hires.png";
+        }else if(booster == "sv06.5"){
+            e.target.src = "https://images.pokemontcg.io/sv6pt5/"+number+"_hires.png";
+        }else{
+            e.target.src = "https://images.pokemontcg.io/"+booster+"/"+number+"_hires.png";
+        }
     }
     function handleState() {
         setIsOpen(false);
@@ -202,81 +151,108 @@ function MyCardsSet(props) {
         <>
             {isLoaded === false ?
                 <>
-                    <ProgressBarCard getNb={myCards.length} item={items.length}/>
+                    <ProgressBarCard booster={props.idBooster} getNb={myCards.length} item={items.cards.length}/>
                     <div style={{color:"white",display:"flex",width:"100%",justifyContent:"center",flexWrap:"wrap"}}>
-                        <label htmlFor="subscribe">
-                            <input
-                                style={{marginRight:"10px"}}
-                                type="checkbox"
-                                onChange={handleChangeOnlyMine}
-                                id="subscribe"
-                                name="subscribe"
-                            />
-                            Voir les cartes manquantes
-                        </label>
+                        {myCards.length != items.cards.length &&
+                            <label htmlFor="subscribe">
+                                <input
+                                    style={{marginRight:"10px"}}
+                                    type="checkbox"
+                                    onChange={handleChangeOnlyMine}
+                                    id="subscribe"
+                                    name="subscribe"
+                                />
+                                Voir les cartes manquantes
+                            </label>
+                        }
                     </div>
                     <div id={"cardsContainer"}>
-                        {items.sort((a, b) => a.number - b.number).map((val, key) => {
+                        {items.cards.sort((a, b) => a.localId - b.localId).map((val, key) => {
                                 if (myCardsId.includes(val.id)) {
-                                    if(val.rarity != "Common" && val.rarity != "Uncommon" && typeof val.rarity !== "undefined"){
-                                        var stadeC = rarities.find((uc) => uc.rarity.includes(val.rarity)).stade;
+                                    if(myCards.find((uc) => uc.card == val.id).rarity != "Common" && myCards.find((uc) => uc.card == val.id).rarity != "Uncommon" && typeof myCards.find((uc) => uc.card == val.id).rarity !== "undefined"){
+                                        var stadeC = rarities.find((uc) => uc.rarity.includes(myCards.find((uc) => uc.card == val.id).rarity)).stade;
                                     }else{
                                         var stadeC = 0;
                                     }
                                     let cardNb = myCards.find((myCard) => myCard.card.includes(val.id));
                                     if(stadeC == 4){
                                         return (
-                                        <div onClick={openModal} style={{animation: "glowGetRainbow 10s infinite alternate"}} id={"lastBangerContainer"} className={"lastBangerContainer"}>
-                                            <div cardId={val.id} pokemonId={val.dexId} myCardNb={cardNb.nbCard} image={val.image} stade={stadeC} className="cardBangerAlertSet">
-                                                <LazyLoadImage
-                                                    delayTime={0}
-                                                    threshold={200}
-                                                    placeholderSrc={"https://images.pokemontcg.io/defaut.png"}
-                                                    width={"250"}
-                                                    style={{width:"250px",filter:"brightness(1)"}}
-                                                    wrapperClassName={"shadowBangerCard"}
-                                                    effect="opacity"
-                                                    delayTime={5}
-                                                    wrapperProps={{
-                                                        // If you need to, you can tweak the effect transition using the wrapper style.
-                                                        style: {transitionDelay: "0.1s"},
-                                                    }}
-                                                    src={"https://images.pokemontcg.io/"+val.set.id+"/"+val.number+"_hires.png"} />
-                                                {/*<img className={"shadowBangerCard"} style={{width:"250px",filter:"brightness(1)"}} src={"https://images.pokemontcg.io/"+val.set.id+"/"+val.number+"_hires.png"}/>*/}
+                                            <div style={{position:"relative", animation: "glowGetRainbow 10s infinite alternate"}}
+                                                 id={"lastBangerContainer"} className={"lastBangerContainer"}>
+                                                {myCards.find((uc) => uc.card == val.id).nbCard > 1 && <div className="infoNbCard" style={{zIndex:"1",width:"30px",height:"30px",lineHeight:"30px",left:"15px",bottom:"8px"}}>X{myCards.find((uc) => uc.card == val.id).nbCard}</div>}
+                                                <div cardId={val.id} pokemonId={val.dexId} myCardNb={cardNb.nbCard}
+                                                     image={val.image} stade={stadeC} className="cardBangerAlertSet">
+                                                    <LazyLoadImage
+                                                        number={val.number}
+                                                        booster={val.booster}
+                                                        block={val.block}
+                                                        onError={(e) => errorImages(e, props.idBooster, val.localId)}
+                                                        alt="Grapefruit slice atop a pile of other slices"
+                                                        placeholderSrc={"https://images.pokemontcg.io/defaut.png"}
+                                                        width={"250"}
+                                                        style={{width: "250px", filter: "brightness(1)"}}
+                                                        wrapperClassName={"shadowBangerCard"}
+                                                        effect="opacity"
+                                                        threshold={200}
+                                                        delayTime={5}
+                                                        wrapperProps={{
+                                                            // If you need to, you can tweak the effect transition using the wrapper style.
+                                                            style: {transitionDelay: "0.1s"},
+                                                        }}
+                                                        src={"https://assets.tcgdex.net/" + lang + "/" + rarities[0].block + "/" + props.idBooster + "/" + val.localId + "/high.png"}/> {/*<img className={"shadowBangerCard"} style={{width:"250px",filter:"brightness(1)"}} src={"https://images.pokemontcg.io/"+val.set.id+"/"+val.number+"_hires.png"}/>*/}
+                                                </div>
                                             </div>
-                                        </div>
                                         )
                                     }else if(stadeC == 3){
                                         return (
-                                            <div cardId={val.id} pokemonId={val.dexId} myCardNb={cardNb.nbCard} image={val.image} stade={stadeC} onClick={openModal} style={{filter: "drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px)"}} id={"lastBangerContainer"} className={"lastBangerContainer"}>
-                                                <div cardId={val.id} pokemonId={val.dexId} myCardNb={cardNb.nbCard} image={val.image} stade={stadeC} className="cardBangerAlertSetThree">
+                                            <div cardId={val.id} pokemonId={val.dexId} myCardNb={cardNb.nbCard}
+                                                 image={val.image} stade={stadeC}
+                                                 style={{position:"relative", filter: "drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px)"}}
+                                                 id={"lastBangerContainer"} className={"lastBangerContainer"}>
+                                                {myCards.find((uc) => uc.card == val.id).nbCard > 1 && <div
+                                                    className="infoNbCard" style={{zIndex:"1",width:"30px",height:"30px",lineHeight:"30px",left:"15px",bottom:"8px"}}>X{myCards.find((uc) => uc.card == val.id).nbCard}</div>}
+                                                <div cardId={val.id} pokemonId={val.dexId} myCardNb={cardNb.nbCard}
+                                                     image={val.image} stade={stadeC}
+                                                     className="cardBangerAlertSetThree">
                                                     <LazyLoadImage
+                                                        number={val.number}
+                                                        booster={val.booster}
+                                                        block={val.block}
+                                                        onError={(e) => errorImages(e, props.idBooster, val.localId)}
+                                                        alt="Grapefruit slice atop a pile of other slices"
                                                         delayTime={0}
                                                         threshold={200}
                                                         placeholderSrc={"https://images.pokemontcg.io/defaut.png"}
                                                         width={"250"}
-                                                        style={{width:"250px",filter:"brightness(1.2)"}}
+                                                        style={{width: "250px", filter: "brightness(1.2)"}}
                                                         wrapperClassName={"shadowBangerCard"}
                                                         effect="opacity"
                                                         wrapperProps={{
                                                             // If you need to, you can tweak the effect transition using the wrapper style.
                                                             style: {transitionDelay: "0.1s"},
                                                         }}
-                                                        src={"https://images.pokemontcg.io/"+val.set.id+"/"+val.number+"_hires.png"} />
-                                                    {/*<img className={"shadowBangerCard"} style={{width:"250px",filter:"brightness(1.2)"}} src={"https://images.pokemontcg.io/"+val.set.id+"/"+val.number+"_hires.png"}/>*/}
+                                                        src={"https://assets.tcgdex.net/" + lang + "/" + rarities[0].block + "/" + props.idBooster + "/" + val.localId + "/high.png"}/>
                                                 </div>
                                             </div>
                                         )
-                                    }else{
+                                    } else {
                                         return (
-                                            <button stade={stadeC} style={customStyles.buttonMyCard} onClick={openModal} className={"cardBox"}>
+                                            <button stade={stadeC} style={customStyles.buttonMyCard}
+                                                    className={"cardBox"}>
+                                                {myCards.find((uc) => uc.card == val.id).nbCard > 1 && <div className="infoNbCard" style={{zIndex:"1",width:"30px",height:"30px",lineHeight:"30px",left:"15px",bottom:"8px"}}>X{myCards.find((uc) => uc.card == val.id).nbCard}</div>}
                                                 <LazyLoadImage
+                                                    number={val.number}
+                                                    booster={val.booster}
+                                                    block={val.block}
+                                                    onError={(e) => errorImages(e, props.idBooster, val.localId)}
+                                                    alt="Grapefruit slice atop a pile of other slices"
                                                     delayTime={0}
                                                     threshold={200}
                                                     placeholderSrc={"https://images.pokemontcg.io/defaut.png"}
                                                     width={"250"}
                                                     stade={stadeC}
-                                                    style={{filter:stadeC == 1 ? "drop-shadow(rgb(17, 208, 154) 0px 0px 5px) drop-shadow(rgb(17, 210, 154) 0px 0px 5px) drop-shadow(rgb(17, 208, 154) 0px 0px 5px)" : stadeC == 2 ? "drop-shadow(rgb(14, 208, 214) 0px 0px 3px) drop-shadow(rgb(14, 208, 214) 0px 0px 5px) drop-shadow(rgb(14, 208, 214) 0px 0px 5px)" : stadeC == 3 && "drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px)"}} cardId={val.id} pokemonId={val.dexId} myCardNb={cardNb.nbCard}
+                                                    style={{filter: stadeC == 1 ? "drop-shadow(rgb(17, 208, 154) 0px 0px 5px) drop-shadow(rgb(17, 210, 154) 0px 0px 5px) drop-shadow(rgb(17, 208, 154) 0px 0px 5px)" : stadeC == 2 ? "drop-shadow(rgb(14, 208, 214) 0px 0px 3px) drop-shadow(rgb(14, 208, 214) 0px 0px 5px) drop-shadow(rgb(14, 208, 214) 0px 0px 5px)" : stadeC == 3 && "drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px)"}}
+                                                    cardId={val.id} pokemonId={val.dexId} myCardNb={cardNb.nbCard}
                                                     image={val.image}
                                                     wrapperClassName={stadeC == 4 ? "fit-picture-card cardOnListRainbow" : "fit-picture-card"}
                                                     effect="opacity"
@@ -284,33 +260,33 @@ function MyCardsSet(props) {
                                                         // If you need to, you can tweak the effect transition using the wrapper style.
                                                         style: {transitionDelay: "0.1s"},
                                                     }}
-                                                    src={"https://images.pokemontcg.io/"+val.set.id+"/"+val.number+"_hires.png"} />
-                                                {/*<img stade={stadeC} style={{filter:stadeC == 1 ? "drop-shadow(rgb(17, 208, 154) 0px 0px 5px) drop-shadow(rgb(17, 210, 154) 0px 0px 5px) drop-shadow(rgb(17, 208, 154) 0px 0px 5px)" : stadeC == 2 ? "drop-shadow(rgb(14, 208, 214) 0px 0px 3px) drop-shadow(rgb(14, 208, 214) 0px 0px 5px) drop-shadow(rgb(14, 208, 214) 0px 0px 5px)" : stadeC == 3 && "drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px)"}} cardId={val.id} pokemonId={val.dexId} myCardNb={cardNb.nbCard}*/}
-                                                {/*     image={val.image} className={stadeC == 4 ? "fit-picture-card cardOnListRainbow" : "fit-picture-card"}*/}
+                                                    src={"https://assets.tcgdex.net/" + lang + "/" + rarities[0].block + "/" + props.idBooster + "/" + val.localId + "/high.png"}/> {/*     image={val.image} className={stadeC == 4 ? "fit-picture-card cardOnListRainbow" : "fit-picture-card"}*/}
                                                 {/*     src={"https://images.pokemontcg.io/"+val.set.id+"/"+val.number+"_hires.png"}*/}
-                                                {/*     onError={errorImage}/>*/}
+                                                {/*     onError={(e) => errorImages(e, props.idBooster, val.localId )}/>*/}
                                             </button>
                                         )
                                     }
                                 }else if(!onlyMine){
                                     return (
                                         <LazyLoadImage
+                                            number={val.number}
+                                            booster={val.booster}
+                                            block={val.block}
+                                            onError={(e) => errorImages(e, props.idBooster, val.localId )} alt="Grapefruit slice atop a pile of other slices"
                                             placeholderSrc={"https://images.pokemontcg.io/defaut.png"}
                                             delayTime={0}
                                             threshold={200}
                                             width={"250"}
                                             style={{filter:"grayscale(1)"}}
                                             stade={stadeC}
-                                            image={"https://images.pokemontcg.io/"+val.set.id+"/"+val.number+".png"}
+                                            image={val.image}
                                             wrapperClassName={"fit-picture-card"}
                                             effect="opacity"
                                             wrapperProps={{
                                                 // If you need to, you can tweak the effect transition using the wrapper style.
                                                 style: {transitionDelay: "0.1s"},
                                             }}
-                                            src={"https://images.pokemontcg.io/"+val.set.id+"/"+val.number+"_hires.png"} />
-                                        // <img style={{filter:"grayscale(1)"}} className={"fit-picture-card"} src={"https://images.pokemontcg.io/"+val.set.id+"/"+val.number+".png"} onError={errorImage}/>
-                                    )
+                                            src={"https://assets.tcgdex.net/"+lang+"/" + rarities[0].block + "/" + props.idBooster + "/" + val.localId + "/high.png"}/>                                    )
                                 }
                             })
                         }
@@ -318,7 +294,7 @@ function MyCardsSet(props) {
                     <Modal isOpen={modalIsOpen} onRequestClose={closeModal} style={customStyles}
                            contentLabel="Example Modal">
                         <UniqueCard stade={stadeCard} pokemonName={pokemonName} onClick={closeModal} cardImage={myCardImage} cardNb={myCardNb}
-                                    cardId={cardId} idBooster={props.idBooster} change={handleState}/>
+                                    cardId={cardId} idBooster={props.idBooster} change={handleState} lang={lang}/>
                     </Modal>
                 </>
                 :

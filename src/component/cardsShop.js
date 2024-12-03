@@ -29,6 +29,10 @@ function CardsShop(props) {
     const [nextFree, setNextFree] = React.useState(null);
     const [onOpen, setOnOpen] = React.useState(false);
     const [selectedBoosterId, setSelectedBoosterId] = React.useState(0);
+    const [nameGuru, setNameGuru] = React.useState(0);
+    const [block, setBlock] = React.useState(0);
+    const [randomBooster, setRandomBooster] = React.useState(null);
+    const [globalBooster, setGlobalBoosters] = React.useState(null);
     const customStyles = {
         content: {
             position:'initial',
@@ -70,6 +74,11 @@ function CardsShop(props) {
                                     .get("/api/getBoostersList")
                                     .then(function(response){
                                         setItems(response.data);
+                                            Axios.get("/api/getBoostersList")
+                                            .then(function(response){
+                                                setGlobalBoosters(response.data);
+                                                setRandomBooster(Math.floor(Math.random() * response.data.length));
+                                            })
                                         response.data.filter(item => item.gen == 1).map((val, key) => {
                                             setArray(array => [...array,
                                                 <div className="uniqueTradeContainer">
@@ -154,9 +163,13 @@ function CardsShop(props) {
         setOnOpen(true);
         var button = e.currentTarget;
         var nbBooster = e.target.getAttribute("nbBooster");
+        var nameGuru = e.target.getAttribute("nameGuru");
+        var block = e.target.getAttribute("block");
         button.disabled = true;
         var id = e.target.value;
         setBoosterId(id);
+        setNameGuru(nameGuru);
+        setBlock(block);
         Axios
             .get("/api/getCardsPoint/"+props.user)
             .then(function(response){
@@ -184,9 +197,13 @@ function CardsShop(props) {
         setOnOpen(true);
         var button = e.currentTarget;
         var nbBooster = e.target.getAttribute("nbBooster");
+        var nameGuru = e.target.getAttribute("nameGuru");
+        var block = e.target.getAttribute("block");
         button.disabled = true;
         var id = e.target.value;
         setBoosterId(id);
+        setNameGuru(nameGuru);
+        setBlock(block);
         Axios
             .get("/api/getCanOpen/"+props.user)
             .then(function(response){
@@ -230,6 +247,7 @@ function CardsShop(props) {
         setIsOpen(false);
     }
     function handleState() {
+        setRandomBooster(Math.floor(Math.random() * items.length));
         setOnOpen(false);
     }
     function changeCarousel(e) {
@@ -238,7 +256,7 @@ function CardsShop(props) {
     return (
         <>
             {onOpen === true ?
-                <OpeningBooster change={handleState} idBooster={boosterId} user={props.user}/>
+                <OpeningBooster change={handleState} idBooster={boosterId} user={props.user} boosterGuru={nameGuru} block={block}/>
                 :
                 canOpenLive !== null &&
                 <>
@@ -285,7 +303,7 @@ function CardsShop(props) {
                         <option value="9">Gen 9</option>
                     </select>
                     <div id={"cardsContainer"}>
-                        {items &&
+                        {randomBooster &&
                             <div className="uniqueTradeContainerRandom">
                                 <div style={{height:"70px"}} className={"containerImgBooster"}>
                                     <img style={{width:"70px"}} className="fit-picture" src={"/images/random.png"}
@@ -295,7 +313,9 @@ function CardsShop(props) {
                                     {points > 0 ?
                                         loading === false ?
                                                 <button style={{fontSize:"13px",margin:" 0px",fontsize: "13px",height: "25px",lineHeight: "8px",width: "180px"}}
-                                                        value={items[Math.floor(Math.random() * items.length)].name}
+                                                        value={globalBooster[randomBooster].name}
+                                                        nameGuru={globalBooster[randomBooster].nameGuru}
+                                                        block={globalBooster[randomBooster].block}
                                                         onClick={openModal}
                                                         className="guessTradeButton">Ouvrir
                                                 </button>
@@ -305,7 +325,10 @@ function CardsShop(props) {
                                         <button style={{fontSize:"13px",margin:" 0px",fontsize: "13px",height: "25px",lineHeight: "8px",width: "180px"}}  className="guessTradeButton">Aucun Token</button>
                                     }
                                     {canOpenLive == 1 &&
-                                            <button style={{fontSize:"13px",margin:" 0px",fontsize: "13px",height: "25px",lineHeight: "8px",width: "180px", marginTop:"10px"}}  value={items[Math.floor(Math.random() * items.length)].name}
+                                            <button style={{fontSize:"13px",margin:" 0px",fontsize: "13px",height: "25px",lineHeight: "8px",width: "180px", marginTop:"10px"}}
+                                                    value={globalBooster[randomBooster].name}
+                                                    nameGuru={globalBooster[randomBooster].nameGuru}
+                                                    block={globalBooster[randomBooster].block}
                                                     onClick={freeBooster}
                                                     className="guessTradeButton">Booster Gratuit
                                             </button>
@@ -329,6 +352,8 @@ function CardsShop(props) {
                                                 <button
                                                             style={{fontSize: "13px", width: "180px", margin:"0"}}
                                                             value={items[selectedBoosterId].name}
+                                                            nameGuru={items[selectedBoosterId].nameGuru}
+                                                            block={items[selectedBoosterId].block}
                                                             onClick={openModal}
                                                             className="guessTradeButton">Ouvrir
                                                     </button>
@@ -340,6 +365,8 @@ function CardsShop(props) {
                                         {canOpenLive == 1 &&
                                             <button style={{fontSize: "13px", width: "180px", margin:"0"}}
                                                         value={items[selectedBoosterId].name}
+                                                        nameGuru={items[selectedBoosterId].nameGuru}
+                                                        block={items[selectedBoosterId].block}
                                                         onClick={freeBooster}
                                                         className="guessTradeButton">Booster Gratuit
                                             </button>

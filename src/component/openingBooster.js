@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react';
+import React,{useState, useEffect, Suspense} from 'react';
 import { useParams } from 'react-router-dom'
 import ReactPaginate from 'react-paginate';
 import Axios from 'axios'
@@ -22,102 +22,18 @@ function OpeningBooster(props) {
             props.change();
         }, 1000);
     }
+
     useEffect(() => {
-        fetch("https://api.pokemontcg.io/v2/cards?q=set.id:"+props.idBooster)
+        fetch("https://api.tcgdex.net/v2/en/sets/"+props.idBooster)
             .then(res => res.json())
             .then(
                 (result) => {
-                    setItems(result.data);
-                    if(result.data.length == 250){
-                        fetch("https://api.pokemontcg.io/v2/cards?q=set.id:"+props.idBooster+"&page=2")
-                            .then(res => res.json())
-                            .then(
-                                (result) => {
-                                    result.data.map((val, key) => {
-                                        setItems(items => [...items,val]);
-                                    })
-                                    setIsLoaded(false);
-                                })
-                    }
-                    if(props.idBooster == "swsh45"){
-                        fetch("https://api.pokemontcg.io/v2/cards?q=set.id:swsh45sv")
-                            .then(res => res.json())
-                            .then(
-                                (result) => {
-                                    result.data.map((val, key) => {
-                                        setItems(items => [...items,val]);
-                                    })
-                                    setIsLoaded(false);
-                                })
-                    }else if(props.idBooster == "swsh9"){
-                        fetch("https://api.pokemontcg.io/v2/cards?q=set.id:swsh9tg")
-                            .then(res => res.json())
-                            .then(
-                                (result) => {
-                                    result.data.map((val, key) => {
-                                        setItems(items => [...items,val]);
-                                    })
-                                    setIsLoaded(false);
-                                })
-
-                    }else if(props.idBooster == "swsh10"){
-                        fetch("https://api.pokemontcg.io/v2/cards?q=set.id:swsh10tg")
-                            .then(res => res.json())
-                            .then(
-                                (result) => {
-                                    result.data.map((val, key) => {
-                                        setItems(items => [...items,val]);
-                                    })
-                                    setIsLoaded(false);
-                                })
-
-                    }else if(props.idBooster == "swsh11"){
-                        fetch("https://api.pokemontcg.io/v2/cards?q=set.id:swsh11tg")
-                            .then(res => res.json())
-                            .then(
-                                (result) => {
-                                    result.data.map((val, key) => {
-                                        setItems(items => [...items,val]);
-                                    })
-                                    setIsLoaded(false);
-                                })
-
-                    }else if(props.idBooster == "swsh12"){
-                        fetch("https://api.pokemontcg.io/v2/cards?q=set.id:swsh12tg")
-                            .then(res => res.json())
-                            .then(
-                                (result) => {
-                                    result.data.map((val, key) => {
-                                        setItems(items => [...items,val]);
-                                    })
-                                    setIsLoaded(false);
-                                })
-
-                    }else if(props.idBooster == "swsh12pt5"){
-                        fetch("https://api.pokemontcg.io/v2/cards?q=set.id:swsh12pt5gg")
-                            .then(res => res.json())
-                            .then(
-                                (result) => {
-                                    result.data.map((val, key) => {
-                                        setItems(items => [...items,val]);
-                                    })
-                                    setIsLoaded(false);
-                                })
-
-                    }else if(props.idBooster == "sm115"){
-                        fetch("https://api.pokemontcg.io/v2/cards?q=set.id:sma")
-                            .then(res => res.json())
-                            .then(
-                                (result) => {
-                                    result.data.map((val, key) => {
-                                        setItems(items => [...items,val]);
-                                    })
-                                    setIsLoaded(false);
-                                })
-
-                    }else{
-                        setIsLoaded(false);
-                    }
+                    setItems(result.cards);
+                    Axios
+                        .get("/api/getRaritiesByBooster/"+props.idBooster)
+                        .then(function(response){
+                            setRarities(response.data);
+                        })
                 },
                 (error) => {
                     setIsLoaded(true);
@@ -125,13 +41,6 @@ function OpeningBooster(props) {
                 }
             )
     }, []);
-    useEffect(() => {
-        Axios
-            .get("/api/getRaritiesByBooster/"+props.idBooster)
-            .then(function(response){
-                setRarities(response.data);
-            })
-    }, [])
     const customStyles = {
         textModal: {
             fontSize:'30px',
@@ -150,41 +59,12 @@ function OpeningBooster(props) {
             filter: "grayscale(1)"
         },
     };
-    useEffect(() => {
-        const timeout = setTimeout(() => {
-            setIsLoaded(false)
-            const timeout = setTimeout(() => {
-                setThings(false)
-
-            }, 1000)
-            return () => clearTimeout(timeout)
-        }, 5000)
-
-        return () => clearTimeout(timeout)
-    }, []);
     return (
         <>
             <div className={"discoveredCardsContainer"}>
-                <div style={{
-                    display: things === true ? "flex" : "none" ,
-                    justifyContent: "center",
-                    height: "280px",
-                    width: "300px"
-                }}>
-                    <div
-                         className={isLoaded === true ? "dropBooster fit-picture showBooster" : "fit-picture dropCards hiddenBooster"}>
-                        <img style={customStyles.imgModal2} src={"/Boosters/" + props.idBooster + ".png"}
-                             alt="Grapefruit slice atop a pile of other slices"/>
-                    </div>
-                    <div style={{overflow: "hidden"}}
-                         className={isLoaded === true ? "dropBooster fit-picture showBooster" : "fit-picture dropCards hiddenBooster"}>
-                        <img style={customStyles.imgModal} src={"/Boosters/" + props.idBooster + ".png"}
-                             alt="Grapefruit slice atop a pile of other slices"/>
-                    </div>
-                </div>
                 {
-                    items &&
-                    <OpeningCards user={props.user} change={handleState} idBooster={props.idBooster} items={items}
+                    rarities &&
+                    <OpeningCards block={props.block} user={props.user} change={handleState} boosterGuru={props.boosterGuru} idBooster={props.idBooster} items={items}
                                   rarities={rarities}/>
 
                 }

@@ -18,7 +18,6 @@ const pseudo = props.cookies.user.data[0].login;
     return (
         <>
             <div className={"contentContainer"}>
-                <OnStream />
                 <PkmList list={list}/>
             </div>
         </>

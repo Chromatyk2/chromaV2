@@ -131,7 +131,7 @@ function Profil(props) {
                 setProfil(response.data);
                 Axios.get("/api/getMyTotalCards/"+pseudo)
                     .then(function (response){
-                        setPourcentCard(Math.round((response.data[0].nbCard / 15937) * 100));
+                        setPourcentCard(Math.abs((response.data[0].nbCard / 15937) * 100).toFixed(5));
                         setMyTotalsCards(response.data)
                         Axios.get("/api/getMyLastTenCards/"+pseudo)
                             .then(function(response){
@@ -237,6 +237,30 @@ function Profil(props) {
                     })
             })
     }
+    function errorImage(e){
+        e.target.onerror = null;
+        if(e.target.getAttribute("booster") == "sm3.5"){
+            e.target.src = "https://images.pokemontcg.io/sm35/"+e.target.getAttribute("number")+"_hires.png";
+        }else if(e.target.getAttribute("booster") == "sm7.5"){
+            e.target.src = "https://images.pokemontcg.io/sm75/"+e.target.getAttribute("number")+"_hires.png";
+        }else if(e.target.getAttribute("booster") == "sm11.5"){
+            e.target.src = "https://images.pokemontcg.io/sm115/"+e.target.getAttribute("number")+"_hires.png";
+        }else if(e.target.getAttribute("booster") == "swsh3.5"){
+            e.target.src = "https://images.pokemontcg.io/swsh35/"+e.target.getAttribute("number")+"_hires.png";
+        }else if(e.target.getAttribute("booster") == "swsh4.5"){
+            e.target.src = "https://images.pokemontcg.io/swsh4.5/"+e.target.getAttribute("number")+"_hires.png";
+        }else if(e.target.getAttribute("booster") == "swsh12.5"){
+            e.target.src = "https://images.pokemontcg.io/swsh12pt5/"+e.target.getAttribute("number")+"_hires.png";
+        }else if(e.target.getAttribute("booster") == "sv03.5"){
+            e.target.src = "https://images.pokemontcg.io/sv3pt5/"+e.target.getAttribute("number")+"_hires.png";
+        }else if(e.target.getAttribute("booster") == "sv04.5"){
+            e.target.src = "https://images.pokemontcg.io/sv4pt5/"+e.target.getAttribute("number")+"_hires.png";
+        }else if(e.target.getAttribute("booster") == "sv06.5"){
+            e.target.src = "https://images.pokemontcg.io/sv6pt5/"+e.target.getAttribute("number")+"_hires.png";
+        }else{
+            e.target.src = "https://images.pokemontcg.io/"+e.target.getAttribute("booster")+"/"+e.target.getAttribute("number")+"_hires.png";
+        }
+    }
     return (
         <>
             <div className={"contentContainer"}>
@@ -245,7 +269,6 @@ function Profil(props) {
                         profil &&
                         profil.length > 0 &&
                         <>
-                            <OnStream/>
                             <p className={"pseudoProfil"}>{profil[0].pseudo}</p>
                             <div className={"profilVisuals"}>
                                 <div style={{width: "120px"}}>
@@ -379,16 +402,29 @@ function Profil(props) {
                                     </div>
                                     <p style={{marginTop: "20px", marginBottom: "20px"}}
                                        className={"pseudoProfil"}>Dernier Booster</p>
-                                    <div className={"profilCards"}>
-                                        {myLastTenCards.sort((a, b) => b.stade - a.stade).map((val, key) => {
-                                            return (
-                                                <img className={"profilCard"}
-                                                     style={{filter: val.stade == 1 ? "drop-shadow(rgb(17, 208, 154) 0px 0px 5px) drop-shadow(rgb(17, 210, 154) 0px 0px 5px) drop-shadow(rgb(17, 208, 154) 0px 0px 5px)" : val.stade == 2 ? "drop-shadow(rgb(14, 208, 214) 0px 0px 3px) drop-shadow(rgb(14, 208, 214) 0px 0px 5px) drop-shadow(rgb(14, 208, 214) 0px 0px 5px)" : val.stade == 3 && "drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px)"}}
-                                                     src={"https://images.pokemontcg.io/" + val.booster + "/" + val.card.split("-").pop() + "_hires.png"}/>
-                                            )
-                                        })
+                                    <div style={{display:"flex",flexWrap:"wrap"}}>
+                                        <img style={{width:"130px"}} src={"/Boosters/" + myLastTenCards[0].booster + ".png"}/>
+                                        <div className={"profilCards"}>
+                                            {myLastTenCards.sort((a, b) => b.stade - a.stade).map((val, key) => {
+                                                {
+                                                    if(val.number !== null && val.block !== null){
+                                                        return (
+                                                            <img
+                                                                number={val.number}
+                                                                booster={val.booster}
+                                                                block={val.block}
+                                                                className={"profilCard"}
+                                                                 onError={errorImage} alt="Grapefruit slice atop a pile of other slices"
+                                                                 style={{filter: val.stade == 1 ? "drop-shadow(rgb(17, 208, 154) 0px 0px 5px) drop-shadow(rgb(17, 210, 154) 0px 0px 5px) drop-shadow(rgb(17, 208, 154) 0px 0px 5px)" : val.stade == 2 ? "drop-shadow(rgb(14, 208, 214) 0px 0px 3px) drop-shadow(rgb(14, 208, 214) 0px 0px 5px) drop-shadow(rgb(14, 208, 214) 0px 0px 5px)" : val.stade == 3 && "drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px) drop-shadow(rgb(200, 185, 19) 0px 0px 5px)"}}
+                                                                 src={"https://assets.tcgdex.net/fr/" + val.block + "/" + val.booster + "/" + val.number + "/high.png"}/>
 
-                                        }
+                                                        )
+                                                    }
+                                                }
+                                            })
+
+                                            }
+                                        </div>
                                     </div>
                                 </>
                             }

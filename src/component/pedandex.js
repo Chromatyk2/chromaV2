@@ -251,7 +251,6 @@ function Pedandex(props) {
     return (
         <>
             <div className={"contentContainer"}>
-                <OnStream />
                 <div style={{
                     display: "flex",
                     flexFlow: "row",
